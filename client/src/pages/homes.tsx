@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PalmsListingCard from "@/components/PalmsListingCard";
 import { useQuery } from "@tanstack/react-query";
 import { type Property } from "@shared/schema";
 import { PropertyCard } from "@/components/PropertyCard";
@@ -134,7 +135,9 @@ export default function Homes() {
             <div dangerouslySetInnerHTML={{
               __html: `<realscout-office-listings agent-encoded-id="QWdlbnQtMjI1MDUw" sort-order="NEWEST" listing-status="For Sale" property-types="SFR,TC" price-min="450000" price-max="4000000"></realscout-office-listings>`
             }} />
-            
+
+            <PalmsListingCard />
+
             <div className="mt-8 text-center">
               <p className="text-sm text-gray-500 mb-4">
                 🔒 Exclusive MLS Access • Updated Every 15 Minutes • Dr. Duffy's Personal Listings

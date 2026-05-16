@@ -37,6 +37,22 @@ export default function PalmsListingCard() {
         }}
       />
 
+      {/* Listing photo */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="https://cdn.propertypanorama.com/las/2782527/0.jpg"
+        alt="4381 W Flamingo Rd #822 · Palms Place Las Vegas"
+        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+        style={{
+          width: "100%",
+          height: "220px",
+          objectFit: "cover" as const,
+          borderRadius: "8px",
+          marginBottom: "16px",
+          display: "block",
+        }}
+      />
+
       {/* Featured badge */}
       <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "12px", flexWrap: "wrap" as const }}>
         <span
@@ -126,7 +142,7 @@ export default function PalmsListingCard() {
           📞 Call/Text 702-222-1964
         </a>
         <a
-          href="https://drjanduffy.com/property/4381-w-flamingo-rd-822-las-vegas-nv-89103"
+          href="https://www.luxevegasliving.com/idx/4381-w-flamingo-rd-las-vegas-nv-89103/1801545223_spid/"
           target="_blank"
           rel="noopener noreferrer"
           style={{

@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import PalmsListingCard from "./PalmsListingCard";
 
 export default function RealScoutListings() {
   return (
@@ -23,16 +24,17 @@ export default function RealScoutListings() {
         {/* RealScout Widget - using dangerouslySetInnerHTML per rules */}
         <div
           dangerouslySetInnerHTML={{
-            __html: `<realscout-office-listings 
-              agent-encoded-id="QWdlbnQtMjI1MDUw" 
-              sort-order="NEWEST" 
-              listing-status="For Sale" 
-              property-types=",SFR,MF,TC" 
-              price-min="500000" 
+            __html: `<realscout-office-listings
+              agent-encoded-id="QWdlbnQtMjI1MDUw"
+              sort-order="NEWEST"
+              listing-status="For Sale"
+              property-types=",SFR,MF,TC"
+              price-min="500000"
               price-max="800000"
             ></realscout-office-listings>`,
           }}
         />
+        <PalmsListingCard />
       </div>
     </section>
   );

@@ -83,6 +83,6 @@
     "typescript": "5.4.2",
     "vitest": "^4.0.18",
     "webpack-bundle-analyzer": "^4.10.2",
-    "wrangler": "^3.78.12"
+    "wrangler": "^4.65.0"
   }
 }

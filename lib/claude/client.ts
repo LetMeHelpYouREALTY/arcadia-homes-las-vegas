@@ -15,6 +15,7 @@ import Anthropic from '@anthropic-ai/sdk';
 
 export interface ClaudeConfig {
   apiKey: string;
+  baseURL?: string;
   maxRetries?: number;
   timeout?: number;
   enableCaching?: boolean;
@@ -87,6 +88,7 @@ export class ClaudeClient {
 
     this.client = new Anthropic({
       apiKey: config.apiKey,
+      baseURL: config.baseURL,
       maxRetries: this.config.maxRetries,
       timeout: this.config.timeout,
     });

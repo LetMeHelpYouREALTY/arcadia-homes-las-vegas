@@ -8,6 +8,7 @@
 export interface ClaudeConfiguration {
   // API Settings
   apiKey: string;
+  baseURL?: string;
   model: string;
   maxTokens: number;
   temperature: number;
@@ -58,7 +59,11 @@ export interface ClaudeConfiguration {
 export function getClaudeConfig(): ClaudeConfiguration {
   return {
     // API Settings
-    apiKey: process.env.ANTHROPIC_API_KEY || '',
+    // Prefers Vercel AI Gateway (AI_GATEWAY_API_KEY) when set; falls back to
+    // calling Anthropic directly with ANTHROPIC_API_KEY. Non-breaking until
+    // AI_GATEWAY_API_KEY is added to this site's deployment env vars.
+    apiKey: process.env.AI_GATEWAY_API_KEY || process.env.ANTHROPIC_API_KEY || '',
+    baseURL: process.env.AI_GATEWAY_API_KEY ? 'https://ai-gateway.vercel.sh' : undefined,
     model: process.env.CLAUDE_MODEL || 'claude-3-5-sonnet-20241022',
     maxTokens: parseInt(process.env.CLAUDE_MAX_TOKENS || '4096'),
     temperature: parseFloat(process.env.CLAUDE_TEMPERATURE || '1.0'),

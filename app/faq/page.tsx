@@ -5,7 +5,6 @@ import { Phone } from "lucide-react";
 import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
 import {
-  generateBreadcrumbSchema,
   generateFAQSchema,
   generateWebPageSchema,
   combineSchemas,
@@ -23,12 +22,6 @@ export const metadata: Metadata = {
     "BHHS agent questions",
   ],
 };
-
-// Breadcrumb items
-const breadcrumbs = [
-  { name: "Home", url: "/" },
-  { name: "FAQ", url: "/faq" },
-];
 
 const faqCategories = [
   {
@@ -165,7 +158,6 @@ const allFaqs = faqCategories.flatMap((category) =>
 
 // Combined page schemas including all FAQs
 const pageSchemas = combineSchemas(
-  generateBreadcrumbSchema(breadcrumbs),
   generateWebPageSchema({
     name: "Frequently Asked Questions | Berkshire Hathaway HomeServices Las Vegas",
     description:

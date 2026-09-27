@@ -12,6 +12,12 @@ export const siteConfig = {
   url: "https://www.arcadiahomeslasvegas.com",
   description:
     "Expert real estate for Arcadia and Summerlin West (89135), NV. Buy, sell, or invest with Dr. Jan Duffy, your trusted Berkshire Hathaway HomeServices Nevada Properties agent.",
+  ogImage: {
+    path: "/og-image.jpg",
+    width: 1200,
+    height: 630,
+    alt: "Arcadia Homes Las Vegas — Summerlin West luxury real estate with Dr. Jan Duffy",
+  },
 };
 
 export const agentInfo = {

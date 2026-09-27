@@ -5,6 +5,7 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
 import Footer from "@/components/layouts/Footer";
+import AmenityMapSection from "@/components/amenities/AmenityMapSection";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Home as HomeIcon, TrendingUp, Shield, Users, Phone } from "lucide-react";
@@ -196,6 +197,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <AmenityMapSection
+          title="What's Nearby Arcadia"
+          subtitle="Restaurants, grocery, parks, golf, and healthcare around Grand Park Village in Summerlin West—filter the map or open the full amenities guide."
+          defaultCategory="grocery"
+        />
 
         {/* Market Stats Section */}
         <section className="py-16 bg-slate-900 text-white">

@@ -9,6 +9,7 @@ import { cn } from "lib/utils";
 import AIChatWidget from "@/components/chat/AIChatWidget";
 import CalendlyBadge from "@/components/calendly/CalendlyBadge";
 import SchemaScript from "@/components/SchemaScript";
+import PathBreadcrumbSchema from "@/components/PathBreadcrumbSchema";
 import {
   generateRealEstateAgentSchema,
   generateWebSiteSchema,
@@ -46,11 +47,20 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: siteConfig.ogImage.path,
+        width: siteConfig.ogImage.width,
+        height: siteConfig.ogImage.height,
+        alt: siteConfig.ogImage.alt,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
+    images: [siteConfig.ogImage.path],
   },
   icons: {
     icon: "/favicon-32x32.png",
@@ -88,6 +98,7 @@ export default function RootLayout({
         <meta name="color-scheme" content="light" />
         {/* Site-wide JSON-LD Schema: RealEstateAgent + WebSite */}
         <SchemaScript schema={siteWideSchemas} id="site-schema" />
+        <PathBreadcrumbSchema />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-WB5DLLZ4C6"

@@ -1,8 +1,8 @@
 import {
   AMENITIES_PAGE_FAQS,
-  ARCADIA_COMMUNITY,
   CURATED_NEARBY_PLACES,
 } from "@/lib/amenities/arcadia-community";
+import { formatCuratedAddress } from "@/lib/amenities/curated-place-utils";
 import { agentInfo } from "@/lib/site-config";
 import Link from "next/link";
 import { Phone } from "lucide-react";
@@ -16,7 +16,7 @@ export default function AmenitiesWrittenContent() {
         </h2>
         <p className="text-slate-700 leading-relaxed">
           Arcadia buyers in Grand Park Village are minutes from{" "}
-          <strong>Downtown Summerlin</strong> (1720 Festival Plaza Drive, Las Vegas, NV 89135),
+          <strong>Downtown Summerlin</strong> (1980 Festival Plaza Drive, Las Vegas, NV 89135),
           Summerlin West&apos;s open-air hub for restaurants, coffee, and casual dining. Additional
           options line West Charleston Boulevard and nearby Summerlin retail centers.
         </p>
@@ -27,10 +27,10 @@ export default function AmenitiesWrittenContent() {
           Parks &amp; Recreation
         </h2>
         <p className="text-slate-700 leading-relaxed mb-4">
-          <strong>Exploration Peak Park</strong> (9600 Red Hills Road, Las Vegas, NV 89138) offers
-          trails and elevated views toward Red Rock Canyon. The master-planned{" "}
-          <strong>Grand Park</strong> in Summerlin West is developing in phases adjacent to Grand
-          Park Village. For regional outdoor recreation,{" "}
+          The master-planned <strong>Grand Park</strong> in Summerlin West is developing in phases
+          adjacent to Grand Park Village. <strong>Exploration Peak Park</strong> (9700 South Buffalo
+          Drive, Las Vegas, NV 89178) is a Clark County regional park with trails and Exploration
+          Peak. For regional outdoor recreation,{" "}
           <strong>Red Rock Canyon National Conservation Area</strong> (1000 Scenic Loop Drive, Blue
           Diamond, NV 89005) is a short drive west.
         </p>
@@ -41,7 +41,7 @@ export default function AmenitiesWrittenContent() {
           Golf Near Summerlin West
         </h2>
         <p className="text-slate-700 leading-relaxed">
-          <strong>TPC Las Vegas</strong> (12500 TPC Boulevard, Las Vegas, NV 89138) and other
+          <strong>TPC Las Vegas</strong> (9851 Canyon Run Drive, Las Vegas, NV 89144) and other
           Summerlin-area courses are within a few miles of Arcadia, supporting an active outdoor
           lifestyle without a long commute.
         </p>
@@ -52,9 +52,9 @@ export default function AmenitiesWrittenContent() {
           Healthcare &amp; Pharmacies
         </h2>
         <p className="text-slate-700 leading-relaxed">
-          <strong>Summerlin Hospital Medical Center</strong> (657 Town Center Drive, Las Vegas, NV
-          89144) is a major full-service hospital serving Summerlin. Retail pharmacies are available
-          at grocery and drugstore locations throughout Summerlin West and along Charleston
+          <strong>Summerlin Hospital Medical Center</strong> (657 North Town Center Drive, Las Vegas,
+          NV 89144) is a major full-service hospital serving Summerlin. Retail pharmacies are
+          available at grocery and drugstore locations throughout Summerlin West and along Charleston
           Boulevard.
         </p>
       </section>
@@ -64,10 +64,9 @@ export default function AmenitiesWrittenContent() {
           Shopping &amp; Daily Errands
         </h2>
         <p className="text-slate-700 leading-relaxed">
-          Beyond Downtown Summerlin, residents reach grocers and big-box retail along Charleston
-          Boulevard and in surrounding Summerlin villages. Use the map filters above for live
-          grocery, shopping, and parking results near {ARCADIA_COMMUNITY.coordinates.lat.toFixed(4)}
-          , {ARCADIA_COMMUNITY.coordinates.lng.toFixed(4)}.
+          Beyond Downtown Summerlin, residents reach grocers such as Whole Foods Market at 2475 South
+          Town Center Drive and Smith&apos;s Food and Drug at 9851 West Charleston Boulevard, plus
+          big-box retail along Charleston Boulevard and in surrounding Summerlin villages.
         </p>
       </section>
 
@@ -77,7 +76,7 @@ export default function AmenitiesWrittenContent() {
         </h2>
         <p className="text-slate-700 leading-relaxed">
           Arcadia is in the Clark County School District. Nearby public schools include{" "}
-          <strong>Ernest Becker Middle School</strong> (9700 W Maule Avenue, Las Vegas, NV 89148)
+          <strong>Ernest Becker Middle School</strong> (9700 West Maule Avenue, Las Vegas, NV 89148)
           and <strong>Palo Verde High School</strong> (333 South Pavilion Center Drive, Las Vegas,
           NV 89144). Confirm school zoning for a specific lot with CCSD before you buy.
         </p>
@@ -117,7 +116,7 @@ export default function AmenitiesWrittenContent() {
               className="rounded-lg border border-slate-200 bg-white p-4 text-sm shadow-sm"
             >
               <p className="font-semibold text-slate-900">{place.name}</p>
-              <p className="text-slate-600 mt-1">{place.address}</p>
+              <p className="text-slate-600 mt-1">{formatCuratedAddress(place)}</p>
               {place.note && <p className="text-slate-500 mt-2">{place.note}</p>}
             </li>
           ))}

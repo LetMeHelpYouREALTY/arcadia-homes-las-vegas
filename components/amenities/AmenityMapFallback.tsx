@@ -3,6 +3,7 @@ import {
   CURATED_NEARBY_PLACES,
   type AmenityCategoryId,
 } from "@/lib/amenities/arcadia-community";
+import { formatCuratedAddress } from "@/lib/amenities/curated-place-utils";
 import { buildEmbedMapUrl } from "@/lib/amenities/maps-env";
 import Link from "next/link";
 
@@ -43,8 +44,7 @@ export default function AmenityMapFallback({
         />
       </div>
       <p className="text-sm text-slate-600">
-        Interactive amenity search requires a Google Maps API key. This map shows{" "}
-        {ARCADIA_COMMUNITY.name} in {ARCADIA_COMMUNITY.areaLabel}.{" "}
+        Map centered on {ARCADIA_COMMUNITY.name} in {ARCADIA_COMMUNITY.areaLabel}.{" "}
         <Link href="/amenities" className="text-blue-600 hover:underline font-medium">
           View the full Nearby Amenities guide
         </Link>
@@ -54,11 +54,11 @@ export default function AmenityMapFallback({
         <ul className="grid gap-3 sm:grid-cols-2" aria-label="Featured nearby places">
           {filtered.map((place) => (
             <li
-              key={`${place.name}-${place.address}`}
+              key={`${place.name}-${place.postalCode}`}
               className="rounded-lg border border-slate-200 bg-white p-4 text-sm"
             >
               <p className="font-semibold text-slate-900">{place.name}</p>
-              <p className="text-slate-600 mt-1">{place.address}</p>
+              <p className="text-slate-600 mt-1">{formatCuratedAddress(place)}</p>
               {place.note && <p className="text-slate-500 mt-2 text-xs">{place.note}</p>}
             </li>
           ))}

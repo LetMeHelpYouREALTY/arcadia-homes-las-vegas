@@ -15,11 +15,13 @@ function placeListItem(place: (typeof CURATED_NEARBY_PLACES)[number], index: num
     item: {
       "@type": place.schemaType,
       name: place.name,
+      url: place.sourceUrl,
       address: {
         "@type": "PostalAddress",
-        streetAddress: place.address.split(",")[0]?.trim(),
-        addressLocality: ARCADIA_COMMUNITY.city,
-        addressRegion: ARCADIA_COMMUNITY.region,
+        streetAddress: place.streetAddress,
+        addressLocality: place.locality,
+        addressRegion: place.region,
+        postalCode: place.postalCode,
         addressCountry: "US",
       },
     },

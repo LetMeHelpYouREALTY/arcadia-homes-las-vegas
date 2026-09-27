@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import AmenityMapSection from "@/components/amenities/AmenityMapSection";
 import Link from "next/link";
 import { Phone, MapPin, Home } from "lucide-react";
 import type { Metadata } from "next";
@@ -247,6 +248,13 @@ export default function ArcadiaPage() {
             </div>
           </section>
 
+          <AmenityMapSection
+            variant="compact"
+            title="Life Near Arcadia"
+            subtitle="See dining, parks, golf, and services within a short drive of Grand Park Village."
+            defaultCategory="parks"
+          />
+
           {/* Dr. Jan Duffy Quote */}
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
@@ -280,6 +288,11 @@ export default function ArcadiaPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Explore More</h2>
             <ul className="flex flex-wrap gap-4 text-blue-600">
+              <li>
+                <Link href="/amenities" className="hover:underline">
+                  Nearby amenities in Arcadia
+                </Link>
+              </li>
               <li>
                 <Link href="/neighborhoods/summerlin" className="hover:underline">
                   Luxury new construction Summerlin West

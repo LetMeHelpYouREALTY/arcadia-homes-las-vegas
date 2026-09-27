@@ -16,6 +16,7 @@ import {
   HelpCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
+import AmenityMapSection from "@/components/amenities/AmenityMapSection";
 
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
@@ -691,6 +692,12 @@ export default function NewConstructionPage() {
           Last Updated: January 2026 | Incentives subject to change
         </div>
       </main>
+      <AmenityMapSection
+        variant="compact"
+        title="New Construction Near Arcadia"
+        subtitle="Map daily errands, golf, and healthcare around SHAWOOD Arcadia in Summerlin West."
+        defaultCategory="golf"
+      />
       <RealScoutListings />
       <Footer />
     </>

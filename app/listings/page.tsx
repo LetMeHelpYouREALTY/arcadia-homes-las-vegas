@@ -11,6 +11,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import AmenityMapSection from "@/components/amenities/AmenityMapSection";
 
 export const metadata: Metadata = {
   title: "Las Vegas Homes for Sale | MLS Property Search | Berkshire Hathaway HomeServices",
@@ -493,6 +494,12 @@ export default function ListingsPage() {
         {/* Last Updated */}
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
+      <AmenityMapSection
+        variant="compact"
+        title="Explore Summerlin West Amenities"
+        subtitle="Searching near Arcadia and Grand Park Village? Filter restaurants, grocery, parks, and more."
+        defaultCategory="shopping"
+      />
       <Footer />
     </>
   );

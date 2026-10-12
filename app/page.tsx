@@ -8,11 +8,13 @@ import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Home as HomeIcon, TrendingUp, Shield, Users, Phone } from "lucide-react";
+import { arcadiaHomeFaqs } from "@/lib/arcadia-home-faqs";
+import { schemaToJsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Arcadia Homes Las Vegas | Dr. Jan Duffy, REALTOR® | Summerlin West",
+  title: "Arcadia at Grand Park | Dr. Jan Duffy",
   description:
-    "Expert real estate for Arcadia and Summerlin West (89135). Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties—buy, sell, or invest. Call (702) 500-0337.",
+    "SHAWOOD at Arcadia in Grand Park village, Summerlin West. Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties—buy or sell with a local expert. (702) 500-0337.",
   keywords: [
     "Arcadia Homes Las Vegas",
     "Summerlin West real estate",
@@ -24,73 +26,17 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600;
 
-// Organization Schema
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
-  url: "https://www.arcadiahomeslasvegas.com",
-  telephone: "+17025000337",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "9406 W Lake Mead Blvd, Suite 100",
-    addressLocality: "Las Vegas",
-    addressRegion: "NV",
-    postalCode: "89134",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "200",
-  },
-};
-
-// FAQ Schema for SEO
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Why should I choose a Berkshire Hathaway HomeServices agent in Las Vegas?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Berkshire Hathaway HomeServices is the only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, ethical standards, and a global referral network of 50,000+ agents. When you're making the biggest purchase of your life, that trust matters.",
-      },
+  mainEntity: arcadiaHomeFaqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
     },
-    {
-      "@type": "Question",
-      name: "What areas does Berkshire Hathaway HomeServices Nevada Properties serve?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "BHHS Nevada Properties serves all of Las Vegas, Henderson, North Las Vegas, and surrounding areas, with specialized expertise in Summerlin, The Ridges, Skye Canyon, Southern Highlands, Green Valley, and all Henderson communities.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do I contact Dr. Jan Duffy at Berkshire Hathaway HomeServices?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "You can reach Dr. Jan Duffy at (702) 500-0337 or email DrDuffy@arcadiahomeslasvegas.com. Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Does Berkshire Hathaway HomeServices help with new construction homes?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes! BHHS agents provide free buyer representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities—the builder pays the commission, not you.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is the current Las Vegas real estate market like in 2026?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "As of January 2026, the Las Vegas median home price is $450,000 (+4.2% YoY), with homes selling in an average of 28 days. Henderson's median is slightly higher at $485,000. The market remains competitive but balanced.",
-      },
-    },
-  ],
+  })),
 };
 
 export default function Home() {
@@ -98,11 +44,7 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(faqSchema) }}
       />
       <Navbar />
       <main>
@@ -289,7 +231,11 @@ export default function Home() {
 
         <WhyChooseUs />
         <ReviewsSection />
-        <FAQSection />
+        <FAQSection
+          faqs={arcadiaHomeFaqs}
+          title="Arcadia at Grand Park — Frequently Asked Questions"
+          subtitle="Answers about SHAWOOD at Arcadia in Summerlin West from Dr. Jan Duffy"
+        />
 
         {/* CTA Section */}
         <section className="py-16 md:py-20 bg-blue-600 text-white">

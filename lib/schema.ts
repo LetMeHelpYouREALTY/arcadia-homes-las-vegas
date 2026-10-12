@@ -113,26 +113,18 @@ export function generateRealEstateAgentSchema() {
     },
     areaServed: [
       {
-        "@type": "City",
-        name: "Las Vegas",
-        sameAs: "https://en.wikipedia.org/wiki/Las_Vegas",
-      },
-      {
-        "@type": "City",
-        name: "Henderson",
-        sameAs: "https://en.wikipedia.org/wiki/Henderson,_Nevada",
-      },
-      {
         "@type": "Place",
-        name: "Summerlin",
-      },
-      {
-        "@type": "City",
-        name: "North Las Vegas",
-      },
-      {
-        "@type": "Place",
-        name: "Green Valley",
+        name: "Arcadia",
+        containedInPlace: {
+          "@type": "Place",
+          name: "Summerlin",
+          containedInPlace: {
+            "@type": "City",
+            name: "Las Vegas",
+            addressRegion: "NV",
+            addressCountry: "US",
+          },
+        },
       },
     ],
     openingHoursSpecification: [
@@ -169,16 +161,9 @@ export function generateRealEstateAgentSchema() {
         sameAs: "https://en.wikipedia.org/wiki/Berkshire_Hathaway_HomeServices",
       },
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: agentStats.averageRating.toString(),
-      reviewCount: agentStats.reviewCount.toString(),
-      bestRating: "5",
-      worstRating: "1",
-    },
     knowsAbout: [
       "Las Vegas real estate",
-      "Henderson homes",
+      "Arcadia at Grand Park",
       "Summerlin properties",
       "Luxury homes",
       "New construction",
@@ -606,5 +591,5 @@ export function combineSchemas(...schemas: Record<string, unknown>[]) {
  * Convert schema object to JSON-LD string
  */
 export function schemaToJsonLd(schema: Record<string, unknown>): string {
-  return JSON.stringify(schema);
+  return JSON.stringify(schema).replace(/</g, "\\u003c");
 }

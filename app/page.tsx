@@ -14,7 +14,7 @@ import { schemaToJsonLd } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Arcadia at Grand Park | Dr. Jan Duffy",
   description:
-    "SHAWOOD at Arcadia in Grand Park village, Summerlin West. Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties—buy or sell with a local expert. (702) 500-0337.",
+    "SHAWOOD at Arcadia in Grand Park village, Summerlin West. Dr. Jan Duffy, BHHS Nevada Properties—Arcadia new construction expert. (702) 500-0337.",
   keywords: [
     "Arcadia Homes Las Vegas",
     "Summerlin West real estate",

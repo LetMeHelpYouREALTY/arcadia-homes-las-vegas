@@ -53,7 +53,10 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+        <h1
+          id="hero-heading"
+          className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+        >
           Arcadia by SHAWOOD in Summerlin West
         </h1>
         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">

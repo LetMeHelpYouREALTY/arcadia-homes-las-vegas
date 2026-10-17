@@ -32,6 +32,6 @@ export const arcadiaHomeFaqs: ArcadiaHomeFaq[] = [
   {
     question: "How do I tour Arcadia with Dr. Jan Duffy?",
     answer:
-      "Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties helps buyers explore SHAWOOD at Arcadia. Call (702) 500-0337 or email DrDuffy@arcadiahomeslasvegas.com to schedule a private tour.",
+      "Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties is a buyer's agent who helps clients explore SHAWOOD at Arcadia. Call (702) 500-0337 or email DrDuffy@arcadiahomeslasvegas.com to schedule a private tour.",
   },
 ];

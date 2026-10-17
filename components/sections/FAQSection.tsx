@@ -82,7 +82,10 @@ export default function FAQSection({
               className="border border-slate-200 rounded-lg mb-4 overflow-hidden"
             >
               <button
+                type="button"
                 onClick={() => toggleFAQ(index)}
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
                 className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-slate-50 transition-colors"
               >
                 <span className="font-semibold text-slate-900 pr-4">{faq.question}</span>
@@ -92,11 +95,14 @@ export default function FAQSection({
                   <ChevronDown className="h-5 w-5 text-slate-400 flex-shrink-0" />
                 )}
               </button>
-              {openIndex === index && (
-                <div className="px-6 py-4 bg-slate-50 border-t border-slate-200">
-                  <p className="text-slate-700">{faq.answer}</p>
-                </div>
-              )}
+              <div
+                id={`faq-answer-${index}`}
+                className={`px-6 py-4 bg-slate-50 border-t border-slate-200 ${
+                  openIndex === index ? "" : "hidden"
+                }`}
+              >
+                <p className="text-slate-700">{faq.answer}</p>
+              </div>
             </div>
           ))}
         </div>

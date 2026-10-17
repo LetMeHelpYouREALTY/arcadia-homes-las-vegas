@@ -92,8 +92,8 @@ export function generateRealEstateAgentSchema() {
       "Berkshire Hathaway HomeServices",
     ],
     url: BASE_URL,
-    logo: `${BASE_URL}/images/dr-jan-duffy.jpg`,
-    image: `${BASE_URL}/images/dr-jan-duffy.jpg`,
+    logo: `${BASE_URL}${siteConfig.ogImage.path}`,
+    image: `${BASE_URL}${siteConfig.ogImage.path}`,
     description: siteConfig.description,
     telephone: "+17025000337",
     email: agentInfo.email,
@@ -111,9 +111,13 @@ export function generateRealEstateAgentSchema() {
       latitude: officeInfo.coordinates.lat,
       longitude: officeInfo.coordinates.lng,
     },
+    employee: {
+      "@id": `${BASE_URL}/about#agent`,
+    },
     areaServed: [
       {
         "@type": "Place",
+        "@id": `${BASE_URL}/neighborhoods/arcadia#place`,
         name: "Arcadia",
         containedInPlace: {
           "@type": "Place",
@@ -189,13 +193,20 @@ export function generatePersonSchema() {
     description:
       "Dr. Jan Duffy is a REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas since 2008. Specialist in Arcadia, Summerlin West, luxury homes, and new construction.",
     url: `${BASE_URL}/about`,
+    image: `${BASE_URL}${siteConfig.ogImage.path}`,
     email: agentInfo.email,
     telephone: "+17025000337",
     worksFor: {
-      "@type": "Organization",
-      name: agentInfo.brokerage,
-      url: BASE_URL,
+      "@id": `${BASE_URL}#parent-organization`,
     },
+    mainEntityOfPage: `${BASE_URL}/about`,
+    knowsAbout: [
+      "Arcadia at Grand Park",
+      "SHAWOOD new construction",
+      "Grand Park village Summerlin",
+      "Summerlin West real estate",
+      "Las Vegas luxury homes",
+    ],
     sameAs: Object.values(socialProfiles),
     hasCredential: {
       "@type": "EducationalOccupationalCredential",
@@ -262,6 +273,9 @@ export function generateWebSiteSchema() {
     description: siteConfig.description,
     publisher: {
       "@id": `${BASE_URL}#organization`,
+    },
+    about: {
+      "@id": `${BASE_URL}/about#agent`,
     },
     potentialAction: {
       "@type": "SearchAction",
@@ -547,23 +561,45 @@ export function generateWebPageSchema(page: {
   url: string;
   datePublished?: string;
   dateModified?: string;
+  aboutId?: string;
+  primaryImage?: string;
+  speakableSelectors?: string[];
 }) {
-  return {
+  const pageUrl = page.url.startsWith("http") ? page.url : `${BASE_URL}${page.url}`;
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${page.url.startsWith("http") ? page.url : `${BASE_URL}${page.url}`}#webpage`,
+    "@id": `${pageUrl}#webpage`,
     name: page.name,
     description: page.description,
-    url: page.url.startsWith("http") ? page.url : `${BASE_URL}${page.url}`,
+    url: pageUrl,
     isPartOf: {
       "@id": `${BASE_URL}#website`,
     },
     about: {
-      "@id": `${BASE_URL}#organization`,
+      "@id": page.aboutId ?? `${BASE_URL}#organization`,
     },
     ...(page.datePublished && { datePublished: page.datePublished }),
     ...(page.dateModified && { dateModified: page.dateModified }),
   };
+
+  if (page.primaryImage) {
+    schema.primaryImageOfPage = {
+      "@type": "ImageObject",
+      url: page.primaryImage.startsWith("http")
+        ? page.primaryImage
+        : `${BASE_URL}${page.primaryImage}`,
+    };
+  }
+
+  if (page.speakableSelectors && page.speakableSelectors.length > 0) {
+    schema.speakable = {
+      "@type": "SpeakableSpecification",
+      cssSelector: page.speakableSelectors,
+    };
+  }
+
+  return schema;
 }
 
 // ============================================================================

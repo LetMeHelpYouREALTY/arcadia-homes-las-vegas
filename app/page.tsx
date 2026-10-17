@@ -9,42 +9,79 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Home as HomeIcon, TrendingUp, Shield, Users, Phone } from "lucide-react";
 import { arcadiaHomeFaqs } from "@/lib/arcadia-home-faqs";
-import { schemaToJsonLd } from "@/lib/schema";
+import { siteConfig } from "@/lib/site-config";
+import {
+  combineSchemas,
+  generateFAQSchema,
+  generateWebPageSchema,
+  schemaToJsonLd,
+} from "@/lib/schema";
+
+const homeTitle = "Arcadia at Grand Park | Dr. Jan Duffy";
+const homeDescription =
+  "SHAWOOD at Arcadia in Grand Park village, Summerlin West. Dr. Jan Duffy, BHHS Nevada Properties—Arcadia new construction expert. (702) 500-0337.";
 
 export const metadata: Metadata = {
-  title: "Arcadia at Grand Park | Dr. Jan Duffy",
-  description:
-    "SHAWOOD at Arcadia in Grand Park village, Summerlin West. Dr. Jan Duffy, BHHS Nevada Properties—Arcadia new construction expert. (702) 500-0337.",
+  title: homeTitle,
+  description: homeDescription,
   keywords: [
     "Arcadia Homes Las Vegas",
     "Summerlin West real estate",
     "89135 homes",
     "Dr. Jan Duffy realtor",
     "BHHS Nevada Properties",
+    "SHAWOOD Arcadia",
   ],
+  openGraph: {
+    title: homeTitle,
+    description: homeDescription,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: siteConfig.ogImage.path,
+        width: siteConfig.ogImage.width,
+        height: siteConfig.ogImage.height,
+        alt: siteConfig.ogImage.alt,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: homeTitle,
+    description: homeDescription,
+    images: [siteConfig.ogImage.path],
+  },
 };
 
 export const revalidate = 3600;
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: arcadiaHomeFaqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-};
+const homeStructuredData = combineSchemas(
+  generateWebPageSchema({
+    name: homeTitle,
+    description: homeDescription,
+    url: "/",
+    dateModified: "2026-10-17",
+    aboutId: `${siteConfig.url}/neighborhoods/arcadia#place`,
+    primaryImage: siteConfig.ogImage.path,
+    speakableSelectors: ["#hero-heading", "#arcadia-summary"],
+  }),
+  generateFAQSchema(
+    arcadiaHomeFaqs.map((faq) => ({
+      question: faq.question,
+      answer: faq.answer,
+    })),
+  ),
+);
 
 export default function Home() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(homeStructuredData) }}
       />
       <Navbar />
       <main>
@@ -121,7 +158,10 @@ export default function Home() {
         <section className="py-12 md:py-16 bg-slate-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+              <h2
+                id="arcadia-summary"
+                className="text-2xl md:text-3xl font-bold text-slate-900 mb-4"
+              >
                 Arcadia in Summerlin®
               </h2>
               <p className="text-lg text-slate-700 mb-6">
@@ -195,6 +235,7 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
               {[
+                { name: "Arcadia at Grand Park", price: "New construction", slug: "arcadia" },
                 { name: "Summerlin", price: "$625K", slug: "summerlin" },
                 { name: "Henderson", price: "$485K", slug: "henderson" },
                 { name: "Green Valley", price: "$520K", slug: "green-valley" },
@@ -271,8 +312,8 @@ export default function Home() {
 
         {/* Last Updated */}
         <div className="bg-slate-100 py-4 text-center text-sm text-slate-500">
-          Last Updated: January 2026 | HeyBerkshire.com - Berkshire Hathaway HomeServices Nevada
-          Properties
+          Last Updated: October 2026 | arcadiahomeslasvegas.com — Berkshire Hathaway HomeServices
+          Nevada Properties
         </div>
       </main>
       <Footer />

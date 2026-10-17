@@ -71,6 +71,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/neighborhoods/arcadia"
+                  className="text-slate-300 hover:text-white transition-colors text-sm"
+                >
+                  Arcadia at Grand Park (SHAWOOD)
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/why-berkshire-hathaway"
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >

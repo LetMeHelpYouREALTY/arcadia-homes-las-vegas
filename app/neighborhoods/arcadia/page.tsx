@@ -4,6 +4,8 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
 import { Phone, MapPin, Home } from "lucide-react";
 import type { Metadata } from "next";
+import { combineSchemas, schemaToJsonLd } from "@/lib/schema";
+import { siteConfig } from "@/lib/site-config";
 
 const canonicalUrl = "https://www.arcadiahomeslasvegas.com/neighborhoods/arcadia";
 
@@ -48,8 +50,8 @@ const arcadiaFaqs = [
     a: "Arcadia offers three floor plans — Bristlecone (3,176 sq ft, 3 bed/4.5 bath from $1,499,990), Juniper (3,209 sq ft, 4 bed/4.5 bath), and Pinyon (3,399 sq ft, 4 bed/5.5 bath with bonus room) — all two-story with 3-car garages.",
   },
   {
-    q: "Who is the real estate agent for Arcadia homes Las Vegas?",
-    a: "Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties specializes in Arcadia homes at arcadiahomeslasvegas.com. Contact: (702) 500-0337.",
+    q: "Who can represent buyers at Arcadia in Las Vegas?",
+    a: "Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties is a buyer's agent who helps clients purchase at SHAWOOD at Arcadia. Contact: (702) 500-0337 or arcadiahomeslasvegas.com.",
   },
   {
     q: "Are there eco-friendly homes in Summerlin West?",
@@ -57,46 +59,64 @@ const arcadiaFaqs = [
   },
 ];
 
-// JSON-LD: Residential community + RealEstateAgent + FAQPage (GEO)
-const arcadiaSchema = {
+const arcadiaPlaceSchema = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ResidentialComplex",
-      "@id": `${canonicalUrl}#place`,
-      name: "Arcadia",
-      description:
-        "Exclusive gated community of 40 luxury single-family homes in Summerlin West, Las Vegas 89135, in Grand Park Village. Japanese-inspired design, eco-friendly construction, $1.5M to $2M+.",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Las Vegas",
-        addressRegion: "NV",
-        postalCode: "89135",
-      },
+  "@type": "Place",
+  "@id": `${canonicalUrl}#place`,
+  name: "Arcadia at Grand Park",
+  description:
+    "Gated SHAWOOD neighborhood of 40 luxury single-family homes in Grand Park village, Summerlin West, Las Vegas. Japanese-inspired design and eco-conscious construction.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Las Vegas",
+    addressRegion: "NV",
+    postalCode: "89135",
+    addressCountry: "US",
+  },
+  containedInPlace: {
+    "@type": "Place",
+    name: "Grand Park village",
+    containedInPlace: {
+      "@type": "Place",
+      name: "Summerlin",
       containedInPlace: {
-        "@type": "Place",
-        name: "Summerlin West",
+        "@type": "City",
+        name: "Las Vegas",
+        addressRegion: "NV",
+        addressCountry: "US",
       },
     },
-    {
-      "@type": "RealEstateAgent",
-      "@id": `${canonicalUrl}#agent`,
-      name: "Dr. Jan Duffy",
-      jobTitle: "REALTOR®",
-      telephone: "+17025000337",
-      url: "https://www.arcadiahomeslasvegas.com",
-      description: "Specialist in Arcadia homes Las Vegas and Summerlin West luxury new construction.",
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: arcadiaFaqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.q,
-        acceptedAnswer: { "@type": "Answer", text: faq.a },
-      })),
-    },
+  },
+  numberOfAccommodationUnits: 40,
+  sameAs: [
+    "https://shawood.com/community/arcadia/",
+    "https://summerlin.com/shawood-at-arcadia-opens-first-nevada-neighborhood-in-summerlin/",
   ],
 };
+
+const arcadiaStructuredData = combineSchemas(
+  arcadiaPlaceSchema,
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${canonicalUrl}#webpage`,
+    name: "Arcadia Homes Summerlin West | Dr. Jan Duffy",
+    url: canonicalUrl,
+    isPartOf: { "@id": `${siteConfig.url}#website` },
+    about: { "@id": `${canonicalUrl}#place` },
+    dateModified: "2026-10-17",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${canonicalUrl}#faq`,
+    mainEntity: arcadiaFaqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  },
+);
 
 const floorplans = [
   {
@@ -130,7 +150,7 @@ export default function ArcadiaPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(arcadiaSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(arcadiaStructuredData) }}
       />
       <Navbar />
       <main className="pt-24 pb-16">

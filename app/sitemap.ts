@@ -2,7 +2,8 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.arcadiahomeslasvegas.com";
-  const lastModified = new Date();
+  /** Stable lastmod — update when URLs or priorities change materially */
+  const lastModified = new Date("2026-10-17T00:00:00.000Z");
 
   // Core pages
   const corePages = [

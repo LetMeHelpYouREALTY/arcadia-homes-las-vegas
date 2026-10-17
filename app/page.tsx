@@ -16,6 +16,7 @@ import {
   generateWebPageSchema,
   schemaToJsonLd,
 } from "@/lib/schema";
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 const homeTitle = "Arcadia at Grand Park | Dr. Jan Duffy";
 const homeDescription =
@@ -54,6 +55,7 @@ export const metadata: Metadata = {
     description: homeDescription,
     images: [siteConfig.ogImage.path],
   },
+  ...selfCanonicalMetadata,
 };
 
 export const revalidate = 3600;

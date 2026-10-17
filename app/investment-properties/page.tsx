@@ -4,6 +4,8 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { Phone, TrendingUp, DollarSign, Building, BarChart, CheckCircle, Calculator } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Las Vegas Investment Properties | Berkshire Hathaway HomeServices",
   description:
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
     "1031 exchange Las Vegas",
     "cash flow properties Las Vegas",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const investmentAreas = [

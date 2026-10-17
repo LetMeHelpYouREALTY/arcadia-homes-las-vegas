@@ -19,6 +19,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Real Estate Services Las Vegas | Berkshire Hathaway HomeServices",
   description:
@@ -32,6 +34,7 @@ export const metadata: Metadata = {
     "55+ community specialist",
     "California relocation Las Vegas",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const servicesSchema = {

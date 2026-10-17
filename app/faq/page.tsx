@@ -10,6 +10,8 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "FAQ | Berkshire Hathaway HomeServices Las Vegas Real Estate",
   description:
@@ -21,6 +23,7 @@ export const metadata: Metadata = {
     "selling a home Henderson",
     "BHHS agent questions",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const faqCategories = [

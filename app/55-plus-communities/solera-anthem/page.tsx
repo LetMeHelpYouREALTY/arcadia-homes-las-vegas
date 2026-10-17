@@ -16,6 +16,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
   description:
@@ -34,6 +36,7 @@ export const metadata: Metadata = {
       "Close-knit community with guard-gated security. Lower HOA fees, Henderson safety. From $380K. Dr. Jan Duffy, BHHS.",
     type: "website",
   },
+  ...selfCanonicalMetadata,
 };
 
 const communitySchema = {

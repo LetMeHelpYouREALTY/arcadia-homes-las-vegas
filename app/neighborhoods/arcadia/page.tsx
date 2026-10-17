@@ -6,15 +6,18 @@ import { Phone, MapPin, Home } from "lucide-react";
 import type { Metadata } from "next";
 import { combineSchemas, schemaToJsonLd } from "@/lib/schema";
 import { siteConfig } from "@/lib/site-config";
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 const canonicalUrl = "https://www.arcadiahomeslasvegas.com/neighborhoods/arcadia";
+const arcadiaTitle = "Arcadia Homes Summerlin West 89135 | Dr. Jan Duffy";
+const arcadiaDescription =
+  "SHAWOOD at Arcadia in Grand Park village—40 gated luxury homes, three floor plans. Buyer's agent Dr. Jan Duffy, BHHS. (702) 500-0337.";
 
 // Image alt template for Arcadia: "[Subject] – Arcadia luxury new construction, Summerlin West Las Vegas 89135, Grand Park Village"
 
 export const metadata: Metadata = {
-  title: "Arcadia Homes Las Vegas | Luxury New Construction Summerlin West 89135 | Dr. Jan Duffy",
-  description:
-    "Luxury new construction in Arcadia, Summerlin West 89135. Gated community, 40 homes, $1.5M–$2M+. Dr. Jan Duffy, BHHS. (702) 500-0337.",
+  title: arcadiaTitle,
+  description: arcadiaDescription,
   keywords: [
     "Arcadia homes Las Vegas",
     "Arcadia Las Vegas 89135",
@@ -23,16 +26,31 @@ export const metadata: Metadata = {
     "Grand Park Village Summerlin new homes",
     "Japanese inspired luxury homes Las Vegas",
     "gated community Summerlin West",
-    "new construction Summerlin $1.5M $2M",
+    "SHAWOOD Arcadia",
   ],
-  alternates: { canonical: canonicalUrl },
   openGraph: {
-    title: "Arcadia Homes Las Vegas | Luxury New Construction Summerlin West 89135 | Dr. Jan Duffy",
-    description:
-      "Luxury new construction in Arcadia, Summerlin West 89135. Gated community, 40 homes, $1.5M–$2M+. Dr. Jan Duffy, BHHS. (702) 500-0337.",
+    title: arcadiaTitle,
+    description: arcadiaDescription,
     url: canonicalUrl,
-    siteName: "Arcadia Homes Las Vegas",
+    siteName: siteConfig.name,
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: siteConfig.ogImage.path,
+        width: siteConfig.ogImage.width,
+        height: siteConfig.ogImage.height,
+        alt: siteConfig.ogImage.alt,
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: arcadiaTitle,
+    description: arcadiaDescription,
+    images: [siteConfig.ogImage.path],
+  },
+  ...selfCanonicalMetadata,
 };
 
 // AEO FAQ verbatim (plan)

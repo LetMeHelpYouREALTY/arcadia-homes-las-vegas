@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
   description:
@@ -33,6 +35,7 @@ export const metadata: Metadata = {
       "Full amenities at the lowest price point. Golf, pools, fitness, 100+ clubs. From $280K. Dr. Jan Duffy, BHHS Nevada Properties.",
     type: "website",
   },
+  ...selfCanonicalMetadata,
 };
 
 const communitySchema = {

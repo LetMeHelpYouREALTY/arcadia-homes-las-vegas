@@ -21,6 +21,8 @@ import {
   generateLocalBusinessSchema,
   generateFAQSchema,
 } from "@/lib/gbp-schema";
+import { schemaToJsonLd } from "@/lib/schema";
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
   title: "Dr. Jan Duffy, REALTOR® Las Vegas | Berkshire Hathaway HomeServices",
@@ -41,6 +43,7 @@ export const metadata: Metadata = {
     url: "https://www.arcadiahomeslasvegas.com/google-business",
     type: "profile",
   },
+  ...selfCanonicalMetadata,
 };
 
 export default function GoogleBusinessPage() {
@@ -51,11 +54,11 @@ export default function GoogleBusinessPage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(localBusinessSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: schemaToJsonLd(faqSchema) }}
       />
       <Navbar />
       <main className="pt-24 pb-16">

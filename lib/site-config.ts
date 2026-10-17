@@ -105,6 +105,13 @@ export const valuePropositions = {
 // Neighborhoods served
 export const neighborhoods = [
   {
+    name: "Arcadia at Grand Park",
+    slug: "arcadia",
+    description: "SHAWOOD luxury new construction in Grand Park village, Summerlin West",
+    medianPrice: "From $1.5M",
+    highlights: ["40 homes", "Grand Park village", "SHAWOOD", "Summerlin West"],
+  },
+  {
     name: "Summerlin",
     slug: "summerlin",
     description: "Master-planned community with parks, trails, and top-rated schools",
@@ -114,9 +121,9 @@ export const neighborhoods = [
   {
     name: "Henderson",
     slug: "henderson",
-    description: "Nevada's second-largest city with family-friendly neighborhoods",
+    description: "Nevada's second-largest city with established neighborhoods and lake access",
     medianPrice: "$485,000",
-    highlights: ["Low crime rate", "Excellent schools", "Lake Las Vegas", "Green Valley"],
+    highlights: ["Lake Las Vegas", "Green Valley", "Parks", "Shopping districts"],
   },
   {
     name: "Green Valley",

@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Las Vegas Luxury Homes for Sale | Berkshire Hathaway HomeServices",
   description:
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
     "MacDonald Highlands Henderson",
     "luxury real estate agent Las Vegas",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const luxurySchema = {
@@ -46,6 +49,15 @@ const luxurySchema = {
 };
 
 const luxuryNeighborhoods = [
+  {
+    name: "Arcadia at Grand Park",
+    location: "Summerlin West",
+    priceRange: "$1.5M - $2M+",
+    description:
+      "SHAWOOD's gated 40-home community in Grand Park village with Japanese-inspired architecture, wellness-focused design, and three two-story floor plans.",
+    features: ["SHAWOOD", "Grand Park village", "Gated", "New construction"],
+    detailPath: "/neighborhoods/arcadia",
+  },
   {
     name: "The Ridges",
     location: "Summerlin",
@@ -263,13 +275,21 @@ export default function LuxuryHomesPage() {
                     </span>
                   </div>
                   <p className="text-slate-600 text-sm mb-4">{neighborhood.description}</p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {neighborhood.features.map((feature) => (
                       <span key={feature} className="bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded">
                         {feature}
                       </span>
                     ))}
                   </div>
+                  {"detailPath" in neighborhood && neighborhood.detailPath ? (
+                    <Link
+                      href={neighborhood.detailPath}
+                      className="text-sm font-semibold text-blue-600 hover:text-blue-700 inline-flex items-center"
+                    >
+                      View Arcadia details <ArrowRight className="h-4 w-4 ml-1" />
+                    </Link>
+                  ) : null}
                 </div>
               ))}
             </div>

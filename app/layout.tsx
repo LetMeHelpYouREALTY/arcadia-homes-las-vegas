@@ -2,7 +2,6 @@ import "./globals.css";
 
 import React from "react";
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import Script from "next/script";
 import { GeistSans } from "geist/font/sans";
 import { Analytics } from "@vercel/analytics/react";
@@ -17,12 +16,9 @@ import {
   generatePersonSchema,
   combineSchemas,
 } from "@/lib/schema";
-import { generateRootMetadata } from "@/lib/page-metadata";
+import { rootLayoutMetadata } from "@/lib/page-metadata";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const pathname = (await headers()).get("x-pathname") ?? "/";
-  return generateRootMetadata(pathname);
-}
+export const metadata: Metadata = rootLayoutMetadata;
 
 export const viewport = {
   width: "device-width",

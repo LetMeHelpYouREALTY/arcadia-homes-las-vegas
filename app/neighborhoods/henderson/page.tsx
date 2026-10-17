@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Phone, Shield, Users } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Henderson | Nevada Real Estate",
   description:
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
     "Henderson Nevada",
     "Green Valley Henderson",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const neighborhoodSchema = {

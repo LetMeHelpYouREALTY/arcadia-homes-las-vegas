@@ -223,8 +223,18 @@ export default function Footer() {
               <Link href="/sitemap.xml" className="text-slate-400 hover:text-white transition-colors">
                 Sitemap
               </Link>
+              <a
+                href="/fair-housing.txt"
+                className="text-slate-400 hover:text-white transition-colors"
+              >
+                Fair Housing
+              </a>
             </div>
           </div>
+          <p className="text-slate-500 text-xs text-center mt-4 max-w-3xl mx-auto">
+            Equal Housing Opportunity. We do not discriminate based on race, color, religion, sex,
+            handicap, familial status, national origin, sexual orientation, or gender identity.
+          </p>
           <div className="text-slate-400 text-sm mt-4 text-center space-y-1">
             <p className="font-semibold text-slate-300">{agentInfo.name} | NV License #{agentInfo.license}</p>
             <p>{agentInfo.brokerage}</p>

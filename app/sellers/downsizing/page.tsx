@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Downsizing in Las Vegas | Berkshire Hathaway HomeServices",
   description:
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
     "empty nester Las Vegas",
     "Berkshire Hathaway HomeServices downsizing",
   ],
+  ...selfCanonicalMetadata,
 };
 
 export default function DownsizingPage() {

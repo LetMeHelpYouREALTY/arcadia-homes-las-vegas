@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: 'Security Policy',
   description: 'Security policy and responsible disclosure information for arcadiahomeslasvegas.com',

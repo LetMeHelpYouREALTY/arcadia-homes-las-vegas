@@ -19,6 +19,8 @@ import type { Metadata } from "next";
 
 export const revalidate = 86400;
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Arcadia & Summerlin West Real Estate",
   description:
@@ -32,6 +34,7 @@ export const metadata: Metadata = {
     "Henderson real estate agent",
     "Summerlin realtor",
   ],
+  ...selfCanonicalMetadata,
 };
 
 // Person Schema for Dr. Jan Duffy

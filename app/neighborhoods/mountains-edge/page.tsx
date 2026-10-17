@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Phone, Mountain, DollarSign } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Mountains Edge | Southwest Las Vegas",
   description:
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
     "southwest Las Vegas homes",
     "affordable Las Vegas",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const faqSchema = {

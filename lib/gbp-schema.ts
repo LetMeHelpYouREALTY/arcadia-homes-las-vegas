@@ -1,6 +1,9 @@
 // Google Business Profile Schema Data
 // Supports GBP ranking factors: Relevance, Distance, Prominence
 
+import { generateRealEstateAgentSchema } from "@/lib/schema";
+import { officeInfo } from "@/lib/site-config";
+
 export const businessInfo = {
   // NAP - Must match GBP exactly
   name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
@@ -35,8 +38,8 @@ export const businessInfo = {
 
   // Geo coordinates for distance ranking
   geo: {
-    latitude: 36.1941,
-    longitude: -115.2678,
+    latitude: officeInfo.coordinates.lat,
+    longitude: officeInfo.coordinates.lng,
   },
 
   // Service areas - Start focused, expand with prominence
@@ -157,7 +160,7 @@ Specialized services include: buyer and seller representation, luxury home sales
 Dr. Jan's approach is simple: treat every client like family, know the market inside and out, and never stop working until the deal closes successfully.`,
 
   // Section 3: Where - Areas served (~250 words)
-  whereWeServe: `Dr. Jan serves the entire Las Vegas Valley with specialized knowledge of Las Vegas, Summerlin, Henderson, North Las Vegas, and all of Clark County. Neighborhood expertise includes Summerlin's master-planned communities, Henderson's Green Valley and Inspirada, the luxury enclaves of The Ridges and Southern Highlands, family-friendly Centennial Hills and Skye Canyon, and affordable options in Mountains Edge and North Las Vegas.
+  whereWeServe: `Dr. Jan serves the entire Las Vegas Valley with specialized knowledge of Las Vegas, Summerlin, Henderson, North Las Vegas, and all of Clark County. Neighborhood expertise includes Summerlin's master-planned communities, Henderson's Green Valley and Inspirada, the luxury enclaves of The Ridges and Southern Highlands, Centennial Hills and Skye Canyon, and affordable options in Mountains Edge and North Las Vegas.
 
 55+ active adult community specialization covers Sun City Summerlin (Nevada's largest 55+ community), Sun City Anthem in Henderson, Del Webb Lake Las Vegas, and Solera at Anthem. Investment property expertise spans single-family rentals, multi-family opportunities, and short-term rental analysis across the Las Vegas metro area.
 
@@ -208,39 +211,17 @@ export const gbpFAQs = [
   },
 ];
 
-// Generate LocalBusiness Schema
+// Single RealEstateAgent node (@id #organization) — extended with GBP service catalog
 export function generateLocalBusinessSchema() {
+  const agent = generateRealEstateAgentSchema();
+  const { "@context": _ctx, ...agentNode } = agent as {
+    "@context": string;
+    [key: string]: unknown;
+  };
+
   return {
     "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "@id": "https://www.arcadiahomeslasvegas.com/#organization",
-    name: businessInfo.name,
-    image: "https://www.arcadiahomeslasvegas.com/images/dr-jan-duffy.jpg",
-    url: businessInfo.url,
-    telephone: businessInfo.phone.tel,
-    email: businessInfo.email,
-    priceRange: businessInfo.priceRange,
-    address: {
-      "@type": "PostalAddress",
-      ...businessInfo.address,
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: businessInfo.geo.latitude,
-      longitude: businessInfo.geo.longitude,
-    },
-    openingHoursSpecification: [
-      { "@type": "OpeningHoursSpecification", dayOfWeek: "Monday", opens: "09:00", closes: "18:00" },
-      { "@type": "OpeningHoursSpecification", dayOfWeek: "Tuesday", opens: "09:00", closes: "18:00" },
-      { "@type": "OpeningHoursSpecification", dayOfWeek: "Wednesday", opens: "09:00", closes: "18:00" },
-      { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "09:00", closes: "18:00" },
-      { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "09:00", closes: "18:00" },
-      { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "10:00", closes: "16:00" },
-    ],
-    areaServed: businessInfo.serviceAreas.map((area) => ({
-      "@type": "City",
-      name: area,
-    })),
+    ...agentNode,
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Real Estate Services",
@@ -253,17 +234,7 @@ export function generateLocalBusinessSchema() {
         },
       })),
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "200",
-      bestRating: "5",
-    },
-    sameAs: [
-      "https://www.facebook.com/drjanduffy",
-      "https://www.instagram.com/drjanduffy",
-      "https://www.linkedin.com/in/drjanduffy",
-    ],
+    sameAs: businessInfo.socialProfiles,
   };
 }
 

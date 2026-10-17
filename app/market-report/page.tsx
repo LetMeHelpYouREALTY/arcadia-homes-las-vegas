@@ -4,6 +4,8 @@ import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { TrendingUp, TrendingDown, Home, DollarSign, BarChart, Phone } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Las Vegas Real Estate Market Report January 2026 | Berkshire Hathaway HomeServices",
   description:
@@ -15,6 +17,7 @@ export const metadata: Metadata = {
     "Nevada housing market",
     "Berkshire Hathaway market report",
   ],
+  ...selfCanonicalMetadata,
 };
 
 // Report Schema

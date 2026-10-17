@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Sun City Summerlin Homes for Sale | Berkshire Hathaway HomeServices",
   description:
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     "retirement community Las Vegas",
     "Berkshire Hathaway Sun City",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const communitySchema = {

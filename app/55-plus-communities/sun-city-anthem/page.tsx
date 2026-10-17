@@ -18,6 +18,8 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Sun City Anthem Homes for Sale | Berkshire Hathaway HomeServices",
   description:
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
     "active adult Henderson",
     "Berkshire Hathaway Sun City Anthem",
   ],
+  ...selfCanonicalMetadata,
 };
 
 // Community amenities for schema

@@ -17,6 +17,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices New Construction Las Vegas | Buyer's Guide",
   description:
@@ -30,6 +32,7 @@ export const metadata: Metadata = {
     "Lennar Las Vegas",
     "KB Home Las Vegas",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const faqSchema = {
@@ -88,6 +91,20 @@ const faqSchema = {
 };
 
 const builders = [
+  {
+    name: "SHAWOOD at Arcadia",
+    segment: "Luxury boutique",
+    priceRange: "From $1.5M",
+    communities: ["Grand Park village, Summerlin West (Arcadia)"],
+    currentIncentives: "Contact Dr. Jan Duffy for current SHAWOOD incentives and inventory",
+    incentiveDeadline: "Varies by homesite",
+    highlights: [
+      "40-home gated enclave",
+      "Japanese-inspired design",
+      "Three floor plans (Bristlecone, Juniper, Pinyon)",
+    ],
+    detailPath: "/neighborhoods/arcadia",
+  },
   {
     name: "Toll Brothers",
     segment: "Luxury",
@@ -430,6 +447,14 @@ export default function NewConstructionPage() {
                       </div>
                     </div>
 
+                    {"detailPath" in builder && builder.detailPath ? (
+                      <Link
+                        href={builder.detailPath}
+                        className="inline-block text-sm font-semibold text-blue-600 hover:text-blue-700 mb-4"
+                      >
+                        Explore {builder.name} →
+                      </Link>
+                    ) : null}
                     <div className="flex flex-wrap gap-2">
                       {builder.highlights.map((highlight) => (
                         <span

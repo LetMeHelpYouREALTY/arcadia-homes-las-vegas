@@ -11,6 +11,8 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Summerlin | Las Vegas Luxury Real Estate",
   description:
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     "Summerlin Las Vegas",
     "luxury homes Summerlin",
   ],
+  ...selfCanonicalMetadata,
 };
 
 // FAQ data for schema
@@ -140,9 +143,17 @@ export default function SummerlinPage() {
                 enjoy an active, healthy lifestyle that's hard to find elsewhere in the desert Southwest.
               </p>
               <p>
+                In Grand Park village,{" "}
+                <Link href="/neighborhoods/arcadia" className="text-blue-600 hover:underline">
+                  Arcadia by SHAWOOD
+                </Link>{" "}
+                delivers luxury new construction with Japanese-inspired design—Dr. Jan Duffy represents buyers
+                exploring that gated 40-home enclave.
+              </p>
+              <p>
                 <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has deep roots in Summerlin,
-                and our agents understand the nuances of each village—from the family-friendly atmosphere of
-                The Paseos to the luxury estates of The Ridges. Whether you're a first-time buyer looking at
+                and our agents understand the nuances of each village—from the village parks of The Paseos to
+                the luxury estates of The Ridges. Whether you're a first-time buyer looking at
                 condos in Affinity or a move-up buyer seeking a custom home in Red Rock Country Club, BHHS
                 has the expertise to guide you through the process.
               </p>

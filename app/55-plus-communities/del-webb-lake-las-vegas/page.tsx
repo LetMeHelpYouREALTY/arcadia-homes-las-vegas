@@ -12,6 +12,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Del Webb at Lake Las Vegas Homes | Berkshire Hathaway HomeServices",
   description:
@@ -23,6 +25,7 @@ export const metadata: Metadata = {
     "lakefront retirement community",
     "Berkshire Hathaway Del Webb",
   ],
+  ...selfCanonicalMetadata,
 };
 
 export default function DelWebbLakeLasVegasPage() {

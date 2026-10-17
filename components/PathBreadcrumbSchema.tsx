@@ -1,12 +1,15 @@
-import { headers } from "next/headers";
+"use client";
+
+import { usePathname } from "next/navigation";
 import { BreadcrumbSchema } from "@/components/SchemaScript";
 import { getBreadcrumbsForPath } from "@/lib/breadcrumbs";
 
 /**
- * Injects BreadcrumbList JSON-LD for all inner pages based on the request path.
+ * Client breadcrumb JSON-LD (avoids headers() in root layout for ISR).
+ * Renders on the server during SSR with the current pathname.
  */
-export default async function PathBreadcrumbSchema() {
-  const pathname = (await headers()).get("x-pathname") ?? "/";
+export default function PathBreadcrumbSchema() {
+  const pathname = usePathname() ?? "/";
   const breadcrumbs = getBreadcrumbsForPath(pathname);
 
   if (!breadcrumbs) {

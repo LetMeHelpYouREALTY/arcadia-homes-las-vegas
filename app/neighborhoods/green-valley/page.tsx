@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Phone, TreePine, ShoppingBag } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Green Valley | Henderson Real Estate",
   description:
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
     "Green Valley real estate",
     "Green Valley Ranch",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const faqSchema = {

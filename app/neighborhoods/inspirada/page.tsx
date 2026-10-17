@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Phone, Waves, TreePine } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Inspirada | Henderson Resort Living",
   description:
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
     "Henderson master planned",
     "resort style community",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const faqSchema = {

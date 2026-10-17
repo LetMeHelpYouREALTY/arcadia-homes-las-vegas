@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Sell Your Las Vegas Home | Berkshire Hathaway HomeServices",
   description:
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
     "Las Vegas real estate agent",
     "Summerlin home selling",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const sellerSchema = {

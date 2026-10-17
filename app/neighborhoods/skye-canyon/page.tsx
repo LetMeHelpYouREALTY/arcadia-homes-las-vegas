@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Phone, Mountain, Users } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices Skye Canyon | Northwest Las Vegas",
   description:
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
     "northwest Las Vegas homes",
     "new construction Skye Canyon",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const faqSchema = {
@@ -32,18 +35,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What amenities does Skye Canyon offer?",
+      name: "What community amenities does Skye Canyon offer?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Skye Canyon features Skye Center, a 15-acre amenity complex with resort-style pools, fitness center, sports courts, and event spaces. The community also offers miles of trails, parks, and is adjacent to Floyd Lamb Park.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is Skye Canyon good for families?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, Skye Canyon is designed for families with new schools, extensive children's amenities, community events, and safe neighborhoods. The community hosts family-friendly events throughout the year at Skye Center.",
+        text: "Skye Canyon features Skye Center with pools, fitness facilities, sports courts, and event spaces, plus miles of trails and parks. Howard Hughes–planned villages include newer schools and recreation programming throughout the year.",
       },
     },
     {
@@ -346,12 +341,12 @@ export default function SkyeCanyonPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Is Skye Canyon good for families?
+                  What community amenities does Skye Canyon offer?
                 </h3>
                 <p className="text-slate-600">
-                  Yes, Skye Canyon is designed for families with new schools, extensive children's
-                  amenities, community events, and safe neighborhoods. The community hosts family-friendly
-                  events throughout the year at Skye Center.
+                  Skye Canyon features Skye Center with pools, fitness facilities, sports courts, and
+                  event spaces, plus miles of trails and parks. Howard Hughes–planned villages include
+                  newer schools and recreation programming throughout the year.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">

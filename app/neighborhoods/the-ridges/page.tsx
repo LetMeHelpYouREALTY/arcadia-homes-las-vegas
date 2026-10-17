@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Phone, Shield, Mountain } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Berkshire Hathaway HomeServices The Ridges | Las Vegas Luxury Real Estate",
   description:
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
     "luxury homes Las Vegas",
     "guard gated Summerlin",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const faqSchema = {

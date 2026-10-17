@@ -7,6 +7,8 @@ import type { Metadata } from "next";
 
 export const revalidate = 86400;
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Contact Dr. Jan Duffy | Arcadia Homes Las Vegas",
   description:
@@ -18,6 +20,7 @@ export const metadata: Metadata = {
     "Las Vegas realtor contact",
     "schedule real estate appointment",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const contactSchema = {

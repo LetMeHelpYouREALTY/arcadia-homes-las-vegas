@@ -4,11 +4,22 @@ import Image from "next/image";
 import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
+import { siteConfig } from "@/lib/site-config";
 
-export const metadata: Metadata = {
-  title: "Property Details | Las Vegas & Henderson Real Estate",
-  description: "View detailed information about this property listing in Las Vegas or Henderson, NV.",
+type PropertyPageProps = {
+  params: Promise<{ id: string }>;
 };
+
+export async function generateMetadata({ params }: PropertyPageProps): Promise<Metadata> {
+  const { id } = await params;
+  const canonical = `${siteConfig.url}/listings/${id}`;
+  return {
+    title: "Property Details | Las Vegas & Henderson Real Estate",
+    description:
+      "View detailed information about this property listing in Las Vegas or Henderson, NV.",
+    alternates: { canonical },
+  };
+}
 
 // This would typically fetch from RealScout API
 async function getProperty(id: string) {
@@ -27,10 +38,6 @@ async function getProperty(id: string) {
       "Stunning modern home in desirable Summerlin community. Features open floor plan, updated kitchen, and beautiful backyard. Close to schools, shopping, and entertainment.",
   };
 }
-
-type PropertyPageProps = {
-  params: Promise<{ id: string }>;
-};
 
 export default async function PropertyPage({ params }: PropertyPageProps) {
   const { id } = await params;
@@ -51,7 +58,12 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
               </li>
               <li>/</li>
               <li>
-                <a href="http://drjanduffy.realscout.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+                <a
+                  href="http://drjanduffy.realscout.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-600"
+                >
                   Properties
                 </a>
               </li>
@@ -114,7 +126,6 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
                 </div>
               </div>
 
-              {/* RealScout Widget Integration Point */}
               <div className="bg-blue-50 rounded-lg p-6">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Schedule a Showing</h3>
                 <p className="text-slate-700 mb-4">
@@ -126,7 +137,6 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
               </div>
             </div>
 
-            {/* Sidebar */}
             <div className="md:col-span-1">
               <div className="bg-white border border-slate-200 rounded-lg p-6 sticky top-24">
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Contact Agent</h3>

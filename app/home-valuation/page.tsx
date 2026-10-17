@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Phone, CheckCircle, Home, TrendingUp, MapPin, Calculator, Clock, DollarSign } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Free Home Valuation Las Vegas | What's Your Home Worth? | Berkshire Hathaway HomeServices",
   description:
@@ -19,6 +21,7 @@ export const metadata: Metadata = {
     "Summerlin home value",
     "Henderson home value",
   ],
+  ...selfCanonicalMetadata,
 };
 
 // FAQ Schema for SEO

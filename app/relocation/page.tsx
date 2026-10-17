@@ -17,6 +17,8 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 
+import { selfCanonicalMetadata } from "@/lib/page-metadata";
+
 export const metadata: Metadata = {
   title: "Relocating to Las Vegas | Berkshire Hathaway HomeServices",
   description:
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
     "moving from California to Nevada",
     "Las Vegas real estate relocation",
   ],
+  ...selfCanonicalMetadata,
 };
 
 const relocationSchema = {
@@ -49,38 +52,45 @@ const relocationSchema = {
 const popularRelocationAreas = [
   {
     name: "Summerlin",
-    best: "Families, professionals",
-    highlights: "Top-rated schools, 150+ parks, Red Rock Canyon proximity, master-planned living",
+    fit: "Master-planned villages, trails, retail hubs",
+    highlights: "150+ parks, Red Rock Canyon proximity, Downtown Summerlin",
     from: "$500K",
   },
   {
+    name: "Arcadia at Grand Park",
+    fit: "SHAWOOD luxury new construction",
+    highlights: "40-home gated enclave, Grand Park village, Summerlin West",
+    from: "$1.5M",
+    path: "/neighborhoods/arcadia",
+  },
+  {
     name: "Henderson",
-    best: "Families, retirees",
-    highlights: "Lowest crime rates, excellent schools, community feel, diverse neighborhoods",
+    fit: "Suburban amenities, commute options",
+    highlights: "Lake Las Vegas access, Green Valley, established neighborhoods",
     from: "$450K",
   },
   {
     name: "Green Valley",
-    best: "Established families",
-    highlights: "Mature landscaping, championship golf, shopping and dining, Henderson location",
+    fit: "Golf, dining, mature streetscapes",
+    highlights: "Mature landscaping, championship golf, The District",
     from: "$480K",
   },
   {
     name: "Skye Canyon",
-    best: "Young families",
-    highlights: "Newest construction, mountain trail access, modern amenities, growing area",
+    fit: "Resort-style amenities, newer builds",
+    highlights: "Skye Center, mountain trail access, northwest location",
     from: "$500K",
   },
   {
     name: "Southern Highlands",
-    best: "Luxury buyers, golfers",
-    highlights: "Guard-gated sections, championship golf, mountain views, resort living",
+    fit: "Golf course living, guard-gated sections",
+    highlights: "Championship golf, mountain views, resort amenities",
     from: "$700K",
   },
   {
     name: "Inspirada",
-    best: "Families, active adults",
-    highlights: "Resort-style pools, extensive trails, new homes, Henderson convenience",
+    fit: "Resort pools, newer Henderson builds",
+    highlights: "Resort-style pools, extensive trails, new construction",
     from: "$450K",
   },
 ];
@@ -214,21 +224,34 @@ export default function RelocationPage() {
               commute times, outdoor access, or community feel.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {popularRelocationAreas.map((area) => (
-                <div
-                  key={area.name}
-                  className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
-                >
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="font-bold text-lg text-slate-900">{area.name}</h3>
-                    <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
-                      From {area.from}
-                    </span>
+              {popularRelocationAreas.map((area) => {
+                const card = (
+                  <>
+                    <div className="flex justify-between items-start mb-2">
+                      <h3 className="font-bold text-lg text-slate-900">{area.name}</h3>
+                      <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded">
+                        From {area.from}
+                      </span>
+                    </div>
+                    <p className="text-sm text-blue-600 mb-3">{area.fit}</p>
+                    <p className="text-slate-600 text-sm">{area.highlights}</p>
+                  </>
+                );
+                return (
+                  <div
+                    key={area.name}
+                    className="bg-white border border-slate-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
+                  >
+                    {"path" in area && area.path ? (
+                      <Link href={area.path} className="block hover:text-blue-600">
+                        {card}
+                      </Link>
+                    ) : (
+                      card
+                    )}
                   </div>
-                  <p className="text-sm text-blue-600 mb-3">Best for: {area.best}</p>
-                  <p className="text-slate-600 text-sm">{area.highlights}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
             <div className="text-center mt-8">
               <Link href="/neighborhoods" className="text-blue-600 hover:text-blue-700 font-semibold inline-flex items-center">
@@ -386,8 +409,8 @@ export default function RelocationPage() {
                   a: "Absolutely. Dr. Jan provides virtual tours, video walkthroughs, and detailed neighborhood analysis so you can purchase confidently before relocating. Many clients buy their Las Vegas home without ever visiting in person until closing day.",
                 },
                 {
-                  q: "What are the best areas for families relocating to Las Vegas?",
-                  a: "Summerlin, Henderson (especially Green Valley and Inspirada), and Skye Canyon consistently rank highest for families due to excellent schools, low crime, and family-friendly amenities. Dr. Jan can match you with the right area based on your specific priorities—schools, commute, budget, and lifestyle.",
+                  q: "How do I choose a neighborhood when relocating to Las Vegas?",
+                  a: "Dr. Jan Duffy compares communities using your stated priorities—commute time, budget, square footage, HOA amenities, and named schools you want to research. Popular options include Summerlin, Henderson (Green Valley, Inspirada), Skye Canyon, and SHAWOOD at Arcadia in Grand Park village.",
                 },
                 {
                   q: "How does the cost of living compare to California?",
@@ -402,8 +425,8 @@ export default function RelocationPage() {
                   a: "Las Vegas has diversified beyond gaming and hospitality. Major growth sectors include healthcare (Intermountain Health, UMC), technology (Switch, various startups), sports (Raiders, Golden Knights, Aces), logistics (Amazon), and professional services. The economy is growing faster than the national average.",
                 },
                 {
-                  q: "Is Las Vegas safe for families?",
-                  a: "Yes, particularly in the suburban communities. Henderson consistently ranks as one of America's safest cities. Summerlin, Green Valley, and Inspirada also have very low crime rates. Dr. Jan can provide detailed crime statistics for any neighborhood you're considering.",
+                  q: "Where can I research public safety data for a Las Vegas neighborhood?",
+                  a: "Dr. Jan Duffy points clients to official sources—Las Vegas Metropolitan Police Department crime maps, Henderson Police open data, and Clark County records—so you can review statistics for specific ZIP codes and patrol areas before you choose a community.",
                 },
               ].map((faq, index) => (
                 <div key={index} className="bg-slate-50 rounded-lg p-6">

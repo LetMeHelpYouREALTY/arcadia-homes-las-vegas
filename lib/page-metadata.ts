@@ -50,6 +50,11 @@ export const rootLayoutMetadata: Metadata = {
   },
 };
 
+/** Per-page self canonical — merge into each route's `metadata` export for correct SEO without `headers()`. */
+export const selfCanonicalMetadata: Pick<Metadata, "alternates"> = {
+  alternates: { canonical: "./" },
+};
+
 export function canonicalUrlForPath(pathname: string): string {
   if (!pathname || pathname === "/") {
     return siteConfig.url;

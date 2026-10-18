@@ -5,6 +5,7 @@ import { TrendingUp, TrendingDown, Home, DollarSign, BarChart, Phone } from "luc
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Las Vegas Real Estate Market Report January 2026",
@@ -191,7 +192,10 @@ export default function MarketReportPage() {
                 proper pricing and preparation."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Arcadia Homes Las Vegas
+                <span className="inline-flex items-center gap-3 not-italic">
+                  <AgentPhoto size={48} />
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas</span>
+                </span>
               </cite>
             </div>
 

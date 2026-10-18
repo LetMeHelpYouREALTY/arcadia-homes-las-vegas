@@ -92,8 +92,8 @@ export function generateRealEstateAgentSchema() {
       "Berkshire Hathaway HomeServices",
     ],
     url: BASE_URL,
-    logo: `${BASE_URL}${siteConfig.ogImage.path}`,
-    image: `${BASE_URL}${siteConfig.ogImage.path}`,
+    logo: `${BASE_URL}/icon-512.png`,
+    image: `${BASE_URL}/images/agent/dr-jan-duffy-realtor-las-vegas.png`,
     description: siteConfig.description,
     telephone: "+17025000337",
     email: agentInfo.email,
@@ -193,7 +193,7 @@ export function generatePersonSchema() {
     description:
       "Dr. Jan Duffy is a REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, with 35 years in Las Vegas real estate. Specialist in Arcadia, Summerlin West, luxury homes, and new construction.",
     url: `${BASE_URL}/about`,
-    image: `${BASE_URL}${siteConfig.ogImage.path}`,
+    image: `${BASE_URL}/images/agent/dr-jan-duffy-realtor-las-vegas.png`,
     email: agentInfo.email,
     telephone: "+17025000337",
     worksFor: {
@@ -227,7 +227,6 @@ export function generateOrganizationSchema() {
     "@id": `${BASE_URL}#parent-organization`,
     name: "Berkshire Hathaway HomeServices Nevada Properties",
     url: "https://www.bfrre.com",
-    logo: `${BASE_URL}/favicon-32x32.png`,
     parentOrganization: {
       "@type": "Organization",
       name: "Berkshire Hathaway HomeServices",

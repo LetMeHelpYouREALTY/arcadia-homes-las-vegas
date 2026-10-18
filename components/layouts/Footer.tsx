@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AgentPhoto from "@/components/AgentPhoto";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { agentInfo, officeInfo, siteConfig } from "@/lib/site-config";
 
@@ -11,7 +12,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-bold text-xl mb-4">{siteConfig.name}</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <AgentPhoto size={64} />
+              <div>
+                <h3 className="font-bold text-xl leading-tight">{siteConfig.name}</h3>
+                <p className="text-slate-400 text-sm">{agentInfo.name}, {agentInfo.title}</p>
+              </div>
+            </div>
             <p className="text-slate-300 mb-4 text-sm">
               Arcadia, Summerlin West and 55+ real estate with Dr. Jan Duffy. 35 years in Las
               Vegas real estate, $127M+ in closed transactions.

@@ -9,6 +9,8 @@
 
 "use client";
 
+import AgentPhoto from "@/components/AgentPhoto";
+
 export default function PalmsListingCard() {
   return (
     <div
@@ -69,7 +71,8 @@ export default function PalmsListingCard() {
         >
           ✦ Featured Listing
         </span>
-        <span style={{ fontSize: "12px", color: "#C9A84C", fontWeight: "600" }}>
+        <span style={{ fontSize: "12px", color: "#C9A84C", fontWeight: "600", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+          <AgentPhoto size={28} />
           Dr. Jan Duffy · Arcadia Homes Las Vegas
         </span>
       </div>

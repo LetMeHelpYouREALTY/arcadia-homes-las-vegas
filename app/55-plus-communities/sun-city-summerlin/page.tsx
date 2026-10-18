@@ -12,6 +12,7 @@ import {
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Sun City Summerlin Homes for Sale",
@@ -275,7 +276,10 @@ export default function SunCitySummerlinPage() {
                 golf course views, mountain views, or proximity to their favorite rec center."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Arcadia Homes Las Vegas
+                <span className="inline-flex items-center gap-3 not-italic">
+                  <AgentPhoto size={48} />
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas</span>
+                </span>
               </cite>
             </div>
           </section>

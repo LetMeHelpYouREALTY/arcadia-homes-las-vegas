@@ -5,7 +5,6 @@ import Link from "next/link";
 import {
   Phone,
   Plane,
-  Globe,
   Clock,
   CheckCircle,
   Home as HomeIcon,
@@ -16,6 +15,7 @@ import {
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Relocation Home Sales Las Vegas",
@@ -73,7 +73,7 @@ export default function RelocationPage() {
           {/* Why Work With Dr. Jan */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <div className="flex items-center justify-center mb-6">
-              <Globe className="h-8 w-8 mr-3 text-blue-400" />
+              <AgentPhoto size={64} className="mr-4" />
               <h2 className="text-3xl font-bold">Why Work With Dr. Jan</h2>
             </div>
             <p className="text-center text-slate-300 mb-8 max-w-2xl mx-auto">
@@ -488,7 +488,10 @@ export default function RelocationPage() {
                 agent in your new city—someone who'll treat you like a VIP, not just a referral."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Arcadia Homes Las Vegas
+                <span className="inline-flex items-center gap-3 not-italic">
+                  <AgentPhoto size={48} />
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas</span>
+                </span>
               </cite>
             </div>
           </section>

@@ -6,6 +6,7 @@ import { Phone, Mountain, Users } from "lucide-react";
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Skye Canyon Homes for Sale | Northwest Las Vegas",
@@ -308,7 +309,10 @@ export default function SkyeCanyonPage() {
                 features already included."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Arcadia Homes Las Vegas
+                <span className="inline-flex items-center gap-3 not-italic">
+                  <AgentPhoto size={48} />
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas</span>
+                </span>
               </cite>
             </div>
           </section>

@@ -18,6 +18,7 @@ import {
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Home Buying Guide Las Vegas",
@@ -293,6 +294,7 @@ export default function BuyersPage() {
 
           {/* Why Work with Dr. Jan */}
           <section className="mb-16 max-w-5xl mx-auto">
+            <div className="flex justify-center mb-4"><AgentPhoto size={96} /></div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
               Why Buy with Dr. Jan Duffy
             </h2>
@@ -332,7 +334,10 @@ export default function BuyersPage() {
                 every client like family and won't stop until we find the right home for your needs."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Arcadia Homes Las Vegas | 35 Years in Las Vegas Real Estate
+                <span className="inline-flex items-center gap-3 not-italic">
+                  <AgentPhoto size={48} />
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas | 35 Years in Las Vegas Real Estate</span>
+                </span>
               </cite>
             </div>
           </section>

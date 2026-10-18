@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import AgentPhoto from "@/components/AgentPhoto";
 import Link from "next/link";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -46,12 +47,15 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Brand Logo */}
-          <Link href="/" className="flex flex-col">
-            <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-tight">
-              Arcadia Homes
-              <span className="text-blue-600"> Las Vegas</span>
+          <Link href="/" className="flex items-center gap-3">
+            <AgentPhoto size={44} priority className="md:h-12 md:w-12" />
+            <span className="flex flex-col">
+              <span className="text-lg md:text-xl lg:text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-tight">
+                Arcadia Homes
+                <span className="text-blue-600"> Las Vegas</span>
+              </span>
+              <span className="text-xs text-slate-500 hidden sm:block">Dr. Jan Duffy, REALTOR®</span>
             </span>
-            <span className="text-xs text-slate-500 hidden sm:block">Dr. Jan Duffy, REALTOR®</span>
           </Link>
 
           {/* Desktop Navigation */}

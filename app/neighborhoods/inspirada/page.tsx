@@ -6,6 +6,7 @@ import { Phone, Waves, TreePine } from "lucide-react";
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Inspirada Homes for Sale | Henderson Resort Living",
@@ -312,7 +313,10 @@ export default function InspiradaPage() {
                 main pool complex or on a quiet cul-de-sac backing to open space."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Arcadia Homes Las Vegas
+                <span className="inline-flex items-center gap-3 not-italic">
+                  <AgentPhoto size={48} />
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas</span>
+                </span>
               </cite>
             </div>
           </section>

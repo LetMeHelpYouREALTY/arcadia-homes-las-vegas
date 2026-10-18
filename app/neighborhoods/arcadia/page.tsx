@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 import { combineSchemas, schemaToJsonLd } from "@/lib/schema";
 import { siteConfig } from "@/lib/site-config";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 const canonicalUrl = "https://www.arcadiahomeslasvegas.com/neighborhoods/arcadia";
 const arcadiaTitle = "Arcadia Homes Summerlin West 89135 | Dr. Jan Duffy";
@@ -294,7 +295,10 @@ export default function ArcadiaPage() {
                 construction and find the right floor plan and lot for their lifestyle.&quot;
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Arcadia Homes Las Vegas
+                <span className="inline-flex items-center gap-3 not-italic">
+                  <AgentPhoto size={48} />
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas</span>
+                </span>
               </cite>
             </div>
           </section>

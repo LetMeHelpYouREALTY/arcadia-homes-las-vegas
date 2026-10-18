@@ -20,6 +20,7 @@ import type { Metadata } from "next";
 export const revalidate = 86400;
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Arcadia & Summerlin West Real Estate",
@@ -43,6 +44,7 @@ const personSchema = {
   "@type": "RealEstateAgent",
   name: "Dr. Jan Duffy",
   jobTitle: "REALTOR®",
+  image: "https://www.arcadiahomeslasvegas.com/images/agent/dr-jan-duffy-realtor-las-vegas.png",
   description:
     "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, with 35 years serving Las Vegas, Henderson, and Summerlin.",
   telephone: "+17025000337",
@@ -230,19 +232,22 @@ export default function AboutPage() {
                   the transaction. I treat every client like family and won't stop until we achieve 
                   your real estate goals."
                   <cite className="block mt-2 text-slate-900 font-semibold not-italic">
-                    — Dr. Jan Duffy, Arcadia Homes Las Vegas
+                    <span className="inline-flex items-center gap-3 not-italic">
+                      <AgentPhoto size={48} />
+                      <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas</span>
+                    </span>
                   </cite>
                 </blockquote>
               </div>
 
               {/* Stats & Credentials */}
               <div className="space-y-6">
-                {/* Agent Photo Placeholder */}
-                <div className="bg-gradient-to-br from-blue-100 to-slate-100 rounded-lg p-8 aspect-square flex items-center justify-center">
+                {/* Agent Photo */}
+                <div className="bg-gradient-to-br from-blue-50 to-slate-100 rounded-lg p-8 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="text-6xl mb-4">👩‍💼</div>
-                    <p className="text-slate-600 font-semibold">Dr. Jan Duffy</p>
-                    <p className="text-sm text-slate-500">Arcadia Homes Las Vegas</p>
+                    <AgentPhoto size={320} priority className="mx-auto mb-4 h-auto w-full max-w-[320px]" />
+                    <p className="text-slate-900 font-semibold text-lg">Dr. Jan Duffy, REALTOR®</p>
+                    <p className="text-sm text-slate-500">Arcadia Homes Las Vegas · NV License S.0197614.LLC</p>
                   </div>
                 </div>
 

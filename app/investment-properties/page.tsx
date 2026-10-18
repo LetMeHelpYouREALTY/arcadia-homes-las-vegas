@@ -5,6 +5,7 @@ import { Phone, TrendingUp, DollarSign, Building, BarChart, CheckCircle, Calcula
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Las Vegas Investment Properties",
@@ -171,7 +172,10 @@ export default function InvestmentPropertiesPage() {
                 combination of cash flow and appreciation potential."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Arcadia Homes Las Vegas
+                <span className="inline-flex items-center gap-3 not-italic">
+                  <AgentPhoto size={48} />
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas</span>
+                </span>
               </cite>
             </div>
           </section>

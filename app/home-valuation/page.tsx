@@ -7,6 +7,7 @@ import { Phone, CheckCircle, Home, TrendingUp, MapPin, Calculator, Clock, Dollar
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Free Home Valuation Las Vegas | What's Your Home Worth?",
@@ -172,7 +173,10 @@ export default function HomeValuationPage() {
                   algorithms—to determine your home's true value."
                 </blockquote>
                 <cite className="text-slate-900 font-semibold text-sm">
-                  — Dr. Jan Duffy, Arcadia Homes Las Vegas
+                  <span className="inline-flex items-center gap-3 not-italic">
+                    <AgentPhoto size={48} />
+                    <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas</span>
+                  </span>
                 </cite>
               </div>
 

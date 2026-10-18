@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export default function HeroSection() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -53,6 +54,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
+        <AgentPhoto size={96} priority className="mb-4 drop-shadow-xl md:h-28 md:w-28" />
         <h1
           id="hero-heading"
           className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"

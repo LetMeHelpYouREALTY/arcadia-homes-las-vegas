@@ -8,6 +8,7 @@ import type { Metadata } from "next";
 export const revalidate = 86400;
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Contact Dr. Jan Duffy",
@@ -80,6 +81,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           {/* Hero */}
           <div className="text-center mb-12">
+            <AgentPhoto size={140} priority className="mx-auto mb-6" />
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               Arcadia Homes Las Vegas
             </div>
@@ -201,7 +203,8 @@ export default function ContactPage() {
               </div>
 
               {/* Credentials */}
-              <div className="p-4 bg-blue-50 rounded-lg">
+              <div className="p-4 bg-blue-50 rounded-lg flex items-center gap-4">
+                <AgentPhoto size={64} />
                 <p className="text-sm text-slate-700">
                   <strong>Dr. Jan Duffy, REALTOR®</strong><br />
                   License S.0197614.LLC<br />

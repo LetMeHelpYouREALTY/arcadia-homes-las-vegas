@@ -5,6 +5,7 @@ import { Bed, Bath, Square, MapPin, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+import AgentPhoto from "@/components/AgentPhoto";
 
 type PropertyPageProps = {
   params: Promise<{ id: string }>;
@@ -140,10 +141,13 @@ export default async function PropertyPage({ params }: PropertyPageProps) {
             <div className="md:col-span-1">
               <div className="bg-white border border-slate-200 rounded-lg p-6 sticky top-24">
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Contact Agent</h3>
-                <p className="text-slate-600 mb-4">Dr. Jan Duffy</p>
-                <p className="text-sm text-slate-600 mb-6">
-                  Arcadia Homes Las Vegas
-                </p>
+                <div className="flex items-center gap-4 mb-6">
+                  <AgentPhoto size={72} />
+                  <div>
+                    <p className="font-semibold text-slate-900">Dr. Jan Duffy</p>
+                    <p className="text-sm text-slate-600">Arcadia Homes Las Vegas</p>
+                  </div>
+                </div>
                 <div className="space-y-3">
                   <Button asChild className="w-full bg-blue-600 hover:bg-blue-700">
                     <a href="tel:+17025000337">Call (702) 500-0337</a>

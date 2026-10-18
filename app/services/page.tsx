@@ -20,6 +20,7 @@ import {
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import AgentPhoto from "@/components/AgentPhoto";
 
 export const metadata: Metadata = {
   title: "Real Estate Services Las Vegas",
@@ -363,6 +364,7 @@ export default function ServicesPage() {
 
           {/* Value Proposition */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
+            <div className="flex justify-center mb-4"><AgentPhoto size={96} /></div>
             <h2 className="text-3xl font-bold mb-6 text-center">
               Why Work with Dr. Jan
             </h2>

@@ -2,179 +2,133 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import { realscoutRange } from "@/lib/realscout-ranges";
-import { TrendingUp, TrendingDown, Home, DollarSign, BarChart, Phone } from "lucide-react";
+import { Home, DollarSign, Phone } from "lucide-react";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import { agentInfo, siteConfig } from "@/lib/site-config";
 import AgentPhoto from "@/components/AgentPhoto";
 import PageIllustration from "@/components/PageIllustration";
+import { vegasMarket as v, monthlyPayment } from "@/lib/vegas-market";
+import { usd } from "@/lib/arcadia-market";
+
+const title = `Las Vegas Real Estate Market Report ${v.month}`;
+const description = `Las Vegas ${v.month}: single-family median ${usd(v.lvr.sfMedian)}, ${v.lvr.monthsSupply} months of supply, 30-year rate ${v.rate.thirtyYear}%. Plain-English analysis from Dr. Jan Duffy.`;
 
 export const metadata: Metadata = {
-  title: "Las Vegas Real Estate Market Report January 2026",
-  description:
-    "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Dr. Jan Duffy, Arcadia Homes Las Vegas.",
+  title,
+  description,
   keywords: [
     "Las Vegas real estate market",
     "Las Vegas home prices 2026",
     "Henderson real estate market",
-    "Nevada housing market",
+    "Las Vegas median home price",
   ],
   ...selfCanonicalMetadata,
 };
 
-// Report Schema
 const reportSchema = {
   "@context": "https://schema.org",
   "@type": "Report",
-  name: "Las Vegas Real Estate Market Report - January 2026",
-  author: {
-    "@type": "RealEstateAgent",
-    name: "Dr. Jan Duffy",
-    worksFor: "Berkshire Hathaway HomeServices Nevada Properties",
-  },
-  datePublished: "2026-01-23",
-  about: {
-    "@type": "Place",
-    name: "Las Vegas, Nevada",
-  },
+  name: title,
+  description,
+  url: `${siteConfig.url}/market-report`,
+  author: { "@type": "Person", name: "Dr. Jan Duffy" },
+  datePublished: v.updated,
+  dateModified: v.updated,
+  about: { "@type": "Place", name: "Las Vegas, Nevada" },
 };
+
+const loan = Math.round(v.lvr.sfMedian * 0.8);
+const payNow = monthlyPayment(loan, v.rate.thirtyYear);
+const payYearAgo = monthlyPayment(loan, v.rate.yearAgo);
+const payGap = payNow - payYearAgo;
+
+const snapshot = [
+  { value: usd(v.lvr.sfMedian), label: "Single-family median", note: `${v.lvr.sfMedianYoY} vs. Sept 2025` },
+  { value: `${v.lvr.monthsSupply} months`, label: "Housing supply", note: `About ${v.lvr.monthsSupplyLastYear} months a year ago` },
+  { value: v.lvr.sfNoOffer.toLocaleString(), label: "Homes listed with no offer", note: `${v.lvr.sfNoOfferYoY} vs. last year` },
+  { value: `${v.rate.thirtyYear.toFixed(2)}%`, label: "30-year fixed rate", note: `${v.rate.yearAgo}% a year ago` },
+];
+
+const faqs = [
+  {
+    q: "Are Las Vegas home prices falling?",
+    a: `Flat, not falling. The September single-family median was ${usd(v.lvr.sfMedian)}, the same as September 2025, and ${usd(v.lvr.sfRecord - v.lvr.sfMedian)} below the ${usd(v.lvr.sfRecord)} record set in ${v.lvr.sfRecordMonths}.`,
+  },
+  {
+    q: "Is this a buyer's or seller's market?",
+    a: `Las Vegas is at ${v.lvr.monthsSupply} months of supply, up from about ${v.lvr.monthsSupplyLastYear} a year ago. That leans toward buyers in most price ranges, but ${v.lvr.soldWithin30} of homes still sold within 30 days in September.`,
+  },
+  {
+    q: "How much do higher rates change my payment?",
+    a: `On a ${usd(v.lvr.sfMedian)} home with 20% down, principal and interest is about ${usd(payNow)} a month at ${v.rate.thirtyYear.toFixed(2)}%. At last year's ${v.rate.yearAgo}%, it was about ${usd(payYearAgo)}.`,
+  },
+  {
+    q: "How many buyers are paying cash?",
+    a: `${v.lvr.cashShare} of September sales were cash, close to last year's level. Short sales and foreclosures were ${v.lvr.distressedShare} of sales.`,
+  },
+];
 
 export default function MarketReportPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reportSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reportSchema) }} />
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
           <PageIllustration scene="market" palette="golden" label="Illustration of rising bar chart beside a city skyline" />
-          {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Arcadia Homes Las Vegas Market Intelligence
+              Updated {v.updated}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Las Vegas Real Estate Market Report
+              Las Vegas Real Estate Market Report — {v.month}
             </h1>
             <p className="text-xl text-slate-600">
-              January 2026 | Expert analysis from{" "}
-              <strong>Dr. Jan Duffy, Arcadia Homes Las Vegas</strong>
+              Prices held flat at {usd(v.lvr.sfMedian)} while supply grew to {v.lvr.monthsSupply} months. Rates at{" "}
+              {v.rate.thirtyYear.toFixed(2)}% are doing most of the work.
             </p>
           </div>
           <RealScoutListings compact {...realscoutRange("/market-report")} />
 
-          {/* Key Stats Overview */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Las Vegas Market Snapshot | January 2026
-            </h2>
+            <h2 className="text-2xl font-bold mb-8 text-center">Las Vegas Snapshot — {v.month}</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">$450,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-                <div className="flex items-center justify-center mt-1 text-green-400 text-sm">
-                  <TrendingUp className="h-4 w-4 mr-1" />
-                  +4.2% YoY
+              {snapshot.map((s) => (
+                <div key={s.label} className="text-center">
+                  <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">{s.value}</div>
+                  <div className="text-slate-200 text-sm font-semibold">{s.label}</div>
+                  <div className="text-slate-400 text-sm mt-1">{s.note}</div>
                 </div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">28</div>
-                <div className="text-slate-300 text-sm">Days on Market</div>
-                <div className="flex items-center justify-center mt-1 text-green-400 text-sm">
-                  <TrendingDown className="h-4 w-4 mr-1" />
-                  -3 days
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">4,850</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-                <div className="flex items-center justify-center mt-1 text-yellow-400 text-sm">
-                  +12% YoY
-                </div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">2.1</div>
-                <div className="text-slate-300 text-sm">Months Inventory</div>
-                <div className="flex items-center justify-center mt-1 text-slate-400 text-sm">
-                  Seller's Market
-                </div>
-              </div>
+              ))}
             </div>
+            <p className="mt-8 text-center text-sm text-slate-400">
+              Condos and townhomes: {usd(v.lvr.condoMedian)} median ({v.lvr.condoMedianYoY} vs. last year).{" "}
+              {v.lvr.totalSales.toLocaleString()} total sales in September.
+            </p>
           </section>
 
-          {/* Area Breakdown */}
-          <section className="mb-16 max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Market Data by Area
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                {
-                  area: "Las Vegas (Overall)",
-                  median: "$450,000",
-                  change: "+4.2%",
-                  dom: 28,
-                  trend: "up",
-                },
-                {
-                  area: "Henderson",
-                  median: "$485,000",
-                  change: "+5.1%",
-                  dom: 24,
-                  trend: "up",
-                },
-                {
-                  area: "Summerlin",
-                  median: "$625,000",
-                  change: "+6.8%",
-                  dom: 22,
-                  trend: "up",
-                },
-                {
-                  area: "North Las Vegas",
-                  median: "$385,000",
-                  change: "+3.2%",
-                  dom: 32,
-                  trend: "up",
-                },
-                {
-                  area: "Southern Highlands",
-                  median: "$750,000",
-                  change: "+7.2%",
-                  dom: 35,
-                  trend: "up",
-                },
-                {
-                  area: "Luxury ($1M+)",
-                  median: "$1,200,000",
-                  change: "+8.5%",
-                  dom: 45,
-                  trend: "up",
-                },
-              ].map((item) => (
-                <div
-                  key={item.area}
-                  className="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
-                >
-                  <h3 className="font-bold text-lg text-slate-900 mb-4">{item.area}</h3>
-                  <div className="space-y-3">
+          <section className="mb-16 max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-2 text-center">Median Price by Area</h2>
+            <p className="text-slate-600 mb-8 text-center">Closed sales, {v.areasMonth}, resale and new construction.</p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {v.areas.map((a) => (
+                <div key={a.area} className="bg-white border border-slate-200 rounded-lg p-6">
+                  <h3 className="font-bold text-lg text-slate-900 mb-4">{a.area}</h3>
+                  <div className="space-y-3 text-sm">
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Median Price</span>
-                      <span className="font-semibold text-slate-900">{item.median}</span>
+                      <span className="text-slate-600">Median sold</span>
+                      <span className="font-semibold text-slate-900">{usd(a.median)}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-600">YoY Change</span>
-                      <span
-                        className={`font-semibold ${item.trend === "up" ? "text-green-600" : "text-red-600"}`}
-                      >
-                        {item.change}
-                      </span>
+                      <span className="text-slate-600">vs. last year</span>
+                      <span className="font-semibold text-slate-900">{a.yoy ?? "—"}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-slate-600">Days on Market</span>
-                      <span className="font-semibold text-slate-900">{item.dom} days</span>
+                      <span className="text-slate-600">Median days on market</span>
+                      <span className="font-semibold text-slate-900">{a.dom ?? "—"}</span>
                     </div>
                   </div>
                 </div>
@@ -182,38 +136,26 @@ export default function MarketReportPage() {
             </div>
           </section>
 
-          {/* Expert Analysis */}
           <section className="mb-16 max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Expert Market Analysis
-            </h2>
-            <div className="bg-slate-50 rounded-lg p-8">
-              <blockquote className="text-lg text-slate-700 italic mb-6">
-                "The Las Vegas market remains strong heading into 2026. We're seeing continued
-                demand from California relocators and remote workers, but the days of 20 offers on
-                every listing are behind us. Buyers finally have some negotiating power, while
-                sellers are still achieving solid appreciation. It's a balanced market that rewards
-                proper pricing and preparation."
-              </blockquote>
-              <cite className="text-slate-900 font-semibold">
-                <span className="inline-flex items-center gap-3 not-italic">
-                  <AgentPhoto size={48} />
-                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas</span>
-                </span>
-              </cite>
+            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">What It Means</h2>
+            <div className="flex gap-4 items-start mb-8">
+              <AgentPhoto size={64} className="mt-1 ring-2 ring-amber-400" />
+              <p className="text-lg text-slate-700">
+                The rate is the story this fall. On a {usd(v.lvr.sfMedian)} home with 20% down, the monthly
+                payment is about {usd(payGap)} higher than a year ago — at the same price. Sellers are holding
+                price, home sales are down {v.lvr.sfSalesYoY.replace("-", "")} from last year, and listings without offers keep stacking up.
+              </p>
             </div>
-
-            <div className="mt-8 grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-4 flex items-center">
                   <Home className="h-5 w-5 text-blue-600 mr-2" />
                   For Buyers
                 </h3>
                 <ul className="space-y-2 text-slate-600">
-                  <li>• More inventory = more choices</li>
-                  <li>• Negotiating power is returning</li>
-                  <li>• Interest rates stabilizing around 6.5%</li>
-                  <li>• New construction offering incentives</li>
+                  <li>• {v.lvr.sfNoOffer.toLocaleString()} homes sit with no offer — more room to negotiate</li>
+                  <li>• Ask for seller credits toward a rate buydown</li>
+                  <li>• Builder rate incentives can beat the {v.rate.thirtyYear.toFixed(2)}% market rate</li>
                 </ul>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -222,79 +164,19 @@ export default function MarketReportPage() {
                   For Sellers
                 </h3>
                 <ul className="space-y-2 text-slate-600">
-                  <li>• Still a seller's market (2.1 months inventory)</li>
-                  <li>• Proper pricing is crucial</li>
-                  <li>• 4.2% appreciation in past year</li>
-                  <li>• Well-priced homes sell in under 30 days</li>
+                  <li>• Price to September, not to the {usd(v.lvr.sfRecord)} spring record</li>
+                  <li>• {v.lvr.soldWithin30} of homes still sold within 30 days</li>
+                  <li>• Offering a rate buydown widens your buyer pool</li>
                 </ul>
               </div>
             </div>
           </section>
 
-          {/* Market Trends */}
-          <section className="mb-16 max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Key Market Trends to Watch
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <TrendingUp className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">California Migration</h3>
-                <p className="text-slate-600 text-sm">
-                  Continued influx of California buyers seeking affordability and no state income
-                  tax. Summerlin and Henderson remain top destinations.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Home className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">New Construction</h3>
-                <p className="text-slate-600 text-sm">
-                  Builders offering significant incentives including rate buydowns, closing cost
-                  credits, and upgrades. Great time for new home buyers.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <BarChart className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Luxury Strength</h3>
-                <p className="text-slate-600 text-sm">
-                  The $1M+ segment showing strongest appreciation at 8.5% YoY. The Ridges and
-                  Southern Highlands leading the luxury market.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* FAQ */}
           <section className="mb-16 max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Market Questions We're Hearing
-            </h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">Market Questions We&apos;re Hearing</h2>
             <div className="space-y-4">
-              {[
-                {
-                  q: "Is now a good time to buy in Las Vegas?",
-                  a: "Yes. With more inventory, returning negotiating power, and stable interest rates, buyers have more options than they've had in years. Well-priced homes are still moving quickly, but you won't face the bidding wars of 2021-2022.",
-                },
-                {
-                  q: "Should I wait for prices to drop?",
-                  a: "Las Vegas prices have historically been resilient. Current appreciation of 4.2% YoY, strong job growth, and continued California migration suggest prices will remain stable or continue gradual increases. Waiting typically costs more than potential savings.",
-                },
-                {
-                  q: "Is this a buyer's or seller's market?",
-                  a: "With 2.1 months of inventory, Las Vegas is technically still a seller's market (6 months is balanced). However, buyers have more leverage than they've had since 2019. It's a balanced environment that rewards proper pricing.",
-                },
-                {
-                  q: "What's happening with interest rates?",
-                  a: "Rates have stabilized around 6.5% for conventional loans. Many buyers are using builder incentives or rate buydowns to achieve effective rates in the low 5% range. VA and FHA options remain competitive.",
-                },
-              ].map((faq, index) => (
-                <div key={index} className="bg-slate-50 rounded-lg p-6">
+              {faqs.map((faq) => (
+                <div key={faq.q} className="bg-slate-50 rounded-lg p-6">
                   <h3 className="font-bold text-slate-900 mb-2">{faq.q}</h3>
                   <p className="text-slate-600">{faq.a}</p>
                 </div>
@@ -302,30 +184,43 @@ export default function MarketReportPage() {
             </div>
           </section>
 
-          {/* CTA */}
+          <section className="mb-16 max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Sources</h2>
+            <ul className="space-y-2 text-slate-600">
+              {v.sources.map((s) => (
+                <li key={s.url}>
+                  <a href={s.url} className="text-blue-600 hover:underline" rel="noopener" target="_blank">
+                    {s.label}
+                  </a>{" "}
+                  — checked {s.checked}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-sm text-slate-500">
+              Las Vegas REALTORS figures cover existing homes sold through the MLS across Southern Nevada; they
+              exclude most new builder sales. Payment estimates are principal and interest only. Next update:{" "}
+              {v.nextUpdate}. For Arcadia specifically, see the{" "}
+              <Link href="/neighborhoods/arcadia/market-report" className="text-blue-600 hover:underline">
+                Arcadia market report
+              </Link>
+              .
+            </p>
+          </section>
+
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Get Personalized Market Insights
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Do These Numbers Mean for You?</h2>
             <p className="text-xl text-blue-100 mb-8">
-              Want to know what these numbers mean for your specific neighborhood or situation? Dr.
-              Jan Duffy provides free market consultations.
+              Get the numbers for your street, your price range, and your timing.
             </p>
             <a
-              href="tel:+17025000337"
+              href={agentInfo.phoneTel}
               className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-md font-bold text-lg hover:bg-blue-50 transition-colors"
             >
               <Phone className="h-5 w-5 mr-2" />
-              Call (702) 500-0337
+              Call or text {agentInfo.phone}
             </a>
-            <p className="mt-4 text-blue-200 text-sm">
-              Dr. Jan Duffy | Arcadia Homes Las Vegas
-            </p>
           </section>
         </div>
-
-        {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
       <Footer />
     </>

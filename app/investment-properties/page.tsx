@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import { Phone, TrendingUp, DollarSign, Building, BarChart, CheckCircle, Calculator } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -89,7 +90,7 @@ export default function InvestmentPropertiesPage() {
               <strong>Dr. Jan Duffy</strong>.
             </p>
           </div>
-          <RealScoutListings compact />
+          <RealScoutListings compact {...realscoutRange("/investment-properties")} />
 
           {/* Why Las Vegas */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

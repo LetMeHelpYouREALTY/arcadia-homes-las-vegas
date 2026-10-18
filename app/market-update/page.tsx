@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import {
   Phone,
@@ -95,7 +96,7 @@ export default function MarketUpdatePage() {
               <span>By Dr. Jan Duffy, REALTOR® | Arcadia Homes Las Vegas</span>
             </div>
           </div>
-          <RealScoutListings compact />
+          <RealScoutListings compact {...realscoutRange("/market-update")} />
 
           {/* Key Statistics */}
           <section className="mb-16 max-w-5xl mx-auto">

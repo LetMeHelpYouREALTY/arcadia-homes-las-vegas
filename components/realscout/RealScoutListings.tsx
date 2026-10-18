@@ -5,7 +5,7 @@ import PalmsListingCard from "./PalmsListingCard";
 
 function formatPrice(n: number) {
   return n >= 1_000_000
-    ? `$${(n / 1_000_000).toFixed(n % 1_000_000 === 0 ? 0 : 1)}M`
+    ? `$${parseFloat((n / 1_000_000).toFixed(2))}M`
     : `$${Math.round(n / 1000)}K`;
 }
 

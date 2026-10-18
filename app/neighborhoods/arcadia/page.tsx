@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import { Phone, MapPin, Home } from "lucide-react";
 import type { Metadata } from "next";
@@ -202,7 +203,7 @@ export default function ArcadiaPage() {
               prices from $1.5M to $2M+.
             </p>
           </div>
-          <RealScoutListings compact />
+          <RealScoutListings compact {...realscoutRange("/neighborhoods/arcadia")} />
 
           {/* Citable GEO block: What is Arcadia */}
           <section className="mb-16 max-w-5xl mx-auto">

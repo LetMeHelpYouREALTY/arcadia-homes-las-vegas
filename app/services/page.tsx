@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import {
   Home,
@@ -206,7 +207,7 @@ export default function ServicesPage() {
               </div>
             </div>
           </div>
-          <RealScoutListings compact />
+          <RealScoutListings compact {...realscoutRange("/services")} />
 
           {/* Core Services Section */}
           <section className="mb-16 max-w-6xl mx-auto">

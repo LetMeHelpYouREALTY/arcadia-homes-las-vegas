@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import FAQSection from "@/components/sections/FAQSection";
@@ -90,7 +91,7 @@ export default function Home() {
       <main>
         <HeroSection />
 
-        <RealScoutListings />
+        <RealScoutListings {...realscoutRange("/")} />
 
         {/* Why Work with Dr. Jan */}
         <section className="py-16 md:py-20 bg-white">

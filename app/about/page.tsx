@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import { 
   Phone, 
@@ -147,7 +148,7 @@ export default function AboutPage() {
               relocating, you'll get expert guidance with integrity and professionalism.
             </p>
           </div>
-          <RealScoutListings compact />
+          <RealScoutListings compact {...realscoutRange("/about")} />
 
           {/* Agent Profile */}
           <section className="mb-16">

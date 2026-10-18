@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import { MapPin, Phone, Home, GraduationCap } from "lucide-react";
 import type { Metadata } from "next";
@@ -149,7 +150,7 @@ export default function NeighborhoodsPage() {
               .
             </p>
           </div>
-          <RealScoutListings compact />
+          <RealScoutListings compact {...realscoutRange("/neighborhoods")} />
 
           {/* Neighborhood Grid */}
           <section className="mb-16 max-w-6xl mx-auto">

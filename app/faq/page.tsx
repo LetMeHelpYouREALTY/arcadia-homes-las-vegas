@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import { Phone } from "lucide-react";
 import type { Metadata } from "next";
 import SchemaScript from "@/components/SchemaScript";
@@ -177,7 +178,7 @@ export default function FAQPage() {
               <strong>Dr. Jan Duffy</strong> in Las Vegas
             </p>
           </div>
-          <RealScoutListings compact />
+          <RealScoutListings compact {...realscoutRange("/faq")} />
 
           {/* FAQ Categories */}
           <div className="max-w-4xl mx-auto space-y-12">

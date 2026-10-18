@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import {
   Phone,
@@ -105,7 +106,7 @@ export default function LuxuryHomesPage() {
               Schedule a Private Preview → (702) 500-0337
             </a>
           </div>
-          <RealScoutListings compact />
+          <RealScoutListings compact {...realscoutRange("/buyers/luxury-homes-las-vegas")} />
 
           {/* Market Performance */}
           <section className="mb-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

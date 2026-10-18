@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import {
   Phone,
@@ -144,7 +145,7 @@ export default function CaliforniaRelocatorPage() {
               Start Your Tax-Free Life → (702) 500-0337
             </a>
           </div>
-          <RealScoutListings compact />
+          <RealScoutListings compact {...realscoutRange("/buyers/california-relocator")} />
 
           {/* Tax Savings Comparison */}
           <section className="mb-16 bg-gradient-to-br from-green-600 to-green-700 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

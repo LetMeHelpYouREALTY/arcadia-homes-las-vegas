@@ -1,6 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import {
   Phone,
@@ -387,7 +388,7 @@ export default function FiftyFiveCommunitiesPage() {
               </a>
             </div>
           </div>
-          <RealScoutListings compact />
+          <RealScoutListings compact {...realscoutRange("/55-plus-communities")} />
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">

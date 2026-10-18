@@ -4,6 +4,7 @@ import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
+import { realscoutRange } from "@/lib/realscout-ranges";
 
 export const metadata: Metadata = {
   title: 'Security Policy',
@@ -23,7 +24,7 @@ export default function SecurityPolicyPage() {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
           Security Policy
         </h1>
-        <RealScoutListings compact />
+        <RealScoutListings compact {...realscoutRange("/security-policy")} />
 
         <div className="prose prose-lg max-w-none">
           {/* Overview */}

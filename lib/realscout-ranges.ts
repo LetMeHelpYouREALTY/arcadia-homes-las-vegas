@@ -13,6 +13,7 @@ export const REALSCOUT_RANGES: Record<string, PriceRange> = {
   // Farm core
   "/": r(900000, 2500000),
   "/neighborhoods/arcadia": r(1400000, 2500000),
+  "/neighborhoods/arcadia/market-report": r(1550000, 2500000),
   "/neighborhoods/summerlin": r(550000, 1500000),
   "/neighborhoods/the-ridges": r(2400000, 19000000),
 

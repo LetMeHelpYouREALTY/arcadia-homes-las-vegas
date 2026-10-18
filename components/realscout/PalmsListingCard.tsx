@@ -10,6 +10,7 @@
 "use client";
 
 import AgentPhoto from "@/components/AgentPhoto";
+import { agentInfo } from "@/lib/site-config";
 
 export default function PalmsListingCard() {
   return (
@@ -129,7 +130,7 @@ export default function PalmsListingCard() {
       {/* CTA row */}
       <div style={{ display: "flex", flexWrap: "wrap" as const, gap: "12px", alignItems: "center" }}>
         <a
-          href="tel:702-222-1964"
+          href={agentInfo.phoneTel}
           style={{
             background: "#C9A84C",
             color: "#0A2440",
@@ -142,7 +143,7 @@ export default function PalmsListingCard() {
             letterSpacing: "0.02em",
           }}
         >
-          📞 Call/Text 702-222-1964
+          📞 Call/Text {agentInfo.phone}
         </a>
         <a
           href="https://www.luxevegasliving.com/idx/4381-w-flamingo-rd-las-vegas-nv-89103/1801545223_spid/"

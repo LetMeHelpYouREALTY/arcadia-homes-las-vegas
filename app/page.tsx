@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   keywords: [
     "Arcadia Homes Las Vegas",
     "Summerlin West real estate",
-    "89135 homes",
+    "89138 homes",
     "Dr. Jan Duffy realtor",
     "Arcadia new construction",
     "SHAWOOD Arcadia",
@@ -175,7 +175,7 @@ export default function Home() {
                 Arcadia in Summerlin®
               </h2>
               <p className="text-lg text-slate-700 mb-6">
-                Boutique gated community of 40 luxury single-family homes in Summerlin West 89135.
+                Boutique gated community of 40 luxury single-family homes in Summerlin West 89138.
                 Japanese-inspired, eco-friendly design in Grand Park village. Three floor plans from
                 $1.5M–$2M+. Learn more and explore availability.
               </p>

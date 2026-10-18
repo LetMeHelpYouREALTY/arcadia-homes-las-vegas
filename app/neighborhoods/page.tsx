@@ -30,8 +30,8 @@ const neighborhoods = [
     medianPrice: "From $1.5M",
     priceChange: "New",
     description:
-      "Boutique gated community of 40 luxury single-family homes in Summerlin West 89135. Grand Park village, Japanese-inspired design, $1.5M–$2M+.",
-    highlights: ["Summerlin West 89135", "Grand Park Village", "40 Homes", "New Construction", "Wellness-Focused"],
+      "Boutique gated community of 40 luxury single-family homes in Summerlin West 89138. Grand Park village, Japanese-inspired design, $1.5M–$2M+.",
+    highlights: ["Summerlin West 89138", "Grand Park Village", "40 Homes", "New Construction", "Wellness-Focused"],
     lifestyleNote: "SHAWOOD new construction, Grand Park village, Summerlin West",
   },
   {

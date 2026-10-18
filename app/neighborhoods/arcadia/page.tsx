@@ -10,20 +10,21 @@ import { siteConfig } from "@/lib/site-config";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
 import PageIllustration from "@/components/PageIllustration";
+import { arcadiaMarket, usd } from "@/lib/arcadia-market";
 
 const canonicalUrl = "https://www.arcadiahomeslasvegas.com/neighborhoods/arcadia";
-const arcadiaTitle = "Arcadia Homes Summerlin West 89135 | Dr. Jan Duffy";
+const arcadiaTitle = "Arcadia Homes Summerlin West 89138 | Dr. Jan Duffy";
 const arcadiaDescription =
   "SHAWOOD at Arcadia in Grand Park village—40 gated luxury homes, three floor plans. Buyer's agent Dr. Jan Duffy. (702) 500-0337.";
 
-// Image alt template for Arcadia: "[Subject] – Arcadia luxury new construction, Summerlin West Las Vegas 89135, Grand Park Village"
+// Image alt template for Arcadia: "[Subject] – Arcadia luxury new construction, Summerlin West Las Vegas 89138, Grand Park Village"
 
 export const metadata: Metadata = {
   title: arcadiaTitle,
   description: arcadiaDescription,
   keywords: [
     "Arcadia homes Las Vegas",
-    "Arcadia Las Vegas 89135",
+    "Arcadia Las Vegas 89138",
     "luxury new construction Summerlin West",
     "Arcadia Summerlin floor plans",
     "Grand Park Village Summerlin new homes",
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
 const arcadiaFaqs = [
   {
     q: "What are Arcadia homes in Las Vegas?",
-    a: "Arcadia is a gated community of 40 luxury single-family homes in Summerlin West, Las Vegas 89135, located in Grand Park Village near Red Rock Canyon. Homes range from 3,176 to 3,399 sq ft with Japanese-inspired design, eco-friendly construction, and prices from $1.5M to $2M+.",
+    a: "Arcadia is a gated community of 40 luxury single-family homes in Summerlin West, Las Vegas 89138, located in Grand Park Village near Red Rock Canyon. Homes range from 3,176 to 3,399 sq ft with Japanese-inspired design, eco-friendly construction, and prices from $1.5M to $2M+.",
   },
   {
     q: "How many homes are in Arcadia Summerlin?",
@@ -68,7 +69,7 @@ const arcadiaFaqs = [
   },
   {
     q: "What floor plans are available at Arcadia Las Vegas?",
-    a: "Arcadia offers three floor plans — Bristlecone (3,176 sq ft, 3 bed/4.5 bath from $1,499,990), Juniper (3,209 sq ft, 4 bed/4.5 bath), and Pinyon (3,399 sq ft, 4 bed/5.5 bath with bonus room) — all two-story with 3-car garages.",
+    a: "Arcadia offers three floor plans — Bristlecone (3,176 sq ft, 3 bed/4.5 bath from $1,584,990), Juniper (3,209 sq ft, 4 bed/4.5 bath), and Pinyon (3,399 sq ft, 4 bed/5.5 bath with bonus room) — all two-story with 3-car garages.",
   },
   {
     q: "Who can represent buyers at Arcadia in Las Vegas?",
@@ -91,7 +92,7 @@ const arcadiaPlaceSchema = {
     "@type": "PostalAddress",
     addressLocality: "Las Vegas",
     addressRegion: "NV",
-    postalCode: "89135",
+    postalCode: "89138",
     addressCountry: "US",
   },
   containedInPlace: {
@@ -145,7 +146,7 @@ const floorplans = [
     sqft: "3,176",
     beds: 3,
     baths: "4.5",
-    price: "$1,499,990",
+    price: usd(arcadiaMarket.plans.find((p) => p.name === "Bristlecone")!.basePrice),
     features: ["Spacious great room and loggia", "Dual closets in primary suite", "Fitness room"],
   },
   {
@@ -153,7 +154,7 @@ const floorplans = [
     sqft: "3,209",
     beds: 4,
     baths: "4.5",
-    price: "$1,515,990",
+    price: usd(arcadiaMarket.plans.find((p) => p.name === "Juniper")!.basePrice),
     features: ["First-floor ensuite guest room", "Pocket office/workspace"],
   },
   {
@@ -161,7 +162,7 @@ const floorplans = [
     sqft: "3,399",
     beds: 4,
     baths: "5.5",
-    price: "$1,605,990",
+    price: usd(arcadiaMarket.plans.find((p) => p.name === "Pinyon")!.basePrice),
     features: ["Bonus room", "First-floor flexible room for work or play"],
   },
 ];
@@ -194,11 +195,11 @@ export default function ArcadiaPage() {
               Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Arcadia Homes Las Vegas — Luxury New Construction Summerlin West 89135
+              Arcadia Homes Las Vegas — Luxury New Construction Summerlin West 89138
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
               <strong>Arcadia</strong> is a gated community of 40 luxury single-family
-              homes in Summerlin West, Las Vegas 89135, located in Grand Park Village near Red Rock
+              homes in Summerlin West, Las Vegas 89138, located in Grand Park Village near Red Rock
               Canyon. Homes feature Japanese-inspired design, eco-friendly luxury construction, and
               prices from $1.5M to $2M+.
             </p>
@@ -213,7 +214,7 @@ export default function ArcadiaPage() {
             <div className="prose prose-lg max-w-none text-slate-700">
               <p>
                 Arcadia is a gated community of 40 luxury single-family homes in
-                Summerlin West, Las Vegas 89135, in Grand Park Village near Red Rock Canyon. The
+                Summerlin West, Las Vegas 89138, in Grand Park Village near Red Rock Canyon. The
                 community offers three floor plans (Bristlecone, Juniper, Pinyon) from 3,176 to
                 3,399 sq ft, with Japanese-inspired design, eco-friendly construction, and prices
                 from $1.5M to $2M+.
@@ -326,6 +327,11 @@ export default function ArcadiaPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Explore More</h2>
             <ul className="flex flex-wrap gap-4 text-blue-600">
+              <li>
+                <Link href="/neighborhoods/arcadia/market-report" className="hover:underline">
+                  Arcadia market report
+                </Link>
+              </li>
               <li>
                 <Link href="/neighborhoods/summerlin" className="hover:underline">
                   Luxury new construction Summerlin West

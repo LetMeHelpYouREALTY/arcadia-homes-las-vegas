@@ -187,7 +187,7 @@ export default function RelocationPage() {
                 make Las Vegas feel like home before you even arrive."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties | Serving Las Vegas Since 2008
+                — Dr. Jan Duffy, BHHS Nevada Properties | 35 Years in Las Vegas Real Estate
               </cite>
             </div>
           </section>

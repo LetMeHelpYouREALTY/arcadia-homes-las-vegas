@@ -24,7 +24,7 @@ import { selfCanonicalMetadata } from "@/lib/page-metadata";
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Arcadia & Summerlin West Real Estate",
   description:
-    "Dr. Jan Duffy is a REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas since 2008. Meet your trusted agent for Arcadia and Summerlin West. Call (702) 500-0337.",
+    "Dr. Jan Duffy is a REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, with 35 years in Las Vegas real estate. Meet your trusted agent for Arcadia and Summerlin West. Call (702) 500-0337.",
   authors: [{ name: "Dr. Jan Duffy", url: "https://www.arcadiahomeslasvegas.com/about" }],
   keywords: [
     "Dr. Jan Duffy",
@@ -44,7 +44,7 @@ const personSchema = {
   name: "Dr. Jan Duffy",
   jobTitle: "REALTOR®",
   description:
-    "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas, Henderson, and Summerlin since 2008.",
+    "Licensed real estate agent with Berkshire Hathaway HomeServices Nevada Properties, with 35 years serving Las Vegas, Henderson, and Summerlin.",
   telephone: "+17025000337",
   email: "DrDuffy@arcadiahomeslasvegas.com",
   url: "https://www.arcadiahomeslasvegas.com/about",
@@ -136,7 +136,7 @@ export default function AboutPage() {
               Meet Your Berkshire Hathaway HomeServices Agent
             </h1>
             <p className="text-xl text-slate-700 font-medium mb-4">
-              Dr. Jan Duffy is a REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, serving Las Vegas since 2008.
+              Dr. Jan Duffy is a REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, with 35 years in Las Vegas real estate.
             </p>
             <p className="text-xl text-slate-600">
               Backed by the most
@@ -162,7 +162,7 @@ export default function AboutPage() {
                     world-class resources and local expertise to every client I serve.
                   </p>
                   <p>
-                    Since 2008, I've closed $127 million in transactions and
+                    Over 35 years, I've closed $127 million in transactions and
                     helped hundreds of families find their perfect home in Las Vegas, Henderson,
                     Summerlin, and throughout Southern Nevada. My expertise spans luxury properties,
                     new construction, investment real estate, 55+ active adult communities, and 
@@ -221,7 +221,7 @@ export default function AboutPage() {
                 <div className="bg-blue-50 border border-blue-100 rounded-lg p-6">
                   <p className="font-semibold text-slate-900">Dr. Jan Duffy | NV License #S.0197614.LLC</p>
                   <p className="text-slate-700 mt-1">Berkshire Hathaway HomeServices Nevada Properties</p>
-                  <p className="text-slate-600 text-sm mt-1">Serving Las Vegas since 2008 · Summerlin West luxury specialist</p>
+                  <p className="text-slate-600 text-sm mt-1">35 years in Las Vegas real estate · Summerlin West luxury specialist</p>
                   <p className="text-sm mt-2">
                     <a href="tel:+17025000337" className="text-blue-600 hover:underline font-medium">(702) 500-0337</a>
                     {" · "}
@@ -255,8 +255,8 @@ export default function AboutPage() {
                 {/* Stats Grid */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">Since 2008</div>
-                    <div className="text-sm text-slate-600">Serving Las Vegas</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">35 Years</div>
+                    <div className="text-sm text-slate-600">in Las Vegas Real Estate</div>
                   </div>
                   <div className="bg-blue-50 rounded-lg p-6 text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">$127M+</div>

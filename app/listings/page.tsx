@@ -216,9 +216,9 @@ export default function ListingsPage() {
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Each Las Vegas neighborhood offers a unique lifestyle, from the resort-style living 
-              of Summerlin to the family-friendly communities of Henderson. Understanding these 
+              of Summerlin to the master-planned communities of Henderson. Understanding these 
               differences is crucial to finding a home that fits your needs. As a Berkshire 
-              Hathaway HomeServices agent serving Las Vegas since 2008, Dr. Jan Duffy provides 
+              Hathaway HomeServices agent with 35 years in Las Vegas real estate, Dr. Jan Duffy provides 
               expert guidance on which neighborhoods match your priorities—whether that's schools, 
               commute times, amenities, or investment potential.
             </p>
@@ -256,7 +256,7 @@ export default function ListingsPage() {
               In today's competitive Las Vegas market, having expert representation can mean the 
               difference between winning your dream home and losing out. Dr. Jan Duffy brings 
               the resources of Berkshire Hathaway HomeServices—the most trusted name in real estate—
-              combined with deep local market knowledge from serving Las Vegas since 2008.
+              combined with deep local market knowledge from 35 years in Las Vegas real estate.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">

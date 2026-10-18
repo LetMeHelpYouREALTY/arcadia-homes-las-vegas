@@ -128,7 +128,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Market Expertise</h3>
                 <p className="text-slate-600 text-sm">
-                  Serving Las Vegas since 2008, $127M+ in closed transactions
+                  35 years in Las Vegas real estate, $127M+ in closed transactions
                 </p>
               </div>
               <div className="text-center p-6">

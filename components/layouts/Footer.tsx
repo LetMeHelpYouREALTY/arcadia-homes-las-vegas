@@ -238,7 +238,7 @@ export default function Footer() {
           <div className="text-slate-400 text-sm mt-4 text-center space-y-1">
             <p className="font-semibold text-slate-300">{agentInfo.name} | NV License #{agentInfo.license}</p>
             <p>{agentInfo.brokerage}</p>
-            <p>Serving Las Vegas since 2008 · Summerlin West luxury specialist</p>
+            <p>35 years in Las Vegas real estate · Summerlin West luxury specialist</p>
             <p>
               <a href={agentInfo.phoneTel} className="hover:text-white">{agentInfo.phone}</a>
               {" · "}

@@ -244,7 +244,7 @@ export default function LuxuryHomesPage() {
                 and the complete resources of BHHS."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties | Serving Las Vegas Since 2008
+                — Dr. Jan Duffy, BHHS Nevada Properties | 35 Years in Las Vegas Real Estate
               </cite>
             </div>
           </section>

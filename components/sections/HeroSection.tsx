@@ -81,8 +81,8 @@ export default function HeroSection() {
             <span>Properties Sold</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-semibold">Since 2008</span>
-            <span>Serving Las Vegas</span>
+            <span className="font-semibold">35 Years</span>
+            <span>in Las Vegas Real Estate</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="font-semibold">4.9★</span>

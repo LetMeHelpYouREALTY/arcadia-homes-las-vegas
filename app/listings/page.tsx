@@ -15,7 +15,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Homes for Sale | MLS Property Search | Arcadia Homes Las Vegas",
+  title: "Las Vegas Homes for Sale | MLS Property Search",
   description:
     "Browse all Las Vegas and Henderson homes for sale with live MLS listings. Search by neighborhood, price, and features. Dr. Jan Duffy, Arcadia Homes Las Vegas. Call (702) 500-0337.",
   keywords: [

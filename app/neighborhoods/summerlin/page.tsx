@@ -14,7 +14,7 @@ import {
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Summerlin Homes for Sale | Las Vegas Luxury Real Estate | Arcadia Homes Las Vegas",
+  title: "Summerlin Homes for Sale | Las Vegas Luxury Real Estate",
   description:
     "Find Summerlin homes with Dr. Jan Duffy, a 35-year Las Vegas real estate expert. She offers expert guidance in Las Vegas's premier master-planned community. Median price $625K. Call (702) 500-0337.",
   keywords: [

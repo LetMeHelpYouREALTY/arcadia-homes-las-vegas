@@ -10,7 +10,7 @@ export const revalidate = 86400;
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Contact Dr. Jan Duffy | Arcadia Homes Las Vegas",
+  title: "Contact Dr. Jan Duffy",
   description:
     "Contact Dr. Jan Duffy at Arcadia Homes Las Vegas. Schedule an appointment or call (702) 500-0337. Arcadia & Summerlin West real estate.",
   keywords: [

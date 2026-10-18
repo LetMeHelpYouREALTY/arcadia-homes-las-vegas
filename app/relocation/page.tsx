@@ -19,7 +19,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Relocating to Las Vegas | Arcadia Homes Las Vegas",
+  title: "Relocating to Las Vegas",
   description:
     "Moving to Las Vegas? Dr. Jan Duffy at Arcadia Homes Las Vegas provides comprehensive relocation services. Schools, neighborhoods, cost of living. Call (702) 500-0337.",
   keywords: [

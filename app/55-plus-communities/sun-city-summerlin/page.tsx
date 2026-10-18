@@ -14,7 +14,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Sun City Summerlin Homes for Sale | Arcadia Homes Las Vegas",
+  title: "Sun City Summerlin Homes for Sale",
   description:
     "Nevada's largest 55+ community. Sun City Summerlin homes from $320K-$850K. 3 golf courses, 4 rec centers, 100+ clubs. Dr. Jan Duffy, 55+ specialist. Call (702) 500-0337.",
   keywords: [

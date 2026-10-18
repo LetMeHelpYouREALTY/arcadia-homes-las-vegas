@@ -13,7 +13,7 @@ import {
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "FAQ | Arcadia Homes Las Vegas Real Estate",
+  title: "Las Vegas Real Estate FAQ",
   description:
     "Frequently asked questions about Las Vegas real estate, buying, selling, investing, and working with Dr. Jan Duffy at Arcadia Homes Las Vegas.",
   keywords: [

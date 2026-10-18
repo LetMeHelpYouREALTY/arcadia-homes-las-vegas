@@ -17,7 +17,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Move-Up Sellers Las Vegas | Arcadia Homes Las Vegas",
+  title: "Move-Up Sellers Las Vegas",
   description:
     "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 500-0337.",
   keywords: [

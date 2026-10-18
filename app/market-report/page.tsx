@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Real Estate Market Report January 2026 | Arcadia Homes Las Vegas",
+  title: "Las Vegas Real Estate Market Report January 2026",
   description:
     "Get the latest Las Vegas real estate market statistics for January 2026. Median prices, days on market, inventory levels, and expert analysis from Dr. Jan Duffy, Arcadia Homes Las Vegas.",
   keywords: [

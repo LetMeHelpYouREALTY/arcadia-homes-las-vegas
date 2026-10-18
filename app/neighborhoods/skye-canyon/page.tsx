@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Skye Canyon Homes for Sale | Northwest Las Vegas | Arcadia Homes Las Vegas",
+  title: "Skye Canyon Homes for Sale | Northwest Las Vegas",
   description:
     "Find Skye Canyon homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. She specializes in this premier northwest community. Median price $550K. Call (702) 500-0337.",
   keywords: [

@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "North Las Vegas Homes for Sale | Affordable Homes | Arcadia Homes Las Vegas",
+  title: "North Las Vegas Homes for Sale | Affordable Homes",
   description:
     "Find affordable North Las Vegas homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. She helps first-time buyers and investors. Median price $385K. Call (702) 500-0337.",
   keywords: [

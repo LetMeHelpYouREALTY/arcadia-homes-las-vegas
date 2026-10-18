@@ -18,7 +18,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Divorce & Probate Home Sales Las Vegas | Arcadia Homes Las Vegas",
+  title: "Divorce & Probate Home Sales Las Vegas",
   description:
     "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 500-0337.",
   keywords: [

@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Investment Properties | Arcadia Homes Las Vegas",
+  title: "Las Vegas Investment Properties",
   description:
     "Invest in Las Vegas real estate with Dr. Jan Duffy at Arcadia Homes Las Vegas. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-0337.",
   keywords: [

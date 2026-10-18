@@ -9,7 +9,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Free Home Valuation Las Vegas | What's Your Home Worth? | Arcadia Homes Las Vegas",
+  title: "Free Home Valuation Las Vegas | What's Your Home Worth?",
   description:
     "Get a free, accurate home valuation in Las Vegas from Dr. Jan Duffy, with 35 years in Las Vegas real estate. Expert CMA analysis for Summerlin, Henderson, Green Valley & all Las Vegas neighborhoods. Call (702) 500-0337.",
   keywords: [

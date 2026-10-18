@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "The Ridges Homes for Sale | Las Vegas Luxury Real Estate | Arcadia Homes Las Vegas",
+  title: "The Ridges Homes for Sale | Las Vegas Luxury Real Estate",
   description:
     "Find luxury homes in The Ridges with Dr. Jan Duffy of Arcadia Homes Las Vegas. Dr. Jan specializes in Summerlin's 900-home-site guard-gated community. Median price $2.5M. Call (702) 500-0337.",
   keywords: [

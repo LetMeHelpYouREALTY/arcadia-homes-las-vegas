@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Mountains Edge Homes for Sale | Southwest Las Vegas | Arcadia Homes Las Vegas",
+  title: "Mountains Edge Homes for Sale | Southwest Las Vegas",
   description:
     "Find Mountains Edge homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. Dr. Jan specializes in this southwest Las Vegas community. Median price $475K. Call (702) 500-0337.",
   keywords: [

@@ -22,7 +22,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Real Estate Services Las Vegas | Arcadia Homes Las Vegas",
+  title: "Real Estate Services Las Vegas",
   description:
     "Comprehensive real estate services from Dr. Jan Duffy, with 35 years in Las Vegas real estate. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 500-0337.",
   keywords: [

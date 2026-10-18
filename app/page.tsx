@@ -18,7 +18,7 @@ import {
 } from "@/lib/schema";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
-const homeTitle = "Arcadia at Grand Park | Dr. Jan Duffy";
+const homeTitle = "Arcadia at Grand Park | Homes by Dr. Jan Duffy";
 const homeDescription =
   "SHAWOOD at Arcadia in Grand Park village, Summerlin West. Dr. Jan Duffy, Arcadia Homes Las Vegas—Arcadia new construction expert. (702) 500-0337.";
 

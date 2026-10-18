@@ -16,7 +16,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "First-Time Home Buyers Las Vegas | Arcadia Homes Las Vegas",
+  title: "First-Time Home Buyers Las Vegas",
   description:
     "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy, 35 years in Las Vegas real estate. Call (702) 500-0337.",
   keywords: [

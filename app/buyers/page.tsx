@@ -20,7 +20,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Home Buying Guide Las Vegas | Arcadia Homes Las Vegas",
+  title: "Home Buying Guide Las Vegas",
   description:
     "Looking to buy a home in Las Vegas? Dr. Jan Duffy of Arcadia Homes Las Vegas guides you through every step. Free buyer consultation. Call (702) 500-0337.",
   keywords: [

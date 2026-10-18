@@ -16,7 +16,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Sell Your Las Vegas Home | Arcadia Homes Las Vegas",
+  title: "Sell Your Las Vegas Home",
   description:
     "Sell your Las Vegas or Henderson home for top dollar with Dr. Jan Duffy of Arcadia Homes Las Vegas. 35 years of local experience. Free home valuation. World-class marketing. Call (702) 500-0337.",
   keywords: [

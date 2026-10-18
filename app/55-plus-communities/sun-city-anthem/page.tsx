@@ -20,7 +20,7 @@ import {
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Sun City Anthem Homes for Sale | Arcadia Homes Las Vegas",
+  title: "Sun City Anthem Homes for Sale",
   description:
     "Henderson's premier 55+ community. Sun City Anthem homes from $350K-$1.2M. 2 championship golf courses, stunning mountain views. Dr. Jan Duffy. Call (702) 500-0337.",
   keywords: [

@@ -25,7 +25,7 @@ import { schemaToJsonLd } from "@/lib/schema";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Dr. Jan Duffy, REALTOR® Las Vegas | Arcadia Homes Las Vegas",
+  title: "Dr. Jan Duffy, REALTOR® Las Vegas",
   description:
     "Dr. Jan Duffy is a trusted Las Vegas REALTOR® with 35 years of experience. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-0337.",
   keywords: [

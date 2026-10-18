@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Henderson Homes & Real Estate | Arcadia Homes Las Vegas",
+  title: "Henderson Homes & Real Estate",
   description:
     "Find Henderson homes with Dr. Jan Duffy, Arcadia Homes Las Vegas. Green Valley, Inspirada, MacDonald Highlands, and Lake Las Vegas. Median price $485K. Call (702) 500-0337.",
   keywords: [

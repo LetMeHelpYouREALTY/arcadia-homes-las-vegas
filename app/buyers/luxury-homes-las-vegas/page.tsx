@@ -16,7 +16,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Luxury Homes Las Vegas | Arcadia Homes Las Vegas",
+  title: "Luxury Homes Las Vegas",
   description:
     "Las Vegas luxury real estate from $1.2M to $10M+. Guard-gated estates, Strip penthouses, and custom homes. Dr. Jan Duffy provides discrete, expert representation. Call (702) 500-0337.",
   keywords: [

@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Neighborhoods | Arcadia Homes Las Vegas",
+  title: "Las Vegas Neighborhoods",
   description:
     "Explore Las Vegas and Henderson neighborhoods with Dr. Jan Duffy at Arcadia Homes Las Vegas. Summerlin, Henderson, The Ridges, Southern Highlands & more.",
   keywords: [

@@ -18,7 +18,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Divorce & Probate Home Sales Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Divorce & Probate Home Sales Las Vegas | Arcadia Homes Las Vegas",
   description:
     "Sensitive real estate situations handled with discretion. Dr. Jan Duffy helps with divorce sales, probate, estate liquidation, and court-ordered sales. Call (702) 500-0337.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "probate real estate Las Vegas",
     "estate sale Las Vegas",
     "court ordered sale Nevada",
-    "Berkshire Hathaway HomeServices divorce",
+    "Dr. Jan Duffy divorce probate",
   ],
   ...selfCanonicalMetadata,
 };
@@ -448,34 +448,34 @@ export default function DivorceProbatePage() {
             </div>
           </section>
 
-          {/* Why BHHS Matters */}
+          {/* Why Work with Dr. Jan */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
-              Why Berkshire Hathaway HomeServices for Sensitive Sales
+              Why Work with Dr. Jan on a Sensitive Sale
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
                 <Shield className="h-10 w-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-bold text-slate-900 mb-2">Credibility & Trust</h3>
+                <h3 className="font-bold text-slate-900 mb-2">35 Years of Experience</h3>
                 <p className="text-slate-600 text-sm">
-                  The Berkshire Hathaway name carries weight with attorneys, judges, and opposing
-                  parties. Our valuations and processes are respected because of the brand's
-                  reputation for integrity.
+                  Dr. Jan has 35 years in Las Vegas real estate and 500+ successful transactions. She
+                  prices with care and explains each step, so everyone involved knows where
+                  things stand.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
                 <Scale className="h-10 w-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-bold text-slate-900 mb-2">Professional Standards</h3>
+                <h3 className="font-bold text-slate-900 mb-2">Careful Documentation</h3>
                 <p className="text-slate-600 text-sm">
-                  BHHS agents follow strict ethical guidelines and documentation standards. This
-                  protects all parties and provides a defensible paper trail for legal proceedings.
+                  Dr. Jan keeps clear records at every step. This protects all parties and
+                  provides a paper trail for legal proceedings.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
                 <Users className="h-10 w-10 text-blue-600 mx-auto mb-4" />
                 <h3 className="font-bold text-slate-900 mb-2">Expert Network</h3>
                 <p className="text-slate-600 text-sm">
-                  Dr. Jan has established relationships with family law attorneys, probate
+                  Dr. Jan has long-standing relationships with family law attorneys, probate
                   specialists, and estate planners throughout Las Vegas. She can refer trusted
                   professionals if you need legal guidance.
                 </p>
@@ -490,12 +490,10 @@ export default function DivorceProbatePage() {
                 "When you're going through a divorce or handling a loved one's estate, the last
                 thing you need is real estate stress. I've handled hundreds of sensitive transactions,
                 and I understand these situations require more than market expertise—they require
-                discretion, patience, and genuine care. <strong>Berkshire Hathaway HomeServices</strong>
-                gives me the resources and credibility these situations demand. Your privacy and
-                peace of mind come first."
+                discretion, patience, and real care. Your privacy and peace of mind come first."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>

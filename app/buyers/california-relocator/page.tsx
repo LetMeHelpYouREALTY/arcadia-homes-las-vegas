@@ -17,7 +17,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Relocating from California to Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Relocating from California to Las Vegas | Arcadia Homes Las Vegas",
   description:
     "Moving from California to Las Vegas? Zero state income tax, 40-60% lower home prices, same sunshine. Dr. Jan Duffy helps CA relocators find their perfect Las Vegas home. Call (702) 500-0337.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "California relocator Las Vegas",
     "no state income tax Nevada",
     "Las Vegas homes California buyers",
-    "Berkshire Hathaway HomeServices relocation",
+    "Dr. Jan Duffy relocation",
   ],
   ...selfCanonicalMetadata,
 };
@@ -48,7 +48,7 @@ const faqSchema = {
       name: "What neighborhoods do California relocators prefer in Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "California buyers typically gravitate toward Summerlin (similar to Irvine/coastal communities), Henderson (family-friendly like San Diego suburbs), and The Ridges (comparable to Newport Coast luxury). These areas offer the quality and amenities California buyers expect.",
+        text: "California buyers typically gravitate toward Summerlin (similar to Irvine/coastal communities), Henderson (similar to San Diego suburbs, with new construction and a growing tech corridor), and The Ridges (comparable to Newport Coast luxury). These areas offer the quality and amenities California buyers expect.",
       },
     },
     {
@@ -234,16 +234,16 @@ export default function CaliforniaRelocatorPage() {
                 </div>
                 <div className="p-6">
                   <p className="text-slate-600 mb-4">
-                    "The Irvine of Las Vegas" - Master-planned perfection with top schools,
+                    "The Irvine of Las Vegas" - Master-planned with 150+ parks & trails,
                     Downtown Summerlin shopping, and Red Rock Canyon views.
                   </p>
                   <div className="text-sm text-slate-500 mb-4">
-                    <strong>Best for:</strong> Families from Orange County, coastal CA
+                    <strong>Best for:</strong> Orange County and coastal CA relocators
                   </div>
                   <ul className="text-sm space-y-1 text-slate-700">
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Top-rated schools
+                      Red Rock Canyon views
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
@@ -271,10 +271,10 @@ export default function CaliforniaRelocatorPage() {
                 <div className="p-6">
                   <p className="text-slate-600 mb-4">
                     Henderson = San Diego suburbs meets tech corridor. Google's data center,
-                    top schools, and "America's Safest City" accolades.
+                    new construction, and resort-style community amenities.
                   </p>
                   <div className="text-sm text-slate-500 mb-4">
-                    <strong>Best for:</strong> Tech workers, young families, San Diego relocators
+                    <strong>Best for:</strong> Tech workers, remote workers, San Diego relocators
                   </div>
                   <ul className="text-sm space-y-1 text-slate-700">
                     <li className="flex items-center">
@@ -283,7 +283,7 @@ export default function CaliforniaRelocatorPage() {
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Lowest crime rates
+                      Resort-style community pools
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
@@ -307,7 +307,7 @@ export default function CaliforniaRelocatorPage() {
                 <div className="p-6">
                   <p className="text-slate-600 mb-4">
                     Newport Coast quality, Vegas prices. Guard-gated luxury with Strip views,
-                    celebrity neighbors, and custom estates.
+                    Bear's Best golf, and custom estates.
                   </p>
                   <div className="text-sm text-slate-500 mb-4">
                     <strong>Best for:</strong> Beverly Hills/Newport Beach luxury buyers
@@ -402,7 +402,8 @@ export default function CaliforniaRelocatorPage() {
                 </h3>
                 <p className="text-slate-600">
                   California buyers typically gravitate toward Summerlin (similar to Irvine/coastal
-                  communities), Henderson (family-friendly like San Diego suburbs), and The Ridges
+                  communities), Henderson (similar to San Diego suburbs, with new construction and a
+                  growing tech corridor), and The Ridges
                   (comparable to Newport Coast luxury). These areas offer the quality and amenities
                   California buyers expect.
                 </p>
@@ -432,10 +433,10 @@ export default function CaliforniaRelocatorPage() {
                   What about schools compared to California?
                 </h3>
                 <p className="text-slate-600">
-                  Nevada public schools overall rank lower than California's, but individual schools
-                  in Summerlin and Henderson rate highly. Many California families choose areas with
-                  top-rated schools or consider private options. Dr. Jan provides school-specific
-                  guidance for every neighborhood.
+                  Nevada public schools overall rank lower than California's, and ratings vary
+                  school by school. Dr. Jan can tell you which public schools are assigned to any
+                  home you're considering, so you can review them yourself. Private options are
+                  also available.
                 </p>
               </div>
             </div>
@@ -445,15 +446,14 @@ export default function CaliforniaRelocatorPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "I've helped hundreds of California families make the move to Las Vegas. The most
+                "I've helped hundreds of California buyers make the move to Las Vegas. The most
                 common reaction? 'Why didn't we do this sooner?' Between the tax savings, the space,
                 and the lifestyle, most clients can't believe what their California equity buys here.
-                As a <strong>Berkshire Hathaway HomeServices</strong> agent, I coordinate with our
-                California offices to make the transition seamless—you don't have to figure this
-                out alone."
+                With 35 years in Las Vegas real estate, I guide you through every step of the
+                move—you don't have to figure this out alone."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -483,7 +483,7 @@ export default function CaliforniaRelocatorPage() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

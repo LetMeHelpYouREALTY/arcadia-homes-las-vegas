@@ -17,7 +17,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Move-Up Sellers Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Move-Up Sellers Las Vegas | Arcadia Homes Las Vegas",
   description:
     "Ready for your next chapter? Dr. Jan Duffy helps Las Vegas homeowners leverage equity into their dream home. Sell and buy seamlessly. Call (702) 500-0337.",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "sell and buy Las Vegas",
     "home equity Las Vegas",
     "upgrade home Las Vegas",
-    "Berkshire Hathaway HomeServices seller",
+    "Dr. Jan Duffy move-up seller",
   ],
   ...selfCanonicalMetadata,
 };
@@ -111,7 +111,7 @@ export default function MoveUpSellerPage() {
                 <div className="flex-grow">
                   <h3 className="font-bold text-slate-900 mb-1">Centennial Hills → Summerlin</h3>
                   <p className="text-slate-600 text-sm">
-                    Upgrade from $450K starter to $650K+ in Downtown Summerlin area. Better schools,
+                    Upgrade from $450K starter to $650K+ in Downtown Summerlin area. Shopping and dining,
                     walkable amenities, Red Rock views.
                   </p>
                 </div>
@@ -127,7 +127,7 @@ export default function MoveUpSellerPage() {
                 <div className="flex-grow">
                   <h3 className="font-bold text-slate-900 mb-1">Green Valley → MacDonald Ranch</h3>
                   <p className="text-slate-600 text-sm">
-                    Move from established Green Valley ($520K) to luxury Henderson ($800K+).
+                    Move from Green Valley ($520K) to luxury Henderson ($800K+).
                     Larger lots, custom features, mountain views.
                   </p>
                 </div>
@@ -218,8 +218,7 @@ export default function MoveUpSellerPage() {
               <p>
                 The biggest concern move-up buyers have is timing. What happens if you sell before
                 finding your next home? What if you find your dream home but can't sell in time?
-                <strong> Berkshire Hathaway HomeServices</strong> agents like Dr. Jan Duffy have
-                strategies for every scenario, ensuring you never end up homeless or paying two
+                <strong> Dr. Jan Duffy</strong> has strategies for every scenario, ensuring you never end up homeless or paying two
                 mortgages unnecessarily.
               </p>
             </div>
@@ -230,7 +229,7 @@ export default function MoveUpSellerPage() {
                 </div>
                 <h3 className="font-bold text-slate-900 mb-2">Sell First, Then Buy</h3>
                 <p className="text-slate-600 text-sm mb-4">
-                  The safest approach: sell your home, secure your equity, then purchase with
+                  The lowest-risk approach: sell your home, secure your equity, then purchase with
                   confidence and negotiating power.
                 </p>
                 <div className="text-sm">
@@ -330,13 +329,12 @@ export default function MoveUpSellerPage() {
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Move-up transactions are like a chess game—every move matters. I coordinate both
-                sides so you don't end up homeless or paying two mortgages. With{" "}
-                <strong>Berkshire Hathaway HomeServices</strong>, I have the resources to make
-                complex transactions smooth. That's why clients trust me with their biggest
+                sides so you don't end up homeless or paying two mortgages. After 35 years in Las
+                Vegas real estate, I know how to make complex transactions smooth. That's why clients trust me with their biggest
                 financial moves."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -361,8 +359,8 @@ export default function MoveUpSellerPage() {
                   a: "It depends on your goals. Sometimes moving to a larger home in your current neighborhood is the best value. Other times, upgrading to a premium location provides better long-term appreciation. Dr. Jan analyzes both options to help you decide.",
                 },
                 {
-                  q: "How do schools factor into a move-up decision?",
-                  a: "Schools significantly impact both your quality of life and resale value. Moving to better school zones (like Summerlin's Palo Verde High School district or Henderson's Coronado) often justifies higher prices through appreciation and demand.",
+                  q: "How do I check school assignments for a new home?",
+                  a: "School assignments, such as Palo Verde High School in Summerlin or Coronado High School in Henderson, are set by Clark County School District and can change. Dr. Jan shows you how to confirm the assigned schools for any address on the CCSD website so you can research them yourself.",
                 },
                 {
                   q: "What are the tax implications of selling and buying?",

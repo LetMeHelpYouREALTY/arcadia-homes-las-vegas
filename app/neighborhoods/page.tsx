@@ -7,9 +7,9 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Neighborhoods | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Neighborhoods | Arcadia Homes Las Vegas",
   description:
-    "Explore Las Vegas and Henderson neighborhoods with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Summerlin, Henderson, The Ridges, Southern Highlands & more.",
+    "Explore Las Vegas and Henderson neighborhoods with Dr. Jan Duffy at Arcadia Homes Las Vegas. Summerlin, Henderson, The Ridges, Southern Highlands & more.",
   keywords: [
     "Las Vegas neighborhoods",
     "Henderson communities",
@@ -45,18 +45,18 @@ const neighborhoods = [
     slug: "henderson",
     medianPrice: "$485,000",
     priceChange: "+5.1%",
-    description: "Nevada's second-largest city with established neighborhoods and lake access",
+    description: "Nevada's second-largest city with master-planned neighborhoods and lake access",
     highlights: ["Lake Las Vegas", "Green Valley", "Parks", "Shopping districts"],
-    lifestyleNote: "Suburban amenities, commute options, diverse housing stock",
+    lifestyleNote: "Suburban amenities, commute options, wide range of home types",
   },
   {
     name: "Green Valley",
     slug: "green-valley",
     medianPrice: "$520,000",
     priceChange: "+4.8%",
-    description: "Established Henderson community with mature landscaping and excellent amenities",
+    description: "Henderson community with mature landscaping, golf, and trails",
     highlights: ["Golf Courses", "Walking Trails", "The District", "Mature Trees"],
-    lifestyleNote: "Golf, dining, established streetscapes",
+    lifestyleNote: "Golf, dining, tree-lined streetscapes",
   },
   {
     name: "The Ridges",
@@ -132,14 +132,14 @@ export default function NeighborhoodsPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas & Henderson Neighborhoods
             </h1>
             <p className="text-xl text-slate-600">
               Explore Southern Nevada communities with Dr. Jan Duffy, your{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> neighborhood expert—including{" "}
+              neighborhood expert—including{" "}
               <Link href="/neighborhoods/arcadia" className="text-blue-600 hover:underline">
                 Arcadia at Grand Park (SHAWOOD)
               </Link>
@@ -189,13 +189,12 @@ export default function NeighborhoodsPage() {
             <div className="bg-slate-50 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Every Las Vegas neighborhood has its own personality. Whether you want the parks and
-                trails of Summerlin, the established charm of Green Valley, or the luxury of The
-                Ridges, I'll help you find the community that matches your lifestyle. That's the
-                Berkshire Hathaway HomeServices difference—personalized guidance backed by local
-                expertise."
+                trails of Summerlin, the mature landscaping of Green Valley, or the luxury of The
+                Ridges, I'll help you find the community that matches your lifestyle. That's
+                personalized guidance backed by 35 years of local expertise."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -236,8 +235,8 @@ export default function NeighborhoodsPage() {
               Ready to Explore Las Vegas Neighborhoods?
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Dr. Jan Duffy provides personalized neighborhood guidance backed by Berkshire Hathaway
-              HomeServices resources.
+              Dr. Jan Duffy provides personalized neighborhood guidance backed by 35 years
+              in Las Vegas real estate.
             </p>
             <a
               href="tel:+17025000337"

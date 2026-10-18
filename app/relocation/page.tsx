@@ -13,16 +13,15 @@ import {
   School,
   ArrowRight,
   Shield,
-  Globe,
 } from "lucide-react";
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Relocating to Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Relocating to Las Vegas | Arcadia Homes Las Vegas",
   description:
-    "Moving to Las Vegas? Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties provides comprehensive relocation services. Schools, neighborhoods, cost of living. Call (702) 500-0337.",
+    "Moving to Las Vegas? Dr. Jan Duffy at Arcadia Homes Las Vegas provides comprehensive relocation services. Schools, neighborhoods, cost of living. Call (702) 500-0337.",
   keywords: [
     "relocating to Las Vegas",
     "moving to Las Vegas",
@@ -66,7 +65,7 @@ const popularRelocationAreas = [
   {
     name: "Henderson",
     fit: "Suburban amenities, commute options",
-    highlights: "Lake Las Vegas access, Green Valley, established neighborhoods",
+    highlights: "Lake Las Vegas access, Green Valley, Inspirada",
     from: "$450K",
   },
   {
@@ -99,7 +98,7 @@ const relocationServices = [
   "Personalized neighborhood matching based on your priorities",
   "School district research and tour coordination",
   "Virtual home tours before you arrive",
-  "Coordination with your current BHHS agent",
+  "Coordination with your current agent back home",
   "Cost of living and budget comparison",
   "Commute time analysis to your workplace",
   "Community and lifestyle matching",
@@ -123,19 +122,18 @@ export default function RelocationPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Relocating to Las Vegas?
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              <strong>Berkshire Hathaway HomeServices</strong> makes your move seamless. With
-              50,000+ agents nationwide, we coordinate your relocation from anywhere in the country.
-              Whether you're moving from California, the Midwest, or across the globe, Dr. Jan Duffy 
+              <strong>Dr. Jan Duffy</strong> makes your move seamless. She coordinates your
+              relocation from anywhere in the country. Whether you're moving from California, the Midwest, or across the globe, Dr. Jan Duffy 
               provides comprehensive relocation services to ensure your transition is stress-free.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> 50,000+ Agent Network</span>
+              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> 35 Years Local Experience</span>
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Virtual Home Tours</span>
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> School Research</span>
             </div>
@@ -146,7 +144,7 @@ export default function RelocationPage() {
             <h2 className="text-2xl font-bold mb-4 text-center">Why People Are Moving to Las Vegas</h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
               Las Vegas has become one of the fastest-growing cities in America, attracting 
-              families, professionals, and retirees from across the country. Here's why so 
+              people from across the country. Here's why so 
               many people are making the move to Southern Nevada.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -182,12 +180,12 @@ export default function RelocationPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Moving to a new city is stressful enough. I handle everything from neighborhood
                 tours to school research to contractor referrals so you can focus on your new
-                beginning. And because Berkshire Hathaway HomeServices has agents nationwide, I can
+                beginning. I can also
                 coordinate with your agent back home to make the transition seamless. My goal is to 
                 make Las Vegas feel like home before you even arrive."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties | 35 Years in Las Vegas Real Estate
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas | 35 Years in Las Vegas Real Estate
               </cite>
             </div>
           </section>
@@ -266,15 +264,14 @@ export default function RelocationPage() {
               Las Vegas Schools & Education
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              For families with children, school quality is often the top priority when 
-              relocating. Las Vegas offers a range of public, charter, and private school 
+              Many buyers want to research schools when relocating. Las Vegas offers a range of public, charter, and private school 
               options. Dr. Jan provides detailed school research to help you make informed decisions.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white border border-slate-200 rounded-xl p-6">
                 <h3 className="font-bold text-lg text-slate-900 mb-4 flex items-center">
                   <School className="h-5 w-5 text-blue-600 mr-2" />
-                  Top-Rated School Areas
+                  Schools to Research by Area
                 </h3>
                 <ul className="space-y-2 text-slate-700">
                   <li className="flex items-start">
@@ -287,7 +284,7 @@ export default function RelocationPage() {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2 mt-1 flex-shrink-0" />
-                    <span><strong>Private:</strong> The Meadows, Bishop Gorman, Faith Lutheran</span>
+                    <span><strong>Private:</strong> The Meadows and other private options</span>
                   </li>
                 </ul>
               </div>
@@ -323,7 +320,7 @@ export default function RelocationPage() {
             <h2 className="text-2xl font-bold mb-4 text-center">Moving from California?</h2>
             <p className="text-blue-100 text-center max-w-3xl mx-auto mb-8">
               California to Nevada is one of the most popular relocation routes in the country. 
-              Thousands of California families move to Las Vegas each year seeking lower costs, 
+              Thousands of Californians move to Las Vegas each year seeking lower costs, 
               no state income tax, and a better quality of life. Here's what the numbers look like.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
@@ -358,22 +355,22 @@ export default function RelocationPage() {
             </div>
           </section>
 
-          {/* BHHS Network */}
+          {/* Why Work With Dr. Jan */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              The Berkshire Hathaway HomeServices Advantage
+              Why Relocate With Dr. Jan
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              With 50,000+ agents in 1,500+ offices worldwide, Berkshire Hathaway HomeServices 
-              provides seamless coordination for relocations. Your agent back home can connect 
-              directly with Dr. Jan to ensure a smooth transition—no gaps, no miscommunication.
+              35 years in Las Vegas real estate and $127M+ in closed transactions. Your agent back
+              home can connect directly with Dr. Jan to ensure a smooth transition—no gaps, no
+              miscommunication.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center p-6 bg-slate-50 rounded-xl">
-                <Globe className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-bold text-lg mb-2">Nationwide Network</h3>
+                <Home className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="font-bold text-lg mb-2">Local Expertise</h3>
                 <p className="text-slate-600 text-sm">
-                  Seamless referrals from any BHHS agent in the country directly to Dr. Jan
+                  35 years in Las Vegas real estate, with a focus on Summerlin West and 55+ communities
                 </p>
               </div>
               <div className="text-center p-6 bg-slate-50 rounded-xl">
@@ -387,7 +384,7 @@ export default function RelocationPage() {
                 <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2">Trusted Referrals</h3>
                 <p className="text-slate-600 text-sm">
-                  Not using BHHS? Dr. Jan can recommend a trusted agent in your area
+                  Dr. Jan can recommend a trusted agent in your current area
                 </p>
               </div>
             </div>
@@ -414,11 +411,11 @@ export default function RelocationPage() {
                 },
                 {
                   q: "How does the cost of living compare to California?",
-                  a: "Las Vegas costs about 30-40% less than LA/Orange County and 50%+ less than San Francisco. The biggest savings come from no state income tax (California charges up to 13.3%) and significantly lower housing costs. A family earning $200K in California could save $20,000+ annually just in state taxes.",
+                  a: "Las Vegas costs about 30-40% less than LA/Orange County and 50%+ less than San Francisco. The biggest savings come from no state income tax (California charges up to 13.3%) and significantly lower housing costs. A household earning $200K in California could save $20,000+ annually just in state taxes.",
                 },
                 {
                   q: "Do you help coordinate the sale of my current home too?",
-                  a: "Yes! Through the BHHS referral network, Dr. Jan can connect you with a trusted agent in your current city. This coordination ensures both transactions stay on track with synchronized timelines for a seamless transition.",
+                  a: "Yes! Dr. Jan can connect you with a trusted agent in your current city. This coordination ensures both transactions stay on track with synchronized timelines for a seamless transition.",
                 },
                 {
                   q: "What's the job market like in Las Vegas?",
@@ -441,7 +438,7 @@ export default function RelocationPage() {
           <section className="text-center bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Planning Your Move to Las Vegas?</h2>
             <p className="text-xl text-slate-300 mb-8">
-              Let Dr. Jan Duffy and Berkshire Hathaway HomeServices make your relocation stress-free.
+              Let Dr. Jan Duffy make your relocation stress-free.
               Whether you're moving next month or exploring options, a free consultation can help 
               you understand the Las Vegas market and plan your transition.
             </p>
@@ -461,7 +458,7 @@ export default function RelocationPage() {
               </Link>
             </div>
             <p className="mt-4 text-slate-400 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

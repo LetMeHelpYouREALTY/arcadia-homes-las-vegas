@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { agentInfo, officeInfo, siteConfig } from "@/lib/site-config";
 
 export default function Footer() {
@@ -9,42 +9,21 @@ export default function Footer() {
     <footer className="bg-slate-900 text-white">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Company Info */}
+          {/* Brand */}
           <div>
-            <h3 className="font-bold text-xl mb-4">Berkshire Hathaway HomeServices</h3>
+            <h3 className="font-bold text-xl mb-4">{siteConfig.name}</h3>
             <p className="text-slate-300 mb-4 text-sm">
-              Nevada Properties - Your trusted real estate partner in Las Vegas, Henderson, and
-              Summerlin. Backed by Warren Buffett's legacy of trust.
+              Arcadia, Summerlin West and 55+ real estate with Dr. Jan Duffy. 35 years in Las
+              Vegas real estate, $127M+ in closed transactions.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="http://drjanduffy.realscout.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-white transition-colors"
-                aria-label="Search Las Vegas Homes"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="http://drjanduffy.realscout.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-white transition-colors"
-                aria-label="Search Las Vegas Homes"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="http://drjanduffy.realscout.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-white transition-colors"
-                aria-label="Search Las Vegas Homes"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
+            <a
+              href="http://drjanduffy.realscout.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-white transition-colors text-sm font-semibold"
+            >
+              Search Las Vegas homes →
+            </a>
           </div>
 
           {/* Quick Links */}
@@ -75,14 +54,6 @@ export default function Footer() {
                   className="text-slate-300 hover:text-white transition-colors text-sm"
                 >
                   Arcadia at Grand Park (SHAWOOD)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/why-berkshire-hathaway"
-                  className="text-slate-300 hover:text-white transition-colors text-sm"
-                >
-                  Why BHHS
                 </Link>
               </li>
               <li>
@@ -213,8 +184,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm text-center md:text-left">
-              © {currentYear} Berkshire Hathaway HomeServices Nevada Properties. All Rights
-              Reserved.
+              © {currentYear} {siteConfig.name} · {agentInfo.name}. All Rights Reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Link href="/faq" className="text-slate-400 hover:text-white transition-colors">
@@ -235,20 +205,24 @@ export default function Footer() {
             Equal Housing Opportunity. We do not discriminate based on race, color, religion, sex,
             handicap, familial status, national origin, sexual orientation, or gender identity.
           </p>
-          <div className="text-slate-400 text-sm mt-4 text-center space-y-1">
-            <p className="font-semibold text-slate-300">{agentInfo.name} | NV License #{agentInfo.license}</p>
-            <p>{agentInfo.brokerage}</p>
-            <p>35 years in Las Vegas real estate · Summerlin West luxury specialist</p>
-            <p>
+          {/* Brokerage disclosure — NAC 645.610: brokerage name shown with prominence,
+              license number, and franchise independently-owned statement */}
+          <div className="mt-6 mx-auto max-w-3xl rounded-lg border border-slate-700 bg-slate-800/60 px-6 py-5 text-center space-y-1">
+            <p className="text-white text-base md:text-lg font-bold">
+              Brokered by {agentInfo.brokerage}
+            </p>
+            <p className="text-slate-200 text-sm font-semibold">
+              {agentInfo.name}, {agentInfo.title} | NV License #{agentInfo.license}
+            </p>
+            <p className="text-slate-300 text-sm">
+              Each office is independently owned and operated.
+            </p>
+            <p className="text-slate-300 text-sm">
               <a href={agentInfo.phoneTel} className="hover:text-white">{agentInfo.phone}</a>
               {" · "}
               <a href={siteConfig.url} className="hover:text-white">{siteConfig.url.replace("https://", "").replace("www.", "")}</a>
             </p>
           </div>
-          <p className="text-slate-600 text-xs mt-4 text-center max-w-3xl mx-auto">
-            When you work with a Berkshire Hathaway HomeServices agent, you're backed by a name
-            synonymous with trust, ethical standards, and financial strength.
-          </p>
         </div>
       </div>
     </footer>

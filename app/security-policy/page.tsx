@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import Navbar from "@/components/layouts/Navbar";
+import Footer from "@/components/layouts/Footer";
 
 export const metadata: Metadata = {
   title: 'Security Policy',
@@ -13,6 +15,8 @@ export const metadata: Metadata = {
 
 export default function SecurityPolicyPage() {
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-white py-12">
       <div className="container mx-auto max-w-4xl px-4">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
@@ -26,7 +30,7 @@ export default function SecurityPolicyPage() {
               Our Commitment to Security
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              At Berkshire Hathaway HomeServices Nevada Properties, we take the security
+              At Arcadia Homes Las Vegas, we take the security
               of our systems and the privacy of our clients seriously. This page outlines
               our security practices and provides information for security researchers.
             </p>
@@ -244,7 +248,7 @@ export default function SecurityPolicyPage() {
                 <strong>Dr. Jan Duffy</strong>
               </p>
               <p className="mb-2">
-                Berkshire Hathaway HomeServices Nevada Properties
+                Arcadia Homes Las Vegas
               </p>
               <p className="mb-2">
                 Email:{' '}
@@ -273,5 +277,7 @@ export default function SecurityPolicyPage() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   )
 }

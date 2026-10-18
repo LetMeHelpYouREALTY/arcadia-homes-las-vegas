@@ -2,17 +2,16 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import RealScoutListings from "@/components/realscout/RealScoutListings";
 import Link from "next/link";
-import { Phone, Shield, Users } from "lucide-react";
+import { Phone, MapPin, Users } from "lucide-react";
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Henderson | Nevada Real Estate",
+  title: "Henderson Homes & Real Estate | Arcadia Homes Las Vegas",
   description:
-    "Find Henderson homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in Henderson's family-friendly communities. Median price $485K. Call (702) 500-0337.",
+    "Find Henderson homes with Dr. Jan Duffy, Arcadia Homes Las Vegas. Green Valley, Inspirada, MacDonald Highlands, and Lake Las Vegas. Median price $485K. Call (702) 500-0337.",
   keywords: [
-    "Berkshire Hathaway HomeServices Henderson",
     "Henderson homes for sale",
     "Henderson real estate agent",
     "Henderson Nevada",
@@ -25,7 +24,7 @@ const neighborhoodSchema = {
   "@context": "https://schema.org",
   "@type": "Place",
   name: "Henderson, Nevada",
-  description: "Nevada's second-largest city known for safety, schools, and family-friendly communities",
+  description: "Nevada's second-largest city with 60+ parks, master-planned communities, and quick access to the 215 Beltway",
   geo: {
     "@type": "GeoCoordinates",
     latitude: "36.0395",
@@ -47,10 +46,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "How safe is Henderson compared to Las Vegas?",
+      name: "How does Henderson compare to Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Henderson consistently ranks as one of America's safest cities. It has been named the safest city in Nevada and frequently appears in national 'Best Places to Live' rankings for its low crime rates and family-friendly environment.",
+        text: "Henderson is Nevada's second-largest city, with over 60 parks, multiple recreation centers, and quick access to the 215 Beltway and I-515/US-95. The Strip is about 15 minutes away and the airport about 12 minutes.",
       },
     },
     {
@@ -58,15 +57,15 @@ const faqSchema = {
       name: "What are the best neighborhoods in Henderson?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Henderson's top neighborhoods include Green Valley (established, mature landscaping), Inspirada (resort-style amenities), MacDonald Highlands (luxury), Anthem (family-oriented), and Lake Las Vegas (waterfront living). Each offers distinct lifestyle options.",
+        text: "Henderson's top neighborhoods include Green Valley (mature landscaping), Inspirada (resort-style amenities), MacDonald Highlands (luxury), Anthem, and Lake Las Vegas (waterfront living). Each offers distinct lifestyle options.",
       },
     },
     {
       "@type": "Question",
-      name: "Why choose Berkshire Hathaway HomeServices for Henderson real estate?",
+      name: "Why choose Dr. Jan Duffy for Henderson real estate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BHHS Nevada Properties has served Henderson for decades. Our agents like Dr. Jan Duffy know every community, school district, and HOA. The Berkshire Hathaway name provides trust and resources that benefit both buyers and sellers.",
+        text: "Dr. Jan Duffy brings 35 years in Las Vegas real estate and $127M+ in closed transactions. She knows Henderson's communities, school zoning, and HOAs, and she works with both buyers and sellers.",
       },
     },
   ],
@@ -100,14 +99,14 @@ export default function HendersonPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Henderson
+              Henderson Homes &amp; Real Estate
             </h1>
             <p className="text-xl text-slate-600">
-              Nevada's safest city. Find your Henderson home with Dr. Jan Duffy, your trusted{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> Henderson specialist.
+              Nevada's second-largest city. Find your Henderson home with{" "}
+              <strong>Dr. Jan Duffy</strong>, your trusted Henderson specialist.
             </p>
           </div>
 
@@ -145,24 +144,20 @@ export default function HendersonPage() {
               <p>
                 <strong>Henderson</strong> has quietly become one of the most desirable cities in the American
                 Southwest. As Nevada's second-largest city with over 320,000 residents, Henderson offers the
-                perfect balance of suburban tranquility and urban convenience. <strong>Berkshire Hathaway
-                HomeServices</strong> has been helping families find their Henderson dream homes for decades,
-                and Dr. Jan Duffy brings unmatched expertise to every transaction.
+                perfect balance of suburban tranquility and urban convenience. <strong>Dr. Jan Duffy</strong> brings
+                35 years in Las Vegas real estate to every Henderson transaction.
               </p>
               <p>
-                What sets Henderson apart? Start with safety. Henderson consistently ranks as one of America's
-                safest large cities, making it the top choice for families with children. The city's excellent
-                schools, low crime rates, and community-oriented atmosphere create an environment where
-                families thrive. Add in the fact that Nevada has no state income tax, and you understand why
+                What sets Henderson apart? Start with space to get outside. The city operates over 60 parks and
+                multiple recreation centers, and the 215 Beltway puts the Strip about 15 minutes away. Add in the fact that Nevada has no state income tax, and you understand why
                 so many Californians are making Henderson their new home.
               </p>
               <p>
-                The Henderson real estate market offers remarkable diversity. From the established tree-lined
+                The Henderson real estate market offers remarkable diversity. From the tree-lined
                 streets of <strong>Green Valley</strong> to the resort-style amenities of <strong>Inspirada</strong>,
                 from the luxury estates of <strong>MacDonald Highlands</strong> to the waterfront properties at
                 <strong> Lake Las Vegas</strong>—Henderson has a community for every lifestyle and budget.
-                <strong> Berkshire Hathaway HomeServices Nevada Properties</strong> agents know each of these
-                communities intimately.
+                <strong> Dr. Jan Duffy</strong> knows each of these communities intimately.
               </p>
 
               {/* Community Highlights */}
@@ -170,24 +165,21 @@ export default function HendersonPage() {
               <div className="grid md:grid-cols-2 gap-8 not-prose">
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
-                    <Shield className="h-8 w-8 text-blue-600 mr-3" />
-                    <h4 className="font-bold text-slate-900 text-lg">America's Safest City</h4>
+                    <MapPin className="h-8 w-8 text-blue-600 mr-3" />
+                    <h4 className="font-bold text-slate-900 text-lg">Parks &amp; Recreation</h4>
                   </div>
                   <p className="text-slate-600">
-                    Henderson has been named the safest city in Nevada and consistently ranks among America's
-                    safest large cities. The Henderson Police Department's community policing approach and
-                    active neighborhood watch programs contribute to exceptionally low crime rates that give
-                    families peace of mind.
+                    The city operates over 60 parks and multiple recreation centers. Lake Mead is about
+                    20 minutes away, and the 215 Beltway connects you to the rest of the valley.
                   </p>
                 </div>
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
                     <Users className="h-8 w-8 text-blue-600 mr-3" />
-                    <h4 className="font-bold text-slate-900 text-lg">Family-First Community</h4>
+                    <h4 className="font-bold text-slate-900 text-lg">Community Life</h4>
                   </div>
                   <p className="text-slate-600">
-                    Henderson is designed for families. The city operates over 60 parks, multiple recreation
-                    centers, and hundreds of youth programs. The Henderson Libraries system is award-winning,
+                    The Henderson Libraries system is award-winning,
                     and community events throughout the year—from the Henderson Farmers Market to the annual
                     Heritage Parade—bring neighbors together.
                   </p>
@@ -198,14 +190,14 @@ export default function HendersonPage() {
               <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Henderson School Districts</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
-                  Henderson offers some of Nevada's best public schools through Clark County School District,
-                  plus excellent charter and private options:
+                  Henderson is served by Clark County School District, plus charter and private options.
+                  Ask Dr. Jan which schools are zoned for any home you're considering:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div>
                     <h5 className="font-bold text-slate-900 mb-2">Elementary Schools</h5>
                     <ul className="text-slate-600 text-sm space-y-1">
-                      <li>• John C. Vanderburg (9/10)</li>
+                      <li>• John C. Vanderburg Elementary</li>
                       <li>• Elise L. Wolff Elementary</li>
                       <li>• C.T. Sewell Elementary</li>
                       <li>• Pinecrest Academy (Charter)</li>
@@ -215,7 +207,7 @@ export default function HendersonPage() {
                   <div>
                     <h5 className="font-bold text-slate-900 mb-2">Middle & High Schools</h5>
                     <ul className="text-slate-600 text-sm space-y-1">
-                      <li>• Coronado High School (8/10)</li>
+                      <li>• Coronado High School</li>
                       <li>• Green Valley High School</li>
                       <li>• Foothill High School</li>
                       <li>• Bob Miller Middle School</li>
@@ -228,8 +220,6 @@ export default function HendersonPage() {
                       <li>• Henderson International School</li>
                       <li>• Coral Academy of Science</li>
                       <li>• Pinecrest Academy</li>
-                      <li>• The Adelson School</li>
-                      <li>• St. Peter the Apostle</li>
                     </ul>
                   </div>
                 </div>
@@ -309,12 +299,11 @@ export default function HendersonPage() {
                 properties exceeding $2 million in guard-gated communities.
               </p>
               <p>
-                Choosing <strong>Berkshire Hathaway HomeServices</strong> for your Henderson home search means
-                working with agents who understand the subtle differences between Henderson's many communities.
-                Dr. Jan Duffy can explain which neighborhoods have the best schools for your children's ages,
-                which HOAs are well-managed, and which areas offer the strongest investment potential. That
-                local knowledge, backed by the resources and reputation of Berkshire Hathaway, makes all the
-                difference.
+                Working with <strong>Dr. Jan Duffy</strong> on your Henderson home search means working with
+                someone who understands the subtle differences between Henderson's many communities. She can
+                help you check school zoning for a specific address, see which HOAs are well-managed, and
+                compare which areas offer the strongest investment potential. That local knowledge makes all
+                the difference.
               </p>
             </div>
           </section>
@@ -323,13 +312,13 @@ export default function HendersonPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Henderson offers something for everyone—young professionals, growing families, active retirees.
-                As a Berkshire Hathaway HomeServices agent, I help clients cut through the options and find
+                "Henderson offers something for every budget—from condos in the $350,000s to guard-gated estates
+                over $2 million. With 35 years in Las Vegas real estate, I help clients cut through the options and find
                 the community that fits their lifestyle. There's a reason Henderson keeps winning 'Best Places
                 to Live' awards."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -352,12 +341,12 @@ export default function HendersonPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  How safe is Henderson compared to Las Vegas?
+                  How does Henderson compare to Las Vegas?
                 </h3>
                 <p className="text-slate-600">
-                  Henderson consistently ranks as one of America's safest cities. It has been named the
-                  safest city in Nevada and frequently appears in national "Best Places to Live" rankings
-                  for its low crime rates and family-friendly environment.
+                  Henderson is Nevada's second-largest city, with over 60 parks, multiple recreation centers,
+                  and quick access to the 215 Beltway and I-515/US-95. The Strip is about 15 minutes away and
+                  the airport about 12 minutes.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -365,19 +354,19 @@ export default function HendersonPage() {
                   What are the best neighborhoods in Henderson?
                 </h3>
                 <p className="text-slate-600">
-                  Henderson's top neighborhoods include Green Valley (established, mature landscaping),
-                  Inspirada (resort-style amenities), MacDonald Highlands (luxury), Anthem (family-oriented),
+                  Henderson's top neighborhoods include Green Valley (mature landscaping),
+                  Inspirada (resort-style amenities), MacDonald Highlands (luxury), Anthem,
                   and Lake Las Vegas (waterfront living). Each offers distinct lifestyle options.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why choose Berkshire Hathaway HomeServices for Henderson real estate?
+                  Why choose Dr. Jan Duffy for Henderson real estate?
                 </h3>
                 <p className="text-slate-600">
-                  BHHS Nevada Properties has served Henderson for decades. Our agents like Dr. Jan Duffy
-                  know every community, school district, and HOA. The Berkshire Hathaway name provides
-                  trust and resources that benefit both buyers and sellers.
+                  Dr. Jan Duffy brings 35 years in Las Vegas real estate and $127M+ in closed transactions.
+                  She knows Henderson's communities, school zoning, and HOAs, and she works with both buyers
+                  and sellers.
                 </p>
               </div>
             </div>
@@ -389,7 +378,7 @@ export default function HendersonPage() {
               Find Your Henderson Home Today
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Henderson expert,
+              Contact Dr. Jan Duffy, your Henderson expert,
               for personalized guidance and local market insights.
             </p>
             <a
@@ -400,7 +389,7 @@ export default function HendersonPage() {
               Call (702) 500-0337
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

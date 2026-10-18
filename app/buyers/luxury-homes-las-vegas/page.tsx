@@ -16,7 +16,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Luxury Homes Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Luxury Homes Las Vegas | Arcadia Homes Las Vegas",
   description:
     "Las Vegas luxury real estate from $1.2M to $10M+. Guard-gated estates, Strip penthouses, and custom homes. Dr. Jan Duffy provides discrete, expert representation. Call (702) 500-0337.",
   keywords: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "MacDonald Highlands",
     "luxury real estate Henderson",
     "guard gated communities Las Vegas",
-    "Berkshire Hathaway luxury homes",
+    "Dr. Jan Duffy luxury homes",
   ],
   ...selfCanonicalMetadata,
 };
@@ -44,7 +44,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What are the most exclusive luxury communities in Las Vegas?",
+      name: "What are the top luxury communities in Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "The Ridges in Summerlin ($1.5M-$10M+) is the valley's most prestigious address. MacDonald Highlands and Ascaya in Henderson ($2M-$15M) offer Strip views. For high-rise luxury, Waldorf Astoria, Veer Towers, and Panorama Towers dominate the Strip corridor.",
@@ -152,8 +152,7 @@ export default function LuxuryHomesPage() {
                     </span>
                   </div>
                   <p className="text-slate-600 mb-4">
-                    The valley's most exclusive enclave, home to celebrities, executives, and those who
-                    demand absolute privacy. Custom estates, Bear's Best Golf Club, and Red Rock views.
+                    A guard-gated Summerlin enclave for buyers who want maximum privacy. Custom estates, Bear's Best Golf Club, and Red Rock views.
                   </p>
                   <ul className="space-y-2 mb-4">
                     <li className="flex items-center text-sm text-slate-700">
@@ -170,7 +169,7 @@ export default function LuxuryHomesPage() {
                     </li>
                     <li className="flex items-center text-sm text-slate-700">
                       <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Celebrity neighborhood
+                      Bear's Best Golf Club
                     </li>
                   </ul>
                   <Link
@@ -197,7 +196,7 @@ export default function LuxuryHomesPage() {
                   </div>
                   <p className="text-slate-600 mb-4">
                     Elevated luxury with dramatic Strip and valley views. DragonRidge Country Club,
-                    modern architecture, and Henderson's low crime rates create an unmatched combination.
+                    modern architecture, and guard-gated entries create an unmatched combination.
                   </p>
                   <ul className="space-y-2 mb-4">
                     <li className="flex items-center text-sm text-slate-700">
@@ -214,7 +213,7 @@ export default function LuxuryHomesPage() {
                     </li>
                     <li className="flex items-center text-sm text-slate-700">
                       <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Henderson safety & schools
+                      Guard-gated entries
                     </li>
                   </ul>
                   <Link
@@ -302,7 +301,7 @@ export default function LuxuryHomesPage() {
                     </li>
                     <li className="flex items-center text-sm text-slate-700">
                       <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Top-rated schools
+                      Championship golf course lots
                     </li>
                   </ul>
                   <Link
@@ -326,7 +325,7 @@ export default function LuxuryHomesPage() {
               <div>
                 <p className="text-slate-700 mb-4">
                   Luxury transactions require a level of discretion that most agents can't provide.
-                  Dr. Jan Duffy and <strong>Berkshire Hathaway HomeServices</strong> understand that
+                  Dr. Jan Duffy understands that
                   privacy isn't a luxury—it's a requirement.
                 </p>
                 <ul className="space-y-3">
@@ -370,11 +369,11 @@ export default function LuxuryHomesPage() {
                 "Luxury buyers expect discretion, market expertise, and flawless execution. In this
                 price range, one wrong move can cost hundreds of thousands of dollars. My clients
                 trust me because I've closed $127M+ in transactions and understand that their time
-                and privacy are worth more than any commission. <strong>Berkshire Hathaway HomeServices</strong>
-                provides the global resources and credibility that luxury transactions demand."
+                and privacy are worth more than any commission. Thirty-five years in Las Vegas real
+                estate gives me the local knowledge luxury transactions demand."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -404,7 +403,7 @@ export default function LuxuryHomesPage() {
               </Link>
             </div>
             <p className="mt-6 text-slate-400 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

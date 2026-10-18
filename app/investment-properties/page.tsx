@@ -7,9 +7,9 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Investment Properties | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Investment Properties | Arcadia Homes Las Vegas",
   description:
-    "Invest in Las Vegas real estate with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-0337.",
+    "Invest in Las Vegas real estate with Dr. Jan Duffy at Arcadia Homes Las Vegas. Rental properties, ROI analysis, 1031 exchanges. No state income tax. Call (702) 500-0337.",
   keywords: [
     "Las Vegas investment property",
     "Las Vegas rental property",
@@ -75,7 +75,7 @@ export default function InvestmentPropertiesPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | 35 Years in Las Vegas Real Estate
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Investment Properties
@@ -83,7 +83,7 @@ export default function InvestmentPropertiesPage() {
             <p className="text-xl text-slate-600">
               No state income tax, strong appreciation, and excellent rental yields. Discover why
               investors choose Las Vegas—with guidance from{" "}
-              <strong>Berkshire Hathaway HomeServices</strong>.
+              <strong>Dr. Jan Duffy</strong>.
             </p>
           </div>
 
@@ -171,7 +171,7 @@ export default function InvestmentPropertiesPage() {
                 combination of cash flow and appreciation potential."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -250,7 +250,7 @@ export default function InvestmentPropertiesPage() {
                 <h3 className="font-bold text-lg text-slate-900 mb-2">Cap Rate (Capitalization Rate)</h3>
                 <p className="text-slate-600 text-sm mb-4">
                   Net Operating Income ÷ Property Value. Las Vegas cap rates range from 4-6%,
-                  competitive with major metros. Higher cap rates typically mean higher risk neighborhoods.
+                  competitive with major metros. Higher cap rates typically come with higher risk.
                 </p>
                 <div className="bg-slate-50 rounded p-3 text-sm">
                   <strong>Example:</strong> $485K Henderson home renting at $2,300/mo = ~4.5% cap rate
@@ -303,33 +303,33 @@ export default function InvestmentPropertiesPage() {
                 <p className="text-slate-600 mb-4">
                   <strong>Best for: Cash flow investors.</strong> Highest cap rates in the valley (5.2%+)
                   with lower entry prices. Growing population as Amazon, Fanatics, and other employers
-                  expand. School quality varies by area—research specific zones.
+                  expand. Newer construction is available at lower price points.
                 </p>
                 <div className="grid grid-cols-3 gap-4 text-sm">
                   <div><span className="font-medium">Entry:</span> $350K-$450K</div>
                   <div><span className="font-medium">Rent:</span> $1,800-$2,200</div>
-                  <div><span className="font-medium">Tenant Pool:</span> Working families, warehouse workers</div>
+                  <div><span className="font-medium">Tenant Pool:</span> Warehouse and logistics workers</div>
                 </div>
               </div>
               <div className="bg-white rounded-xl p-6">
                 <h3 className="font-bold text-xl text-slate-900 mb-2">Henderson</h3>
                 <p className="text-slate-600 mb-4">
-                  <strong>Best for: Balanced investors.</strong> Premium tenant quality, excellent schools,
-                  and steady appreciation. Lower vacancy rates and longer tenant retention offset
+                  <strong>Best for: Balanced investors.</strong> Master-planned communities, newer
+                  construction, and steady appreciation. Lower vacancy rates and longer tenant retention offset
                   slightly lower cap rates.
                 </p>
                 <div className="grid grid-cols-3 gap-4 text-sm">
                   <div><span className="font-medium">Entry:</span> $450K-$600K</div>
                   <div><span className="font-medium">Rent:</span> $2,100-$2,800</div>
-                  <div><span className="font-medium">Tenant Pool:</span> Professionals, families, retirees</div>
+                  <div><span className="font-medium">Tenant Pool:</span> Professionals</div>
                 </div>
               </div>
               <div className="bg-white rounded-xl p-6">
                 <h3 className="font-bold text-xl text-slate-900 mb-2">Summerlin</h3>
                 <p className="text-slate-600 mb-4">
                   <strong>Best for: Appreciation investors.</strong> Premium neighborhood with strongest
-                  appreciation (6.8% YoY). Lower cap rates but exceptional tenant quality and
-                  very low vacancy. Best-in-class schools and amenities.
+                  appreciation (6.8% YoY). Lower cap rates but very low vacancy. Parks, trails,
+                  and Downtown Summerlin amenities.
                 </p>
                 <div className="grid grid-cols-3 gap-4 text-sm">
                   <div><span className="font-medium">Entry:</span> $550K-$800K</div>
@@ -390,8 +390,7 @@ export default function InvestmentPropertiesPage() {
               </div>
               <p className="text-slate-600 text-sm">
                 Dr. Jan works with qualified intermediaries and can help identify replacement properties
-                within the 45-day window. Berkshire Hathaway's nationwide network is invaluable for
-                clients exchanging into or out of Las Vegas.
+                within the 45-day window, whether you're exchanging into or out of Las Vegas.
               </p>
             </div>
           </section>
@@ -413,7 +412,7 @@ export default function InvestmentPropertiesPage() {
                 },
                 {
                   q: "Can you help with 1031 exchanges?",
-                  a: "Absolutely. Dr. Jan works with qualified intermediaries and can help identify replacement properties within the 45-day identification window. Berkshire Hathaway's nationwide network is particularly valuable for exchanging into or out of Las Vegas.",
+                  a: "Absolutely. Dr. Jan works with qualified intermediaries and can help identify replacement properties within the 45-day identification window, whether you're exchanging into or out of Las Vegas.",
                 },
                 {
                   q: "What's the best area for investment properties?",
@@ -434,8 +433,8 @@ export default function InvestmentPropertiesPage() {
               Ready to Invest in Las Vegas?
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Get expert guidance on Las Vegas investment properties from Dr. Jan Duffy and
-              Berkshire Hathaway HomeServices.
+              Get expert guidance on Las Vegas investment properties from Dr. Jan Duffy, with 35 years
+              in Las Vegas real estate.
             </p>
             <a
               href="tel:+17025000337"
@@ -445,7 +444,7 @@ export default function InvestmentPropertiesPage() {
               Call (702) 500-0337
             </a>
             <p className="mt-4 text-slate-400 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

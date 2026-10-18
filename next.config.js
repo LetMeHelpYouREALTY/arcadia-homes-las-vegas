@@ -34,20 +34,13 @@ const nextConfig = {
         destination: 'https://www.arcadiahomeslasvegas.com/:path*',
         permanent: true,
       },
+      // Brokerage name lives in the footer only; old page folds into About
+      {
+        source: '/why-berkshire-hathaway',
+        destination: '/about',
+        permanent: true,
+      },
     ]
-  },
-
-  // In development only: proxy /api/* to Flask. In production, Next.js API routes handle /api/*.
-  rewrites: async () => {
-    if (process.env.NODE_ENV === 'development') {
-      return [
-        {
-          source: '/api/:path*',
-          destination: 'http://127.0.0.1:5328/api/:path*',
-        },
-      ];
-    }
-    return [];
   },
 
   // Enhanced security headers including CSP for RealScout widget

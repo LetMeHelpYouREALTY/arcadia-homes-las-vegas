@@ -14,11 +14,11 @@ import {
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Summerlin | Las Vegas Luxury Real Estate",
+  title: "Summerlin Homes for Sale | Las Vegas Luxury Real Estate | Arcadia Homes Las Vegas",
   description:
-    "Find Summerlin homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy offers expert guidance in Las Vegas's premier master-planned community. Median price $625K. Call (702) 500-0337.",
+    "Find Summerlin homes with Dr. Jan Duffy, a 35-year Las Vegas real estate expert. She offers expert guidance in Las Vegas's premier master-planned community. Median price $625K. Call (702) 500-0337.",
   keywords: [
-    "Berkshire Hathaway HomeServices Summerlin",
+    "Dr. Jan Duffy Summerlin",
     "Summerlin homes for sale",
     "Summerlin real estate agent",
     "Summerlin Las Vegas",
@@ -42,12 +42,12 @@ const summerlinFaqs = [
   {
     question: "What makes Summerlin different from other Las Vegas communities?",
     answer:
-      "Summerlin offers 150+ parks, 150+ miles of trails, top-rated schools, and stunning Red Rock Canyon views. The Howard Hughes Corporation has developed Summerlin with careful planning since 1990, creating distinct villages each with unique character.",
+      "Summerlin offers 150+ parks, 150+ miles of trails, nine golf courses, and stunning Red Rock Canyon views. The Howard Hughes Corporation has developed Summerlin with careful planning since 1990, creating distinct villages each with unique character.",
   },
   {
-    question: "Why should I use a Berkshire Hathaway HomeServices agent in Summerlin?",
+    question: "Why should I work with Dr. Jan Duffy in Summerlin?",
     answer:
-      "Berkshire Hathaway HomeServices agents like Dr. Jan Duffy bring deep Summerlin expertise combined with the global resources and trusted reputation of the BHHS brand. This combination helps buyers compete in Summerlin's competitive market and helps sellers maximize their home's value.",
+      "Dr. Jan Duffy brings 35 years of Las Vegas real estate experience and deep Summerlin West expertise, with $127M+ in closed transactions. That experience helps buyers compete in Summerlin's competitive market and helps sellers maximize their home's value.",
   },
 ];
 
@@ -57,7 +57,7 @@ const pageSchemas = combineSchemas(
     name: "Summerlin",
     slug: "summerlin",
     description:
-      "Premier master-planned community in Las Vegas featuring Red Rock Canyon views, 150+ parks, top-rated schools, and luxury homes from $400K to $10M+.",
+      "Premier master-planned community in Las Vegas featuring Red Rock Canyon views, 150+ parks, trail systems, and luxury homes from $400K to $10M+.",
     latitude: 36.1672,
     longitude: -115.331,
     containedIn: "Las Vegas",
@@ -87,14 +87,14 @@ export default function SummerlinPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Summerlin
+              Summerlin Homes for Sale
             </h1>
             <p className="text-xl text-slate-600">
-              Discover Las Vegas's premier master-planned community with Dr. Jan Duffy, your trusted{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> Summerlin expert.
+              Discover Las Vegas's premier master-planned community with Dr. Jan Duffy, your trusted
+              Summerlin expert.
             </p>
           </div>
 
@@ -131,8 +131,8 @@ export default function SummerlinPage() {
               </h2>
               <p>
                 When homebuyers search for the best neighborhoods in Las Vegas, <strong>Summerlin</strong> consistently
-                ranks at the top. As a <strong>Berkshire Hathaway HomeServices</strong> agent specializing in Summerlin
-                real estate, Dr. Jan Duffy has helped hundreds of families find their perfect home in this
+                ranks at the top. As a Summerlin West specialist with 35 years in Las Vegas real estate,
+                <strong> Dr. Jan Duffy</strong> has helped hundreds of buyers find their home in this
                 award-winning master-planned community.
               </p>
               <p>
@@ -151,11 +151,10 @@ export default function SummerlinPage() {
                 exploring that gated 40-home enclave.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has deep roots in Summerlin,
-                and our agents understand the nuances of each village—from the village parks of The Paseos to
-                the luxury estates of The Ridges. Whether you're a first-time buyer looking at
-                condos in Affinity or a move-up buyer seeking a custom home in Red Rock Country Club, BHHS
-                has the expertise to guide you through the process.
+                <strong>Dr. Jan Duffy</strong> has deep roots in Summerlin and understands the nuances of
+                each village—from the village parks of The Paseos to the luxury estates of The Ridges.
+                Whether you're a first-time buyer looking at condos in Affinity or a move-up buyer seeking
+                a custom home in Red Rock Country Club, she has the expertise to guide you through the process.
               </p>
 
               {/* Community Highlights */}
@@ -176,13 +175,12 @@ export default function SummerlinPage() {
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
                     <GraduationCap className="h-8 w-8 text-blue-600 mr-3" />
-                    <h4 className="font-bold text-slate-900 text-lg">Top-Rated Schools</h4>
+                    <h4 className="font-bold text-slate-900 text-lg">Public & Private School Options</h4>
                   </div>
                   <p className="text-slate-600">
-                    Summerlin is home to some of Nevada's highest-performing schools. The community includes
-                    multiple Blue Ribbon schools, advanced STEM programs, and excellent private school options
-                    like The Meadows School and Bishop Gorman High School. Families consistently choose
-                    Summerlin for its exceptional educational opportunities.
+                    Summerlin is served by Clark County School District public schools, with private
+                    options like The Meadows School and Bishop Gorman High School nearby. See the school
+                    list below, and check each address's school zone before you buy.
                   </p>
                 </div>
               </div>
@@ -191,8 +189,7 @@ export default function SummerlinPage() {
               <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Summerlin School Districts</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
-                  Summerlin is served by the Clark County School District with some of Nevada's
-                  highest-rated public schools, plus excellent private options:
+                  Summerlin is served by the Clark County School District, plus private options:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div>
@@ -287,9 +284,8 @@ export default function SummerlinPage() {
                 a fraction of the cost—with no state income tax.
               </p>
               <p>
-                Working with a <strong>Berkshire Hathaway HomeServices</strong> agent gives you access to listings
-                before they hit the market, expert negotiation skills, and the backing of a globally trusted brand.
-                Dr. Jan Duffy has 35 years in Las Vegas real estate, which means you'll have insights that online 
+                Working with <strong>Dr. Jan Duffy</strong> gives you access to listings before they hit
+                the market and expert negotiation skills. She has 35 years in Las Vegas real estate, which means you'll have insights that online 
                 searches simply can't provide—from which streets have the best mountain views to which builders 
                 offer the best construction quality.
               </p>
@@ -303,10 +299,10 @@ export default function SummerlinPage() {
                 "Summerlin isn't just a neighborhood—it's a lifestyle. I've spent 35 years in Las Vegas
                 real estate, and I can tell you exactly which villages have the parks and trails you want, which offer the
                 best investment potential, and where you'll find the hidden gems. That local knowledge is
-                what sets Berkshire Hathaway HomeServices apart."
+                what I bring to every client."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -342,19 +338,18 @@ export default function SummerlinPage() {
                   What makes Summerlin different from other Las Vegas communities?
                 </h3>
                 <p className="text-slate-600">
-                  Summerlin offers 150+ parks, 150+ miles of trails, top-rated schools, and stunning
+                  Summerlin offers 150+ parks, 150+ miles of trails, nine golf courses, and stunning
                   Red Rock Canyon views. The Howard Hughes Corporation has developed Summerlin with
                   careful planning since 1990, creating distinct villages each with unique character.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why should I use a Berkshire Hathaway HomeServices agent in Summerlin?
+                  Why should I work with Dr. Jan Duffy in Summerlin?
                 </h3>
                 <p className="text-slate-600">
-                  Berkshire Hathaway HomeServices agents like Dr. Jan Duffy bring deep Summerlin expertise
-                  combined with the global resources and trusted reputation of the BHHS brand. This
-                  combination helps buyers compete in Summerlin's competitive market and helps sellers
+                  Dr. Jan Duffy brings 35 years of Las Vegas real estate experience and deep Summerlin
+                  West expertise, with $127M+ in closed transactions. That experience helps buyers compete in Summerlin's competitive market and helps sellers
                   maximize their home's value.
                 </p>
               </div>
@@ -367,7 +362,7 @@ export default function SummerlinPage() {
               Ready to Find Your Summerlin Home?
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Summerlin specialist,
+              Contact Dr. Jan Duffy, your Summerlin specialist,
               for a personalized home search or free market analysis.
             </p>
             <a
@@ -378,7 +373,7 @@ export default function SummerlinPage() {
               Call (702) 500-0337
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

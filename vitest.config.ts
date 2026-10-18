@@ -43,7 +43,7 @@ export default defineConfig({
           name: 'ui',
           environment: 'jsdom',
           include: ['**/*.{test,spec}.{ts,tsx}'],
-          exclude: ['app/api/**/*.test.ts'],
+          exclude: ['app/api/**/*.test.ts', 'node_modules/**', '.next/**'],
           setupFiles: ['./tests/setup.ts'],
         },
       },

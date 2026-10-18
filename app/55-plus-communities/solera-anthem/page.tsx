@@ -21,19 +21,19 @@ import { selfCanonicalMetadata } from "@/lib/page-metadata";
 export const metadata: Metadata = {
   title: "Solera at Anthem Homes for Sale | Intimate Guard-Gated 55+ Henderson | Dr. Jan Duffy",
   description:
-    "Solera at Anthem - intimate guard-gated 55+ community in Henderson. Homes from $380K-$650K. Lower HOA fees, close-knit atmosphere. Dr. Jan Duffy, BHHS. Call (702) 500-0337.",
+    "Solera at Anthem - intimate guard-gated 55+ community in Henderson. Homes from $380K-$650K. Lower HOA fees, close-knit atmosphere. Dr. Jan Duffy, Arcadia Homes Las Vegas. Call (702) 500-0337.",
   keywords: [
     "Solera at Anthem homes for sale",
     "Solera Anthem Henderson",
     "guard-gated 55+ community Henderson",
     "Henderson 55+ communities",
     "intimate 55+ community Las Vegas",
-    "Berkshire Hathaway Solera Anthem",
+    "Dr. Jan Duffy Solera Anthem",
   ],
   openGraph: {
     title: "Solera at Anthem - Intimate Guard-Gated 55+ in Henderson",
     description:
-      "Close-knit community with guard-gated security. Lower HOA fees, Henderson safety. From $380K. Dr. Jan Duffy, BHHS.",
+      "Close-knit 55+ community with a 24/7 manned gate. Lower HOA fees. From $380K. Dr. Jan Duffy, Arcadia Homes Las Vegas.",
     type: "website",
   },
   ...selfCanonicalMetadata,
@@ -93,8 +93,8 @@ export default function SoleraAnthemPage() {
               Solera at Anthem
             </h1>
             <p className="text-xl text-slate-600">
-              The close-knit alternative to mega-communities. Guard-gated security
-              in Henderson's safest neighborhood.
+              The close-knit alternative to mega-communities. A 24/7 manned gate
+              inside Henderson's Anthem master plan.
             </p>
           </div>
 
@@ -137,7 +137,7 @@ export default function SoleraAnthemPage() {
               </h2>
               <p>
                 <strong>Solera at Anthem</strong> offers something increasingly
-                rare in Las Vegas 55+ living—a genuinely intimate community where
+                rare in Las Vegas 55+ living—an intimate community where
                 neighbors become friends. With approximately 1,200 homes, Solera
                 is significantly smaller than Sun City's 7,000+ home developments,
                 creating a close-knit atmosphere that larger communities simply
@@ -148,13 +148,11 @@ export default function SoleraAnthemPage() {
                 security, a beautiful clubhouse, resort-style pool, fitness
                 center, and active social programming. Unlike some 55+
                 communities where one spouse can be younger, Solera requires{" "}
-                <strong>all residents to be 55+</strong>, ensuring a consistent
-                community demographic.
+                <strong>all residents to be 55+</strong>.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
-                helps buyers who value community over amenity overload. Dr. Jan
-                Duffy understands why some buyers prefer Solera's intimate scale
+                <strong>Dr. Jan Duffy</strong> helps buyers who value community
+                over amenity overload. She understands why some buyers prefer Solera's intimate scale
                 and all-55+ requirement to larger developments.
               </p>
             </div>
@@ -173,8 +171,7 @@ export default function SoleraAnthemPage() {
                     Most 55+ communities allow younger spouses under the 80/20
                     HOPA rule. Solera is different—
                     <strong>every resident must be 55 or older</strong>. This
-                    creates a truly age-matched community where everyone shares
-                    similar life stages and interests.
+                    makes Solera a fully 55+ active adult community.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="bg-white rounded-lg p-4">
@@ -253,7 +250,7 @@ export default function SoleraAnthemPage() {
           {/* Henderson Location */}
           <section className="mb-16 bg-slate-50 rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
-              Henderson: America's Safest Large City
+              Henderson Location
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 border border-slate-200">
@@ -261,12 +258,11 @@ export default function SoleraAnthemPage() {
                   <Shield className="h-6 w-6 text-teal-600 mr-3 flex-shrink-0" />
                   <div>
                     <h3 className="font-bold text-slate-900 mb-2">
-                      Top Safety Rankings
+                      24/7 Manned Gate
                     </h3>
                     <p className="text-slate-600 text-sm">
-                      Henderson consistently ranks as one of the safest large
-                      cities in America. Double security: Henderson's safety plus
-                      Solera's guard gate.
+                      Solera's entrance is staffed around the clock, with visitor
+                      verification and community patrol.
                     </p>
                   </div>
                 </div>
@@ -340,7 +336,7 @@ export default function SoleraAnthemPage() {
                     All residents 55+—no exceptions
                   </strong>
                   <p className="text-slate-600 text-sm">
-                    Consistent community demographic with shared life experiences
+                    Every resident meets the 55+ requirement
                   </p>
                 </div>
               </div>
@@ -348,11 +344,11 @@ export default function SoleraAnthemPage() {
                 <CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <strong className="text-slate-900">
-                    Guard-gated in America's safest city
+                    Guard-gated with a 24/7 manned entrance
                   </strong>
                   <p className="text-slate-600 text-sm">
-                    Double layer of security: Henderson's safety record plus 24/7
-                    guard gate
+                    Visitor verification and community patrol, inside the Anthem
+                    master plan
                   </p>
                 </div>
               </div>
@@ -376,15 +372,13 @@ export default function SoleraAnthemPage() {
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Solera at Anthem is perfect for buyers who find Sun City
-                overwhelming. It's intimate, genuinely guard-gated, and everyone
-                is actually 55+. The community feels like a neighborhood, not a
-                small city. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I often
-                recommend Solera to buyers who prioritize community connection
+                overwhelming. It's intimate, guard-gated, and everyone is 55+.
+                The community feels like a neighborhood, not a small city. After
+                35 years in Las Vegas real estate, I often recommend Solera to buyers who prioritize community connection
                 over endless amenities."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>

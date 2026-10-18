@@ -24,13 +24,13 @@ import { selfCanonicalMetadata } from "@/lib/page-metadata";
 export const metadata: Metadata = {
   title: "About Dr. Jan Duffy | Arcadia & Summerlin West Real Estate",
   description:
-    "Dr. Jan Duffy is a REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, with 35 years in Las Vegas real estate. Meet your trusted agent for Arcadia and Summerlin West. Call (702) 500-0337.",
+    "Dr. Jan Duffy is a REALTOR® with 35 years in Las Vegas real estate and $127M+ in closed transactions. Meet your trusted agent for Arcadia and Summerlin West. Call (702) 500-0337.",
   authors: [{ name: "Dr. Jan Duffy", url: "https://www.arcadiahomeslasvegas.com/about" }],
   keywords: [
     "Dr. Jan Duffy",
-    "Berkshire Hathaway HomeServices agent",
+    "Arcadia Homes Las Vegas",
     "Las Vegas realtor",
-    "BHHS Nevada Properties",
+    "Summerlin West real estate agent",
     "Henderson real estate agent",
     "Summerlin realtor",
   ],
@@ -82,7 +82,7 @@ const specializations = [
   },
   {
     title: "Luxury Properties ($1M+)",
-    description: "The Ridges, MacDonald Highlands, Southern Highlands, and exclusive communities",
+    description: "The Ridges, MacDonald Highlands, Southern Highlands, and other guard-gated communities",
   },
   {
     title: "New Construction",
@@ -98,7 +98,7 @@ const specializations = [
   },
   {
     title: "California Relocation",
-    description: "Helping CA families transition to Nevada's tax advantages and lower costs",
+    description: "Helping California buyers move to Nevada's tax advantages and lower costs",
   },
 ];
 
@@ -130,18 +130,17 @@ export default function AboutPage() {
           {/* Hero Section */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Meet Your Berkshire Hathaway HomeServices Agent
+              Meet Dr. Jan Duffy
             </h1>
             <p className="text-xl text-slate-700 font-medium mb-4">
-              Dr. Jan Duffy is a REALTOR® with Berkshire Hathaway HomeServices Nevada Properties, with 35 years in Las Vegas real estate.
+              Dr. Jan Duffy is a REALTOR® with 35 years in Las Vegas real estate.
             </p>
             <p className="text-xl text-slate-600">
-              Backed by the most
-              trusted name in real estate. Whether you're buying, selling, investing, or 
-              relocating, you'll receive expert guidance with integrity and professionalism.
+              Summerlin West and 55+ specialist. Whether you're buying, selling, investing, or
+              relocating, you'll get expert guidance with integrity and professionalism.
             </p>
           </div>
 
@@ -156,25 +155,20 @@ export default function AboutPage() {
 
                 <div className="prose prose-lg text-slate-700 mb-8 space-y-4">
                   <p>
-                    When you choose to work with <strong>Berkshire Hathaway HomeServices</strong>,
-                    you're choosing a legacy of trust, integrity, and excellence. I'm proud to
-                    represent this iconic brand in the Las Vegas real estate market, bringing 
-                    world-class resources and local expertise to every client I serve.
+                    I've spent 35 years in Las Vegas real estate. I bring that local knowledge
+                    to every client I serve, from first showing to closing day.
                   </p>
                   <p>
                     Over 35 years, I've closed $127 million in transactions and
-                    helped hundreds of families find their perfect home in Las Vegas, Henderson,
+                    helped hundreds of clients find their home in Las Vegas, Henderson,
                     Summerlin, and throughout Southern Nevada. My expertise spans luxury properties,
                     new construction, investment real estate, 55+ active adult communities, and 
-                    relocations—particularly for California families seeking Nevada's tax advantages.
+                    relocations—particularly for California buyers seeking Nevada's tax advantages.
                   </p>
                   <p>
-                    What sets <strong>Berkshire Hathaway HomeServices Nevada Properties</strong>{" "}
-                    apart? We're backed by Warren Buffett's Berkshire Hathaway Inc.—a name synonymous
-                    with financial strength and ethical standards. When you're making the biggest
-                    financial decision of your life, that trust matters. You deserve an agent who 
-                    puts your interests first, provides honest advice, and has the resources to 
-                    deliver exceptional results.
+                    When you're making the biggest financial decision of your life, trust matters.
+                    You deserve an agent who puts your interests first, gives honest advice, and
+                    has the experience to deliver results.
                   </p>
                   <p>
                     I believe in treating every client like family. Whether you're a first-time 
@@ -220,7 +214,7 @@ export default function AboutPage() {
                 {/* Authority block */}
                 <div className="bg-blue-50 border border-blue-100 rounded-lg p-6">
                   <p className="font-semibold text-slate-900">Dr. Jan Duffy | NV License #S.0197614.LLC</p>
-                  <p className="text-slate-700 mt-1">Berkshire Hathaway HomeServices Nevada Properties</p>
+                  <p className="text-slate-700 mt-1">Arcadia Homes Las Vegas</p>
                   <p className="text-slate-600 text-sm mt-1">35 years in Las Vegas real estate · Summerlin West luxury specialist</p>
                   <p className="text-sm mt-2">
                     <a href="tel:+17025000337" className="text-blue-600 hover:underline font-medium">(702) 500-0337</a>
@@ -236,7 +230,7 @@ export default function AboutPage() {
                   the transaction. I treat every client like family and won't stop until we achieve 
                   your real estate goals."
                   <cite className="block mt-2 text-slate-900 font-semibold not-italic">
-                    — Dr. Jan Duffy, BHHS Nevada Properties
+                    — Dr. Jan Duffy, Arcadia Homes Las Vegas
                   </cite>
                 </blockquote>
               </div>
@@ -248,7 +242,7 @@ export default function AboutPage() {
                   <div className="text-center">
                     <div className="text-6xl mb-4">👩‍💼</div>
                     <p className="text-slate-600 font-semibold">Dr. Jan Duffy</p>
-                    <p className="text-sm text-slate-500">BHHS Nevada Properties</p>
+                    <p className="text-sm text-slate-500">Arcadia Homes Las Vegas</p>
                   </div>
                 </div>
 
@@ -305,8 +299,8 @@ export default function AboutPage() {
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Dr. Jan Duffy brings specialized expertise across multiple real estate categories. 
-              Whether you're a first-time buyer, luxury home seeker, investor, or retiree looking 
-              for the perfect 55+ community, you'll receive tailored guidance for your specific needs.
+              Whether you're a first-time buyer, luxury home seeker, investor, or looking
+              for a 55+ active adult community, you'll receive tailored guidance for your specific needs.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {specializations.map((spec) => (
@@ -321,62 +315,58 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Why BHHS Section */}
+          {/* Why Work with Dr. Jan Section */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-              Why Berkshire Hathaway HomeServices?
+              Why Work with Dr. Jan?
             </h2>
             <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              Berkshire Hathaway HomeServices is the only real estate brand backed by Warren 
-              Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, 
-              ethical standards, and a commitment to client service that defines every transaction.
+              Local experience, a proven track record, and honest advice on every transaction.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Award className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">Trusted Brand</h3>
+                <h3 className="font-bold text-xl mb-2">35 Years Local</h3>
                 <p className="text-slate-300 text-sm">
-                  The only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc.—a 
-                  name synonymous with trust and integrity worldwide.
+                  35 years in Las Vegas real estate and $127M+ in closed transactions.
                 </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Users className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">Global Network</h3>
+                <h3 className="font-bold text-xl mb-2">500+ Transactions</h3>
                 <p className="text-slate-300 text-sm">
-                  50,000+ agents worldwide for seamless referrals and relocations. Whether you're 
-                  moving from California or anywhere else, our network has you covered.
+                  Summerlin West and 55+ specialist. Moving from California or anywhere else?
+                  Dr. Jan guides you from first call to closing.
                 </p>
               </div>
               <div className="text-center">
                 <div className="bg-blue-600 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Shield className="h-8 w-8" />
                 </div>
-                <h3 className="font-bold text-xl mb-2">Ethical Standards</h3>
+                <h3 className="font-bold text-xl mb-2">Your Interests First</h3>
                 <p className="text-slate-300 text-sm">
-                  Rigorous ethical guidelines ensure your interests always come first. No pressure, 
-                  no games—just honest advice and expert representation.
+                  No pressure, no games—just honest advice and expert representation.
                 </p>
               </div>
             </div>
             <div className="text-center">
-              <Link
-                href="/why-berkshire-hathaway"
+              <a
+                href="tel:+17025000337"
                 className="inline-block bg-white text-slate-900 px-8 py-3 rounded-md font-semibold hover:bg-slate-100 transition-colors"
               >
-                Learn More About BHHS
-              </Link>
+                Call (702) 500-0337
+              </a>
             </div>
           </section>
 
           {/* Areas Served */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 text-center">
-              Areas Served by BHHS Nevada Properties
+              Areas Served by Dr. Jan Duffy
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Dr. Jan Duffy serves the entire Las Vegas Valley with specialized knowledge of each 
@@ -469,7 +459,7 @@ export default function AboutPage() {
               </Link>
             </div>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

@@ -8,11 +8,11 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Mountains Edge | Southwest Las Vegas",
+  title: "Mountains Edge Homes for Sale | Southwest Las Vegas | Arcadia Homes Las Vegas",
   description:
-    "Find Mountains Edge homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this southwest Las Vegas community. Median price $475K. Call (702) 500-0337.",
+    "Find Mountains Edge homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. Dr. Jan specializes in this southwest Las Vegas community. Median price $475K. Call (702) 500-0337.",
   keywords: [
-    "Berkshire Hathaway HomeServices Mountains Edge",
+    "Dr. Jan Duffy Mountains Edge",
     "Mountains Edge homes for sale",
     "Mountains Edge Las Vegas",
     "southwest Las Vegas homes",
@@ -46,7 +46,7 @@ const faqSchema = {
       name: "How is the commute from Mountains Edge?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Mountains Edge provides easy access to I-215 and I-15, making commutes to the Strip (15-20 minutes), airport (20 minutes), and Henderson (25 minutes) straightforward. The southwest location offers multiple route options.",
+        text: "Mountains Edge provides easy access to I-215 and I-15, making commutes to the Strip (15-20 minutes), airport (20 minutes), and Henderson (25 minutes) easy. The southwest location offers multiple route options.",
       },
     },
     {
@@ -54,7 +54,7 @@ const faqSchema = {
       name: "Is new construction available in Mountains Edge?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, several builders offer new construction in Mountains Edge's expanding areas. BHHS provides free buyer representation on new construction purchases, helping buyers navigate builder contracts and negotiate upgrades.",
+        text: "Yes, several builders offer new construction in Mountains Edge's expanding areas. Dr. Jan provides free buyer representation on new construction purchases, helping buyers navigate builder contracts and negotiate upgrades.",
       },
     },
   ],
@@ -84,14 +84,14 @@ export default function MountainsEdgePage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Mountains Edge
+              Mountains Edge Homes for Sale
             </h1>
             <p className="text-xl text-slate-600">
               Affordable luxury in southwest Las Vegas. Find your Mountains Edge home with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
+              <strong>Dr. Jan Duffy</strong>.
             </p>
           </div>
 
@@ -131,7 +131,7 @@ export default function MountainsEdgePage() {
                 master-planned community amenities at prices significantly below Summerlin or
                 Henderson. This 3,500-acre community in southwest Las Vegas offers mountain views,
                 exceptional parks, and modern homes—without the premium prices of the valley's
-                more established luxury markets. <strong>Berkshire Hathaway HomeServices</strong>
+                older luxury markets. <strong>Dr. Jan Duffy</strong>
                 helps value-conscious buyers discover Mountains Edge's potential.
               </p>
               <p>
@@ -139,14 +139,13 @@ export default function MountainsEdgePage() {
                 stands as the Las Vegas Valley's largest park. From the park's summit, residents
                 enjoy panoramic views of the Las Vegas Strip, surrounding mountains, and the desert
                 floor stretching to the horizon. It's a daily reminder that Mountains Edge offers
-                something special: the combination of suburban convenience with genuine connection
+                something special: the combination of suburban convenience with a real connection
                 to Southern Nevada's natural beauty.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> serves Mountains
-                Edge buyers with the same commitment to excellence we bring to the valley's luxury
-                markets. Dr. Jan Duffy understands that value doesn't mean compromise—it means
-                finding the right home at the right price. For families priced out of Summerlin
+                <strong>Dr. Jan Duffy</strong> serves Mountains Edge buyers with the same
+                commitment she brings to the valley's luxury markets. She understands that value doesn't mean compromise—it means
+                finding the right home at the right price. For buyers priced out of Summerlin
                 or Henderson, Mountains Edge delivers comparable lifestyle at accessible prices.
               </p>
 
@@ -293,12 +292,12 @@ export default function MountainsEdgePage() {
                 $750,000 for larger properties with premium views and upgraded features.
               </p>
               <p>
-                Working with <strong>Berkshire Hathaway HomeServices</strong> in Mountains Edge means
-                getting honest guidance about where the community offers the best value. Dr. Jan Duffy
+                Working with <strong>Dr. Jan Duffy</strong> in Mountains Edge means
+                getting honest guidance about where the community offers the best value. She
                 helps buyers identify neighborhoods with the strongest appreciation potential, homes
-                with the best views, and properties that represent genuine value rather than
-                superficial appeal. That expertise—combined with the BHHS commitment to client
-                service—ensures Mountains Edge buyers make informed decisions.
+                with the best views, and properties that represent real value rather than
+                superficial appeal. That expertise—backed by 35 years in Las Vegas real
+                estate—helps Mountains Edge buyers make informed decisions.
               </p>
             </div>
           </section>
@@ -309,11 +308,11 @@ export default function MountainsEdgePage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Mountains Edge is where I send buyers who want master-planned living without the
                 Summerlin price tag. The park is incredible, the homes are modern, and the value
-                is undeniable. As a Berkshire Hathaway HomeServices agent, I help clients see
+                is undeniable. I help clients see
                 that finding the right home isn't about spending the most—it's about spending wisely."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -352,7 +351,7 @@ export default function MountainsEdgePage() {
                 <p className="text-slate-600">
                   Mountains Edge provides easy access to I-215 and I-15, making commutes to the
                   Strip (15-20 minutes), airport (20 minutes), and Henderson (25 minutes)
-                  straightforward. The southwest location offers multiple route options.
+                  easy. The southwest location offers multiple route options.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -361,7 +360,7 @@ export default function MountainsEdgePage() {
                 </h3>
                 <p className="text-slate-600">
                   Yes, several builders offer new construction in Mountains Edge's expanding areas.
-                  BHHS provides free buyer representation on new construction purchases, helping
+                  Dr. Jan provides free buyer representation on new construction purchases, helping
                   buyers navigate builder contracts and negotiate upgrades.
                 </p>
               </div>
@@ -374,7 +373,7 @@ export default function MountainsEdgePage() {
               Discover Mountains Edge Value
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Mountains Edge specialist,
+              Contact Dr. Jan Duffy, your Mountains Edge specialist,
               for expert guidance in finding exceptional value in southwest Las Vegas.
             </p>
             <a
@@ -385,7 +384,7 @@ export default function MountainsEdgePage() {
               Call (702) 500-0337
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

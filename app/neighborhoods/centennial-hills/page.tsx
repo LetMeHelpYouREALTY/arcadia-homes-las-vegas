@@ -8,15 +8,15 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices Centennial Hills | Las Vegas Homes",
+  title: "Centennial Hills Homes for Sale | Arcadia Homes Las Vegas",
   description:
-    "Find Centennial Hills homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy specializes in this established northwest community. Median price $495K. Call (702) 500-0337.",
+    "Find Centennial Hills homes with Dr. Jan Duffy, a 35-year Las Vegas real estate expert. Mountain views, 120-acre Centennial Hills Park, and easy US-95 access. Median price $495K. Call (702) 500-0337.",
   keywords: [
-    "Berkshire Hathaway HomeServices Centennial Hills",
+    "Dr. Jan Duffy Centennial Hills",
     "Centennial Hills homes for sale",
     "Centennial Hills Las Vegas",
     "northwest Las Vegas real estate",
-    "family homes Las Vegas",
+    "Centennial Hills real estate",
   ],
   ...selfCanonicalMetadata,
 };
@@ -35,10 +35,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Is Centennial Hills a good family neighborhood?",
+      name: "What parks and amenities does Centennial Hills offer?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, Centennial Hills is one of Las Vegas's best family neighborhoods with highly-rated schools, safe streets, multiple parks including Centennial Hills Park, and convenient shopping at Centennial Center.",
+        text: "Centennial Hills has multiple parks, including the 120-acre Centennial Hills Park with sports fields, a skate park, and a dog park. Centennial Center offers shopping and dining, and US-95 provides quick access across the valley.",
       },
     },
     {
@@ -46,7 +46,7 @@ const faqSchema = {
       name: "How far is Centennial Hills from the Las Vegas Strip?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Centennial Hills is approximately 20-25 minutes from the Strip via US-95. The community offers easy freeway access while maintaining a suburban, family-oriented atmosphere away from tourist areas.",
+        text: "Centennial Hills is approximately 20-25 minutes from the Strip via US-95. The community offers easy freeway access while maintaining a suburban atmosphere away from tourist areas.",
       },
     },
     {
@@ -84,14 +84,14 @@ export default function CentennialHillsPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices Centennial Hills
+              Centennial Hills Homes for Sale
             </h1>
             <p className="text-xl text-slate-600">
-              Family-friendly northwest Las Vegas living. Find your Centennial Hills home with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
+              Mountain views, mature parks, and quick US-95 access in northwest Las Vegas.
+              Find your Centennial Hills home with Dr. Jan Duffy.
             </p>
           </div>
 
@@ -124,15 +124,14 @@ export default function CentennialHillsPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="prose prose-lg max-w-none text-slate-700">
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                Centennial Hills: Northwest Las Vegas's Established Family Community
+                Centennial Hills: Mountain Views and Mature Neighborhoods in Northwest Las Vegas
               </h2>
               <p>
-                <strong>Centennial Hills</strong> represents the best of established northwest Las Vegas
-                living. While newer communities like Skye Canyon attract attention, Centennial Hills
-                offers something they can't: mature neighborhoods with proven schools, established
-                landscaping, and a genuine sense of community built over nearly two decades.
-                <strong> Berkshire Hathaway HomeServices</strong> helps families discover why
-                Centennial Hills remains one of the valley's most desirable addresses.
+                <strong>Centennial Hills</strong> represents the best of northwest Las Vegas living.
+                While newer communities like Skye Canyon attract attention, Centennial Hills offers
+                something they can't: neighborhoods built out over nearly two decades, with mature
+                landscaping, finished parks, and shopping already in place. Dr. Jan Duffy helps
+                buyers see why Centennial Hills remains one of the valley's most desirable addresses.
               </p>
               <p>
                 The community's appeal starts with location. Positioned at the base of the mountains
@@ -142,12 +141,11 @@ export default function CentennialHillsPage() {
                 Hills' urban conveniences would suggest.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> has represented
-                Centennial Hills families since the community's earliest phases. Dr. Jan Duffy knows
-                which streets offer the best mountain views, which school zones are most sought-after,
-                and which HOAs maintain their communities to the highest standards. This deep local
-                knowledge, combined with the BHHS commitment to client service, ensures Centennial
-                Hills buyers and sellers receive exceptional representation.
+                <strong>Dr. Jan Duffy</strong> knows which Centennial Hills streets offer the best
+                mountain views, which school zones serve each neighborhood, and which HOAs maintain
+                their communities to the highest standards. That local knowledge, built over 35 years
+                in Las Vegas real estate, means Centennial Hills buyers and sellers get sharp
+                representation.
               </p>
 
               {/* Community Highlights */}
@@ -156,13 +154,13 @@ export default function CentennialHillsPage() {
                 <div className="bg-slate-50 p-6 rounded-xl">
                   <div className="flex items-center mb-4">
                     <Users className="h-8 w-8 text-blue-600 mr-3" />
-                    <h4 className="font-bold text-slate-900 text-lg">Established Family Community</h4>
+                    <h4 className="font-bold text-slate-900 text-lg">Parks & Community Events</h4>
                   </div>
                   <p className="text-slate-600">
-                    Centennial Hills has matured into a true community where neighbors know each other
-                    and families put down roots. The area features multiple established parks including
-                    the popular Centennial Hills Park, community events throughout the year, and the
-                    kind of neighborhood stability that creates lifelong friendships and strong property values.
+                    Centennial Hills has matured into a built-out community with multiple parks,
+                    including the 120-acre Centennial Hills Park with sports fields, a skate park, and
+                    a dog park. Community events run throughout the year, and the area's mature
+                    neighborhoods support strong property values.
                   </p>
                 </div>
                 <div className="bg-slate-50 p-6 rounded-xl">
@@ -183,7 +181,7 @@ export default function CentennialHillsPage() {
               <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Centennial Hills School Districts</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
-                  Centennial Hills is served by established, well-regarded schools with proven track records:
+                  Schools serving the Centennial Hills area include:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div>
@@ -295,11 +293,11 @@ export default function CentennialHillsPage() {
                 smaller homes to over $900,000 for larger properties with premium lots and views.
               </p>
               <p>
-                Working with <strong>Berkshire Hathaway HomeServices</strong> in Centennial Hills means
-                partnering with agents who understand the community's evolution and can identify
-                properties that represent genuine value. Dr. Jan Duffy helps buyers look beyond
+                Working with <strong>Dr. Jan Duffy</strong> in Centennial Hills means partnering with
+                an agent who understands the community's evolution and can identify properties that
+                represent real value. She helps buyers look beyond
                 surface features to evaluate factors that matter long-term: construction quality,
-                lot positioning, HOA health, and school quality. That expertise translates into
+                lot positioning, HOA health, and school zone assignments. That expertise translates into
                 better purchase decisions and stronger long-term investments.
               </p>
             </div>
@@ -309,14 +307,13 @@ export default function CentennialHillsPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Centennial Hills offers something newer communities are still building: a genuine
-                sense of community. The schools have track records, the neighbors have history, and
-                the landscaping is mature. As a Berkshire Hathaway HomeServices agent, I help families
-                see beyond the shiny new construction to communities that have proven their value
+                "Centennial Hills offers something newer communities are still building: a finished
+                neighborhood. The parks are built, the shopping is in place, and the landscaping is
+                mature. With 35 years in Las Vegas real estate, I help buyers see beyond the shiny new construction to communities that have proven their value
                 over time."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -339,12 +336,12 @@ export default function CentennialHillsPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Is Centennial Hills a good family neighborhood?
+                  What parks and amenities does Centennial Hills offer?
                 </h3>
                 <p className="text-slate-600">
-                  Yes, Centennial Hills is one of Las Vegas's best family neighborhoods with
-                  highly-rated schools, safe streets, multiple parks including Centennial Hills
-                  Park, and convenient shopping at Centennial Center.
+                  Centennial Hills has multiple parks, including the 120-acre Centennial Hills Park
+                  with sports fields, a skate park, and a dog park. Centennial Center offers
+                  shopping and dining, and US-95 provides quick access across the valley.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -353,8 +350,8 @@ export default function CentennialHillsPage() {
                 </h3>
                 <p className="text-slate-600">
                   Centennial Hills is approximately 20-25 minutes from the Strip via US-95.
-                  The community offers easy freeway access while maintaining a suburban,
-                  family-oriented atmosphere away from tourist areas.
+                  The community offers easy freeway access while maintaining a suburban
+                  atmosphere away from tourist areas.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -376,8 +373,8 @@ export default function CentennialHillsPage() {
               Find Your Centennial Hills Home
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices Centennial Hills expert,
-              for guidance in this established family community.
+              Contact Dr. Jan Duffy, your Centennial Hills expert, for guidance on mountain-view
+              homes, parks, and neighborhoods across northwest Las Vegas.
             </p>
             <a
               href="tel:+17025000337"
@@ -387,7 +384,7 @@ export default function CentennialHillsPage() {
               Call (702) 500-0337
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

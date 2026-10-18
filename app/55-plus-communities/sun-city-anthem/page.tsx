@@ -6,7 +6,6 @@ import {
   Phone,
   Mountain,
   Trophy,
-  Shield,
   Dumbbell,
   Users,
 } from "lucide-react";
@@ -21,7 +20,7 @@ import {
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Sun City Anthem Homes for Sale | Berkshire Hathaway HomeServices",
+  title: "Sun City Anthem Homes for Sale | Arcadia Homes Las Vegas",
   description:
     "Henderson's premier 55+ community. Sun City Anthem homes from $350K-$1.2M. 2 championship golf courses, stunning mountain views. Dr. Jan Duffy. Call (702) 500-0337.",
   keywords: [
@@ -29,7 +28,7 @@ export const metadata: Metadata = {
     "Sun City Anthem Henderson",
     "55 plus communities Henderson",
     "active adult Henderson",
-    "Berkshire Hathaway Sun City Anthem",
+    "Dr. Jan Duffy Sun City Anthem",
   ],
   ...selfCanonicalMetadata,
 };
@@ -119,7 +118,7 @@ export default function SunCityAnthemPage() {
               Sun City Anthem
             </h1>
             <p className="text-xl text-slate-600">
-              7,100+ homes. Mountain views. Henderson safety. Championship golf.
+              7,100+ homes. Mountain views. 64,000 sq ft clubhouse. Championship golf.
             </p>
           </div>
 
@@ -156,9 +155,9 @@ export default function SunCityAnthemPage() {
               </h2>
               <p>
                 <strong>Sun City Anthem</strong> brings the legendary Sun City lifestyle to Henderson,
-                Nevada's safest and most desirable city. Built by Del Webb from 1998-2008, this
-                7,100+ home community offers stunning mountain views, championship golf, and
-                resort-caliber amenities—all within Henderson's renowned safety and quality of life.
+                Nevada. Built by Del Webb from 1998-2008, this 7,100+ home 55+ active adult
+                community offers mountain views, two championship golf courses, and
+                resort-caliber amenities.
               </p>
               <p>
                 The community's centerpiece is the Anthem Center, a 64,000 sq ft clubhouse featuring
@@ -167,39 +166,37 @@ export default function SunCityAnthemPage() {
                 the adjacent Revere Golf Club—provide world-class golf experiences.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices</strong> agents know Sun City Anthem intimately.
-                Dr. Jan Duffy helps buyers understand the community's various phases, elevation differences,
+                <strong>Dr. Jan Duffy</strong> knows Sun City Anthem inside and out. She helps buyers understand the community's various phases, elevation differences,
                 and which neighborhoods offer the best mountain or Strip views.
               </p>
             </div>
           </section>
 
-          {/* Why Henderson */}
+          {/* Community Highlights */}
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="bg-green-50 border-l-4 border-green-600 rounded-r-xl p-8">
               <div className="flex items-start">
-                <Shield className="h-8 w-8 text-green-600 mr-4 flex-shrink-0 mt-1" />
+                <Mountain className="h-8 w-8 text-green-600 mr-4 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold text-slate-900 mb-4">
-                    Why Henderson Matters
+                    Sun City Anthem by the Numbers
                   </h3>
                   <p className="text-slate-700 mb-4">
-                    Henderson consistently ranks as one of America's safest cities. For 55+ buyers,
-                    this translates to peace of mind, stable property values, and a community that
-                    attracts similar residents who value safety and quality of life.
+                    The draw here is the amenity package. One HOA fee covers a large clubhouse,
+                    pools, courts, trails, and a full calendar of clubs.
                   </p>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div className="text-center bg-white rounded-lg p-4">
-                      <div className="text-2xl font-bold text-green-600">#2</div>
-                      <div className="text-sm text-slate-600">Safest Large City</div>
+                      <div className="text-2xl font-bold text-green-600">64,000</div>
+                      <div className="text-sm text-slate-600">Sq Ft Anthem Center</div>
                     </div>
                     <div className="text-center bg-white rounded-lg p-4">
-                      <div className="text-2xl font-bold text-green-600">A+</div>
-                      <div className="text-sm text-slate-600">Livability Score</div>
+                      <div className="text-2xl font-bold text-green-600">2</div>
+                      <div className="text-sm text-slate-600">Championship Golf Courses</div>
                     </div>
                     <div className="text-center bg-white rounded-lg p-4">
-                      <div className="text-2xl font-bold text-green-600">Low</div>
-                      <div className="text-sm text-slate-600">Property Crime</div>
+                      <div className="text-2xl font-bold text-green-600">80+</div>
+                      <div className="text-sm text-slate-600">Clubs & Groups</div>
                     </div>
                   </div>
                 </div>
@@ -261,7 +258,7 @@ export default function SunCityAnthemPage() {
               <div className="bg-white rounded-xl p-6 border border-slate-200">
                 <h3 className="font-bold text-slate-900 mb-2">Liberty</h3>
                 <p className="text-slate-600 text-sm mb-3">
-                  Original phase with established landscaping. Close to Anthem Center. Most
+                  Original phase with mature landscaping. Close to Anthem Center. Most
                   affordable options starting around $350K.
                 </p>
               </div>
@@ -292,14 +289,14 @@ export default function SunCityAnthemPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Sun City Anthem combines everything Henderson is known for—safety, quality, and
-                stunning scenery—with the Del Webb lifestyle. The views from the upper sections
+                "Sun City Anthem pairs Henderson's mountain scenery and two championship golf
+                courses with the Del Webb lifestyle. The views from the upper sections
                 are spectacular, and the Anthem Center rivals any resort clubhouse I've seen.
-                As a <strong>Berkshire Hathaway HomeServices</strong> agent, I help buyers find
+                With 35 years in Las Vegas real estate, I help buyers find
                 the right balance of views, price, and proximity to amenities."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>

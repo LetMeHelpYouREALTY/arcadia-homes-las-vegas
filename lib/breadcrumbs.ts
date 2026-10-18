@@ -18,7 +18,6 @@ const SEGMENT_LABELS: Record<string, string> = {
   "market-report": "Market Report",
   "market-update": "Market Update",
   "market-insights": "Market Insights",
-  "why-berkshire-hathaway": "Why Berkshire Hathaway",
   "google-business": "Google Business Profile",
   "security-policy": "Security Policy",
 };

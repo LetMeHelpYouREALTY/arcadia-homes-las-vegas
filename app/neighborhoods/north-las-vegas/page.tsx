@@ -8,11 +8,11 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Berkshire Hathaway HomeServices North Las Vegas | Affordable Homes",
+  title: "North Las Vegas Homes for Sale | Affordable Homes | Arcadia Homes Las Vegas",
   description:
-    "Find affordable North Las Vegas homes with Berkshire Hathaway HomeServices Nevada Properties. Dr. Jan Duffy helps first-time buyers and investors. Median price $385K. Call (702) 500-0337.",
+    "Find affordable North Las Vegas homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. She helps first-time buyers and investors. Median price $385K. Call (702) 500-0337.",
   keywords: [
-    "Berkshire Hathaway HomeServices North Las Vegas",
+    "Dr. Jan Duffy North Las Vegas",
     "North Las Vegas homes for sale",
     "affordable homes Las Vegas",
     "first time home buyer Las Vegas",
@@ -51,10 +51,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Why choose Berkshire Hathaway HomeServices for North Las Vegas?",
+      name: "Why work with Dr. Jan Duffy in North Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "BHHS provides expert guidance for first-time buyers navigating the purchase process, plus free representation on new construction purchases. Dr. Jan Duffy helps clients find value while avoiding common pitfalls in emerging neighborhoods.",
+        text: "Dr. Jan Duffy provides expert guidance for first-time buyers navigating the purchase process, plus free representation on new construction purchases. She helps clients find value while avoiding common pitfalls in emerging neighborhoods.",
       },
     },
   ],
@@ -84,14 +84,14 @@ export default function NorthLasVegasPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Berkshire Hathaway HomeServices North Las Vegas
+              North Las Vegas Homes for Sale
             </h1>
             <p className="text-xl text-slate-600">
               Affordable homeownership and investment opportunities. Find your North Las Vegas
-              home with <strong>Berkshire Hathaway HomeServices</strong> and Dr. Jan Duffy.
+              home with <strong>Dr. Jan Duffy</strong>.
             </p>
           </div>
 
@@ -130,9 +130,9 @@ export default function NorthLasVegasPage() {
                 <strong>North Las Vegas</strong> has undergone a remarkable transformation over the past
                 decade. What was once considered a distant suburb is now a thriving city with new
                 master-planned communities, major employers, and infrastructure improvements that make
-                it the Las Vegas Valley's best opportunity for affordable homeownership. <strong>Berkshire
-                Hathaway HomeServices</strong> is proud to help first-time buyers and investors
-                discover North Las Vegas's potential.
+                it the Las Vegas Valley's best opportunity for affordable homeownership. <strong>Dr. Jan
+                Duffy</strong> helps first-time buyers and investors discover North Las Vegas's
+                potential.
               </p>
               <p>
                 With a median home price of <strong>$385,000</strong>—roughly $65,000 less than Las Vegas
@@ -143,11 +143,10 @@ export default function NorthLasVegasPage() {
                 state income tax, more of their income goes toward building equity.
               </p>
               <p>
-                <strong>Berkshire Hathaway HomeServices Nevada Properties</strong> provides the same
-                expert service in North Las Vegas as we do in the valley's luxury markets. Dr. Jan Duffy
-                helps first-time buyers understand the purchase process, navigate financing options, and
+                <strong>Dr. Jan Duffy</strong> provides the same expert service in North Las Vegas
+                as she does in the valley's luxury markets. She helps first-time buyers understand the purchase process, navigate financing options, and
                 avoid common pitfalls. For new construction—where builders' sales agents represent the
-                builder, not you—BHHS provides free buyer representation that can save thousands in
+                builder, not you—Dr. Jan provides free buyer representation that can save thousands in
                 upgrades and negotiations.
               </p>
 
@@ -161,7 +160,7 @@ export default function NorthLasVegasPage() {
                   </div>
                   <p className="text-slate-600">
                     North Las Vegas offers the lowest median home prices in the Las Vegas Valley, making
-                    homeownership attainable for first-time buyers, young families, and investors. Entry-level
+                    homeownership attainable for first-time buyers, move-up buyers, and investors. Entry-level
                     homes start in the $320,000s, while new construction from quality builders ranges
                     from $380,000 to $550,000—prices that would buy a condo elsewhere.
                   </p>
@@ -206,12 +205,12 @@ export default function NorthLasVegasPage() {
               <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">North Las Vegas Schools</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
-                  North Las Vegas is served by Clark County School District, with newer schools in
-                  master-planned communities often performing above area averages:
+                  North Las Vegas is served by Clark County School District, including newer schools
+                  in master-planned communities. Check CCSD for current zoning and boundaries:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div>
-                    <h5 className="font-bold text-slate-900 mb-2">Top Elementary</h5>
+                    <h5 className="font-bold text-slate-900 mb-2">Elementary Schools</h5>
                     <ul className="text-slate-600 text-sm space-y-1">
                       <li>• Aliante Elementary</li>
                       <li>• Oran K. Gragson Elementary</li>
@@ -263,7 +262,7 @@ export default function NorthLasVegasPage() {
               </div>
               <p className="text-slate-600 text-sm mt-2 not-prose">
                 The 215 Beltway provides excellent access from North Las Vegas to all parts of the valley.
-                Many Amazon/warehouse workers live in NLV for the short commute to nearby facilities.
+                Nearby distribution centers are a short drive from most NLV neighborhoods.
               </p>
 
               {/* New Construction Communities */}
@@ -274,7 +273,7 @@ export default function NorthLasVegasPage() {
                   <ul className="text-slate-600 text-sm space-y-2">
                     <li><strong>Aliante:</strong> Master-planned with golf, casino, town center. Homes $400K-$550K.</li>
                     <li><strong>Tule Springs:</strong> Newer community near I-215. KB Home, Lennar. $380K-$500K.</li>
-                    <li><strong>Valley Vista:</strong> Family-focused with parks, pools. Century Communities. $350K-$450K.</li>
+                    <li><strong>Valley Vista:</strong> Parks and community pools. Century Communities. $350K-$450K.</li>
                     <li><strong>Camino Al Norte:</strong> Growing area near 215. Multiple builders. $380K-$480K.</li>
                   </ul>
                 </div>
@@ -297,12 +296,11 @@ export default function NorthLasVegasPage() {
                 find particularly strong opportunities here, with rental yields often exceeding 6%.
               </p>
               <p>
-                Working with <strong>Berkshire Hathaway HomeServices</strong> in North Las Vegas means
+                Working with <strong>Dr. Jan Duffy</strong> in North Las Vegas means
                 getting honest guidance about which neighborhoods offer the best value, which builders
                 have the best reputations, and which areas are poised for the strongest appreciation.
                 Dr. Jan Duffy won't push you toward a more expensive area when North Las Vegas fits
-                your needs—that integrity is what sets BHHS apart from agencies focused solely on
-                commission.
+                your needs. Her focus is the right fit, not the biggest commission.
               </p>
             </div>
           </section>
@@ -313,11 +311,11 @@ export default function NorthLasVegasPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "I tell first-time buyers the truth: you don't need to stretch your budget to own a
                 great home. North Las Vegas offers brand-new construction with modern features at
-                prices that let you build wealth instead of struggling with payments. As a Berkshire
-                Hathaway HomeServices agent, my job is to find the right fit—not the highest price."
+                prices that let you build wealth instead of struggling with payments. After 35 years in
+                Las Vegas real estate, I know my job is to find the right fit—not the highest price."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -360,12 +358,10 @@ export default function NorthLasVegasPage() {
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
-                  Why choose Berkshire Hathaway HomeServices for North Las Vegas?
+                  Why work with Dr. Jan Duffy in North Las Vegas?
                 </h3>
                 <p className="text-slate-600">
-                  BHHS provides expert guidance for first-time buyers navigating the purchase process,
-                  plus free representation on new construction purchases. Dr. Jan Duffy helps clients
-                  find value while avoiding common pitfalls in emerging neighborhoods.
+                  Dr. Jan Duffy provides expert guidance for first-time buyers navigating the purchase process, plus free representation on new construction purchases. She helps clients find value while avoiding common pitfalls in emerging neighborhoods.
                 </p>
               </div>
             </div>
@@ -377,7 +373,7 @@ export default function NorthLasVegasPage() {
               Start Your Homeownership Journey
             </h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices North Las Vegas expert,
+              Contact Dr. Jan Duffy, your North Las Vegas expert,
               for guidance on finding affordable homes that fit your budget.
             </p>
             <a
@@ -388,7 +384,7 @@ export default function NorthLasVegasPage() {
               Call (702) 500-0337
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

@@ -16,13 +16,13 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Sell Your Las Vegas Home | Berkshire Hathaway HomeServices",
+  title: "Sell Your Las Vegas Home | Arcadia Homes Las Vegas",
   description:
-    "Sell your Las Vegas or Henderson home for top dollar with Dr. Jan Duffy at Berkshire Hathaway HomeServices Nevada Properties. Free home valuation. World-class marketing. Call (702) 500-0337.",
+    "Sell your Las Vegas or Henderson home for top dollar with Dr. Jan Duffy of Arcadia Homes Las Vegas. 35 years of local experience. Free home valuation. World-class marketing. Call (702) 500-0337.",
   keywords: [
     "sell home Las Vegas",
     "Las Vegas listing agent",
-    "Berkshire Hathaway sell house",
+    "Dr. Jan Duffy sell house",
     "Henderson home selling",
     "what is my home worth Las Vegas",
     "Las Vegas real estate agent",
@@ -49,13 +49,13 @@ const sellingBenefits = [
     icon: Globe,
     title: "World-Class Marketing",
     description:
-      "Your home gets exposure through the most recognized real estate brand in the world. Professional photography, virtual tours, drone video, and syndication to 100+ websites ensures maximum visibility to qualified buyers.",
+      "Professional photography, virtual tours, drone video, and syndication to 100+ websites ensures maximum visibility to qualified buyers.",
   },
   {
     icon: Users,
-    title: "Global Buyer Network",
+    title: "Local Specialist",
     description:
-      "Berkshire Hathaway's 50,000+ agents worldwide means your listing reaches qualified buyers from across the globe—especially important for Las Vegas's strong relocation and international buyer markets.",
+      "Dr. Jan specializes in Summerlin West and 55+ communities and has completed 500+ transactions across the Las Vegas Valley. She knows the neighborhoods, the buyers, and what sells.",
   },
   {
     icon: BarChart,
@@ -85,7 +85,7 @@ const sellingProcess = [
   {
     step: 3,
     title: "Professional Marketing",
-    description: "Your home is photographed professionally, with virtual tours and drone video. It's listed on the MLS and syndicated to 100+ websites, plus promoted through BHHS's global network and targeted digital advertising.",
+    description: "Your home is photographed professionally, with virtual tours and drone video. It's listed on the MLS and syndicated to 100+ websites, plus promoted through social media and targeted digital advertising.",
   },
   {
     step: 4,
@@ -109,7 +109,6 @@ const includedServices = [
   "Drone video for properties with views or large lots",
   "Comprehensive market analysis & pricing strategy",
   "MLS listing syndicated to 100+ websites",
-  "Berkshire Hathaway global network exposure",
   "Social media marketing campaign",
   "Targeted digital advertising",
   "Open house coordination",
@@ -132,14 +131,14 @@ export default function SellersPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Sell Your Las Vegas Home for Top Dollar
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              When you list with <strong>Berkshire Hathaway HomeServices</strong>, you get
-              world-class marketing, expert pricing, and a name that buyers trust. Dr. Jan Duffy 
+              When you list with <strong>Dr. Jan Duffy</strong>, you get world-class
+              marketing, expert pricing, and skilled negotiation. Dr. Jan 
               has spent 35 years in Las Vegas real estate—helping sellers achieve top-dollar results 
               with proven marketing strategies and skilled negotiation.
             </p>
@@ -183,12 +182,12 @@ export default function SellersPage() {
           {/* Benefits */}
           <section className="mb-16 max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              The Berkshire Hathaway HomeServices Selling Advantage
+              Why Sell with Dr. Jan
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Not all real estate agents can deliver the same results. When you choose a 
-              Berkshire Hathaway HomeServices agent, you're choosing world-class marketing, 
-              a global network of buyers, and the most trusted name in real estate.
+              Not all real estate agents deliver the same results. Dr. Jan brings 35 years
+              in Las Vegas real estate, $127M+ in closed transactions, and 500+ transactions
+              to every listing.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               {sellingBenefits.map((benefit) => {
@@ -296,7 +295,7 @@ export default function SellersPage() {
                   Relocation
                 </h3>
                 <p className="text-slate-600 text-sm mb-3">
-                  Moving for work? BHHS nationwide network coordinates both ends.
+                  Moving for work? Dr. Jan coordinates your sale around your timeline.
                 </p>
                 <span className="text-blue-600 font-semibold text-sm">Learn More →</span>
               </Link>
@@ -317,7 +316,7 @@ export default function SellersPage() {
                 the first time. The result? My listings typically sell within 2% of asking price."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties | 35 Years in Las Vegas Real Estate
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas | 35 Years in Las Vegas Real Estate
               </cite>
             </div>
           </section>
@@ -325,10 +324,10 @@ export default function SellersPage() {
           {/* What's Included */}
           <section className="mb-16 max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              What's Included When You List with BHHS
+              What's Included When You List with Dr. Jan
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              When you list with Dr. Jan Duffy at Berkshire Hathaway HomeServices, you receive 
+              When you list with Dr. Jan Duffy, you receive 
               comprehensive marketing and support services designed to maximize your home's 
               exposure and sale price.
             </p>
@@ -389,12 +388,12 @@ export default function SellersPage() {
                   a: "Dr. Jan provides a personalized preparation checklist for every listing. Generally, decluttering, minor repairs, fresh paint, and professional staging consultation yield the highest ROI. She'll walk through your home and identify exactly what improvements will generate the best return.",
                 },
                 {
-                  q: "How does Berkshire Hathaway market my home?",
-                  a: "Your home gets professional photography, virtual tours, drone video (when appropriate), MLS syndication to 100+ websites, BHHS global network exposure, social media promotion, and targeted digital advertising. It's the most comprehensive marketing available in Las Vegas real estate.",
+                  q: "How will Dr. Jan market my home?",
+                  a: "Your home gets professional photography, virtual tours, drone video (when appropriate), MLS syndication to 100+ websites, social media promotion, and targeted digital advertising. It's the most comprehensive marketing available in Las Vegas real estate.",
                 },
                 {
                   q: "What are your commission rates?",
-                  a: "Commission structures are negotiable and competitive with other full-service brokerages. Dr. Jan offers transparent pricing and will walk you through all costs during your listing consultation. The value of BHHS marketing and negotiation typically results in higher sale prices that more than offset commission.",
+                  a: "Commission structures are negotiable and competitive with other full-service brokerages. Dr. Jan offers transparent pricing and will walk you through all costs during your listing consultation. The value of strong marketing and negotiation typically results in higher sale prices that more than offset commission.",
                 },
                 {
                   q: "Should I wait for prices to go higher?",
@@ -418,7 +417,7 @@ export default function SellersPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Sell Your Las Vegas Home?</h2>
             <p className="text-xl text-slate-300 mb-8">
               Schedule a free listing consultation with Dr. Jan Duffy and discover what your home
-              could sell for with Berkshire Hathaway HomeServices. No obligation, no pressure—just 
+              could sell for. No obligation, no pressure—just 
               honest advice and expert analysis.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -437,7 +436,7 @@ export default function SellersPage() {
               </Link>
             </div>
             <p className="mt-4 text-slate-400 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

@@ -18,15 +18,14 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Downsizing in Las Vegas | Berkshire Hathaway HomeServices",
+  title: "Downsizing in Las Vegas | Arcadia Homes Las Vegas",
   description:
     "Ready to simplify? Dr. Jan Duffy helps Las Vegas homeowners extract equity and transition to low-maintenance living. 55+ communities, condos, and more. Call (702) 500-0337.",
   keywords: [
     "downsizing Las Vegas",
     "sell large home Las Vegas",
     "55 plus communities Las Vegas",
-    "empty nester Las Vegas",
-    "Berkshire Hathaway HomeServices downsizing",
+    "low-maintenance homes Las Vegas",
   ],
   ...selfCanonicalMetadata,
 };
@@ -135,8 +134,8 @@ export default function DownsizingPage() {
                 </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2">Single-Story Homes</h3>
                 <p className="text-slate-600 text-sm mb-4">
-                  Right-sized single-story in established neighborhoods. No stairs,
-                  smaller yard, lower utility costs. Age-in-place features available.
+                  Right-sized single-story homes in mature neighborhoods. No stairs,
+                  smaller yard, lower utility costs.
                 </p>
                 <div className="text-blue-600 font-semibold">$400K - $600K</div>
                 <Link
@@ -153,7 +152,7 @@ export default function DownsizingPage() {
                 </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2">Lock-and-Leave Condos</h3>
                 <p className="text-slate-600 text-sm mb-4">
-                  Secure, zero-maintenance living. Travel for months without worry.
+                  Zero-maintenance living. Travel for months without worry.
                   Guard-gated options available in Summerlin and Henderson.
                 </p>
                 <div className="text-blue-600 font-semibold">$275K - $500K</div>
@@ -182,7 +181,7 @@ export default function DownsizingPage() {
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Professional staging that showcases family-friendly features</span>
+                    <span>Professional staging that showcases your home's best features</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
@@ -432,15 +431,14 @@ export default function DownsizingPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-slate-900 text-white rounded-xl p-8">
               <blockquote className="text-lg italic mb-4">
-                "Downsizing clients are some of my favorite to work with. They've worked hard,
-                raised families, and now deserve to enjoy life without maintaining a 4,000 square
+                "Downsizing clients are some of my favorite to work with. They've worked hard
+                and now deserve to enjoy life without maintaining a 4,000 square
                 foot house. I help them extract the equity they've earned, find a home that fits
-                their current lifestyle, and often pocket significant cash for travel, grandkids,
-                or just peace of mind. As a <strong>Berkshire Hathaway HomeServices</strong> agent,
-                I have the experience and compassion this transition requires."
+                their current lifestyle, and often pocket significant cash for travel or just
+                peace of mind. With 35 years in Las Vegas real estate, I have the experience and compassion this transition requires."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>

@@ -18,7 +18,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "Las Vegas Real Estate Market Insights 2026 | Berkshire Hathaway HomeServices",
+  title: "Las Vegas Real Estate Market Insights 2026 | Arcadia Homes Las Vegas",
   description:
     "Technology trends, economic forecasts, and market analysis shaping Las Vegas real estate in 2026. AI, data centers, California migration, and what it means for buyers and sellers. Call (702) 500-0337.",
   keywords: [
@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     "Nevada economic outlook",
     "California to Las Vegas migration",
     "Las Vegas tech hub",
-    "Berkshire Hathaway market insights",
   ],
   ...selfCanonicalMetadata,
 };
@@ -284,7 +283,7 @@ export default function MarketInsightsPage() {
                   </span>
                 </div>
                 <p className="text-slate-600 text-sm mb-3">
-                  Tech corridor growth, safety rankings, and quality of life driving consistent demand.
+                  Tech corridor growth, 60+ city parks, and master-planned amenities driving consistent demand.
                   Expect continued 4-6% appreciation.
                 </p>
                 <div className="text-sm text-slate-500">
@@ -299,7 +298,7 @@ export default function MarketInsightsPage() {
                   </span>
                 </div>
                 <p className="text-slate-600 text-sm mb-3">
-                  Red Rock views, Downtown Summerlin, and top schools maintain premium positioning.
+                  Red Rock views, Downtown Summerlin, and 150+ parks maintain premium positioning.
                   Limited new inventory keeps values strong.
                 </p>
                 <div className="text-sm text-slate-500">
@@ -329,7 +328,7 @@ export default function MarketInsightsPage() {
                   </span>
                 </div>
                 <p className="text-slate-600 text-sm mb-3">
-                  Family-friendly community with the valley's largest park. New construction
+                  Master-planned area with the valley's largest park. New construction
                   competing with resales. Solid appreciation.
                 </p>
                 <div className="text-sm text-slate-500">
@@ -413,12 +412,11 @@ export default function MarketInsightsPage() {
                 "Understanding market forces—not just current prices—separates informed decisions
                 from reactive ones. Las Vegas is no longer just a gaming and tourism economy.
                 Tech investment, California migration, and economic diversification are reshaping
-                which neighborhoods will outperform. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I help clients position
+                which neighborhoods will outperform. With 35 years in Las Vegas real estate, I help clients position
                 themselves for where the market is going, not just where it's been."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>

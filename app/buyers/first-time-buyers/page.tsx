@@ -16,16 +16,16 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "First-Time Home Buyers Las Vegas | Berkshire Hathaway HomeServices",
+  title: "First-Time Home Buyers Las Vegas | Arcadia Homes Las Vegas",
   description:
-    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy at Berkshire Hathaway HomeServices. Call (702) 500-0337.",
+    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy, 35 years in Las Vegas real estate. Call (702) 500-0337.",
   keywords: [
     "first time home buyer Las Vegas",
     "first time buyer Nevada",
     "down payment assistance Las Vegas",
     "FHA loans Las Vegas",
     "VA loans Las Vegas",
-    "Berkshire Hathaway HomeServices first time buyer",
+    "Dr. Jan Duffy first time buyer",
   ],
   ...selfCanonicalMetadata,
 };
@@ -55,7 +55,7 @@ const faqSchema = {
       name: "What neighborhoods are best for first-time buyers in Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Top neighborhoods for first-time buyers include North Las Vegas ($350K-$450K), Mountains Edge ($380K-$480K), and Centennial Hills ($398K median). These areas offer new construction options, good schools, and strong appreciation potential.",
+        text: "Top neighborhoods for first-time buyers include North Las Vegas ($350K-$450K), Mountains Edge ($380K-$480K), and Centennial Hills ($398K median). These areas offer new construction options, parks, and strong appreciation potential.",
       },
     },
     {
@@ -214,7 +214,7 @@ export default function FirstTimeBuyersPage() {
                 </div>
                 <div className="text-2xl font-bold text-blue-600 mb-2">$380K - $480K</div>
                 <p className="text-slate-600 text-sm mb-4">
-                  Southwest Las Vegas with the valley's largest park. Great community feel,
+                  Southwest Las Vegas with the valley's largest park. Large community park,
                   mountain views, and easy freeway access.
                 </p>
                 <ul className="text-sm space-y-1 text-slate-700">
@@ -228,7 +228,7 @@ export default function FirstTimeBuyersPage() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Family-friendly
+                    Easy freeway access
                   </li>
                 </ul>
                 <Link
@@ -242,17 +242,17 @@ export default function FirstTimeBuyersPage() {
               <div className="bg-white rounded-xl p-6 border border-slate-200">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="font-bold text-lg text-slate-900">Centennial Hills</h3>
-                  <span className="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-semibold">Top Schools</span>
+                  <span className="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-semibold">Near Red Rock</span>
                 </div>
                 <div className="text-2xl font-bold text-blue-600 mb-2">$398K Median</div>
                 <p className="text-slate-600 text-sm mb-4">
-                  Northwest Las Vegas near Centennial Hills Hospital. Excellent schools,
-                  family parks, and Red Rock Canyon proximity.
+                  Northwest Las Vegas near Centennial Hills Hospital. Parks, trails,
+                  and Red Rock Canyon proximity.
                 </p>
                 <ul className="text-sm space-y-1 text-slate-700">
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Highly-rated schools
+                    Parks and trails
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
@@ -457,8 +457,7 @@ export default function FirstTimeBuyersPage() {
                 </h3>
                 <p className="text-slate-600">
                   No! Buyer's agent services are typically free to buyers—the seller pays the commission.
-                  You get full professional representation from Berkshire Hathaway HomeServices at no
-                  cost to you.
+                  You get full professional representation from Dr. Jan at no cost to you.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -481,12 +480,11 @@ export default function FirstTimeBuyersPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Buying your first home is exciting AND overwhelming. My job is to make it less
                 overwhelming. I walk first-time buyers through every step, explain everything in
-                plain English, and make sure you're confident in your decision. As a{" "}
-                <strong>Berkshire Hathaway HomeServices</strong> agent, I have resources and
-                connections that independent agents simply don't have."
+                plain English, and make sure you're confident in your decision. After 35 years in Las Vegas real
+                estate, I know the lenders, builders, and neighborhoods that can help you."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -516,7 +514,7 @@ export default function FirstTimeBuyersPage() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

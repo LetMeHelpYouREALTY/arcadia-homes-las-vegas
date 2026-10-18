@@ -11,7 +11,7 @@ import { selfCanonicalMetadata } from "@/lib/page-metadata";
 const canonicalUrl = "https://www.arcadiahomeslasvegas.com/neighborhoods/arcadia";
 const arcadiaTitle = "Arcadia Homes Summerlin West 89135 | Dr. Jan Duffy";
 const arcadiaDescription =
-  "SHAWOOD at Arcadia in Grand Park village—40 gated luxury homes, three floor plans. Buyer's agent Dr. Jan Duffy, BHHS. (702) 500-0337.";
+  "SHAWOOD at Arcadia in Grand Park village—40 gated luxury homes, three floor plans. Buyer's agent Dr. Jan Duffy. (702) 500-0337.";
 
 // Image alt template for Arcadia: "[Subject] – Arcadia luxury new construction, Summerlin West Las Vegas 89135, Grand Park Village"
 
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 const arcadiaFaqs = [
   {
     q: "What are Arcadia homes in Las Vegas?",
-    a: "Arcadia is an exclusive gated community of 40 luxury single-family homes in Summerlin West, Las Vegas 89135, located in Grand Park Village near Red Rock Canyon. Homes range from 3,176 to 3,399 sq ft with Japanese-inspired design, eco-friendly construction, and prices from $1.5M to $2M+.",
+    a: "Arcadia is a gated community of 40 luxury single-family homes in Summerlin West, Las Vegas 89135, located in Grand Park Village near Red Rock Canyon. Homes range from 3,176 to 3,399 sq ft with Japanese-inspired design, eco-friendly construction, and prices from $1.5M to $2M+.",
   },
   {
     q: "How many homes are in Arcadia Summerlin?",
@@ -69,7 +69,7 @@ const arcadiaFaqs = [
   },
   {
     q: "Who can represent buyers at Arcadia in Las Vegas?",
-    a: "Dr. Jan Duffy with Berkshire Hathaway HomeServices Nevada Properties is a buyer's agent who helps clients purchase at SHAWOOD at Arcadia. Contact: (702) 500-0337 or arcadiahomeslasvegas.com.",
+    a: "Dr. Jan Duffy of Arcadia Homes Las Vegas is a buyer's agent who helps clients purchase at SHAWOOD at Arcadia. Contact: (702) 500-0337 or arcadiahomeslasvegas.com.",
   },
   {
     q: "Are there eco-friendly homes in Summerlin West?",
@@ -187,13 +187,13 @@ export default function ArcadiaPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Arcadia Homes Las Vegas — Luxury New Construction Summerlin West 89135
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              <strong>Arcadia</strong> is an exclusive gated community of 40 luxury single-family
+              <strong>Arcadia</strong> is a gated community of 40 luxury single-family
               homes in Summerlin West, Las Vegas 89135, located in Grand Park Village near Red Rock
               Canyon. Homes feature Japanese-inspired design, eco-friendly luxury construction, and
               prices from $1.5M to $2M+.
@@ -207,7 +207,7 @@ export default function ArcadiaPage() {
             </h2>
             <div className="prose prose-lg max-w-none text-slate-700">
               <p>
-                Arcadia is an exclusive gated community of 40 luxury single-family homes in
+                Arcadia is a gated community of 40 luxury single-family homes in
                 Summerlin West, Las Vegas 89135, in Grand Park Village near Red Rock Canyon. The
                 community offers three floor plans (Bristlecone, Juniper, Pinyon) from 3,176 to
                 3,399 sq ft, with Japanese-inspired design, eco-friendly construction, and prices
@@ -294,7 +294,7 @@ export default function ArcadiaPage() {
                 construction and find the right floor plan and lot for their lifestyle.&quot;
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, Berkshire Hathaway HomeServices Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </section>
@@ -345,7 +345,7 @@ export default function ArcadiaPage() {
           <section className="text-center bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Explore Arcadia Homes Las Vegas</h2>
             <p className="text-xl text-blue-100 mb-8">
-              Contact Dr. Jan Duffy, your Berkshire Hathaway HomeServices agent, for current
+              Contact Dr. Jan Duffy for current
               availability, floor plan details, and expert guidance on Arcadia and Summerlin West
               new construction.
             </p>
@@ -366,7 +366,7 @@ export default function ArcadiaPage() {
               </a>
             </p>
             <p className="mt-2 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

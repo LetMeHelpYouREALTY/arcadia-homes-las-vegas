@@ -70,7 +70,7 @@ export default function PalmsListingCard() {
           ✦ Featured Listing
         </span>
         <span style={{ fontSize: "12px", color: "#C9A84C", fontWeight: "600" }}>
-          Dr. Jan Duffy · BHHS Nevada Properties
+          Dr. Jan Duffy · Arcadia Homes Las Vegas
         </span>
       </div>
 

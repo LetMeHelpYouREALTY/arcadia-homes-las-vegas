@@ -13,41 +13,20 @@ import {
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 export const metadata: Metadata = {
-  title: "FAQ | Berkshire Hathaway HomeServices Las Vegas Real Estate",
+  title: "FAQ | Arcadia Homes Las Vegas Real Estate",
   description:
-    "Frequently asked questions about Las Vegas real estate, Berkshire Hathaway HomeServices, buying, selling, and working with Dr. Jan Duffy at BHHS Nevada Properties.",
+    "Frequently asked questions about Las Vegas real estate, buying, selling, investing, and working with Dr. Jan Duffy at Arcadia Homes Las Vegas.",
   keywords: [
-    "Berkshire Hathaway HomeServices FAQ",
+    "Arcadia Homes Las Vegas FAQ",
     "Las Vegas real estate questions",
     "buying a home Las Vegas",
     "selling a home Henderson",
-    "BHHS agent questions",
+    "Dr. Jan Duffy questions",
   ],
   ...selfCanonicalMetadata,
 };
 
 const faqCategories = [
-  {
-    title: "About Berkshire Hathaway HomeServices",
-    faqs: [
-      {
-        q: "Why should I choose a Berkshire Hathaway HomeServices agent?",
-        a: "Berkshire Hathaway HomeServices is the only real estate brand backed by Warren Buffett's Berkshire Hathaway Inc. This means unmatched financial stability, ethical standards, and a global referral network of 50,000+ agents. When you're making the biggest purchase of your life, that trust matters.",
-      },
-      {
-        q: "Is Berkshire Hathaway HomeServices owned by Warren Buffett?",
-        a: "Berkshire Hathaway HomeServices is part of HSF Affiliates LLC, a joint venture of Berkshire Hathaway Inc. (Warren Buffett's company) and HomeServices of America. The brand carries the trusted Berkshire Hathaway name and upholds its values.",
-      },
-      {
-        q: "What areas does BHHS Nevada Properties serve?",
-        a: "BHHS Nevada Properties serves all of Las Vegas, Henderson, North Las Vegas, and surrounding areas, with specialized expertise in Summerlin, The Ridges, Skye Canyon, Southern Highlands, Green Valley, Inspirada, and all Henderson communities.",
-      },
-      {
-        q: "Does using a Berkshire Hathaway agent cost more?",
-        a: "No. Commission rates are negotiable and comparable to other brokerages. The value you receive—global marketing exposure, trusted brand recognition, and experienced agents—often helps homes sell faster and for more money.",
-      },
-    ],
-  },
   {
     title: "Buying a Home in Las Vegas",
     faqs: [
@@ -68,8 +47,8 @@ const faqCategories = [
         a: "Yes. With more inventory, returning negotiating power, and stable interest rates, buyers have more options than they've had in years. Well-priced homes still move quickly, but you won't face the bidding wars of 2021-2022.",
       },
       {
-        q: "Does BHHS help with new construction homes?",
-        a: "Yes! BHHS agents provide free buyer representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities—the builder pays the commission, not you. Having representation protects your interests.",
+        q: "Does Dr. Jan help with new construction homes?",
+        a: "Yes! Dr. Jan provides free buyer representation for new construction purchases from builders like Toll Brothers, Lennar, and Century Communities—the builder pays the commission, not you. Having representation protects your interests.",
       },
     ],
   },
@@ -89,8 +68,8 @@ const faqCategories = [
         a: "Dr. Jan provides a personalized preparation checklist for every listing. Generally, decluttering, minor repairs, fresh paint, and professional photography are the highest-ROI improvements.",
       },
       {
-        q: "How does Berkshire Hathaway market my home?",
-        a: "BHHS provides world-class marketing including professional photography, virtual tours, MLS syndication to 100+ websites, social media promotion, the BHHS global network exposure, and targeted digital advertising.",
+        q: "How will Dr. Jan market my home?",
+        a: "Dr. Jan's marketing includes professional photography, virtual tours, MLS syndication to 100+ websites, social media promotion, and targeted digital advertising.",
       },
       {
         q: "Should I wait for prices to go higher?",
@@ -110,7 +89,7 @@ const faqCategories = [
         a: "Returns vary by property type and location. Typical Las Vegas rental properties generate 5-8% cash-on-cash returns. Dr. Jan can analyze specific opportunities and provide realistic projections.",
       },
       {
-        q: "Does BHHS help with rental properties?",
+        q: "Does Dr. Jan help with rental properties?",
         a: "Yes. Dr. Jan specializes in investment properties and can help identify opportunities, analyze returns, and connect you with property management resources.",
       },
     ],
@@ -119,12 +98,12 @@ const faqCategories = [
     title: "Relocating to Las Vegas",
     faqs: [
       {
-        q: "Can BHHS help with relocations?",
-        a: "Absolutely! Our global network of 50,000+ agents makes relocations seamless. Dr. Jan can coordinate with BHHS agents in your current city while providing expert guidance on Las Vegas neighborhoods, schools, and communities.",
+        q: "Can Dr. Jan help with relocations?",
+        a: "Absolutely! Dr. Jan provides expert guidance on Las Vegas neighborhoods, commute times, and communities, so you can plan your move with confidence.",
       },
       {
-        q: "What are the best neighborhoods for families?",
-        a: "Summerlin, Henderson (Green Valley, Inspirada), and Centennial Hills are top choices for families, offering excellent schools, parks, and community amenities. Dr. Jan can match you with the right neighborhood based on your priorities.",
+        q: "How do I choose the right neighborhood?",
+        a: "Summerlin, Henderson (Green Valley, Inspirada), and Centennial Hills offer parks, trails, and community amenities. Dr. Jan can match you with the right neighborhood based on your priorities—commute, budget, home size, and amenities.",
       },
       {
         q: "How is the cost of living in Las Vegas?",
@@ -142,6 +121,10 @@ const faqCategories = [
       {
         q: "How do I contact Dr. Jan Duffy?",
         a: "Call or text (702) 500-0337 or email DrDuffy@arcadiahomeslasvegas.com. Office located at 9406 W Lake Mead Blvd, Suite 100, Las Vegas, NV 89134.",
+      },
+      {
+        q: "Does working with Dr. Jan cost more?",
+        a: "No. Commission rates are negotiable and comparable to other brokerages. Experienced representation often helps homes sell faster and for more money.",
       },
       {
         q: "What areas does Dr. Jan cover?",
@@ -182,14 +165,14 @@ export default function FAQPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | Arcadia Homes Las Vegas
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Frequently Asked Questions
             </h1>
             <p className="text-xl text-slate-600">
               Everything you need to know about working with{" "}
-              <strong>Berkshire Hathaway HomeServices</strong> in Las Vegas
+              <strong>Dr. Jan Duffy</strong> in Las Vegas
             </p>
           </div>
 
@@ -217,7 +200,7 @@ export default function FAQPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Still Have Questions?</h2>
             <p className="text-xl text-blue-100 mb-8">
               Dr. Jan Duffy is happy to answer any questions about Las Vegas real estate or working
-              with Berkshire Hathaway HomeServices.
+              together.
             </p>
             <a
               href="tel:+17025000337"
@@ -227,7 +210,7 @@ export default function FAQPage() {
               Call (702) 500-0337
             </a>
             <p className="mt-4 text-blue-200 text-sm">
-              Berkshire Hathaway HomeServices Nevada Properties
+              Dr. Jan Duffy | Arcadia Homes Las Vegas
             </p>
           </section>
         </div>

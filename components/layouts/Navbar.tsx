@@ -51,7 +51,7 @@ export default function Navbar() {
               Arcadia Homes
               <span className="text-blue-600"> Las Vegas</span>
             </span>
-            <span className="text-xs text-slate-500 hidden sm:block">Berkshire Hathaway HomeServices Nevada Properties</span>
+            <span className="text-xs text-slate-500 hidden sm:block">Dr. Jan Duffy, REALTOR®</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -7,7 +7,7 @@ import FAQSection from "@/components/sections/FAQSection";
 import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { Home as HomeIcon, TrendingUp, Shield, Users, Phone } from "lucide-react";
+import { Home as HomeIcon, TrendingUp, Users, Phone, MapPin } from "lucide-react";
 import { arcadiaHomeFaqs } from "@/lib/arcadia-home-faqs";
 import { siteConfig } from "@/lib/site-config";
 import {
@@ -20,7 +20,7 @@ import { selfCanonicalMetadata } from "@/lib/page-metadata";
 
 const homeTitle = "Arcadia at Grand Park | Dr. Jan Duffy";
 const homeDescription =
-  "SHAWOOD at Arcadia in Grand Park village, Summerlin West. Dr. Jan Duffy, BHHS Nevada Properties—Arcadia new construction expert. (702) 500-0337.";
+  "SHAWOOD at Arcadia in Grand Park village, Summerlin West. Dr. Jan Duffy, Arcadia Homes Las Vegas—Arcadia new construction expert. (702) 500-0337.";
 
 export const metadata: Metadata = {
   title: homeTitle,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "Summerlin West real estate",
     "89135 homes",
     "Dr. Jan Duffy realtor",
-    "BHHS Nevada Properties",
+    "Arcadia new construction",
     "SHAWOOD Arcadia",
   ],
   openGraph: {
@@ -89,37 +89,37 @@ export default function Home() {
       <main>
         <HeroSection />
 
-        {/* Berkshire Hathaway Value Proposition Section */}
+        {/* Why Work with Dr. Jan */}
         <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-                Why Choose Berkshire Hathaway HomeServices?
+                Why Work with Dr. Jan Duffy?
               </h2>
               <p className="text-lg text-slate-700 leading-relaxed">
-                When you work with a <strong>Berkshire Hathaway HomeServices</strong> agent, you're
-                backed by a name synonymous with trust, ethical standards, and financial
-                strength—the same principles that built Warren Buffett's empire.
+                When you work with <strong>Dr. Jan Duffy</strong>, you get 35 years of Las Vegas
+                real estate experience and one agent who handles your move from first call to
+                closing.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               <div className="text-center p-6">
                 <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Shield className="h-8 w-8 text-blue-600" />
+                  <MapPin className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Trusted Brand</h3>
+                <h3 className="font-bold text-lg mb-2">Summerlin West & 55+ Specialist</h3>
                 <p className="text-slate-600 text-sm">
-                  Backed by Warren Buffett's Berkshire Hathaway Inc.—unmatched financial stability
+                  Deep knowledge of Summerlin West new construction and 55+ active adult communities
                 </p>
               </div>
               <div className="text-center p-6">
                 <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Users className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Global Network</h3>
+                <h3 className="font-bold text-lg mb-2">500+ Transactions</h3>
                 <p className="text-slate-600 text-sm">
-                  50,000+ agents worldwide for seamless referrals and relocations
+                  500+ successful transactions and satisfied clients
                 </p>
               </div>
               <div className="text-center p-6">
@@ -145,12 +145,12 @@ export default function Home() {
             {/* Expert Quote */}
             <div className="max-w-3xl mx-auto mt-12 bg-slate-50 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "When clients ask why they should choose a Berkshire Hathaway HomeServices agent, I
-                tell them: you're not just getting me—you're getting a global network of 50,000
-                agents, world-class marketing, and a brand that's synonymous with trust."
+                "When clients ask why they should work with me, I tell them: you get 35 years of Las
+                Vegas experience, honest pricing advice, and someone who picks up the phone. Call
+                me at (702) 500-0337."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
-                — Dr. Jan Duffy, BHHS Nevada Properties
+                — Dr. Jan Duffy, Arcadia Homes Las Vegas
               </cite>
             </div>
           </div>
@@ -189,7 +189,7 @@ export default function Home() {
                 Las Vegas Real Estate Market | January 2026
               </h2>
               <p className="text-slate-300">
-                Current market data from Berkshire Hathaway HomeServices Nevada Properties
+                Current market data from Dr. Jan Duffy, Arcadia Homes Las Vegas
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
@@ -232,7 +232,7 @@ export default function Home() {
                 Las Vegas Neighborhoods We Serve
               </h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Berkshire Hathaway HomeServices Nevada Properties covers all of Southern Nevada
+                Dr. Jan Duffy covers all of Southern Nevada
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
@@ -284,7 +284,7 @@ export default function Home() {
         <section className="py-16 md:py-20 bg-blue-600 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Work with Berkshire Hathaway HomeServices?
+              Ready to Work with Dr. Jan Duffy?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               Whether you're buying, selling, or investing in Las Vegas real estate, Dr. Jan Duffy
@@ -306,16 +306,14 @@ export default function Home() {
               </Link>
             </div>
             <p className="mt-6 text-blue-200 text-sm">
-              Dr. Jan Duffy | License S.0197614.LLC | Berkshire Hathaway HomeServices Nevada
-              Properties
+              Dr. Jan Duffy | License S.0197614.LLC | Arcadia Homes Las Vegas
             </p>
           </div>
         </section>
 
         {/* Last Updated */}
         <div className="bg-slate-100 py-4 text-center text-sm text-slate-500">
-          Last Updated: October 2026 | arcadiahomeslasvegas.com — Berkshire Hathaway HomeServices
-          Nevada Properties
+          Last Updated: October 2026 | arcadiahomeslasvegas.com — Arcadia Homes Las Vegas
         </div>
       </main>
       <Footer />

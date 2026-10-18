@@ -61,8 +61,7 @@ export default function HeroSection() {
         </h1>
         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
           Dr. Jan Duffy helps buyers and sellers navigate SHAWOOD at Arcadia in Grand Park village—
-          luxury new construction in Summerlin West with Berkshire Hathaway HomeServices Nevada
-          Properties.
+          luxury new construction in Summerlin West, backed by 35 years in Las Vegas real estate.
         </p>
 
         {/* RealScout Search Widget */}

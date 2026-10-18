@@ -34,7 +34,7 @@ export default function NotFound() {
           </a>
         </div>
         <p className="mt-8 text-sm text-slate-500">
-          {siteConfig.name} · {agentInfo.brokerage}
+          {siteConfig.name} · {agentInfo.name}
         </p>
       </div>
       <Footer />

@@ -63,13 +63,13 @@ export interface SeniorCommunityData {
 
 const BASE_URL = siteConfig.url;
 
-// Social media profiles (to be updated with actual URLs)
+// Social media profiles — keep in sync with businessInfo.socialProfiles in lib/gbp-schema.ts
 export const socialProfiles = {
-  facebook: "https://www.facebook.com/heyberkshire",
-  instagram: "https://www.instagram.com/heyberkshire",
+  facebook: "https://www.facebook.com/drjanduffy",
+  instagram: "https://www.instagram.com/drjanduffy",
   linkedin: "https://www.linkedin.com/in/drjanduffy",
-  tiktok: "https://www.tiktok.com/@heyberkshire",
-  youtube: "https://www.youtube.com/@heyberkshire",
+  youtube: "https://www.youtube.com/@drjanduffy",
+  twitter: "https://twitter.com/drjanduffy",
 };
 
 // ============================================================================
@@ -87,7 +87,7 @@ export function generateRealEstateAgentSchema() {
     "@id": `${BASE_URL}#organization`,
     name: "Dr. Jan Duffy - Berkshire Hathaway HomeServices Nevada Properties",
     alternateName: [
-      "HeyBerkshire",
+      "Arcadia Homes Las Vegas",
       "BHHS Nevada Properties",
       "Berkshire Hathaway HomeServices",
     ],

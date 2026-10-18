@@ -8,7 +8,7 @@ Live: https://www.arcadiahomeslasvegas.com
 ## Stack
 
 - Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS
-- Hosted on Vercel (project `shawood-homes-website`); every push to `main` deploys production
+- Hosted on Vercel (project `arcadia-homes-las-vegas`); every push to `main` deploys production
 - RealScout widgets for listings, Follow Up Boss for leads, Upstash for rate limiting,
   Sentry for errors, Anthropic for the site chat assistant
 

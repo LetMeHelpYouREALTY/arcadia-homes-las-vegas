@@ -149,6 +149,7 @@ export default function NeighborhoodsPage() {
               .
             </p>
           </div>
+          <RealScoutListings compact />
 
           {/* Neighborhood Grid */}
           <section className="mb-16 max-w-6xl mx-auto">
@@ -233,7 +234,6 @@ export default function NeighborhoodsPage() {
             </div>
           </section>
 
-          <RealScoutListings />
 
           {/* CTA */}
           <section className="text-center max-w-3xl mx-auto">

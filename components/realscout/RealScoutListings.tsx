@@ -3,10 +3,18 @@
 import { Button } from "@/components/ui/button";
 import PalmsListingCard from "./PalmsListingCard";
 
-export default function RealScoutListings() {
+type RealScoutListingsProps = {
+  /** Compact: used inside a page's container directly below the hero. */
+  compact?: boolean;
+};
+
+export default function RealScoutListings({ compact = false }: RealScoutListingsProps) {
   return (
-    <section className="py-16 md:py-24 bg-slate-50">
-      <div className="container mx-auto px-4">
+    <section
+      aria-label="Office listings"
+      className={compact ? "mb-16 rounded-2xl bg-slate-50 px-4 py-10 md:px-8" : "py-16 md:py-24 bg-slate-50"}
+    >
+      <div className={compact ? "" : "container mx-auto px-4"}>
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">

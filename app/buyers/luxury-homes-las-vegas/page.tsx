@@ -105,6 +105,7 @@ export default function LuxuryHomesPage() {
               Schedule a Private Preview → (702) 500-0337
             </a>
           </div>
+          <RealScoutListings compact />
 
           {/* Market Performance */}
           <section className="mb-16 bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
@@ -415,7 +416,6 @@ export default function LuxuryHomesPage() {
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
-      <RealScoutListings />
       <Footer />
     </>
   );

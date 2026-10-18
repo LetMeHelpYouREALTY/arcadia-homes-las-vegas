@@ -101,6 +101,7 @@ export default function HomeValuationPage() {
               of Las Vegas market expertise and $127M+ in closed transactions.
             </p>
           </div>
+          <RealScoutListings compact />
 
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
             {/* Calendly Widget */}
@@ -495,7 +496,6 @@ export default function HomeValuationPage() {
         {/* Last Updated */}
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
-      <RealScoutListings />
       <Footer />
     </>
   );

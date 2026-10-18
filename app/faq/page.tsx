@@ -177,6 +177,7 @@ export default function FAQPage() {
               <strong>Dr. Jan Duffy</strong> in Las Vegas
             </p>
           </div>
+          <RealScoutListings compact />
 
           {/* FAQ Categories */}
           <div className="max-w-4xl mx-auto space-y-12">
@@ -220,7 +221,6 @@ export default function FAQPage() {
         {/* Last Updated */}
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
-      <RealScoutListings />
       <Footer />
     </>
   );

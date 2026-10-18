@@ -147,6 +147,7 @@ export default function AboutPage() {
               relocating, you'll get expert guidance with integrity and professionalism.
             </p>
           </div>
+          <RealScoutListings compact />
 
           {/* Agent Profile */}
           <section className="mb-16">
@@ -476,7 +477,6 @@ export default function AboutPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
       <Footer />
     </>
   );

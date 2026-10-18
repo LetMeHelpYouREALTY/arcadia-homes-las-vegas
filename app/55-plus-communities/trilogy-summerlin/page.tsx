@@ -97,6 +97,7 @@ export default function TrilogySummerlinPage() {
               dining, world-class spa, and contemporary homes.
             </p>
           </div>
+          <RealScoutListings compact />
 
           {/* Quick Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
@@ -428,7 +429,6 @@ export default function TrilogySummerlinPage() {
           Last Updated: January 2026
         </div>
       </main>
-      <RealScoutListings />
       <Footer />
     </>
   );

@@ -24,6 +24,7 @@ import {
 import { schemaToJsonLd } from "@/lib/schema";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import PageIllustration from "@/components/PageIllustration";
+import RealScoutListings from "@/components/realscout/RealScoutListings";
 
 export const metadata: Metadata = {
   title: "Dr. Jan Duffy, REALTOR® Las Vegas",
@@ -124,6 +125,7 @@ export default function GoogleBusinessPage() {
               </div>
             </div>
           </section>
+          <RealScoutListings compact />
 
           {/* Business Hours */}
           <section className="max-w-5xl mx-auto mb-16">

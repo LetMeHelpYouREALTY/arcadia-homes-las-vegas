@@ -15,6 +15,7 @@ import type { Metadata } from "next";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
 import PageIllustration from "@/components/PageIllustration";
+import RealScoutListings from "@/components/realscout/RealScoutListings";
 
 export const metadata: Metadata = {
   title: "Las Vegas Homes for Sale | MLS Property Search",
@@ -133,6 +134,7 @@ export default function ListingsPage() {
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> 5,000+ Active Listings</span>
             </div>
           </div>
+          <RealScoutListings compact />
 
           {/* RealScout Widget - Live MLS Listings */}
           <section className="mb-16">

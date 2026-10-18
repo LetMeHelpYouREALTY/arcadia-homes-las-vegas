@@ -72,6 +72,7 @@ export default function DivorceProbatePage() {
               Confidential Consultation → (702) 500-0337
             </a>
           </div>
+          <RealScoutListings compact />
 
           {/* Situations We Help With */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -536,7 +537,6 @@ export default function DivorceProbatePage() {
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
-      <RealScoutListings />
       <Footer />
     </>
   );

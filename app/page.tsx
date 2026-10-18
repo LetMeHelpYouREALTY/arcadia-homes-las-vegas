@@ -90,6 +90,8 @@ export default function Home() {
       <main>
         <HeroSection />
 
+        <RealScoutListings />
+
         {/* Why Work with Dr. Jan */}
         <section className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4">
@@ -227,7 +229,6 @@ export default function Home() {
           </div>
         </section>
 
-        <RealScoutListings />
 
         {/* Neighborhoods Section */}
         <section className="py-16 md:py-20 bg-white">

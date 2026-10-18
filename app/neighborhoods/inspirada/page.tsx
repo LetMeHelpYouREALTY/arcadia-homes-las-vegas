@@ -97,6 +97,7 @@ export default function InspiradaPage() {
               <strong>Dr. Jan Duffy</strong>.
             </p>
           </div>
+          <RealScoutListings compact />
 
           {/* Market Stats */}
           <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
@@ -393,7 +394,6 @@ export default function InspiradaPage() {
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
       </main>
-      <RealScoutListings />
       <Footer />
     </>
   );

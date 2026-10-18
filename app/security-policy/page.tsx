@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import RealScoutListings from "@/components/realscout/RealScoutListings";
 
 export const metadata: Metadata = {
   title: 'Security Policy',
@@ -22,6 +23,7 @@ export default function SecurityPolicyPage() {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">
           Security Policy
         </h1>
+        <RealScoutListings compact />
 
         <div className="prose prose-lg max-w-none">
           {/* Overview */}

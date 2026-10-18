@@ -95,6 +95,7 @@ export default function MarketUpdatePage() {
               <span>By Dr. Jan Duffy, REALTOR® | Arcadia Homes Las Vegas</span>
             </div>
           </div>
+          <RealScoutListings compact />
 
           {/* Key Statistics */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -437,7 +438,6 @@ export default function MarketUpdatePage() {
           Last Updated: January 24, 2026 | Data Source: Las Vegas REALTORS® MLS
         </div>
       </main>
-      <RealScoutListings />
       <Footer />
     </>
   );

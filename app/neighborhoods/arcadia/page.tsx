@@ -202,6 +202,7 @@ export default function ArcadiaPage() {
               prices from $1.5M to $2M+.
             </p>
           </div>
+          <RealScoutListings compact />
 
           {/* Citable GEO block: What is Arcadia */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -377,7 +378,6 @@ export default function ArcadiaPage() {
           </section>
         </div>
       </main>
-      <RealScoutListings />
       <Footer />
     </>
   );

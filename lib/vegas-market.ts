@@ -39,7 +39,7 @@ export const vegasMarket = {
     { area: "Las Vegas (city)", median: 440000, yoy: "+2.3%", dom: 29 },
     { area: "Henderson", median: 505000, yoy: "+5.2%", dom: 35 },
     { area: "North Las Vegas", median: 405000, yoy: "-1.9%", dom: 23 },
-    { area: "Summerlin", median: 660000, yoy: null, dom: null },
+    { area: "Summerlin (single-family)", median: 660000, yoy: "-2.1%", dom: 31 },
   ],
   areasMonth: "August 2026",
 

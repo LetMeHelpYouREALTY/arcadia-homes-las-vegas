@@ -3,12 +3,25 @@
 import { Button } from "@/components/ui/button";
 import PalmsListingCard from "./PalmsListingCard";
 
+function formatPrice(n: number) {
+  return n >= 1_000_000
+    ? `$${(n / 1_000_000).toFixed(n % 1_000_000 === 0 ? 0 : 1)}M`
+    : `$${Math.round(n / 1000)}K`;
+}
+
 type RealScoutListingsProps = {
   /** Compact: used inside a page's container directly below the hero. */
   compact?: boolean;
+  /** Price range for this page's buyers (see lib/realscout-ranges.ts). */
+  priceMin?: number;
+  priceMax?: number;
 };
 
-export default function RealScoutListings({ compact = false }: RealScoutListingsProps) {
+export default function RealScoutListings({
+  compact = false,
+  priceMin = 500000,
+  priceMax = 800000,
+}: RealScoutListingsProps) {
   return (
     <section
       aria-label="Office listings"
@@ -21,7 +34,7 @@ export default function RealScoutListings({ compact = false }: RealScoutListings
               Featured Properties
             </h2>
             <p className="text-slate-600 text-lg">
-              Discover exceptional homes in Las Vegas and Henderson
+              Homes for sale from {formatPrice(priceMin)} to {formatPrice(priceMax)}
             </p>
           </div>
           <Button asChild variant="outline" className="mt-4 md:mt-0">
@@ -37,8 +50,8 @@ export default function RealScoutListings({ compact = false }: RealScoutListings
               sort-order="NEWEST"
               listing-status="For Sale"
               property-types=",SFR,MF,TC"
-              price-min="500000"
-              price-max="800000"
+              price-min="${priceMin}"
+              price-max="${priceMax}"
             ></realscout-office-listings>`,
           }}
         />

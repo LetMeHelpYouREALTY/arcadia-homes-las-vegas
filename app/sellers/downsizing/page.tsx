@@ -17,6 +17,7 @@ import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
+import PageIllustration from "@/components/PageIllustration";
 
 export const metadata: Metadata = {
   title: "Downsizing in Las Vegas",
@@ -48,6 +49,7 @@ export default function DownsizingPage() {
             </nav>
           </div>
 
+          <PageIllustration scene="home" palette="golden" label="Illustration of a home at sunset" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

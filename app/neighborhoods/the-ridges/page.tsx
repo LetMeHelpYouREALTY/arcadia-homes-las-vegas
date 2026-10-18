@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
+import PageIllustration from "@/components/PageIllustration";
 
 export const metadata: Metadata = {
   title: "The Ridges Homes for Sale | Las Vegas Luxury Real Estate",
@@ -82,6 +83,7 @@ export default function TheRidgesPage() {
             </nav>
           </div>
 
+          <PageIllustration scene="golf" palette="golden" label="Illustration of estate homes beside a golf green" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

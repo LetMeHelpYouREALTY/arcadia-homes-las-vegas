@@ -16,6 +16,7 @@ import {
 import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import PageIllustration from "@/components/PageIllustration";
 
 export const metadata: Metadata = {
   title: "Las Vegas Market Update | January 2026",
@@ -77,6 +78,7 @@ export default function MarketUpdatePage() {
           </div>
 
           {/* Header */}
+          <PageIllustration scene="market" label="Illustration of rising bar chart beside a city skyline" />
           <div className="max-w-4xl mx-auto text-center mb-12">
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <Calendar className="h-4 w-4 mr-2" />

@@ -16,6 +16,7 @@ import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
+import PageIllustration from "@/components/PageIllustration";
 
 export const metadata: Metadata = {
   title: "Relocating from California to Las Vegas",
@@ -121,6 +122,7 @@ export default function CaliforniaRelocatorPage() {
             </nav>
           </div>
 
+          <PageIllustration scene="road" label="Illustration of a car on the road into the Las Vegas Valley" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

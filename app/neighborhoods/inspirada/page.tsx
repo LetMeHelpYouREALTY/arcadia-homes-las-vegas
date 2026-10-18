@@ -7,6 +7,7 @@ import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
+import PageIllustration from "@/components/PageIllustration";
 
 export const metadata: Metadata = {
   title: "Inspirada Homes for Sale | Henderson Resort Living",
@@ -82,6 +83,7 @@ export default function InspiradaPage() {
             </nav>
           </div>
 
+          <PageIllustration scene="desert" palette="day" label="Illustration of mountains above neighborhood rooftops" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

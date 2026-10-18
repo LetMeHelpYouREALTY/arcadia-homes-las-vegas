@@ -23,6 +23,7 @@ import {
 } from "@/lib/gbp-schema";
 import { schemaToJsonLd } from "@/lib/schema";
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
+import PageIllustration from "@/components/PageIllustration";
 
 export const metadata: Metadata = {
   title: "Dr. Jan Duffy, REALTOR® Las Vegas",
@@ -72,6 +73,7 @@ export default function GoogleBusinessPage() {
                     <Award className="h-6 w-6 text-yellow-400" />
                     <span className="text-yellow-400 font-semibold">35 Years in Las Vegas Real Estate</span>
                   </div>
+                  <PageIllustration scene="office" label="Illustration of Las Vegas skyline and neighborhoods at dusk" />
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Dr. Jan Duffy
                   </h1>

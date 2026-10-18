@@ -15,6 +15,7 @@ import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
+import PageIllustration from "@/components/PageIllustration";
 
 export const metadata: Metadata = {
   title: "Sell Your Las Vegas Home",
@@ -129,6 +130,7 @@ export default function SellersPage() {
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
+          <PageIllustration scene="home" palette="golden" label="Illustration of a home at sunset" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

@@ -17,6 +17,7 @@ import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
+import PageIllustration from "@/components/PageIllustration";
 
 export const metadata: Metadata = {
   title: "Sun City Aliante Homes for Sale | Most Affordable Sun City | Dr. Jan Duffy",
@@ -82,6 +83,7 @@ export default function SunCityAliantePage() {
             </nav>
           </div>
 
+          <PageIllustration scene="active-adult" palette="golden" label="Illustration of 55+ clubhouse and pool at sunset" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

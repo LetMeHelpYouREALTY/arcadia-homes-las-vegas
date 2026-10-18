@@ -19,6 +19,7 @@ import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
+import PageIllustration from "@/components/PageIllustration";
 
 export const metadata: Metadata = {
   title: "New Construction Las Vegas | Buyer's Guide",
@@ -265,6 +266,7 @@ export default function NewConstructionPage() {
             </nav>
           </div>
 
+          <PageIllustration scene="new-build" label="Illustration of new home framing under construction" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

@@ -8,6 +8,7 @@ import type { Metadata } from "next";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
+import PageIllustration from "@/components/PageIllustration";
 
 export const metadata: Metadata = {
   title: "Free Home Valuation Las Vegas | What's Your Home Worth?",
@@ -86,6 +87,7 @@ export default function HomeValuationPage() {
             </nav>
           </div>
 
+          <PageIllustration scene="home" palette="golden" label="Illustration of a home at sunset" />
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">

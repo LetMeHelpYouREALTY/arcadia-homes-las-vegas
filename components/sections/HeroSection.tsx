@@ -1,55 +1,50 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import AgentPhoto from "@/components/AgentPhoto";
 
 export default function HeroSection() {
-  const [currentImage, setCurrentImage] = useState(0);
   const prefersReducedMotion = useReducedMotion();
-  
-  const images = [
-    "/Image/hero_bg_1.jpg",
-    "/Image/hero_bg_2.jpg",
-    "/Image/hero_bg_3.jpg",
-  ];
-
-  useEffect(() => {
-    // Don't animate if user prefers reduced motion
-    if (prefersReducedMotion) return;
-
-    const intervalId = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(intervalId);
-  }, [prefersReducedMotion, images.length]);
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Background Images */}
-      <div className="absolute inset-0">
-        {images.map((src, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 ${
-              prefersReducedMotion 
-                ? '' 
-                : 'transition-opacity duration-1000'
-            } ${
-              index === currentImage ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <Image
-              src={src}
-              alt={`Hero image ${index + 1}`}
-              fill
-              className="object-cover"
-              priority={index === 0}
-            />
-            <div className="absolute inset-0 bg-black/40" />
-          </div>
-        ))}
+      {/* Background: illustrated desert dusk (placeholder until real Arcadia photos are shot) */}
+      <div className="absolute inset-0" aria-hidden="true">
+        <svg
+          className="h-full w-full"
+          viewBox="0 0 1440 900"
+          preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="heroSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#1e1b4b" />
+              <stop offset="45%" stopColor="#7c3aed" />
+              <stop offset="72%" stopColor="#f97316" />
+              <stop offset="100%" stopColor="#fbbf24" />
+            </linearGradient>
+            <radialGradient id="heroSun" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0%" stopColor="#fde68a" stopOpacity="0.95" />
+              <stop offset="100%" stopColor="#fde68a" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+          <rect width="1440" height="900" fill="url(#heroSky)" />
+          <circle cx="1040" cy="610" r="220" fill="url(#heroSun)" />
+          <path
+            d="M0 640 L120 560 L230 600 L360 500 L470 560 L590 470 L720 545 L840 480 L960 560 L1080 500 L1220 575 L1340 520 L1440 560 L1440 900 L0 900 Z"
+            fill="#9a3412"
+            opacity="0.85"
+          />
+          <path
+            d="M0 720 L150 650 L300 700 L430 630 L560 690 L700 640 L850 705 L1000 650 L1150 715 L1300 660 L1440 700 L1440 900 L0 900 Z"
+            fill="#7c2d12"
+          />
+          <path
+            d="M0 800 L200 760 L420 790 L640 750 L860 795 L1080 760 L1300 790 L1440 770 L1440 900 L0 900 Z"
+            fill="#431407"
+          />
+        </svg>
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       {/* Content */}

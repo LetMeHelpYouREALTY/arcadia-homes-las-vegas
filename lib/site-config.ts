@@ -10,7 +10,7 @@ export const siteConfig = {
     path: "/og-image.jpg",
     width: 1200,
     height: 630,
-    alt: "Arcadia Homes Las Vegas — Summerlin West luxury real estate with Dr. Jan Duffy",
+    alt: "Arcadia at Grand Park | Homes by Dr. Jan Duffy — Arcadia Homes Las Vegas, (702) 500-0337",
   },
 };
 

@@ -40,6 +40,12 @@ const nextConfig = {
         destination: '/about',
         permanent: true,
       },
+      // Old placeholder listing pages; live listings come from RealScout on /listings
+      {
+        source: '/listings/:id',
+        destination: '/listings',
+        permanent: true,
+      },
     ]
   },
 

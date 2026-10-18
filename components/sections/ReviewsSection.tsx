@@ -13,34 +13,16 @@ export interface Review {
   date?: string;
 }
 
-// Default reviews
+// Real Google reviews only (FTC 16 CFR 465): first name + last initial, no stock photos.
+// Source: Google Business Profile "Centennial Hills Real Estate | Homes by Dr. Jan Duffy".
 export const defaultReviews: Review[] = [
   {
     id: 1,
-    name: "Tom Sanders",
-    location: "Las Vegas, NV",
+    name: "Janis B.",
+    location: "Google review · Centennial Hills",
     rating: 5,
-    text: "Dr. Duffy made our home buying experience seamless. Her knowledge of the Las Vegas market is unmatched, and she guided us through every step with professionalism and care.",
-    image: "/Image/person1.jpeg",
-    date: "2025-11-15",
-  },
-  {
-    id: 2,
-    name: "Vitor Palmer",
-    location: "Henderson, NV",
-    rating: 5,
-    text: "We couldn't be happier with our new home! The entire process was smooth, and Dr. Duffy's attention to detail and negotiation skills saved us thousands. Highly recommend!",
-    image: "/Image/person_2-min.jpg",
-    date: "2025-10-22",
-  },
-  {
-    id: 3,
-    name: "Emily Rodriguez",
-    location: "Summerlin, NV",
-    rating: 5,
-    text: "As first-time homebuyers, we were nervous about the process. Dr. Duffy patiently explained everything and helped us find the perfect home in our budget. Thank you!",
-    image: "/Image/person_4-min.jpg",
-    date: "2025-09-08",
+    text: "She is always ready to help you with your property. Five stars. Thank you Jan Duffy!",
+    date: "2024-10-19",
   },
 ];
 
@@ -68,8 +50,8 @@ interface ReviewsSectionProps {
 export default function ReviewsSection({
   reviews = defaultReviews,
   title = "What Our Clients Say",
-  subtitle = "Real testimonials from satisfied clients across Las Vegas and Henderson",
-  googleReviewsUrl = "https://g.page/r/heyberkshire/review",
+  subtitle = "Real reviews from Dr. Jan Duffy's Google Business profiles",
+  googleReviewsUrl = "https://www.google.com/maps/search/?api=1&query=Centennial+Hills+Real+Estate+Homes+by+Dr.+Jan+Duffy",
   className = "",
 }: ReviewsSectionProps) {
   return (
@@ -98,12 +80,12 @@ export default function ReviewsSection({
               {aggregateRating.ratingValue}
             </span>
             <span className="text-slate-600">
-              ({aggregateRating.reviewCount}+ reviews)
+              average client rating
             </span>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className={`grid grid-cols-1 gap-8 mx-auto ${reviews.length === 1 ? "max-w-xl" : reviews.length === 2 ? "md:grid-cols-2 max-w-4xl" : "md:grid-cols-3 max-w-6xl"}`}>
           {reviews.map((review) => (
             <div
               key={review.id}
@@ -121,8 +103,8 @@ export default function ReviewsSection({
                       className="object-cover"
                     />
                   ) : (
-                    <div className="w-full h-full bg-slate-200 flex items-center justify-center">
-                      <span className="text-slate-400 text-sm">{review.name[0]}</span>
+                    <div className="w-full h-full bg-blue-100 flex items-center justify-center">
+                      <span className="text-blue-700 text-xl font-semibold">{review.name[0]}</span>
                     </div>
                   )}
                 </div>
@@ -165,7 +147,7 @@ export default function ReviewsSection({
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold"
           >
-            Read More Reviews on Google
+            See Dr. Jan's reviews on Google
             <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
           </a>
         </div>

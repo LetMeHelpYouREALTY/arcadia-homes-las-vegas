@@ -88,15 +88,14 @@ Tap Call now to schedule a community tour.`,
 
 💰 FHA loans: Only 3.5% down required
 🎖️ VA loans: 0% down for veterans
-🏠 Nevada Housing Division: Down payment assistance up to 5%
 🏗️ Builder incentives: Many offering closing cost credits
 
 Dr. Jan Duffy guides first-time buyers through every step—from pre-approval to keys. Free consultation, no pressure.
 
 Popular first-time buyer neighborhoods:
-- North Las Vegas (median $385K)
-- Mountains Edge (median $475K)
-- Centennial Hills (median $495K)
+- North Las Vegas (median sold $405K, Aug 2026)
+- Mountains Edge (median sold $472.5K, Aug 2026)
+- Centennial Hills (median sold $535K, fall 2026)
 
 Tap Call now to start your homeownership journey.`,
     cta: {
@@ -137,10 +136,10 @@ Tap Call now for a free home valuation.`,
     title: "Luxury Living in Las Vegas: The Ridges, MacDonald Highlands & More",
     content: `Las Vegas luxury real estate offers world-class living at Nevada prices:
 
-🏔️ The Ridges, Summerlin - Guard-gated, custom estates from $2M+
+🏔️ The Ridges, Summerlin - Guard-gated, custom estates, $3.46M median sale (12 mo. to Aug 2026)
 ⛰️ MacDonald Highlands - Henderson hillside luxury with Strip views
 🌆 Strip High-Rises - Waldorf, Veer, Panorama condos
-🌳 Southern Highlands - Golf course living from $800K+
+🌳 Southern Highlands - Golf course living, about $610K median sale (spring 2026)
 
 Why luxury buyers choose Las Vegas:
 ✅ No state income tax

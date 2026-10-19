@@ -15,7 +15,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "The Ridges Homes for Sale | Las Vegas Luxury Real Estate",
   description:
-    "Find luxury homes in The Ridges with Dr. Jan Duffy of Arcadia Homes Las Vegas. Dr. Jan specializes in Summerlin's 900-home-site guard-gated community. Median price $2.5M. Call (702) 500-0337.",
+    "Find luxury homes in The Ridges with Dr. Jan Duffy of Arcadia Homes Las Vegas. Dr. Jan specializes in Summerlin's guard-gated luxury community. Call (702) 500-0337.",
   keywords: [
     "Dr. Jan Duffy The Ridges",
     "The Ridges homes for sale",
@@ -43,7 +43,7 @@ const faqSchema = {
       name: "What makes The Ridges community unique?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The Ridges has 24/7 guard-gated security, only 900 home sites across six distinct villages, and strict architectural guidelines ensuring estate-quality construction throughout.",
+        text: "The Ridges has 24/7 guard-gated security, nearly 400 custom homes on 793 acres, and strict architectural guidelines ensuring estate-quality construction throughout.",
       },
     },
     {
@@ -51,7 +51,7 @@ const faqSchema = {
       name: "How private is The Ridges?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Very. The Ridges has a 24/7 guard gate with roving patrols and only 900 home sites across 793 acres, so homes sit farther apart than in most Summerlin neighborhoods.",
+        text: "Very. The Ridges has a 24/7 guard gate with roving patrols and nearly 400 custom homes across 793 acres, so homes sit farther apart than in most Summerlin neighborhoods.",
       },
     },
     {
@@ -121,7 +121,7 @@ export default function TheRidgesPage() {
               <p>
                 The Ridges comprises six distinctive villages—Bear's Best, Falcon Ridge, Azure, Talon Ridge,
                 Silver Ridge, and Eagle Hills—each offering its own character while maintaining the
-                community's legendary standards. With only 900 home sites across 793 acres, low density is
+                community's legendary standards. With nearly 400 custom homes across 793 acres, low density is
                 built into The Ridges' DNA. Strict architectural guidelines ensure that every home meets
                 the community's exacting standards, protecting property values and ensuring a cohesive
                 aesthetic throughout.
@@ -143,7 +143,7 @@ export default function TheRidgesPage() {
                   <p className="text-slate-600">
                     The Ridges offers 24/7 guard-gated security with roving patrols, giving residents
                     the peace of mind they expect at this price point. Low density—only
-                    900 homes across nearly 800 acres—gives a level of privacy that's hard to find in
+                    about 400 homes across nearly 800 acres—gives a level of privacy that's hard to find in
                     higher-density developments.
                   </p>
                 </div>
@@ -310,7 +310,7 @@ export default function TheRidgesPage() {
                   What makes The Ridges community unique?
                 </h3>
                 <p className="text-slate-600">
-                  The Ridges has 24/7 guard-gated security, only 900 home sites across six distinct villages, and strict architectural guidelines ensuring estate-quality construction throughout.
+                  The Ridges has 24/7 guard-gated security, nearly 400 custom homes on 793 acres, and strict architectural guidelines ensuring estate-quality construction throughout.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -318,7 +318,7 @@ export default function TheRidgesPage() {
                   How private is The Ridges?
                 </h3>
                 <p className="text-slate-600">
-                  Very. The Ridges has a 24/7 guard gate with roving patrols and only 900 home sites
+                  Very. The Ridges has a 24/7 guard gate with roving patrols and nearly 400 custom homes
                   across 793 acres, so homes sit farther apart than in most Summerlin neighborhoods.
                 </p>
               </div>

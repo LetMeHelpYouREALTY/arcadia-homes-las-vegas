@@ -87,7 +87,7 @@ const faqSchema = {
       name: "Are 55+ communities a good investment?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, Las Vegas 55+ communities have shown strong appreciation due to limited supply and growing demand from retiring Baby Boomers. Sun City Summerlin homes have appreciated 40%+ over 5 years. The lifestyle amenities also make properties easier to sell.",
+        text: "Over the long run, Las Vegas 55+ homes have held value well, but no one can promise future gains. Sun City Summerlin homes sold at a $510,000 median over the 12 months to August 2026 (MLS closed sales). The lifestyle amenities also make properties easier to sell.",
       },
     },
     {
@@ -399,7 +399,7 @@ export default function FiftyFiveCommunitiesPage() {
               { value: "$510,000", label: "Sun City Summerlin median sale (12 mo.)" },
               { value: `$${vegasMarket.lvr.sfMedian.toLocaleString()}`, label: "Valley single-family median" },
               { value: `${vegasMarket.lvr.monthsSupply} months`, label: "Valley housing supply" },
-              { value: `${vegasMarket.lvr.cashShare}`, label: "Cash purchases" },
+              { value: `${vegasMarket.lvr.cashShare}`, label: "Valley cash purchases" },
             ]}
             source={`Sun City Summerlin: Nevada Real Estate Group MLS analysis, 12 months to Aug. 31, 2026. ${valleySource}`}
           />

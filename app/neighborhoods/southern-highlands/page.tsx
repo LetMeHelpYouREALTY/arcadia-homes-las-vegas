@@ -15,7 +15,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "Southern Highlands Homes for Sale | Las Vegas Golf Community",
   description:
-    "Find Southern Highlands homes with Dr. Jan Duffy, a 35-year Las Vegas real estate expert. She specializes in this premier golf community. Median price $750K. Call (702) 500-0337.",
+    "Find Southern Highlands homes with Dr. Jan Duffy, a 35-year Las Vegas real estate expert. She specializes in this premier golf community. Call (702) 500-0337.",
   keywords: [
     "Dr. Jan Duffy Southern Highlands",
     "Southern Highlands homes for sale",

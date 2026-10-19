@@ -15,7 +15,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "Green Valley Homes for Sale | Henderson Real Estate",
   description:
-    "Find Green Valley homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. Henderson's original master-planned community, with mature trees and larger lots. Median price $520K. Call (702) 500-0337.",
+    "Find Green Valley homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. Henderson's original master-planned community, with mature trees and larger lots. Call (702) 500-0337.",
   keywords: [
     "Dr. Jan Duffy Green Valley",
     "Green Valley homes for sale",
@@ -43,7 +43,7 @@ const faqSchema = {
       name: "How long do homes stay on the market in Green Valley?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Green Valley homes average 26 days on market. Properties near The District at Green Valley Ranch and those with upgraded features often sell faster, sometimes within the first two weeks.",
+        text: "Green Valley homes sold in a median of 34 days in July 2026 (MLS closed sales). Properties near The District at Green Valley Ranch and those with upgraded features often sell faster, sometimes within the first two weeks.",
       },
     },
     {
@@ -292,7 +292,7 @@ export default function GreenValleyPage() {
                   How long do homes stay on the market in Green Valley?
                 </h3>
                 <p className="text-slate-600">
-                  Green Valley homes average 26 days on market. Properties near The District at Green Valley
+                  Green Valley homes sold in a median of 34 days in July 2026 (MLS closed sales). Properties near The District at Green Valley
                   Ranch and those with upgraded features often sell faster, sometimes within the first two weeks.
                 </p>
               </div>

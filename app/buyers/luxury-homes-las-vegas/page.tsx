@@ -42,7 +42,7 @@ const faqSchema = {
       name: "What is the luxury home market like in Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Las Vegas luxury ($1M+) has appreciated 161% since 2015, making it #4 nationally for luxury growth. The December 2025 luxury median is $1.45M. Cash buyers represent approximately 60% of luxury transactions.",
+        text: "From September 2025 through August 2026, 1,928 Las Vegas-area homes sold for $1 million or more, up 13.9% from the prior year, at a $1.4 million median. Buyers set the terms: 81% closed below list price, and $1M+ supply ran 8.7 months on October 16, 2026 (Nevada Real Estate Group MLS analysis).",
       },
     },
     {

@@ -46,7 +46,7 @@ export default function InvestmentPropertiesPage() {
               Las Vegas Investment Properties
             </h1>
             <p className="text-xl text-slate-600">
-              No state income tax, strong appreciation, and excellent rental yields. Discover why
+              No state income tax, a deep rental market, and prices that held flat this year. Discover why
               investors choose Las Vegas—with guidance from{" "}
               <strong>Dr. Jan Duffy</strong>.
             </p>
@@ -210,7 +210,7 @@ export default function InvestmentPropertiesPage() {
                   competitive with major metros. Higher cap rates typically come with higher risk.
                 </p>
                 <div className="bg-slate-50 rounded p-3 text-sm">
-                  <strong>Example:</strong> $485K Henderson home renting at $2,300/mo = ~4.5% cap rate
+                  <strong>Hypothetical example:</strong> $485K Henderson home renting at $2,300/mo = ~4.5% cap rate
                 </div>
               </div>
               <div className="bg-white border border-slate-200 rounded-xl p-6">
@@ -221,15 +221,14 @@ export default function InvestmentPropertiesPage() {
                   properties often achieve 8-12% cash-on-cash returns through leverage.
                 </p>
                 <div className="bg-slate-50 rounded p-3 text-sm">
-                  <strong>Example:</strong> $121K down on $485K property with $400/mo net = 4% cash-on-cash
+                  <strong>Hypothetical example:</strong> $121K down on $485K property with $400/mo net = 4% cash-on-cash
                 </div>
               </div>
               <div className="bg-white border border-slate-200 rounded-xl p-6">
                 <BarChart className="h-8 w-8 text-purple-600 mb-4" />
                 <h3 className="font-bold text-lg text-slate-900 mb-2">Total Return</h3>
                 <p className="text-slate-600 text-sm mb-4">
-                  Cash flow + appreciation + loan paydown + tax benefits. Las Vegas's strong appreciation
-                  (4-6% annually) combined with rental income creates total returns of 12-18%.
+                  Cash flow + appreciation + loan paydown + tax benefits. Returns depend on the price, rent, and financing; with valley prices flat in 2026, cash flow carries more of the return.
                 </p>
                 <div className="bg-slate-50 rounded p-3 text-sm">
                   <strong>Note:</strong> Tax benefits include depreciation, mortgage interest, and expense deductions
@@ -243,7 +242,7 @@ export default function InvestmentPropertiesPage() {
                   potential. Ratios above 20 suggest overpriced markets.
                 </p>
                 <div className="bg-slate-50 rounded p-3 text-sm">
-                  <strong>Example:</strong> $385K ÷ $23,400/year = 16.5 ratio (favorable)
+                  <strong>Hypothetical example:</strong> $385K ÷ $23,400/year = 16.5 ratio (favorable)
                 </div>
               </div>
             </div>
@@ -258,8 +257,7 @@ export default function InvestmentPropertiesPage() {
               <div className="bg-white rounded-xl p-6">
                 <h3 className="font-bold text-xl text-slate-900 mb-2">North Las Vegas</h3>
                 <p className="text-slate-600 mb-4">
-                  <strong>Best for: Cash flow investors.</strong> Highest cap rates in the valley (5.2%+)
-                  with lower entry prices. Growing population as Amazon, Fanatics, and other employers
+                  <strong>Best for: Cash flow investors.</strong> Lower entry prices ($405,000 median sold, August 2026) often mean better cap rates. Growing population as Amazon, Fanatics, and other employers
                   expand. Newer construction is available at lower price points.
                 </p>
                 <div className="grid grid-cols-3 gap-4 text-sm">
@@ -335,7 +333,7 @@ export default function InvestmentPropertiesPage() {
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <div>Strong appreciation outpaces many markets</div>
+                      <div>Long-term demand from out-of-state buyers</div>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
@@ -372,7 +370,7 @@ export default function InvestmentPropertiesPage() {
                 },
                 {
                   q: "What's the best area for investment properties?",
-                  a: "It depends on your strategy. North Las Vegas offers the best cap rates, while Summerlin provides stronger appreciation. Henderson balances both. Dr. Jan analyzes your goals to recommend the right areas.",
+                  a: "It depends on your strategy. North Las Vegas has the lowest entry prices, Summerlin the highest. Henderson sits between them. Dr. Jan analyzes your goals to recommend the right areas.",
                 },
               ].map((faq, index) => (
                 <div key={index} className="bg-slate-50 rounded-lg p-6">

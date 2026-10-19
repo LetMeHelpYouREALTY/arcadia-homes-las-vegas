@@ -159,7 +159,7 @@ export default function SellersPage() {
           {/* Market Stats */}
           <MarketStatsBlock
             title={`Las Vegas Seller Market Statistics | ${vegasMarket.month}`}
-            intro={`Prices held at ${"$"}${vegasMarket.lvr.sfMedian.toLocaleString()}, but supply grew to ${vegasMarket.lvr.monthsSupply} months. Homes priced to today's market still sell: ${vegasMarket.lvr.soldWithin30} went under contract within 30 days. Homes priced to last spring's record sit.`}
+            intro={`Prices held at ${"$"}${vegasMarket.lvr.sfMedian.toLocaleString()}, but supply grew to ${vegasMarket.lvr.monthsSupply} months. Homes priced to today's market still sell: ${vegasMarket.lvr.soldWithin30} sold within 30 days. Homes priced to last spring's record sit.`}
             stats={valleyStats()}
             source={valleySource}
           />
@@ -352,7 +352,7 @@ export default function SellersPage() {
                 <TrendingUp className="h-24 w-24 text-blue-200 mx-auto mb-4" />
                 <p className="text-2xl font-bold">${vegasMarket.lvr.sfMedian.toLocaleString()}</p>
                 <p className="text-blue-200">Single-Family Median ({vegasMarket.month})</p>
-                <p className="text-blue-300 text-sm mt-2">{vegasMarket.lvr.sfMedianYoY} vs. a year earlier · Las Vegas REALTORS</p>
+                <p className="text-blue-300 text-sm mt-2">{vegasMarket.lvr.sfMedianYoY === "0.0%" ? "Flat" : vegasMarket.lvr.sfMedianYoY} vs. a year earlier · Las Vegas REALTORS</p>
               </div>
             </div>
           </section>
@@ -370,7 +370,7 @@ export default function SellersPage() {
               {[
                 {
                   q: "How long will it take to sell my Las Vegas home?",
-                  a: "Well-priced Las Vegas homes are selling in an average of 28 days. Luxury homes ($1M+) may take 45+ days. The key is pricing correctly from day one—overpriced homes can sit for months, losing both time and money.",
+                  a: "In September 2026, 53.4% of Las Vegas homes sold within 30 days (Las Vegas REALTORS). $1M+ homes took a median of 38 days over the past year. The key is pricing correctly from day one—overpriced homes can sit for months, losing both time and money.",
                 },
                 {
                   q: "What do I need to do to prepare my home for sale?",

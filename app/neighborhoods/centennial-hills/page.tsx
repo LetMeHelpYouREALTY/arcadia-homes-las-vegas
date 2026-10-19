@@ -15,7 +15,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "Centennial Hills Homes for Sale",
   description:
-    "Find Centennial Hills homes with Dr. Jan Duffy, a 35-year Las Vegas real estate expert. Mountain views, 120-acre Centennial Hills Park, and easy US-95 access. Median price $495K. Call (702) 500-0337.",
+    "Find Centennial Hills homes with Dr. Jan Duffy, a 35-year Las Vegas real estate expert. Mountain views, 120-acre Centennial Hills Park, and easy US-95 access. Call (702) 500-0337.",
   keywords: [
     "Dr. Jan Duffy Centennial Hills",
     "Centennial Hills homes for sale",

@@ -71,7 +71,7 @@ const faqSchema = {
       name: "What builder incentives are currently available?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of October 2026, several builders are using their own lenders to beat the 7.40% market rate. Century Communities, for example, advertised 4.875% FHA/VA and 5.75% conventional 30-year fixed rates on select move-in-ready homes, plus up to $3,000 toward closing costs, for closings by October 30. Offers change monthly and usually require the builder's lender. Dr. Jan tracks current offers across builders.",
+        text: "As of October 2026, several builders offer below-market rates through their own lenders on select move-in-ready homes, compared with a 7.40% market average. Century Communities, for example, offers up to $3,000 toward closing costs on select move-in-ready homes closing by October 30. Offers change monthly and usually require the builder's lender; ask that lender for the APR and terms. Dr. Jan tracks current offers across builders.",
       },
     },
     {
@@ -118,7 +118,7 @@ const builders = [
       "The Ridges",
     ],
     currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
-    incentiveDeadline: "February 28, 2026",
+    incentiveDeadline: "Ask for current deadline",
     highlights: [
       "Luxury finishes standard",
       "Highly customizable floor plans",
@@ -136,7 +136,7 @@ const builders = [
       "Southwest (Skye Hills)",
     ],
     currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
-    incentiveDeadline: "January 31, 2026",
+    incentiveDeadline: "Ask for current deadline",
     highlights: [
       "Everything's Included® packages",
       "Smart home technology standard",
@@ -153,7 +153,7 @@ const builders = [
       "Henderson",
     ],
     currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
-    incentiveDeadline: "February 15, 2026",
+    incentiveDeadline: "Ask for current deadline",
     highlights: [
       "Built to Order™ customization",
       "Energy-efficient construction",
@@ -187,7 +187,7 @@ const builders = [
       "Southwest Las Vegas",
     ],
     currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
-    incentiveDeadline: "January 31, 2026",
+    incentiveDeadline: "Ask for current deadline",
     highlights: [
       "Life Tested® floor plans",
       "Consumer-focused designs",
@@ -204,7 +204,7 @@ const builders = [
       "Southwest Las Vegas",
     ],
     currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
-    incentiveDeadline: "February 28, 2026",
+    incentiveDeadline: "Ask for current deadline",
     highlights: [
       "PersonalizedSM options",
       "Wide community selection",
@@ -237,7 +237,7 @@ const builders = [
       "Pahrump",
     ],
     currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
-    incentiveDeadline: "January 31, 2026",
+    incentiveDeadline: "Ask for current deadline",
     highlights: [
       "Most affordable new construction",
       "First-time buyer programs",
@@ -376,29 +376,29 @@ export default function NewConstructionPage() {
               </div>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">4.875%</div>
-                  <div className="text-slate-700 font-medium">FHA/VA 30-Year Fixed</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">Below 7.40%</div>
+                  <div className="text-slate-700 font-medium">Builder-Lender Rate Programs</div>
                   <div className="text-slate-500 text-sm mt-1">
-                    Century Communities, select move-in-ready homes, builder's lender, close by Oct. 30
+                    Several builders offer below-market rates on select move-in-ready homes. Builder's lender required; ask for APR and terms.
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">5.75%</div>
-                  <div className="text-slate-700 font-medium">Conventional 30-Year Fixed</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">Up to $3,000</div>
+                  <div className="text-slate-700 font-medium">Closing Cost Help</div>
                   <div className="text-slate-500 text-sm mt-1">
-                    Same Century Communities offer, plus up to $3,000 toward closing costs
+                    Century Communities, select move-in-ready homes, builder's lender, for closings by Oct. 30
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-5 border border-green-100">
                   <div className="text-3xl font-bold text-green-600 mb-1">7.40%</div>
                   <div className="text-slate-700 font-medium">Market 30-Year Average</div>
                   <div className="text-slate-500 text-sm mt-1">
-                    Freddie Mac, Oct. 15, 2026. Builder rates beat it—compare the price, too
+                    Freddie Mac, Oct. 15, 2026. Compare any builder rate against the home's price, too
                   </div>
                 </div>
               </div>
               <p className="text-center text-slate-600 mt-6">
-                Builder offers checked October 19, 2026 (builder promotions as reported by Neighborhoods in Las Vegas, Oct. 9). Incentives change frequently—call Dr. Jan for current offers in your preferred communities.
+                Builder offers checked October 19, 2026 (builder promotions as reported by Neighborhoods in Las Vegas, Oct. 9, and Nevada Real Estate Group, Oct. 8). Incentives change frequently—call Dr. Jan for current offers in your preferred communities.
               </p>
             </div>
           </section>
@@ -630,7 +630,7 @@ export default function NewConstructionPage() {
                   What builder incentives are currently available?
                 </h3>
                 <p className="text-slate-600">
-                  As of October 2026, several builders are using their own lenders to beat the 7.40% market rate. Century Communities, for example, advertised 4.875% FHA/VA and 5.75% conventional 30-year fixed rates on select move-in-ready homes, plus up to $3,000 toward closing costs, for closings by October 30. Offers change monthly and usually require the builder's lender. Dr. Jan tracks current offers across builders.
+                  As of October 2026, several builders offer below-market rates through their own lenders on select move-in-ready homes, compared with a 7.40% market average. Century Communities, for example, offers up to $3,000 toward closing costs on select move-in-ready homes closing by October 30. Offers change monthly and usually require the builder's lender; ask that lender for the APR and terms. Dr. Jan tracks current offers across builders.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">

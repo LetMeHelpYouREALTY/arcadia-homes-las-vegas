@@ -39,7 +39,7 @@ const neighborhoods = [
     name: "Summerlin",
     slug: "summerlin",
     medianPrice: areaMoney(areaMarket["summerlin"].median),
-    priceChange: "+6.8%",
+    priceChange: areaMarket["summerlin"].yoy,
     description: "Premier master-planned community with parks, trails, and village amenities",
     highlights: ["150+ Parks", "Trail network", "Red Rock Views", "Downtown Summerlin"],
     lifestyleNote: "Master-planned villages, outdoor recreation, retail hubs",
@@ -48,7 +48,7 @@ const neighborhoods = [
     name: "Henderson",
     slug: "henderson",
     medianPrice: areaMoney(areaMarket["henderson"].median),
-    priceChange: "+5.1%",
+    priceChange: areaMarket["henderson"].yoy,
     description: "Nevada's second-largest city with master-planned neighborhoods and lake access",
     highlights: ["Lake Las Vegas", "Green Valley", "Parks", "Shopping districts"],
     lifestyleNote: "Suburban amenities, commute options, wide range of home types",
@@ -57,7 +57,7 @@ const neighborhoods = [
     name: "Green Valley",
     slug: "green-valley",
     medianPrice: areaMoney(areaMarket["green-valley"].median),
-    priceChange: "+4.8%",
+    priceChange: areaMarket["green-valley"].yoy,
     description: "Henderson community with mature landscaping, golf, and trails",
     highlights: ["Golf Courses", "Walking Trails", "The District", "Mature Trees"],
     lifestyleNote: "Golf, dining, tree-lined streetscapes",
@@ -66,7 +66,7 @@ const neighborhoods = [
     name: "The Ridges",
     slug: "the-ridges",
     medianPrice: areaMoney(areaMarket["the-ridges"].median),
-    priceChange: "+8.5%",
+    priceChange: areaMarket["the-ridges"].yoy,
     description: "Ultra-luxury guard-gated community with custom estates and golf",
     highlights: ["Guard-Gated", "Custom Estates", "Bear's Best Golf", "Strip Views"],
     lifestyleNote: "Custom lots, golf, luxury finishes",
@@ -75,7 +75,7 @@ const neighborhoods = [
     name: "Southern Highlands",
     slug: "southern-highlands",
     medianPrice: areaMoney(areaMarket["southern-highlands"].median),
-    priceChange: "+7.2%",
+    priceChange: areaMarket["southern-highlands"].yoy,
     description: "Master-planned luxury community with championship golf and mountain views",
     highlights: ["Golf Community", "Guard-Gated", "Mountain Views", "Luxury Amenities"],
     lifestyleNote: "Golf course living, guard-gated sections",
@@ -84,7 +84,7 @@ const neighborhoods = [
     name: "North Las Vegas",
     slug: "north-las-vegas",
     medianPrice: areaMoney(areaMarket["north-las-vegas"].median),
-    priceChange: "+3.2%",
+    priceChange: areaMarket["north-las-vegas"].yoy,
     description: "Growing area with new construction and entry-level price points",
     highlights: ["New Construction", "Affordable", "Growing Area", "Parks"],
     lifestyleNote: "New builds, value-oriented inventory",
@@ -93,7 +93,7 @@ const neighborhoods = [
     name: "Skye Canyon",
     slug: "skye-canyon",
     medianPrice: areaMoney(areaMarket["skye-canyon"].median),
-    priceChange: "+5.5%",
+    priceChange: areaMarket["skye-canyon"].yoy,
     description: "Newer master-planned community in northwest Las Vegas with mountain views",
     highlights: ["New Homes", "Mountain Views", "Skye Center", "Trail network"],
     lifestyleNote: "Resort-style amenities, newer construction",
@@ -102,7 +102,7 @@ const neighborhoods = [
     name: "Centennial Hills",
     slug: "centennial-hills",
     medianPrice: areaMoney(areaMarket["centennial-hills"].median),
-    priceChange: "+4.8%",
+    priceChange: areaMarket["centennial-hills"].yoy,
     description: "Northwest Las Vegas community with mountain proximity and parks",
     highlights: ["Mountain Access", "Parks", "Shopping", "Trails"],
     lifestyleNote: "Northwest location, outdoor access",
@@ -111,7 +111,7 @@ const neighborhoods = [
     name: "Inspirada",
     slug: "inspirada",
     medianPrice: areaMoney(areaMarket["inspirada"].median),
-    priceChange: "+5.0%",
+    priceChange: areaMarket["inspirada"].yoy,
     description: "Henderson master-planned community with resort-style pools and modern homes",
     highlights: ["Resort Pools", "Walking Trails", "New Construction", "Parks"],
     lifestyleNote: "Resort pools, newer Henderson builds",
@@ -120,7 +120,7 @@ const neighborhoods = [
     name: "Mountains Edge",
     slug: "mountains-edge",
     medianPrice: areaMoney(areaMarket["mountains-edge"].median),
-    priceChange: "+4.5%",
+    priceChange: areaMarket["mountains-edge"].yoy,
     description: "Southwest Las Vegas master-planned community with mountain views and parks",
     highlights: ["Mountain Views", "Parks", "Growing Area", "Affordable Luxury"],
     lifestyleNote: "Southwest valley, park-centric layout",
@@ -171,7 +171,9 @@ export default function NeighborhoodsPage() {
                     </div>
                     <div className="text-right">
                       <div className="font-bold text-slate-900">{neighborhood.medianPrice}</div>
-                      <div className="text-sm text-green-600">{neighborhood.priceChange} YoY</div>
+                      {neighborhood.priceChange && (
+                        <div className={`text-sm ${neighborhood.priceChange.startsWith("-") ? "text-slate-500" : "text-green-600"}`}>{neighborhood.priceChange} YoY</div>
+                      )}
                     </div>
                   </div>
                   <p className="text-slate-600 text-sm mb-4">{neighborhood.description}</p>

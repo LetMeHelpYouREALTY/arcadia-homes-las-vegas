@@ -19,6 +19,7 @@ import {
 import type { Metadata } from "next";
 import { vegasMarket } from "@/lib/vegas-market";
 import MarketStatsBlock, { valleyStats, valleySource } from "@/components/MarketStatsBlock";
+import { areaMarket, areaMoney } from "@/lib/area-market";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -87,12 +88,12 @@ const buyingSteps = [
 ];
 
 const neighborhoods = [
-  { name: "Summerlin", price: "$625K", description: "Master-planned community with Red Rock views" },
-  { name: "Henderson", price: "$485K", description: "Master-planned communities and new construction" },
-  { name: "Green Valley", price: "$520K", description: "Mature landscaping, golf, and dining" },
-  { name: "The Ridges", price: "$2.5M", description: "Ultra-luxury guard-gated estates" },
-  { name: "North Las Vegas", price: "$385K", description: "Affordable new construction" },
-  { name: "Southern Highlands", price: "$750K", description: "Golf course community" },
+  { name: "Summerlin", price: `Median ${areaMoney(areaMarket["summerlin"].median)}`, description: "Master-planned community with Red Rock views" },
+  { name: "Henderson", price: `Median ${areaMoney(areaMarket["henderson"].median)}`, description: "Master-planned communities and new construction" },
+  { name: "Green Valley", price: `Median ${areaMoney(areaMarket["green-valley"].median)}`, description: "Mature landscaping, golf, and dining" },
+  { name: "The Ridges", price: `Median ${areaMoney(areaMarket["the-ridges"].median)}`, description: "Ultra-luxury guard-gated estates" },
+  { name: "North Las Vegas", price: `Median ${areaMoney(areaMarket["north-las-vegas"].median)}`, description: "Affordable new construction" },
+  { name: "Southern Highlands", price: `Median ${areaMoney(areaMarket["southern-highlands"].median)}`, description: "Golf course community" },
 ];
 
 export default function BuyersPage() {

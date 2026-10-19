@@ -63,7 +63,7 @@ const faqCategories = [
       },
       {
         q: "How long will it take to sell my home?",
-        a: "Currently, well-priced homes in Las Vegas are selling in an average of 28 days. Luxury homes may take longer (45+ days). Pricing strategy is crucial—overpriced homes can sit for months.",
+        a: "In September 2026, 53.4% of Las Vegas homes sold within 30 days (Las Vegas REALTORS). $1M+ homes took a median of 38 days over the past year. Pricing strategy is crucial—overpriced homes can sit for months.",
       },
       {
         q: "What do I need to do to prepare my home for sale?",

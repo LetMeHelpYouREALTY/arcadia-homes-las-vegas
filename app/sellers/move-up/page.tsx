@@ -85,13 +85,13 @@ export default function MoveUpSellerPage() {
                 <div className="text-sm text-green-200 mt-2">For 2015-2021 purchases</div>
               </div>
               <div className="text-center bg-white/10 rounded-xl p-6">
-                <div className="text-4xl font-bold mb-2">4 Months</div>
-                <div className="text-green-100">Current Inventory</div>
+                <div className="text-4xl font-bold mb-2">5 Months</div>
+                <div className="text-green-100">Valley Supply (Sept 2026)</div>
                 <div className="text-sm text-green-200 mt-2">Your purchase is easier</div>
               </div>
               <div className="text-center bg-white/10 rounded-xl p-6">
-                <div className="text-4xl font-bold mb-2">28 Days</div>
-                <div className="text-green-100">Avg. Days to Sell</div>
+                <div className="text-4xl font-bold mb-2">53.4%</div>
+                <div className="text-green-100">Sold Within 30 Days (Sept 2026)</div>
                 <div className="text-sm text-green-200 mt-2">Priced-right homes</div>
               </div>
             </div>

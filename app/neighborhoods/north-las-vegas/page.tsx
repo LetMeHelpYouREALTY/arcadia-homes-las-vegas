@@ -15,7 +15,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "North Las Vegas Homes for Sale | Affordable Homes",
   description:
-    "Find affordable North Las Vegas homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. She helps first-time buyers and investors. Median price $385K. Call (702) 500-0337.",
+    "Find affordable North Las Vegas homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. She helps first-time buyers and investors. Call (702) 500-0337.",
   keywords: [
     "Dr. Jan Duffy North Las Vegas",
     "North Las Vegas homes for sale",
@@ -156,8 +156,7 @@ export default function NorthLasVegasPage() {
                   <p className="text-slate-600">
                     North Las Vegas is experiencing unprecedented growth with new retail centers, improved
                     roads, and major employers moving to the area. The city's population has grown over
-                    30% in the past decade, bringing new amenities, restaurants, and services. This growth
-                    trajectory suggests continued appreciation for today's buyers.
+                    30% in the past decade, bringing new amenities, restaurants, and services. Growth adds amenities, though prices dipped 1.9% year over year in August 2026.
                   </p>
                 </div>
               </div>

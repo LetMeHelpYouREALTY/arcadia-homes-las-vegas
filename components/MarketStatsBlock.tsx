@@ -20,7 +20,7 @@ function usd(n: number) {
 /** Valley-wide snapshot from Las Vegas REALTORS + Freddie Mac. */
 export function valleyStats(): Stat[] {
   return [
-    { value: usd(v.lvr.sfMedian), label: `Single-family median (${v.lvr.sfMedianYoY} YoY)` },
+    { value: usd(v.lvr.sfMedian), label: `Single-family median (${v.lvr.sfMedianYoY === "0.0%" ? "flat" : v.lvr.sfMedianYoY} YoY)` },
     { value: `${v.lvr.monthsSupply} months`, label: "Housing supply" },
     { value: v.lvr.soldWithin30, label: "Sold within 30 days" },
     { value: `${v.rate.thirtyYear.toFixed(2)}%`, label: "30-year fixed rate" },

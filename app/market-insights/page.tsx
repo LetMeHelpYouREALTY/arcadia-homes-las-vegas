@@ -289,7 +289,7 @@ export default function MarketInsightsPage() {
                 </div>
                 <p className="text-slate-600 text-sm mb-3">
                   Tech corridor growth, 60+ city parks, and master-planned amenities driving consistent demand.
-                  Expect continued 4-6% appreciation.
+                  Henderson's median sold price rose 5.2% year over year in August 2026.
                 </p>
                 <div className="text-sm text-slate-500">
                   Hot areas: Inspirada, MacDonald Highlands, Green Valley Ranch
@@ -304,7 +304,7 @@ export default function MarketInsightsPage() {
                 </div>
                 <p className="text-slate-600 text-sm mb-3">
                   Red Rock views, Downtown Summerlin, and 150+ parks maintain premium positioning.
-                  Limited new inventory keeps values strong.
+                  Single-family prices dipped 2.1% year over year in August 2026.
                 </p>
                 <div className="text-sm text-slate-500">
                   Hot areas: The Ridges, Regency at Summerlin, Paseos
@@ -334,7 +334,7 @@ export default function MarketInsightsPage() {
                 </div>
                 <p className="text-slate-600 text-sm mb-3">
                   Master-planned area with the valley's largest park. New construction
-                  competing with resales. Solid appreciation.
+                  competing with resales. Prices dipped 4.5% year over year in August 2026.
                 </p>
                 <div className="text-sm text-slate-500">
                   Hot areas: Exploration Peak, Southern Highlands adjacent

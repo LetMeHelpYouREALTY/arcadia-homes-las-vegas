@@ -17,6 +17,8 @@ export type AreaMarket = {
   /** What the median covers (boundary). */
   scope: string;
   yoy?: string;
+  /** Source gives an approximate figure. */
+  approx?: boolean;
   dom?: number;
   /** Extra card when YoY or DOM is missing. */
   extra?: AreaStat;
@@ -89,7 +91,7 @@ export const areaMarket: Record<string, AreaMarket> = {
     name: "Mountains Edge",
     median: 472500,
     period: "August 2026",
-    scope: "Mountains Edge",
+    scope: "Mountains Edge plats",
     yoy: "-4.5%",
     extra: { value: "99.2%", label: "Sale-to-list price (12 mo.)" },
     context:
@@ -117,7 +119,7 @@ export const areaMarket: Record<string, AreaMarket> = {
   "centennial-hills": {
     name: "Centennial Hills",
     median: 535000,
-    period: "100 days to October 2026",
+    period: "past 100 days, Oct. 2026",
     scope: "ZIPs 89131, 89149 and 89143",
     dom: 28,
     extra: { value: "$649,500", label: "Median asking price (Oct.)" },
@@ -145,8 +147,9 @@ export const areaMarket: Record<string, AreaMarket> = {
   "southern-highlands": {
     name: "Southern Highlands",
     median: 610000,
+    approx: true,
     period: "90 days to July 12, 2026",
-    scope: "Southern Highlands",
+    scope: "Southern Highlands closings",
     dom: 20,
     extra: { value: "$975,000", label: "Median asking price" },
     context:
@@ -164,7 +167,7 @@ export const areaMarket: Record<string, AreaMarket> = {
     scope: "Summerlin Village 18",
     extra: { value: "$797", label: "Median price per sq ft" },
     dom: undefined,
-    context: "Its 36 closings ran from $1,750,000 to $16,000,000.",
+    context: "The 36 closings in that window ran from $1,750,000 to $16,000,000.",
     source: {
       label: "Nevada Real Estate Group — Summerlin villages ranked by price (MLS)",
       url: "https://www.nevadarealestategroup.com/blog/most-expensive-summerlin-villages-ranked-2026",
@@ -174,7 +177,7 @@ export const areaMarket: Record<string, AreaMarket> = {
 };
 
 function money(n: number) {
-  if (n >= 1_000_000) return `$${(n / 1_000_000).toFixed(2).replace(/0$/, "")}M`;
+  if (n >= 1_000_000) return `$${(n / 1_000_000).toFixed(2).replace(/\.?0+$/, "")}M`;
   return `$${n.toLocaleString("en-US")}`;
 }
 
@@ -191,14 +194,16 @@ export function areaStats(key: string): AreaStat[] {
 export function areaFaq(key: string): string {
   const a = areaMarket[key];
   const change = a.yoy ? `, ${a.yoy.startsWith("-") ? "down" : "up"} ${a.yoy.replace(/^[+-]/, "")} from a year earlier` : "";
-  return `The median sold price in ${a.name} was ${money(a.median)} (${a.period}, ${a.scope})${change}. ${a.context}`;
+  const about = a.approx ? "about " : "";
+  return `The median sold price in ${a.name} was ${about}${money(a.median)} (${a.period}; ${a.scope})${change}. ${a.context}`;
 }
 
 /** One-paragraph market summary for the body copy of a neighborhood page. */
 export function areaSummary(key: string): string {
   const a = areaMarket[key];
-  const parts = [`${a.name} homes sold at a median of ${money(a.median)} (${a.period}, ${a.scope})`];
-  if (a.yoy) parts.push(`${a.yoy} from a year earlier`);
+  const about = a.approx ? "about " : "";
+  const parts = [`In ${a.name}, homes sold at a median of ${about}${money(a.median)} (${a.period}; ${a.scope})`];
+  if (a.yoy) parts.push(`${a.yoy.startsWith("-") ? "down" : "up"} ${a.yoy.replace(/^[+-]/, "")} from a year earlier`);
   if (a.dom) parts.push(`with a median of ${a.dom} days on market`);
   return `${parts.join(", ")}. ${a.context}`;
 }

@@ -21,7 +21,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "Summerlin Homes for Sale | Las Vegas Luxury Real Estate",
   description:
-    "Find Summerlin homes with Dr. Jan Duffy, a 35-year Las Vegas real estate expert. She offers expert guidance in Las Vegas's premier master-planned community. Median price $625K. Call (702) 500-0337.",
+    "Find Summerlin homes with Dr. Jan Duffy, a 35-year Las Vegas real estate expert. She offers expert guidance in Las Vegas's premier master-planned community. Call (702) 500-0337.",
   keywords: [
     "Dr. Jan Duffy Summerlin",
     "Summerlin homes for sale",
@@ -42,7 +42,7 @@ const summerlinFaqs = [
   {
     question: "How long do homes stay on the market in Summerlin?",
     answer:
-      "Summerlin homes currently average 22 days on market, faster than the Las Vegas Valley average of 28 days. Well-priced homes in desirable villages often receive multiple offers within the first week.",
+      "Summerlin single-family homes sold in a median of 31 days in August 2026 (MLS closed sales). Well-priced homes in popular villages still move faster; overpriced ones sit.",
   },
   {
     question: "What makes Summerlin different from other Las Vegas communities?",
@@ -305,9 +305,8 @@ export default function SummerlinPage() {
                   How long do homes stay on the market in Summerlin?
                 </h3>
                 <p className="text-slate-600">
-                  Summerlin homes currently average 22 days on market, faster than the Las Vegas Valley
-                  average of 28 days. Well-priced homes in desirable villages often receive multiple
-                  offers within the first week.
+                  Summerlin single-family homes sold in a median of 31 days in August 2026 (MLS closed sales).
+                  Well-priced homes in popular villages still move faster; overpriced ones sit.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">

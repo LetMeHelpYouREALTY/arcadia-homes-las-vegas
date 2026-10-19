@@ -8,6 +8,7 @@ import FAQSection from "@/components/sections/FAQSection";
 import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { areaMarket, areaMoney } from "@/lib/area-market";
 import { vegasMarket } from "@/lib/vegas-market";
 import { valleyStats, valleySource } from "@/components/MarketStatsBlock";
 import { Home as HomeIcon, TrendingUp, Users, Phone, MapPin } from "lucide-react";
@@ -237,16 +238,16 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
               {[
                 { name: "Arcadia at Grand Park", price: "New construction", slug: "arcadia" },
-                { name: "Summerlin", price: "$625K", slug: "summerlin" },
-                { name: "Henderson", price: "$485K", slug: "henderson" },
-                { name: "Green Valley", price: "$520K", slug: "green-valley" },
-                { name: "The Ridges", price: "$2.5M", slug: "the-ridges" },
-                { name: "Southern Highlands", price: "$750K", slug: "southern-highlands" },
-                { name: "North Las Vegas", price: "$385K", slug: "north-las-vegas" },
-                { name: "Skye Canyon", price: "$550K", slug: "skye-canyon" },
-                { name: "Centennial Hills", price: "$495K", slug: "centennial-hills" },
-                { name: "Inspirada", price: "$525K", slug: "inspirada" },
-                { name: "Mountains Edge", price: "$475K", slug: "mountains-edge" },
+                { name: "Summerlin", price: `Median ${areaMoney(areaMarket["summerlin"].median)}`, slug: "summerlin" },
+                { name: "Henderson", price: `Median ${areaMoney(areaMarket["henderson"].median)}`, slug: "henderson" },
+                { name: "Green Valley", price: `Median ${areaMoney(areaMarket["green-valley"].median)}`, slug: "green-valley" },
+                { name: "The Ridges", price: `Median ${areaMoney(areaMarket["the-ridges"].median)}`, slug: "the-ridges" },
+                { name: "Southern Highlands", price: `Median ${areaMoney(areaMarket["southern-highlands"].median)}`, slug: "southern-highlands" },
+                { name: "North Las Vegas", price: `Median ${areaMoney(areaMarket["north-las-vegas"].median)}`, slug: "north-las-vegas" },
+                { name: "Skye Canyon", price: `Median ${areaMoney(areaMarket["skye-canyon"].median)}`, slug: "skye-canyon" },
+                { name: "Centennial Hills", price: `Median ${areaMoney(areaMarket["centennial-hills"].median)}`, slug: "centennial-hills" },
+                { name: "Inspirada", price: `Median ${areaMoney(areaMarket["inspirada"].median)}`, slug: "inspirada" },
+                { name: "Mountains Edge", price: `Median ${areaMoney(areaMarket["mountains-edge"].median)}`, slug: "mountains-edge" },
               ].map((area) => (
                 <Link
                   key={area.slug}
@@ -256,7 +257,7 @@ export default function Home() {
                   <h3 className="font-semibold text-slate-900 group-hover:text-blue-600">
                     {area.name}
                   </h3>
-                  <p className="text-sm text-slate-500">From {area.price}</p>
+                  <p className="text-sm text-slate-500">{area.price}</p>
                 </Link>
               ))}
             </div>

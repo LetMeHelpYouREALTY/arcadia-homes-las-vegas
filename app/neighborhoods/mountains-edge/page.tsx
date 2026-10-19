@@ -15,7 +15,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "Mountains Edge Homes for Sale | Southwest Las Vegas",
   description:
-    "Find Mountains Edge homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. Dr. Jan specializes in this southwest Las Vegas community. Median price $475K. Call (702) 500-0337.",
+    "Find Mountains Edge homes with Dr. Jan Duffy of Arcadia Homes Las Vegas. Dr. Jan specializes in this southwest Las Vegas community. Call (702) 500-0337.",
   keywords: [
     "Dr. Jan Duffy Mountains Edge",
     "Mountains Edge homes for sale",

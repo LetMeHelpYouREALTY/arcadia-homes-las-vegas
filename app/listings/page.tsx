@@ -74,37 +74,37 @@ const neighborhoods = [
     name: "Summerlin",
     description: "Master-planned community with Red Rock views and 150+ parks",
     medianPrice: areaMoney(areaMarket["summerlin"].median),
-    daysOnMarket: 22,
+    daysOnMarket: areaMarket["summerlin"].dom,
   },
   {
     name: "Henderson",
     description: "Nevada's second-largest city with master-planned communities and parks",
     medianPrice: areaMoney(areaMarket["henderson"].median),
-    daysOnMarket: 24,
+    daysOnMarket: areaMarket["henderson"].dom,
   },
   {
     name: "Green Valley",
     description: "Henderson community with mature landscaping and golf courses",
     medianPrice: areaMoney(areaMarket["green-valley"].median),
-    daysOnMarket: 26,
+    daysOnMarket: areaMarket["green-valley"].dom,
   },
   {
     name: "Southern Highlands",
     description: "Guard-gated luxury community with championship golf and mountain views",
     medianPrice: areaMoney(areaMarket["southern-highlands"].median),
-    daysOnMarket: 32,
+    daysOnMarket: areaMarket["southern-highlands"].dom,
   },
   {
     name: "North Las Vegas",
     description: "Affordable new construction and growing infrastructure",
     medianPrice: areaMoney(areaMarket["north-las-vegas"].median),
-    daysOnMarket: 18,
+    daysOnMarket: areaMarket["north-las-vegas"].dom,
   },
   {
     name: "Skye Canyon",
     description: "Newer master-planned community with modern amenities and mountain access",
     medianPrice: areaMoney(areaMarket["skye-canyon"].median),
-    daysOnMarket: 20,
+    daysOnMarket: areaMarket["skye-canyon"].dom,
   },
 ];
 
@@ -240,7 +240,9 @@ export default function ListingsPage() {
                   <p className="text-slate-600 text-sm mb-4">{neighborhood.description}</p>
                   <div className="flex justify-between text-sm">
                     <span className="text-slate-500">Median: <strong className="text-slate-900">{neighborhood.medianPrice}</strong></span>
-                    <span className="text-slate-500">DOM: <strong className="text-slate-900">{neighborhood.daysOnMarket} days</strong></span>
+                    {neighborhood.daysOnMarket && (
+                      <span className="text-slate-500">DOM: <strong className="text-slate-900">{neighborhood.daysOnMarket} days</strong></span>
+                    )}
                   </div>
                 </div>
               ))}

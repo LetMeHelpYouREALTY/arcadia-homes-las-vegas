@@ -5,6 +5,8 @@ import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import { Phone, Waves, TreePine } from "lucide-react";
 import type { Metadata } from "next";
+import { AreaStatsBlock } from "@/components/MarketStatsBlock";
+import { areaFaq, areaSummary } from "@/lib/area-market";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -33,7 +35,7 @@ const faqSchema = {
       name: "What is the current median home price in Inspirada?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, Inspirada's median home price is $525,000, up 5.0% year-over-year. New construction ranges from $450,000 to $750,000, while resales offer additional options with established landscaping.",
+        text: areaFaq("inspirada"),
       },
     },
     {
@@ -100,30 +102,7 @@ export default function InspiradaPage() {
           </div>
           <RealScoutListings compact {...realscoutRange("/neighborhoods/inspirada")} />
 
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Inspirada Real Estate Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$525,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">23 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">98</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+5.0%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <AreaStatsBlock area="inspirada" title="Inspirada Real Estate Market" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -288,14 +267,7 @@ export default function InspiradaPage() {
                 </div>
               </div>
 
-              <p className="mt-8">
-                The current Inspirada market shows <strong>98 active listings</strong> with homes
-                averaging <strong>23 days on market</strong>—reflecting strong demand for this
-                sought-after community. The median price of <strong>$525,000</strong> represents
-                solid 5.0% year-over-year appreciation. New construction from builders like Toll
-                Brothers, Lennar, and Beazer ranges from $450,000 to $750,000, while resales with
-                established yards and upgraded features offer compelling alternatives.
-              </p>
+              <p className="mt-8">{areaSummary("inspirada")}</p>
               <p>
                 Choosing <strong>Dr. Jan Duffy</strong> for your Inspirada purchase
                 means working with an agent who understands the community's various neighborhoods, which
@@ -335,11 +307,7 @@ export default function InspiradaPage() {
                 <h3 className="font-bold text-slate-900 mb-2">
                   What is the current median home price in Inspirada?
                 </h3>
-                <p className="text-slate-600">
-                  As of January 2026, Inspirada's median home price is $525,000, up 5.0% year-over-year.
-                  New construction ranges from $450,000 to $750,000, while resales offer additional
-                  options with established landscaping.
-                </p>
+                <p className="text-slate-600">{areaFaq("inspirada")}</p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
@@ -393,7 +361,7 @@ export default function InspiradaPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

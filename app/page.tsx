@@ -8,6 +8,8 @@ import FAQSection from "@/components/sections/FAQSection";
 import Footer from "@/components/layouts/Footer";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { vegasMarket } from "@/lib/vegas-market";
+import { valleyStats, valleySource } from "@/components/MarketStatsBlock";
 import { Home as HomeIcon, TrendingUp, Users, Phone, MapPin } from "lucide-react";
 import { arcadiaHomeFaqs } from "@/lib/arcadia-home-faqs";
 import { siteConfig } from "@/lib/site-config";
@@ -194,31 +196,21 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Las Vegas Real Estate Market | January 2026
+                Las Vegas Real Estate Market | {vegasMarket.month}
               </h2>
               <p className="text-slate-300">
-                Current market data from Dr. Jan Duffy, Arcadia Homes Las Vegas
+                Valley-wide figures for existing homes. Your street can run well above or below them.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">$450K</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-                <div className="text-green-400 text-sm">+4.2% YoY</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">28</div>
-                <div className="text-slate-300 text-sm">Avg Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">4,850</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">2.1</div>
-                <div className="text-slate-300 text-sm">Months Inventory</div>
-              </div>
+              {valleyStats().map((stat) => (
+                <div key={stat.label} className="text-center">
+                  <div className="text-4xl md:text-5xl font-bold text-blue-400 mb-2">{stat.value}</div>
+                  <div className="text-slate-300 text-sm">{stat.label}</div>
+                </div>
+              ))}
             </div>
+            <p className="text-center text-xs text-slate-400 mt-6">Source: {valleySource}</p>
             <div className="text-center mt-8">
               <Link
                 href="/market-report"

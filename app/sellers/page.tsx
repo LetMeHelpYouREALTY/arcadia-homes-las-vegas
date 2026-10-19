@@ -13,6 +13,8 @@ import {
   Users,
 } from "lucide-react";
 import type { Metadata } from "next";
+import { vegasMarket } from "@/lib/vegas-market";
+import MarketStatsBlock, { valleyStats, valleySource } from "@/components/MarketStatsBlock";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -155,34 +157,12 @@ export default function SellersPage() {
           <RealScoutListings compact {...realscoutRange("/sellers")} />
 
           {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4 text-center">
-              Las Vegas Seller Market Statistics | January 2026
-            </h2>
-            <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              The Las Vegas housing market remains favorable for sellers with low inventory and 
-              steady demand. Well-priced homes are selling quickly, and appreciation continues 
-              to outpace national averages. Here's what sellers need to know about current conditions.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+4.2%</div>
-                <div className="text-slate-300 text-sm">Year-Over-Year Appreciation</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">28 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">2.1 Mo</div>
-                <div className="text-slate-300 text-sm">Inventory (Seller's Market)</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">98.5%</div>
-                <div className="text-slate-300 text-sm">List-to-Sale Price Ratio</div>
-              </div>
-            </div>
-          </section>
+          <MarketStatsBlock
+            title={`Las Vegas Seller Market Statistics | ${vegasMarket.month}`}
+            intro={`Prices held at ${"$"}${vegasMarket.lvr.sfMedian.toLocaleString()}, but supply grew to ${vegasMarket.lvr.monthsSupply} months. Homes priced to today's market still sell: ${vegasMarket.lvr.soldWithin30} went under contract within 30 days. Homes priced to last spring's record sit.`}
+            stats={valleyStats()}
+            source={valleySource}
+          />
 
           {/* Benefits */}
           <section className="mb-16 max-w-6xl mx-auto">
@@ -370,9 +350,9 @@ export default function SellersPage() {
               </div>
               <div className="text-center">
                 <TrendingUp className="h-24 w-24 text-blue-200 mx-auto mb-4" />
-                <p className="text-2xl font-bold">$450,000</p>
-                <p className="text-blue-200">Median Home Price (Jan 2026)</p>
-                <p className="text-blue-300 text-sm mt-2">Up 4.2% from last year</p>
+                <p className="text-2xl font-bold">${vegasMarket.lvr.sfMedian.toLocaleString()}</p>
+                <p className="text-blue-200">Single-Family Median ({vegasMarket.month})</p>
+                <p className="text-blue-300 text-sm mt-2">{vegasMarket.lvr.sfMedianYoY} vs. a year earlier · Las Vegas REALTORS</p>
               </div>
             </div>
           </section>
@@ -406,7 +386,7 @@ export default function SellersPage() {
                 },
                 {
                   q: "Should I wait for prices to go higher?",
-                  a: "Current appreciation of 4.2% year-over-year suggests prices are stable with gradual increases. Timing the market is difficult—most sellers do better by listing when ready rather than waiting. Dr. Jan can provide a personalized market analysis to help you decide.",
+                  a: "Prices are flat: the September 2026 single-family median was $470,000, the same as a year earlier and below the $490,000 spring record. Timing the market is difficult—most sellers do better by listing when ready rather than waiting. Dr. Jan can provide a personalized market analysis to help you decide.",
                 },
                 {
                   q: "Do I need to be moved out before listing?",
@@ -451,7 +431,7 @@ export default function SellersPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

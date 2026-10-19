@@ -17,6 +17,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import { vegasMarket } from "@/lib/vegas-market";
+import MarketStatsBlock, { valleyStats, valleySource } from "@/components/MarketStatsBlock";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -347,34 +349,13 @@ export default function BuyersPage() {
           </section>
 
           {/* Market Stats */}
-          <section className="mb-16 bg-blue-600 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4 text-center">
-              Las Vegas Buyer Market Statistics | January 2026
-            </h2>
-            <p className="text-blue-100 text-center max-w-3xl mx-auto mb-8">
-              Understanding the current market helps you make informed decisions about timing, 
-              pricing, and negotiation strategies. Here's a snapshot of what buyers are facing 
-              in the Las Vegas market right now.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">$450K</div>
-                <div className="text-blue-200 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">4,850</div>
-                <div className="text-blue-200 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">28 Days</div>
-                <div className="text-blue-200 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">+4.2%</div>
-                <div className="text-blue-200 text-sm">Year-Over-Year</div>
-              </div>
-            </div>
-          </section>
+          <MarketStatsBlock
+            theme="blue"
+            title={`Las Vegas Buyer Market Statistics | ${vegasMarket.month}`}
+            intro={`Supply is up to ${vegasMarket.lvr.monthsSupply} months and ${vegasMarket.lvr.sfNoOffer.toLocaleString()} single-family homes sat with no offer at the end of ${vegasMarket.month}. That gives buyers more room to negotiate price, credits, and rate buydowns.`}
+            stats={valleyStats()}
+            source={valleySource}
+          />
 
           {/* FAQ */}
           <section className="mb-16 max-w-4xl mx-auto">
@@ -405,7 +386,7 @@ export default function BuyersPage() {
                 },
                 {
                   q: "How competitive is the Las Vegas housing market?",
-                  a: "The Las Vegas market is moderately competitive with 2.1 months of inventory—a slight seller's market. Well-priced homes in desirable areas like Summerlin and Henderson often receive multiple offers within the first week. Having a pre-approval and experienced agent gives you a significant advantage.",
+                  a: "Las Vegas is closer to balanced than it was a year ago: about 5 months of supply in September 2026, up from about 4. Well-priced homes still move—53.4% sold within 30 days—but overpriced ones sit, which gives buyers room to negotiate. A pre-approval still matters on the best homes.",
                 },
                 {
                   q: "How do I choose the right Las Vegas neighborhood?",
@@ -450,7 +431,7 @@ export default function BuyersPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

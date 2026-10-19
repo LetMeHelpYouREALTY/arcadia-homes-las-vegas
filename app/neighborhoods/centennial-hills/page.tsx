@@ -5,6 +5,8 @@ import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import { Phone, Users, ShoppingBag } from "lucide-react";
 import type { Metadata } from "next";
+import { AreaStatsBlock } from "@/components/MarketStatsBlock";
+import { areaFaq, areaSummary } from "@/lib/area-market";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -33,7 +35,7 @@ const faqSchema = {
       name: "What is the current median home price in Centennial Hills?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, Centennial Hills' median home price is $495,000, up 4.8% year-over-year. Prices range from $380,000 for smaller homes to over $900,000 for larger properties with mountain views.",
+        text: areaFaq("centennial-hills"),
       },
     },
     {
@@ -100,30 +102,7 @@ export default function CentennialHillsPage() {
           </div>
           <RealScoutListings compact {...realscoutRange("/neighborhoods/centennial-hills")} />
 
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Centennial Hills Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$495,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">25 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">203</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+4.8%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <AreaStatsBlock area="centennial-hills" title="Centennial Hills Market" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -290,13 +269,7 @@ export default function CentennialHillsPage() {
                 </div>
               </div>
 
-              <p className="mt-8">
-                The current market shows <strong>203 active listings</strong> with homes averaging
-                <strong> 25 days on market</strong>. The median price of <strong>$495,000</strong>
-                represents solid 4.8% year-over-year appreciation while remaining more accessible
-                than Summerlin's higher-priced neighborhoods. Properties range from $380,000 for
-                smaller homes to over $900,000 for larger properties with premium lots and views.
-              </p>
+              <p className="mt-8">{areaSummary("centennial-hills")}</p>
               <p>
                 Working with <strong>Dr. Jan Duffy</strong> in Centennial Hills means partnering with
                 an agent who understands the community's evolution and can identify properties that
@@ -336,11 +309,7 @@ export default function CentennialHillsPage() {
                 <h3 className="font-bold text-slate-900 mb-2">
                   What is the current median home price in Centennial Hills?
                 </h3>
-                <p className="text-slate-600">
-                  As of January 2026, Centennial Hills' median home price is $495,000, up 4.8%
-                  year-over-year. Prices range from $380,000 for smaller homes to over $900,000
-                  for larger properties with mountain views.
-                </p>
+                <p className="text-slate-600">{areaFaq("centennial-hills")}</p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
@@ -396,7 +365,7 @@ export default function CentennialHillsPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

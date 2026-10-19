@@ -115,25 +115,29 @@ export default function LuxuryHomesPage() {
             </h2>
             <div className="grid md:grid-cols-4 gap-6 mb-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-amber-400 mb-2">+161%</div>
-                <div className="text-slate-300 text-sm">Appreciation Since 2015</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">$1.4M</div>
+                <div className="text-slate-300 text-sm">$1M+ median sale</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-amber-400 mb-2">#4</div>
-                <div className="text-slate-300 text-sm">National Luxury Growth</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">1,928</div>
+                <div className="text-slate-300 text-sm">$1M+ sales, +13.9%</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-amber-400 mb-2">$1.45M</div>
-                <div className="text-slate-300 text-sm">Luxury Median (Dec 2025)</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">8.7 mo</div>
+                <div className="text-slate-300 text-sm">$1M+ supply (Oct. 16)</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-amber-400 mb-2">60%</div>
-                <div className="text-slate-300 text-sm">Cash Transactions</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">81%</div>
+                <div className="text-slate-300 text-sm">Closed below list price</div>
               </div>
             </div>
             <p className="text-center text-slate-300">
-              Las Vegas luxury real estate continues to outperform national averages, driven by
-              California migration, favorable tax environment, and world-class amenities.
+              Luxury closings rose while the overall market slipped, but buyers set the terms: more supply,
+              longer market times, and most sales below list.
+            </p>
+            <p className="mt-4 text-center text-xs text-slate-400">
+              Source: Nevada Real Estate Group analysis of MLS closings, Sept. 2025–Aug. 2026, Las Vegas, Henderson,
+              North Las Vegas and Boulder City. Checked 2026-10-19.
             </p>
           </section>
 
@@ -415,7 +419,7 @@ export default function LuxuryHomesPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

@@ -5,6 +5,8 @@ import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import { Phone, Mountain, DollarSign } from "lucide-react";
 import type { Metadata } from "next";
+import { AreaStatsBlock } from "@/components/MarketStatsBlock";
+import { areaFaq, areaSummary } from "@/lib/area-market";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -33,7 +35,7 @@ const faqSchema = {
       name: "What is the current median home price in Mountains Edge?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, Mountains Edge's median home price is $475,000, up 4.5% year-over-year. Prices range from $380,000 for smaller homes to over $750,000 for larger properties with mountain and Strip views.",
+        text: areaFaq("mountains-edge"),
       },
     },
     {
@@ -100,30 +102,7 @@ export default function MountainsEdgePage() {
           </div>
           <RealScoutListings compact {...realscoutRange("/neighborhoods/mountains-edge")} />
 
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Mountains Edge Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$475,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">27 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">234</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+4.5%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <AreaStatsBlock area="mountains-edge" title="Mountains Edge Market" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -175,10 +154,7 @@ export default function MountainsEdgePage() {
                     <h4 className="font-bold text-slate-900 text-lg">Exceptional Value</h4>
                   </div>
                   <p className="text-slate-600">
-                    Mountains Edge's median price of $475,000 is roughly $150,000 less than Summerlin
-                    and $50,000 less than Henderson for comparable homes. Buyers get modern
-                    construction, master-planned amenities, and mountain views at prices that
-                    allow for better financial flexibility. It's affordable luxury done right.
+                    Mountains Edge's August 2026 median sold price of $472,500 sat about $188,000 below Summerlin's single-family median and about $33,000 below Henderson's. Buyers get newer construction, master-planned parks, and mountain views at a lower entry price.
                   </p>
                 </div>
               </div>
@@ -289,13 +265,7 @@ export default function MountainsEdgePage() {
                 </div>
               </div>
 
-              <p className="mt-8">
-                The current market shows <strong>234 active listings</strong> with homes averaging
-                <strong> 27 days on market</strong>. The median price of <strong>$475,000</strong>
-                represents steady 4.5% year-over-year appreciation—sustainable growth that suggests
-                continuing value. Properties range from $380,000 for entry-level homes to over
-                $750,000 for larger properties with premium views and upgraded features.
-              </p>
+              <p className="mt-8">{areaSummary("mountains-edge")}</p>
               <p>
                 Working with <strong>Dr. Jan Duffy</strong> in Mountains Edge means
                 getting honest guidance about where the community offers the best value. She
@@ -335,11 +305,7 @@ export default function MountainsEdgePage() {
                 <h3 className="font-bold text-slate-900 mb-2">
                   What is the current median home price in Mountains Edge?
                 </h3>
-                <p className="text-slate-600">
-                  As of January 2026, Mountains Edge's median home price is $475,000, up 4.5%
-                  year-over-year. Prices range from $380,000 for smaller homes to over $750,000
-                  for larger properties with mountain and Strip views.
-                </p>
+                <p className="text-slate-600">{areaFaq("mountains-edge")}</p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
@@ -396,7 +362,7 @@ export default function MountainsEdgePage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

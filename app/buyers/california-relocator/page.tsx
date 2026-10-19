@@ -235,7 +235,7 @@ export default function CaliforniaRelocatorPage() {
               <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
                 <div className="bg-blue-600 text-white p-4">
                   <h3 className="font-bold text-xl">Summerlin</h3>
-                  <p className="text-blue-100 text-sm">Median: $726K</p>
+                  <p className="text-blue-100 text-sm">Single-family median: $660K (Aug 2026)</p>
                 </div>
                 <div className="p-6">
                   <p className="text-slate-600 mb-4">
@@ -271,7 +271,7 @@ export default function CaliforniaRelocatorPage() {
               <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
                 <div className="bg-green-600 text-white p-4">
                   <h3 className="font-bold text-xl">Henderson / Inspirada</h3>
-                  <p className="text-green-100 text-sm">Median: $530K</p>
+                  <p className="text-green-100 text-sm">Henderson median: $505K (Aug 2026)</p>
                 </div>
                 <div className="p-6">
                   <p className="text-slate-600 mb-4">
@@ -495,7 +495,7 @@ export default function CaliforniaRelocatorPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

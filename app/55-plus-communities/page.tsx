@@ -21,6 +21,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import { vegasMarket } from "@/lib/vegas-market";
+import MarketStatsBlock, { valleySource } from "@/components/MarketStatsBlock";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -391,35 +393,16 @@ export default function FiftyFiveCommunitiesPage() {
           <RealScoutListings compact {...realscoutRange("/55-plus-communities")} />
 
           {/* Quick Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Las Vegas 55+ Market Overview | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-amber-400 mb-1">
-                  25,000+
-                </div>
-                <div className="text-slate-300 text-sm">55+ Homes Available</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">
-                  $280K-$1.2M
-                </div>
-                <div className="text-slate-300 text-sm">Price Range</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">$140-$350</div>
-                <div className="text-slate-300 text-sm">Monthly HOA Range</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">
-                  +5.8%
-                </div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <MarketStatsBlock
+            title={`Las Vegas 55+ Market Overview | ${vegasMarket.month}`}
+            stats={[
+              { value: "$510,000", label: "Sun City Summerlin median sale (12 mo.)" },
+              { value: `$${vegasMarket.lvr.sfMedian.toLocaleString()}`, label: "Valley single-family median" },
+              { value: `${vegasMarket.lvr.monthsSupply} months`, label: "Valley housing supply" },
+              { value: `${vegasMarket.lvr.cashShare}`, label: "Cash purchases" },
+            ]}
+            source={`Sun City Summerlin: Nevada Real Estate Group MLS analysis, 12 months to Aug. 31, 2026. ${valleySource}`}
+          />
 
           {/* California Relocator Section */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -890,7 +873,7 @@ export default function FiftyFiveCommunitiesPage() {
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">
-          Last Updated: January 2026
+          Market figures updated October 2026
         </div>
       </main>
       <Footer />

@@ -58,7 +58,7 @@ const faqSchema = {
       name: "What neighborhoods are best for first-time buyers in Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Top neighborhoods for first-time buyers include North Las Vegas ($350K-$450K), Mountains Edge ($380K-$480K), and Centennial Hills ($398K median). These areas offer new construction options, parks, and strong appreciation potential.",
+        text: "Top neighborhoods for first-time buyers include North Las Vegas ($405,000 median sold, August 2026), Mountains Edge ($472,500, August 2026), and Centennial Hills ($535,000, 100 days to October 2026). These areas offer new construction options and parks below Summerlin and Henderson prices.",
       },
     },
     {
@@ -249,7 +249,7 @@ export default function FirstTimeBuyersPage() {
                   <h3 className="font-bold text-lg text-slate-900">Centennial Hills</h3>
                   <span className="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-semibold">Near Red Rock</span>
                 </div>
-                <div className="text-2xl font-bold text-blue-600 mb-2">$398K Median</div>
+                <div className="text-2xl font-bold text-blue-600 mb-2">$535K Median Sold</div>
                 <p className="text-slate-600 text-sm mb-4">
                   Northwest Las Vegas near Centennial Hills Hospital. Parks, trails,
                   and Red Rock Canyon proximity.
@@ -526,7 +526,7 @@ export default function FirstTimeBuyersPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

@@ -18,24 +18,24 @@ export interface GBPPost {
 // Template posts - Rotate these weekly
 export const gbpPostTemplates: GBPPost[] = [
   {
-    id: "market-update-jan-2026",
+    id: "market-update-sep-2026",
     type: "update",
-    title: "Las Vegas Real Estate Market Update - January 2026",
-    content: `The Las Vegas housing market remains strong heading into 2026! Here's what buyers and sellers need to know:
+    title: "Las Vegas Market Update - September 2026",
+    content: `Las Vegas prices held flat in September. Supply is climbing.
 
-📊 Median home price: $450,000 (+4.2% YoY)
-🏠 Active listings: 4,850 homes
-⏱️ Average days on market: 28 days
-📈 Inventory: 2.1 months (seller's market)
+📊 Single-family median: $470,000 (same as Sept 2025)
+📦 Supply: 5 months, up from about 4 a year ago
+⏱️ 53.4% of homes sold within 30 days
+🏦 30-year rate: 7.40% (Freddie Mac, Oct 15)
 
-Whether you're buying your first home in Henderson, selling in Summerlin, or looking at 55+ communities like Sun City, now is a great time to make your move.
+Source: Las Vegas REALTORS, September 2026.
 
-Call Dr. Jan Duffy at (702) 500-0337 for a free market analysis of your home or neighborhood.`,
+What does this mean for your street? Tap Call now for a free market analysis.`,
     cta: {
       text: "Get Free Market Analysis",
       url: "https://www.arcadiahomeslasvegas.com/home-valuation",
     },
-    publishDate: "2026-01-20",
+    publishDate: "2026-10-19",
     keywords: ["Las Vegas real estate", "Henderson homes", "Summerlin", "55+ communities", "market update"],
   },
   {
@@ -51,7 +51,7 @@ Call Dr. Jan Duffy at (702) 500-0337 for a free market analysis of your home or 
 
 A $1.2M California home could buy you a luxury property in Summerlin or The Ridges. Dr. Jan Duffy specializes in California-to-Nevada relocations and can help you maximize your equity.
 
-Call (702) 500-0337 for a free California equity comparison.`,
+Tap Call now for a free California equity comparison.`,
     cta: {
       text: "California Relocation Guide",
       url: "https://www.arcadiahomeslasvegas.com/buyers/california-relocator",
@@ -72,7 +72,7 @@ Call (702) 500-0337 for a free California equity comparison.`,
 
 Each offers different amenities, price points, and lifestyles. Dr. Jan Duffy specializes in 55+ communities and can help you find the perfect fit.
 
-Schedule a community tour: (702) 500-0337`,
+Tap Call now to schedule a community tour.`,
     cta: {
       text: "Explore 55+ Communities",
       url: "https://www.arcadiahomeslasvegas.com/55-plus-communities",
@@ -98,7 +98,7 @@ Popular first-time buyer neighborhoods:
 - Mountains Edge (median $475K)
 - Centennial Hills (median $495K)
 
-Call (702) 500-0337 to start your homeownership journey.`,
+Tap Call now to start your homeownership journey.`,
     cta: {
       text: "First-Time Buyer Guide",
       url: "https://www.arcadiahomeslasvegas.com/buyers/first-time-buyers",
@@ -118,12 +118,12 @@ Call (702) 500-0337 to start your homeownership journey.`,
 4️⃣ Address minor repairs before listing
 5️⃣ Work with an agent who knows your neighborhood
 
-Current seller stats:
-📈 +4.2% appreciation YoY
-⏱️ 28 days average time to sell
-💰 98.5% list-to-sale ratio
+Las Vegas, September 2026 (Las Vegas REALTORS):
+📊 $470,000 single-family median, flat vs. last year
+⏱️ 53.4% sold within 30 days
+📦 5 months of supply
 
-Get a free home valuation from Dr. Jan Duffy: (702) 500-0337`,
+Tap Call now for a free home valuation.`,
     cta: {
       text: "Get Free Home Valuation",
       url: "https://www.arcadiahomeslasvegas.com/home-valuation",
@@ -148,7 +148,7 @@ Why luxury buyers choose Las Vegas:
 ✅ World-class dining, entertainment, golf
 ✅ 40-60% lower than comparable CA/NY properties
 
-Confidential luxury home search: (702) 500-0337`,
+Tap Call now for a confidential luxury home search.`,
     cta: {
       text: "Luxury Home Search",
       url: "https://www.arcadiahomeslasvegas.com/buyers/luxury-homes-las-vegas",

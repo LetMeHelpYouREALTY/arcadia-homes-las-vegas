@@ -5,6 +5,8 @@ import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import { Phone, DollarSign, TrendingUp } from "lucide-react";
 import type { Metadata } from "next";
+import { AreaStatsBlock } from "@/components/MarketStatsBlock";
+import { areaFaq, areaSummary } from "@/lib/area-market";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -33,7 +35,7 @@ const faqSchema = {
       name: "What is the current median home price in North Las Vegas?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, North Las Vegas' median home price is $385,000—the most affordable in the Las Vegas Valley. First-time buyers can find homes starting in the $320,000s, while new construction ranges from $380,000 to $550,000.",
+        text: areaFaq("north-las-vegas"),
       },
     },
     {
@@ -100,30 +102,7 @@ export default function NorthLasVegasPage() {
           </div>
           <RealScoutListings compact {...realscoutRange("/neighborhoods/north-las-vegas")} />
 
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              North Las Vegas Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$385,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">32 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">892</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+3.2%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <AreaStatsBlock area="north-las-vegas" title="North Las Vegas Market" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -140,7 +119,7 @@ export default function NorthLasVegasPage() {
                 potential.
               </p>
               <p>
-                With a median home price of <strong>$385,000</strong>—roughly $65,000 less than Las Vegas
+                With an August 2026 median sold price of <strong>$405,000</strong>—about $35,000 less than the city of Las Vegas
                 and $100,000 less than Henderson—North Las Vegas offers entry to homeownership that's
                 increasingly difficult to find elsewhere in Southern Nevada. First-time buyers priced
                 out of Summerlin or Henderson find that North Las Vegas delivers modern homes with
@@ -164,10 +143,9 @@ export default function NorthLasVegasPage() {
                     <h4 className="font-bold text-slate-900 text-lg">Most Affordable in the Valley</h4>
                   </div>
                   <p className="text-slate-600">
-                    North Las Vegas offers the lowest median home prices in the Las Vegas Valley, making
-                    homeownership attainable for first-time buyers, move-up buyers, and investors. Entry-level
-                    homes start in the $320,000s, while new construction from quality builders ranges
-                    from $380,000 to $550,000—prices that would buy a condo elsewhere.
+                    North Las Vegas posts one of the lowest median prices in the valley—$405,000 in August 2026,
+                    down 1.9% from a year earlier—and homes there sold in a median of 23 days. That keeps
+                    homeownership in reach for first-time buyers, move-up buyers, and investors.
                   </p>
                 </div>
                 <div className="bg-slate-50 p-6 rounded-xl">
@@ -293,13 +271,7 @@ export default function NorthLasVegasPage() {
                 </div>
               </div>
 
-              <p className="mt-8">
-                The current market shows <strong>892 active listings</strong> with homes averaging
-                <strong> 32 days on market</strong>—slightly longer than the valley average, giving
-                buyers more time to make informed decisions. Year-over-year appreciation of <strong>3.2%</strong>
-                is more modest than luxury markets but represents solid, sustainable growth. Investors
-                find particularly strong opportunities here, with rental yields often exceeding 6%.
-              </p>
+              <p className="mt-8">{areaSummary("north-las-vegas")}</p>
               <p>
                 Working with <strong>Dr. Jan Duffy</strong> in North Las Vegas means
                 getting honest guidance about which neighborhoods offer the best value, which builders
@@ -338,11 +310,7 @@ export default function NorthLasVegasPage() {
                 <h3 className="font-bold text-slate-900 mb-2">
                   What is the current median home price in North Las Vegas?
                 </h3>
-                <p className="text-slate-600">
-                  As of January 2026, North Las Vegas' median home price is $385,000—the most affordable
-                  in the Las Vegas Valley. First-time buyers can find homes starting in the $320,000s,
-                  while new construction ranges from $380,000 to $550,000.
-                </p>
+                <p className="text-slate-600">{areaFaq("north-las-vegas")}</p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
@@ -396,7 +364,7 @@ export default function NorthLasVegasPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

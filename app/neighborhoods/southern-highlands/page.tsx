@@ -5,6 +5,8 @@ import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import { Phone, Shield, Star } from "lucide-react";
 import type { Metadata } from "next";
+import { AreaStatsBlock } from "@/components/MarketStatsBlock";
+import { areaFaq, areaSummary } from "@/lib/area-market";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -33,7 +35,7 @@ const faqSchema = {
       name: "What is the current median home price in Southern Highlands?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, Southern Highlands' median home price is $750,000, up 7.2% year-over-year. Prices range from $500,000 for non-gated homes to over $3 million in guard-gated sections.",
+        text: areaFaq("southern-highlands"),
       },
     },
     {
@@ -100,30 +102,7 @@ export default function SouthernHighlandsPage() {
           </div>
           <RealScoutListings compact {...realscoutRange("/neighborhoods/southern-highlands")} />
 
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Southern Highlands Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$750,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">35 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">156</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+7.2%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <AreaStatsBlock area="southern-highlands" title="Southern Highlands Market" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -291,13 +270,7 @@ export default function SouthernHighlandsPage() {
                 </div>
               </div>
 
-              <p className="mt-8">
-                The Southern Highlands market currently shows <strong>156 active listings</strong> with
-                homes averaging <strong>35 days on market</strong>. The median price of <strong>$750,000</strong>
-                reflects strong appreciation of 7.2% year-over-year, driven by demand from buyers seeking
-                luxury without the premium prices of The Ridges or MacDonald Highlands. Properties range
-                from $500,000 in non-gated sections to over $3 million for golf course estates.
-              </p>
+              <p className="mt-8">{areaSummary("southern-highlands")}</p>
               <p>
                 Choosing <strong>Dr. Jan Duffy</strong> for Southern Highlands means working with an
                 agent who understands the community's unique value. She can explain the differences
@@ -336,11 +309,7 @@ export default function SouthernHighlandsPage() {
                 <h3 className="font-bold text-slate-900 mb-2">
                   What is the current median home price in Southern Highlands?
                 </h3>
-                <p className="text-slate-600">
-                  As of January 2026, Southern Highlands' median home price is $750,000, up 7.2%
-                  year-over-year. Prices range from $500,000 for non-gated homes to over $3 million
-                  in guard-gated sections.
-                </p>
+                <p className="text-slate-600">{areaFaq("southern-highlands")}</p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
@@ -396,7 +365,7 @@ export default function SouthernHighlandsPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

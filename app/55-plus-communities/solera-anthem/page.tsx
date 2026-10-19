@@ -423,9 +423,6 @@ export default function SoleraAnthemPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">
-          Last Updated: January 2026
-        </div>
       </main>
       <Footer />
     </>

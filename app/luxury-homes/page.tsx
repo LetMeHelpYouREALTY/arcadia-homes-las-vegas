@@ -14,6 +14,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import MarketStatsBlock, { valleyStats, valleySource } from "@/components/MarketStatsBlock";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -155,34 +156,17 @@ export default function LuxuryHomesPage() {
           <RealScoutListings compact {...realscoutRange("/luxury-homes")} />
 
           {/* Luxury Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4 text-center">
-              Las Vegas Luxury Market Statistics | January 2026
-            </h2>
-            <p className="text-slate-300 text-center max-w-3xl mx-auto mb-8">
-              The Las Vegas luxury market continues to attract affluent buyers from California, 
-              the Midwest, and international markets. Understanding current market conditions 
-              is essential for both buyers and sellers in this segment.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$1.2M</div>
-                <div className="text-slate-300 text-sm">Median Luxury Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+8.5%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">890</div>
-                <div className="text-slate-300 text-sm">Active $1M+ Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">45 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-            </div>
-          </section>
+          <MarketStatsBlock
+            title="Las Vegas Luxury Market Statistics | 12 Months to Aug. 2026"
+            intro="Luxury sales are up, but on buyers' terms: slower, mostly below list, with deeper supply than the rest of the market."
+            stats={[
+              { value: "$1,400,000", label: "Median $1M+ sale" },
+              { value: "+13.9%", label: "$1M+ sales vs. prior year" },
+              { value: "8.7 months", label: "$1M+ supply (Oct. 16)" },
+              { value: "38 days", label: "Median days on market" },
+            ]}
+            source="Nevada Real Estate Group analysis of MLS closings, Las Vegas, Henderson, North Las Vegas and Boulder City, Sept. 2025–Aug. 2026 (1,928 sales of $1M+). Checked 2026-10-19."
+          />
 
           {/* Why Dr. Jan for Luxury */}
           <section className="mb-16 max-w-6xl mx-auto">
@@ -407,7 +391,7 @@ export default function LuxuryHomesPage() {
                 },
                 {
                   q: "How long do luxury homes take to sell in Las Vegas?",
-                  a: "Luxury homes average 45 days on market, longer than the overall market average of 28 days. However, exceptional properties priced correctly can sell quickly, sometimes within weeks. Marketing strategy and pricing are crucial at this level—overpricing can lead to properties sitting for months.",
+                  a: "$1 million-plus homes sold in a median of 38 days over the 12 months to August 2026, versus 30 days for the whole market. However, exceptional properties priced correctly can sell quickly, sometimes within weeks. Marketing strategy and pricing are crucial at this level—overpricing can lead to properties sitting for months.",
                 },
                 {
                   q: "Can I sell my luxury home privately without public listing?",
@@ -466,7 +450,7 @@ export default function LuxuryHomesPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

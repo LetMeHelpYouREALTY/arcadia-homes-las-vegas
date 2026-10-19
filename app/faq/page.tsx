@@ -75,7 +75,7 @@ const faqCategories = [
       },
       {
         q: "Should I wait for prices to go higher?",
-        a: "Current appreciation of 4.2% YoY suggests prices are stable with gradual increases. Timing the market is difficult—most sellers do better by listing when ready rather than waiting. Dr. Jan can provide a personalized market analysis.",
+        a: "Prices are flat: the September 2026 single-family median was $470,000, the same as a year earlier (Las Vegas REALTORS). Timing the market is difficult—most sellers do better by listing when ready rather than waiting. Dr. Jan can provide a personalized market analysis.",
       },
     ],
   },
@@ -220,7 +220,7 @@ export default function FAQPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

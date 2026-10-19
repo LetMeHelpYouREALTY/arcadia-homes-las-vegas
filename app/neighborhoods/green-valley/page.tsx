@@ -5,6 +5,8 @@ import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import { Phone, TreePine, ShoppingBag } from "lucide-react";
 import type { Metadata } from "next";
+import { AreaStatsBlock } from "@/components/MarketStatsBlock";
+import { areaFaq, areaSummary } from "@/lib/area-market";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -33,7 +35,7 @@ const faqSchema = {
       name: "What is the current median home price in Green Valley?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, Green Valley's median home price is $520,000, with 4.8% appreciation year-over-year. Prices range from $400,000 for smaller homes to over $1.2 million for luxury properties.",
+        text: areaFaq("green-valley"),
       },
     },
     {
@@ -100,30 +102,7 @@ export default function GreenValleyPage() {
           </div>
           <RealScoutListings compact {...realscoutRange("/neighborhoods/green-valley")} />
 
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Green Valley Real Estate Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$520,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">26 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">187</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+4.8%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <AreaStatsBlock area="green-valley" title="Green Valley Real Estate Market" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -266,13 +245,7 @@ export default function GreenValleyPage() {
                 </div>
               </div>
 
-              <p className="mt-8">
-                The current Green Valley market shows <strong>187 active listings</strong> with homes
-                averaging <strong>26 days on market</strong>. The median price of <strong>$520,000</strong>
-                reflects steady demand and the premium buyers pay for mature trees and larger lots.
-                Properties range from well-maintained townhomes in the $400,000s to custom homes
-                exceeding $1.2 million in Green Valley's luxury enclaves.
-              </p>
+              <p className="mt-8">{areaSummary("green-valley")}</p>
               <p>
                 Working with Dr. Jan in Green Valley
                 means understanding the subtle differences between Green Valley proper, Green Valley Ranch,
@@ -312,11 +285,7 @@ export default function GreenValleyPage() {
                 <h3 className="font-bold text-slate-900 mb-2">
                   What is the current median home price in Green Valley?
                 </h3>
-                <p className="text-slate-600">
-                  As of January 2026, Green Valley's median home price is $520,000, with 4.8% appreciation
-                  year-over-year. Prices range from $400,000 for smaller homes to over $1.2 million for
-                  luxury properties.
-                </p>
+                <p className="text-slate-600">{areaFaq("green-valley")}</p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
@@ -367,7 +336,7 @@ export default function GreenValleyPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

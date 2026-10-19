@@ -143,8 +143,8 @@ export default function MarketInsightsPage() {
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span className="text-slate-700">
-                      <strong>Henderson appreciation:</strong> Tech jobs driving Henderson home
-                      values up 5.1% YoY—outpacing valley average
+                      <strong>Henderson appreciation:</strong> Henderson's August 2026 median sold price
+                      was $505,000, up 5.2% from a year earlier—ahead of the flat valley median
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -455,7 +455,7 @@ export default function MarketInsightsPage() {
             </div>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

@@ -11,6 +11,9 @@ import {
   ArrowRight,
 } from "lucide-react";
 import type { Metadata } from "next";
+import { vegasMarket } from "@/lib/vegas-market";
+import MarketStatsBlock, { valleyStats, valleySource } from "@/components/MarketStatsBlock";
+import { areaMarket, areaMoney } from "@/lib/area-market";
 
 import { selfCanonicalMetadata } from "@/lib/page-metadata";
 import AgentPhoto from "@/components/AgentPhoto";
@@ -70,37 +73,37 @@ const neighborhoods = [
   {
     name: "Summerlin",
     description: "Master-planned community with Red Rock views and 150+ parks",
-    medianPrice: "$625,000",
+    medianPrice: areaMoney(areaMarket["summerlin"].median),
     daysOnMarket: 22,
   },
   {
     name: "Henderson",
     description: "Nevada's second-largest city with master-planned communities and parks",
-    medianPrice: "$485,000",
+    medianPrice: areaMoney(areaMarket["henderson"].median),
     daysOnMarket: 24,
   },
   {
     name: "Green Valley",
     description: "Henderson community with mature landscaping and golf courses",
-    medianPrice: "$520,000",
+    medianPrice: areaMoney(areaMarket["green-valley"].median),
     daysOnMarket: 26,
   },
   {
     name: "Southern Highlands",
     description: "Guard-gated luxury community with championship golf and mountain views",
-    medianPrice: "$750,000",
+    medianPrice: areaMoney(areaMarket["southern-highlands"].median),
     daysOnMarket: 32,
   },
   {
     name: "North Las Vegas",
     description: "Affordable new construction and growing infrastructure",
-    medianPrice: "$385,000",
+    medianPrice: areaMoney(areaMarket["north-las-vegas"].median),
     daysOnMarket: 18,
   },
   {
     name: "Skye Canyon",
     description: "Newer master-planned community with modern amenities and mountain access",
-    medianPrice: "$550,000",
+    medianPrice: areaMoney(areaMarket["skye-canyon"].median),
     daysOnMarket: 20,
   },
 ];
@@ -193,7 +196,7 @@ export default function ListingsPage() {
               The Las Vegas real estate market offers exceptional value compared to California and 
               other western states. With no state income tax and housing prices 40-60% lower than 
               coastal cities, your dollar stretches further in Southern Nevada. Here's what you can 
-              expect at different price points in the current January 2026 market.
+              expect at different price points in today's market.
             </p>
             <div className="space-y-4">
               {priceRanges.map((price, _index) => (
@@ -304,35 +307,14 @@ export default function ListingsPage() {
           </section>
 
           {/* Market Stats */}
-          <section className="mb-16 max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">
-              Las Vegas Real Estate Market Statistics
-            </h2>
-            <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              The Las Vegas housing market remains strong heading into 2026, with steady appreciation 
-              and healthy inventory levels. Understanding current market conditions helps buyers 
-              make informed decisions about timing, pricing, and negotiation strategies. Here's a 
-              snapshot of the current market as of January 2026.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="bg-blue-50 rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-1">$450K</div>
-                <div className="text-sm text-slate-600">Median Home Price</div>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-1">28</div>
-                <div className="text-sm text-slate-600">Avg Days on Market</div>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-1">4,850</div>
-                <div className="text-sm text-slate-600">Active Listings</div>
-              </div>
-              <div className="bg-blue-50 rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-1">+4.2%</div>
-                <div className="text-sm text-slate-600">Year-Over-Year</div>
-              </div>
-            </div>
-          </section>
+          <MarketStatsBlock
+            theme="light"
+            title={`Las Vegas Real Estate Market Statistics | ${vegasMarket.month}`}
+            intro={`Prices are flat year over year, supply is up, and mortgage rates are the main pressure on buyers this fall.`}
+            stats={valleyStats()}
+            source={valleySource}
+            className="max-w-6xl"
+          />
 
           {/* Home Buying Process */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -424,9 +406,7 @@ export default function ListingsPage() {
                   How competitive is the Las Vegas housing market in 2026?
                 </h3>
                 <p className="text-slate-600">
-                  The Las Vegas market is moderately competitive with 2.1 months of inventory—a 
-                  slight seller's market. Well-priced homes in desirable areas like Summerlin and 
-                  Henderson often receive multiple offers within the first week. Having a 
+                  Las Vegas is closer to balanced than it was a year ago: about 5 months of supply in September 2026, up from about 4. Well-priced homes still move—53.4% sold within 30 days—but overpriced ones sit, which gives buyers room to negotiate. Having a 
                   pre-approval and experienced agent gives you a significant advantage.
                 </p>
               </div>
@@ -498,7 +478,7 @@ export default function ListingsPage() {
         </div>
 
         {/* Last Updated */}
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

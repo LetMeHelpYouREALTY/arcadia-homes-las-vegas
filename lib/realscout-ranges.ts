@@ -62,7 +62,6 @@ export const REALSCOUT_RANGES: Record<string, PriceRange> = {
   // Market
   "/market-insights": r(400000, 1000000),
   "/market-report": r(425000, 1100000),
-  "/market-update": r(440000, 950000),
 
   // About / contact / utility
   "/about": r(500000, 2000000),

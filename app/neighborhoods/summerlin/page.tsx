@@ -5,6 +5,8 @@ import { realscoutRange } from "@/lib/realscout-ranges";
 import Link from "next/link";
 import { Phone, TreePine, Mountain, GraduationCap, ShoppingBag } from "lucide-react";
 import type { Metadata } from "next";
+import { AreaStatsBlock } from "@/components/MarketStatsBlock";
+import { areaFaq, areaSummary } from "@/lib/area-market";
 import SchemaScript from "@/components/SchemaScript";
 import {
   generateFAQSchema,
@@ -35,7 +37,7 @@ const summerlinFaqs = [
   {
     question: "What is the current median home price in Summerlin?",
     answer:
-      "As of January 2026, the median home price in Summerlin is $625,000, representing a 6.8% increase year-over-year. Luxury homes in The Ridges and other guard-gated communities can exceed $2 million.",
+      areaFaq("summerlin"),
   },
   {
     question: "How long do homes stay on the market in Summerlin?",
@@ -103,30 +105,7 @@ export default function SummerlinPage() {
           </div>
           <RealScoutListings compact {...realscoutRange("/neighborhoods/summerlin")} />
 
-          {/* Market Stats */}
-          <section className="mb-16 bg-slate-900 text-white rounded-2xl p-8 md:p-12 max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold mb-8 text-center">
-              Summerlin Real Estate Market | January 2026
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">$625,000</div>
-                <div className="text-slate-300 text-sm">Median Home Price</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">22 Days</div>
-                <div className="text-slate-300 text-sm">Avg. Days on Market</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold mb-1">342</div>
-                <div className="text-slate-300 text-sm">Active Listings</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-400 mb-1">+6.8%</div>
-                <div className="text-slate-300 text-sm">YoY Appreciation</div>
-              </div>
-            </div>
-          </section>
+          <AreaStatsBlock area="summerlin" title="Summerlin Real Estate Market" />
 
           {/* Main Content */}
           <section className="mb-16 max-w-5xl mx-auto">
@@ -281,13 +260,7 @@ export default function SummerlinPage() {
                 </div>
               </div>
 
-              <p className="mt-8">
-                The current Summerlin real estate market shows strong demand with <strong>342 active listings</strong> and
-                an average of just <strong>22 days on market</strong>. The median home price of <strong>$625,000</strong> represents
-                solid appreciation while still offering value compared to similar communities in California.
-                Buyers relocating from the West Coast find that Summerlin delivers a comparable lifestyle at
-                a fraction of the cost—with no state income tax.
-              </p>
+              <p className="mt-8">{areaSummary("summerlin")}</p>
               <p>
                 Working with <strong>Dr. Jan Duffy</strong> gives you access to listings before they hit
                 the market and expert negotiation skills. She has 35 years in Las Vegas real estate, which means you'll have insights that online 
@@ -325,11 +298,7 @@ export default function SummerlinPage() {
                 <h3 className="font-bold text-slate-900 mb-2">
                   What is the current median home price in Summerlin?
                 </h3>
-                <p className="text-slate-600">
-                  As of January 2026, the median home price in Summerlin is $625,000, representing a 6.8%
-                  increase year-over-year. Luxury homes in The Ridges and other guard-gated communities
-                  can exceed $2 million.
-                </p>
+                <p className="text-slate-600">{areaFaq("summerlin")}</p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
                 <h3 className="font-bold text-slate-900 mb-2">
@@ -385,7 +354,7 @@ export default function SummerlinPage() {
             </p>
           </section>
         </div>
-        <div className="text-center text-sm text-slate-500 mt-8">Last Updated: January 2026</div>
+        <div className="text-center text-sm text-slate-500 mt-8">Market figures updated October 2026</div>
       </main>
       <Footer />
     </>

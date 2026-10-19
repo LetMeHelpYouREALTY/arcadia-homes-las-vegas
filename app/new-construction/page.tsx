@@ -71,7 +71,7 @@ const faqSchema = {
       name: "What builder incentives are currently available?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of January 2026, builders are offering 4-6% toward closing costs, rate buydowns (some as low as 4.99%), free upgrades ($15K-$50K value), and appliance packages. Incentives change monthly. Dr. Jan tracks current offers across all builders.",
+        text: "As of October 2026, several builders are using their own lenders to beat the 7.40% market rate. Century Communities, for example, advertised 4.875% FHA/VA and 5.75% conventional 30-year fixed rates on select move-in-ready homes, plus up to $3,000 toward closing costs, for closings by October 30. Offers change monthly and usually require the builder's lender. Dr. Jan tracks current offers across builders.",
       },
     },
     {
@@ -117,7 +117,7 @@ const builders = [
       "Henderson (Inspirada, Lake Las Vegas)",
       "The Ridges",
     ],
-    currentIncentives: "Up to $50K in design studio credits on select inventory",
+    currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
     incentiveDeadline: "February 28, 2026",
     highlights: [
       "Luxury finishes standard",
@@ -135,7 +135,7 @@ const builders = [
       "North Las Vegas (Valley Vista)",
       "Southwest (Skye Hills)",
     ],
-    currentIncentives: "4.99% rate buydown + $25K toward closing with Lennar Mortgage",
+    currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
     incentiveDeadline: "January 31, 2026",
     highlights: [
       "Everything's Included® packages",
@@ -152,7 +152,7 @@ const builders = [
       "Southwest Las Vegas",
       "Henderson",
     ],
-    currentIncentives: "Up to 6% closing cost credit + free premium lot on select homes",
+    currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
     incentiveDeadline: "February 15, 2026",
     highlights: [
       "Built to Order™ customization",
@@ -169,7 +169,7 @@ const builders = [
       "Henderson (Cadence, Lake Las Vegas)",
       "Mountains Edge",
     ],
-    currentIncentives: "$30K flex credit on quick move-in homes",
+    currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
     incentiveDeadline: "Rolling (inventory dependent)",
     highlights: [
       "Award-winning designs",
@@ -186,7 +186,7 @@ const builders = [
       "North Las Vegas",
       "Southwest Las Vegas",
     ],
-    currentIncentives: "Up to $20K design center credit + rate buydown",
+    currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
     incentiveDeadline: "January 31, 2026",
     highlights: [
       "Life Tested® floor plans",
@@ -203,7 +203,7 @@ const builders = [
       "Henderson",
       "Southwest Las Vegas",
     ],
-    currentIncentives: "Up to $15K HomeGallery credit + 5.25% rate with preferred lender",
+    currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
     incentiveDeadline: "February 28, 2026",
     highlights: [
       "PersonalizedSM options",
@@ -219,7 +219,7 @@ const builders = [
       "Trilogy at Summerlin (55+)",
       "Trilogy at Inspirada (55+)",
     ],
-    currentIncentives: "Resort membership included + up to $40K in upgrades",
+    currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
     incentiveDeadline: "Ongoing",
     highlights: [
       "Award-winning 55+ communities",
@@ -236,7 +236,7 @@ const builders = [
       "Southwest Las Vegas",
       "Pahrump",
     ],
-    currentIncentives: "Up to 5% closing costs + appliance package",
+    currentIncentives: "Offers change monthly—call Dr. Jan for this builder's current incentives",
     incentiveDeadline: "January 31, 2026",
     highlights: [
       "Most affordable new construction",
@@ -368,7 +368,7 @@ export default function NewConstructionPage() {
               <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
                 <h2 className="text-2xl font-bold text-slate-900 flex items-center">
                   <Calendar className="h-7 w-7 text-green-600 mr-3" />
-                  January 2026 Builder Incentives
+                  October 2026 Builder Incentives
                 </h2>
                 <span className="bg-green-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
                   Limited Time Offers
@@ -376,30 +376,29 @@ export default function NewConstructionPage() {
               </div>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">4.99%</div>
-                  <div className="text-slate-700 font-medium">Rate Buydowns</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">4.875%</div>
+                  <div className="text-slate-700 font-medium">FHA/VA 30-Year Fixed</div>
                   <div className="text-slate-500 text-sm mt-1">
-                    Multiple builders offering sub-5% rates with preferred lenders
+                    Century Communities, select move-in-ready homes, builder's lender, close by Oct. 30
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">$50K+</div>
-                  <div className="text-slate-700 font-medium">Upgrade Credits</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">5.75%</div>
+                  <div className="text-slate-700 font-medium">Conventional 30-Year Fixed</div>
                   <div className="text-slate-500 text-sm mt-1">
-                    Design center and premium options at no additional cost
+                    Same Century Communities offer, plus up to $3,000 toward closing costs
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">6%</div>
-                  <div className="text-slate-700 font-medium">Closing Cost Credits</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">7.40%</div>
+                  <div className="text-slate-700 font-medium">Market 30-Year Average</div>
                   <div className="text-slate-500 text-sm mt-1">
-                    Significant credits to offset buyer closing costs
+                    Freddie Mac, Oct. 15, 2026. Builder rates beat it—compare the price, too
                   </div>
                 </div>
               </div>
               <p className="text-center text-slate-600 mt-6">
-                Incentives change frequently. Contact Dr. Jan Duffy for current offers specific
-                to your preferred communities.
+                Builder offers checked October 19, 2026 (builder promotions as reported by Neighborhoods in Las Vegas, Oct. 9). Incentives change frequently—call Dr. Jan for current offers in your preferred communities.
               </p>
             </div>
           </section>
@@ -631,9 +630,7 @@ export default function NewConstructionPage() {
                   What builder incentives are currently available?
                 </h3>
                 <p className="text-slate-600">
-                  As of January 2026, builders are offering 4-6% toward closing costs, rate buydowns
-                  (some as low as 4.99%), free upgrades ($15K-$50K value), and appliance packages.
-                  Incentives change monthly. Dr. Jan tracks current offers across all builders.
+                  As of October 2026, several builders are using their own lenders to beat the 7.40% market rate. Century Communities, for example, advertised 4.875% FHA/VA and 5.75% conventional 30-year fixed rates on select move-in-ready homes, plus up to $3,000 toward closing costs, for closings by October 30. Offers change monthly and usually require the builder's lender. Dr. Jan tracks current offers across builders.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -721,7 +718,7 @@ export default function NewConstructionPage() {
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">
-          Last Updated: January 2026 | Incentives subject to change
+          Incentives checked October 19, 2026 | Subject to change
         </div>
       </main>
       <Footer />

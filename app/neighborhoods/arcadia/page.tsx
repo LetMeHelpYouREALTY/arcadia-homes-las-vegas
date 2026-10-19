@@ -284,8 +284,9 @@ export default function ArcadiaPage() {
                 <p>
                   Arcadia is in Summerlin&apos;s <strong>Grand Park village</strong>, one of several
                   neighborhoods near the village&apos;s namesake park—Grand Park—the largest park to
-                  date in the community upon completion (90 acres). Grand Park is under development
-                  in phases, with the first phase expected by year-end 2025.
+                  date in the community upon completion (90 acres). Grand Park is being built
+                  in phases; its first phase, about 21 acres, opened in March 2026 with ball fields, pickleball
+                  courts, and a splash pad.
                 </p>
               </div>
             </div>

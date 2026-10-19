@@ -191,7 +191,7 @@ export const gbpFAQs = [
   },
   {
     question: "What is the average home price in Las Vegas in 2026?",
-    answer: "As of January 2026, the Las Vegas median home price is $450,000, up 4.2% year-over-year. Henderson's median is slightly higher at $485,000. Luxury communities like Summerlin average $625,000, while The Ridges averages $2.5 million. Contact Dr. Jan for current market data.",
+    answer: "In September 2026, the Las Vegas single-family median was $470,000, flat from a year earlier (Las Vegas REALTORS). In August 2026, Henderson's median sold price was $505,000 and Summerlin's single-family median was $660,000 (MLS closed sales). The Ridges ran a $3.46 million median over the 12 months to August. Contact Dr. Jan for current figures on your street.",
   },
   {
     question: "Does Dr. Jan work with first-time home buyers?",

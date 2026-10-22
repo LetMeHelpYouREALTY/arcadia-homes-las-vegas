@@ -208,7 +208,7 @@ export default function SkyeCanyonPage() {
                   <tbody className="divide-y divide-slate-200">
                     <tr><td className="px-4 py-3">Downtown Summerlin</td><td className="px-4 py-3">8 miles</td><td className="px-4 py-3">15 min</td><td className="px-4 py-3">20-30 min</td></tr>
                     <tr className="bg-slate-50"><td className="px-4 py-3">Las Vegas Strip</td><td className="px-4 py-3">18 miles</td><td className="px-4 py-3">25 min</td><td className="px-4 py-3">35-50 min</td></tr>
-                    <tr><td className="px-4 py-3">McCarran Airport (LAS)</td><td className="px-4 py-3">22 miles</td><td className="px-4 py-3">28 min</td><td className="px-4 py-3">40-55 min</td></tr>
+                    <tr><td className="px-4 py-3">Harry Reid Airport (LAS)</td><td className="px-4 py-3">22 miles</td><td className="px-4 py-3">28 min</td><td className="px-4 py-3">40-55 min</td></tr>
                     <tr className="bg-slate-50"><td className="px-4 py-3">Centennial Hills</td><td className="px-4 py-3">5 miles</td><td className="px-4 py-3">10 min</td><td className="px-4 py-3">12-18 min</td></tr>
                     <tr><td className="px-4 py-3">Floyd Lamb Park</td><td className="px-4 py-3">Adjacent</td><td className="px-4 py-3">5 min</td><td className="px-4 py-3">5 min</td></tr>
                   </tbody>

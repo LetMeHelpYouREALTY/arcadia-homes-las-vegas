@@ -161,7 +161,7 @@ export default function LuxuryHomesPage() {
                     </span>
                   </div>
                   <p className="text-slate-600 mb-4">
-                    A guard-gated Summerlin enclave for buyers who want maximum privacy. Custom estates, Bear's Best Golf Club, and Red Rock views.
+                    A guard-gated Summerlin enclave for buyers who want maximum privacy. Custom estates, the private Amara Golf Club (formerly Bear's Best), and Red Rock views.
                   </p>
                   <ul className="space-y-2 mb-4">
                     <li className="flex items-center text-sm text-slate-700">
@@ -178,7 +178,7 @@ export default function LuxuryHomesPage() {
                     </li>
                     <li className="flex items-center text-sm text-slate-700">
                       <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                      Bear's Best Golf Club
+                      Amara Golf Club (private, opening late 2026)
                     </li>
                   </ul>
                   <Link

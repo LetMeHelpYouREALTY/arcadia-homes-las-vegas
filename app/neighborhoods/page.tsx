@@ -68,7 +68,7 @@ const neighborhoods = [
     medianPrice: areaMoney(areaMarket["the-ridges"].median),
     priceChange: areaMarket["the-ridges"].yoy,
     description: "Ultra-luxury guard-gated community with custom estates and golf",
-    highlights: ["Guard-Gated", "Custom Estates", "Bear's Best Golf", "Strip Views"],
+    highlights: ["Guard-Gated", "Custom Estates", "Amara Golf Club (private)", "Strip Views"],
     lifestyleNote: "Custom lots, golf, luxury finishes",
   },
   {

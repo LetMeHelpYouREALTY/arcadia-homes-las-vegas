@@ -214,7 +214,7 @@ export default function GreenValleyPage() {
                   </thead>
                   <tbody className="divide-y divide-slate-200">
                     <tr><td className="px-4 py-3">Las Vegas Strip</td><td className="px-4 py-3">10 miles</td><td className="px-4 py-3">15 min</td><td className="px-4 py-3">25-35 min</td></tr>
-                    <tr className="bg-slate-50"><td className="px-4 py-3">McCarran Airport (LAS)</td><td className="px-4 py-3">7 miles</td><td className="px-4 py-3">12 min</td><td className="px-4 py-3">18-25 min</td></tr>
+                    <tr className="bg-slate-50"><td className="px-4 py-3">Harry Reid Airport (LAS)</td><td className="px-4 py-3">7 miles</td><td className="px-4 py-3">12 min</td><td className="px-4 py-3">18-25 min</td></tr>
                     <tr><td className="px-4 py-3">Downtown Henderson</td><td className="px-4 py-3">3 miles</td><td className="px-4 py-3">8 min</td><td className="px-4 py-3">10-15 min</td></tr>
                     <tr className="bg-slate-50"><td className="px-4 py-3">Summerlin</td><td className="px-4 py-3">20 miles</td><td className="px-4 py-3">25 min</td><td className="px-4 py-3">35-50 min</td></tr>
                     <tr><td className="px-4 py-3">Lake Mead</td><td className="px-4 py-3">18 miles</td><td className="px-4 py-3">22 min</td><td className="px-4 py-3">25-30 min</td></tr>

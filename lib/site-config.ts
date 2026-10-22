@@ -87,7 +87,7 @@ export const neighborhoods = [
     slug: "the-ridges",
     description: "Ultra-luxury guard-gated community in Summerlin",
     medianPrice: areaMoney(areaMarket["the-ridges"].median),
-    highlights: ["Guard-gated", "Custom estates", "Bear's Best Golf", "Strip views"],
+    highlights: ["Guard-gated", "Custom estates", "Amara Golf Club (private)", "Strip views"],
   },
   {
     name: "Southern Highlands",

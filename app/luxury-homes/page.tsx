@@ -65,7 +65,7 @@ const luxuryNeighborhoods = [
     location: "Summerlin",
     priceRange: "$2M - $15M+",
     description:
-      "Guard-gated community with custom estates, Strip views, and Bear's Best Golf Club. One of the most prestigious addresses in Las Vegas with stunning Red Rock views.",
+      "Guard-gated community with custom estates, Strip views, and the private Amara Golf Club (formerly Bear's Best). One of the most prestigious addresses in Las Vegas with stunning Red Rock views.",
     features: ["Guard-gated", "Custom estates", "Strip views", "Golf course"],
   },
   {

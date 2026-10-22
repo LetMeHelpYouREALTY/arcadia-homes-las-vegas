@@ -119,9 +119,9 @@ export default function TheRidgesPage() {
                 experience to match The Ridges' standard of excellence.
               </p>
               <p>
-                The Ridges comprises six distinctive villages—Bear's Best, Falcon Ridge, Azure, Talon Ridge,
-                Silver Ridge, and Eagle Hills—each offering its own character while maintaining the
-                community's legendary standards. With nearly 400 custom homes across 793 acres, low density is
+                First opened in 2000, The Ridges is a guard-gated village of a dozen-plus individually gated
+                enclaves—among them Azure, Promontory, Falcon Ridge, Arrowhead, Indigo, Talon Ridge, Topaz
+                Ridge, Boulder Ridge, and Fairway Hills—wrapped around the former Bear's Best golf course, now being rebuilt as the private Amara Golf Club (reopening targeted for late 2026). With nearly 400 custom homes across 793 acres, low density is
                 built into The Ridges' DNA. Strict architectural guidelines ensure that every home meets
                 the community's exacting standards, protecting property values and ensuring a cohesive
                 aesthetic throughout.
@@ -142,9 +142,8 @@ export default function TheRidgesPage() {
                   </div>
                   <p className="text-slate-600">
                     The Ridges offers 24/7 guard-gated security with roving patrols, giving residents
-                    the peace of mind they expect at this price point. Low density—only
-                    about 400 homes across nearly 800 acres—gives a level of privacy that's hard to find in
-                    higher-density developments.
+                    the privacy residents expect at this price point. Low density—nearly 400 custom homes
+                    among roughly 1,000 residences across 793 acres—is hard to find in newer developments.
                   </p>
                 </div>
                 <div className="bg-slate-50 p-6 rounded-xl">
@@ -156,40 +155,52 @@ export default function TheRidgesPage() {
                     Positioned along Red Rock Canyon's foothills, The Ridges offers views that no other
                     Las Vegas community can match. Properties feature vistas of the Strip's glittering
                     skyline, the rugged Spring Mountains, and the desert floor stretching to the horizon.
-                    Bear's Best Golf Club, designed by Jack Nicklaus, winds through the community, adding
-                    another layer of prestige.
+                    The golf course that winds through the community—Jack Nicklaus' former Bear's Best—is being
+                    rebuilt as the private, members-only Amara Golf Club, targeted to reopen in late 2026.
                   </p>
                 </div>
               </div>
 
-              {/* The Six Villages */}
-              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">The Six Villages of The Ridges</h3>
+              {/* Enclaves */}
+              <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Enclaves Inside The Ridges</h3>
               <div className="not-prose grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="bg-white border border-slate-200 rounded-xl p-5">
-                  <h5 className="font-bold text-slate-900 mb-2">Bear's Best</h5>
-                  <p className="text-slate-600 text-sm">Surrounds Bear's Best Golf Club. Premium golf course lots with Strip and mountain views. $2M-$8M.</p>
+                  <h5 className="font-bold text-slate-900 mb-2">Azure</h5>
+                  <p className="text-slate-600 text-sm">About 115 custom homes on lots from about a quarter acre to 1.2 acres; many front the golf course (the former Bear's Best, now Amara). Two of the final five Ridges homesites are here.</p>
+                </div>
+                <div className="bg-white border border-slate-200 rounded-xl p-5">
+                  <h5 className="font-bold text-slate-900 mb-2">Indigo</h5>
+                  <p className="text-slate-600 text-sm">Half-acre homesites beside the golf course (now Amara). Three of the final five Ridges homesites, released June 2026, are here, priced from $2.5 million.</p>
+                </div>
+                <div className="bg-white border border-slate-200 rounded-xl p-5">
+                  <h5 className="font-bold text-slate-900 mb-2">Promontory</h5>
+                  <p className="text-slate-600 text-sm">About 54 estate homes; Promontory's CC&Rs originally called for homes of at least about 6,000 square feet.</p>
                 </div>
                 <div className="bg-white border border-slate-200 rounded-xl p-5">
                   <h5 className="font-bold text-slate-900 mb-2">Falcon Ridge</h5>
-                  <p className="text-slate-600 text-sm">Elevated position with panoramic views. Custom estates on large lots. $2.5M-$10M.</p>
+                  <p className="text-slate-600 text-sm">61 custom homesites near Club Ridges, the residents-only fitness club.</p>
                 </div>
                 <div className="bg-white border border-slate-200 rounded-xl p-5">
-                  <h5 className="font-bold text-slate-900 mb-2">Azure</h5>
-                  <p className="text-slate-600 text-sm">Contemporary architecture with dramatic Strip views. Modern luxury homes. $1.8M-$5M.</p>
+                  <h5 className="font-bold text-slate-900 mb-2">Arrowhead</h5>
+                  <p className="text-slate-600 text-sm">About two dozen custom homes, every one on the golf course.</p>
                 </div>
                 <div className="bg-white border border-slate-200 rounded-xl p-5">
                   <h5 className="font-bold text-slate-900 mb-2">Talon Ridge</h5>
-                  <p className="text-slate-600 text-sm">Semi-custom homes with Red Rock backdrop. Entry to The Ridges lifestyle. $1.5M-$3M.</p>
+                  <p className="text-slate-600 text-sm">17 view homesites of a quarter to a third of an acre; the last custom neighborhood to open, in 2019.</p>
                 </div>
                 <div className="bg-white border border-slate-200 rounded-xl p-5">
-                  <h5 className="font-bold text-slate-900 mb-2">Silver Ridge</h5>
-                  <p className="text-slate-600 text-sm">Custom lot community. Architectural masterpieces. $3M-$15M.</p>
+                  <h5 className="font-bold text-slate-900 mb-2">Boulder Ridge</h5>
+                  <p className="text-slate-600 text-sm">About 46 homes built by Christopher Homes.</p>
                 </div>
                 <div className="bg-white border border-slate-200 rounded-xl p-5">
-                  <h5 className="font-bold text-slate-900 mb-2">Eagle Hills</h5>
-                  <p className="text-slate-600 text-sm">Newest village with modern designs. Desert contemporary style. $2M-$6M.</p>
+                  <h5 className="font-bold text-slate-900 mb-2">Fairway Hills</h5>
+                  <p className="text-slate-600 text-sm">Attached homes and the most accessible entry point; 12-month median sale about $1.04 million (3 sales, to Sept. 2026).</p>
                 </div>
               </div>
+              <p className="not-prose mt-4 text-xs text-slate-500">
+                Sources: Summerlin (Howard Hughes) announcements, Jan. 2019 and June 2026; Nevada Real Estate Group MLS
+                analysis, Sept. 2026; local brokerage community guides. Homes and lot counts are approximate.
+              </p>
 
               {/* Commute & Location */}
               <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Location & Accessibility</h3>
@@ -206,8 +217,7 @@ export default function TheRidgesPage() {
                     <tr><td className="px-4 py-3">Downtown Summerlin</td><td className="px-4 py-3">3 miles</td><td className="px-4 py-3">8 min</td></tr>
                     <tr className="bg-slate-50"><td className="px-4 py-3">Red Rock Canyon</td><td className="px-4 py-3">4 miles</td><td className="px-4 py-3">10 min</td></tr>
                     <tr><td className="px-4 py-3">Las Vegas Strip</td><td className="px-4 py-3">15 miles</td><td className="px-4 py-3">20 min</td></tr>
-                    <tr className="bg-slate-50"><td className="px-4 py-3">McCarran Airport (LAS)</td><td className="px-4 py-3">18 miles</td><td className="px-4 py-3">25 min</td></tr>
-                    <tr><td className="px-4 py-3">Private Aviation (HND)</td><td className="px-4 py-3">12 miles</td><td className="px-4 py-3">18 min</td></tr>
+                    <tr className="bg-slate-50"><td className="px-4 py-3">Harry Reid International Airport (LAS)</td><td className="px-4 py-3">18 miles</td><td className="px-4 py-3">25 min</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -218,9 +228,9 @@ export default function TheRidgesPage() {
                 <div className="bg-slate-50 rounded-xl p-6">
                   <h5 className="font-bold text-slate-900 mb-3">Golf & Recreation</h5>
                   <ul className="text-slate-600 text-sm space-y-2">
-                    <li><strong>Bear's Best Golf Club:</strong> Jack Nicklaus "tribute" course with 18 replica holes from his best designs.</li>
+                    <li><strong>Amara Golf Club (formerly Bear's Best):</strong> The Ridges' course closed in 2025 for a $300 million rebuild as a private, members-only club; reopening is targeted for late 2026. Membership is separate from home ownership.</li>
                     <li><strong>Red Rock Country Club:</strong> Two Arnold Palmer courses, just outside The Ridges gates.</li>
-                    <li><strong>TPC Las Vegas:</strong> 15 minutes away, hosts PGA Tour events.</li>
+                    <li><strong>TPC Summerlin:</strong> Home of the PGA Tour's Shriners Children's Open, a short drive away.</li>
                     <li><strong>Red Rock Canyon:</strong> World-class hiking, biking, and rock climbing minutes away.</li>
                   </ul>
                 </div>
@@ -230,7 +240,7 @@ export default function TheRidgesPage() {
                     <li><strong>Downtown Summerlin:</strong> High-end shopping including Apple, Nordstrom, Williams Sonoma.</li>
                     <li><strong>Tivoli Village:</strong> Upscale outdoor shopping with Restoration Hardware, fine dining.</li>
                     <li><strong>Concierge Services:</strong> Private chefs, housekeeping, property management available.</li>
-                    <li><strong>Private Aviation:</strong> Henderson Executive Airport for private jet access.</li>
+                    <li><strong>Private Aviation:</strong> Private jet terminals at Harry Reid International and Henderson Executive Airport.</li>
                   </ul>
                 </div>
               </div>
@@ -239,17 +249,16 @@ export default function TheRidgesPage() {
               <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6">Schools Serving The Ridges</h3>
               <div className="not-prose bg-white border border-slate-200 rounded-xl p-6">
                 <p className="text-slate-700 mb-4">
-                  The Ridges is served by Clark County School District schools in the Palo Verde cluster,
-                  plus several private school options nearby:
+                  The Ridges is served by the Clark County School District. Attendance zones change, so confirm
+                  any address with CCSD&apos;s zoning search before writing an offer. Private schools are nearby too.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <h5 className="font-bold text-slate-900 mb-2">Public Schools</h5>
+                    <h5 className="font-bold text-slate-900 mb-2">Public Schools (current zoning)</h5>
                     <ul className="text-slate-600 text-sm space-y-1">
-                      <li>• Palo Verde High School (8/10)</li>
-                      <li>• Sig Rogich Middle School (9/10)</li>
-                      <li>• Marion Earl Elementary</li>
-                      <li>• Helen Smith Elementary</li>
+                      <li>• Judy &amp; John L. Goolsby Elementary</li>
+                      <li>• Victoria Fertitta Middle School</li>
+                      <li>• Durango High School</li>
                     </ul>
                   </div>
                   <div>

@@ -312,7 +312,7 @@ export default function CaliforniaRelocatorPage() {
                 <div className="p-6">
                   <p className="text-slate-600 mb-4">
                     Newport Coast quality, Vegas prices. Guard-gated luxury with Strip views,
-                    Bear's Best golf, and custom estates.
+                    the private Amara Golf Club (formerly Bear's Best), and custom estates.
                   </p>
                   <div className="text-sm text-slate-500 mb-4">
                     <strong>Best for:</strong> Beverly Hills/Newport Beach luxury buyers

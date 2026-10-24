@@ -137,7 +137,7 @@ export default function RelocationPage() {
               provides comprehensive relocation services to ensure your transition is stress-free.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
-              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> 35 Years Local Experience</span>
+              <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> In Real Estate Since 1983</span>
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> Virtual Home Tours</span>
               <span className="flex items-center"><CheckCircle className="h-4 w-4 text-green-500 mr-1" /> School Research</span>
             </div>
@@ -192,7 +192,7 @@ export default function RelocationPage() {
               <cite className="text-slate-900 font-semibold">
                 <span className="inline-flex items-center gap-3 not-italic">
                   <AgentPhoto size={48} />
-                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas | 35 Years in Las Vegas Real Estate</span>
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas | In Real Estate Since 1983</span>
                 </span>
               </cite>
             </div>
@@ -370,7 +370,7 @@ export default function RelocationPage() {
               Why Relocate With Dr. Jan
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              35 years in Las Vegas real estate and $127M+ in closed transactions. Your agent back
+              In real estate since 1983 with $127M+ in closed transactions. Your agent back
               home can connect directly with Dr. Jan to ensure a smooth transition—no gaps, no
               miscommunication.
             </p>
@@ -379,7 +379,7 @@ export default function RelocationPage() {
                 <Home className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <h3 className="font-bold text-lg mb-2">Local Expertise</h3>
                 <p className="text-slate-600 text-sm">
-                  35 years in Las Vegas real estate, with a focus on Summerlin West and 55+ communities
+                  In real estate since 1983, with a focus on Summerlin West and 55+ communities
                 </p>
               </div>
               <div className="text-center p-6 bg-slate-50 rounded-xl">

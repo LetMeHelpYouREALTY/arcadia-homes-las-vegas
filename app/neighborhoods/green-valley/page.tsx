@@ -125,7 +125,7 @@ export default function GreenValleyPage() {
                 that are already built out.
               </p>
               <p>
-                <strong>Dr. Jan Duffy</strong> brings 35 years of Las Vegas real estate experience to
+                <strong>Dr. Jan Duffy</strong> brings experience in real estate since 1983 to
                 Green Valley. She knows which streets offer the best mountain views, how lot sizes and
                 floor plans vary, and which HOAs maintain their communities to the highest standards.
                 That local knowledge gives Green Valley buyers and sellers a real advantage.
@@ -261,7 +261,7 @@ export default function GreenValleyPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Green Valley offers something newer communities can't replicate—35 years of mature
+                "Green Valley offers something newer communities can't replicate—decades of mature
                 trees, larger lots, and parks and shopping close to home. When clients tell me they
                 want tree-lined streets and a central Henderson location, I show them Green Valley.
                 It's the original, and still one of the best."

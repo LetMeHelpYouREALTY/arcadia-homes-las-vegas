@@ -58,7 +58,7 @@ export default function HeroSection() {
         </h1>
         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
           Dr. Jan Duffy helps buyers and sellers navigate SHAWOOD at Arcadia in Grand Park village—
-          luxury new construction in Summerlin West, backed by 35 years in Las Vegas real estate.
+          luxury new construction in Summerlin West, backed by a career in real estate since 1983.
         </p>
 
         {/* RealScout Search Widget */}
@@ -77,7 +77,7 @@ export default function HeroSection() {
             <span>Properties Sold</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="font-semibold">35 Years</span>
+            <span className="font-semibold">Since 1983</span>
             <span>in Las Vegas Real Estate</span>
           </div>
           <div className="flex items-center gap-2">

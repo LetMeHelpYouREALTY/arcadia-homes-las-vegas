@@ -462,9 +462,9 @@ export default function DivorceProbatePage() {
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white border border-slate-200 rounded-xl p-6 text-center">
                 <Shield className="h-10 w-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="font-bold text-slate-900 mb-2">35 Years of Experience</h3>
+                <h3 className="font-bold text-slate-900 mb-2">In Real Estate Since 1983</h3>
                 <p className="text-slate-600 text-sm">
-                  Dr. Jan has 35 years in Las Vegas real estate and 500+ successful transactions. She
+                  Dr. Jan has been in real estate since 1983, with 500+ successful transactions. She
                   prices with care and explains each step, so everyone involved knows where
                   things stand.
                 </p>

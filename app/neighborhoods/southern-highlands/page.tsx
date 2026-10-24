@@ -287,8 +287,7 @@ export default function SouthernHighlandsPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Southern Highlands delivers luxury living at prices that often surprise buyers—especially
                 those relocating from California. You get championship golf, guard-gated sections, mountain
-                views, and community parks, all just 15 minutes from the Strip. With 35 years in Las
-                Vegas real estate, I help clients see beyond the golf course to the community's full potential."
+                views, and community parks, all just 15 minutes from the Strip. In real estate since 1983, I help clients see beyond the golf course to the community's full potential."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
                 <span className="inline-flex items-center gap-3 not-italic">

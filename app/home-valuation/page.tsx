@@ -17,7 +17,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "Free Home Valuation Las Vegas | What's Your Home Worth?",
   description:
-    "Get a free, accurate home valuation in Las Vegas from Dr. Jan Duffy, with 35 years in Las Vegas real estate. Expert CMA analysis for Summerlin, Henderson, Green Valley & all Las Vegas neighborhoods. Call (702) 500-0337.",
+    "Get a free, accurate home valuation in Las Vegas from Dr. Jan Duffy, in real estate since 1983. Expert CMA analysis for Summerlin, Henderson, Green Valley & all Las Vegas neighborhoods. Call (702) 500-0337.",
   keywords: [
     "home valuation Las Vegas",
     "what is my home worth Las Vegas",
@@ -101,7 +101,7 @@ export default function HomeValuationPage() {
               What's Your Las Vegas Home Worth?
             </h1>
             <p className="text-xl text-slate-600">
-              Get a free, no-obligation home valuation from Dr. Jan Duffy. Accurate pricing backed by 35 years
+              Get a free, no-obligation home valuation from Dr. Jan Duffy. Accurate pricing backed by a career in real estate since 1983
               of Las Vegas market expertise and $127M+ in closed transactions.
             </p>
           </div>
@@ -129,8 +129,8 @@ export default function HomeValuationPage() {
                 <p className="text-slate-300 mb-6">
                   Online estimators like Zillow's "Zestimate" can be off by 10% or more—that's
                   $45,000+ on a typical Las Vegas home. Dr. Jan Duffy provides a comprehensive
-                  market analysis using current MLS data, recent comparable sales, and her 35 years
-                  of Las Vegas real estate expertise. The result? Accurate pricing that helps you sell
+                  market analysis using current MLS data, recent comparable sales, and her expertise
+                  built in real estate since 1983. The result? Accurate pricing that helps you sell
                   faster and for more money.
                 </p>
                 <div className="space-y-3">

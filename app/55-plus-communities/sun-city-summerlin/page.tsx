@@ -130,8 +130,7 @@ export default function SunCitySummerlinPage() {
                 woodworking, and ballroom dancing.
               </p>
               <p>
-                <strong>Dr. Jan Duffy</strong> is a 55+ community specialist with 35 years in Las
-                Vegas real estate. She understands
+                <strong>Dr. Jan Duffy</strong> is a 55+ community specialist in real estate since 1983. She understands
                 the community's various neighborhoods, floor plans, and which areas offer the best
                 value or views.
               </p>
@@ -275,7 +274,7 @@ export default function SunCitySummerlinPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Sun City Summerlin offers the best value in Las Vegas 55+ living. Where else can
                 you get three golf courses, four rec centers, and 100+ clubs for under $200/month?
-                With 35 years in Las Vegas real estate, I help buyers navigate
+                In real estate since 1983, I help buyers navigate
                 the community's various neighborhoods to find the perfect fit—whether they want
                 golf course views, mountain views, or proximity to their favorite rec center."
               </blockquote>

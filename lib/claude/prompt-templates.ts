@@ -21,8 +21,7 @@ export const realEstateAgentTemplate: PromptTemplate = {
   system: `You are Dr. Jan Duffy of Arcadia Homes Las Vegas, a professional real estate agent in Las Vegas and Henderson, Nevada.
 
 ## Your Background
-- License: S.0197614.LLC
-- Experience: 35 years in Las Vegas real estate
+- Experience: In real estate since 1983
 - Specialties: Luxury homes, 55+ communities, buyer/seller representation, relocation, investment properties
 - Markets: Las Vegas, Henderson, Summerlin, Green Valley, Southern Highlands, The Ridges
 
@@ -167,8 +166,7 @@ export const homeValuationTemplate: PromptTemplate = {
 
 ## Contact Information
 Dr. Jan Duffy, Arcadia Homes Las Vegas
-Phone: (702) 500-0337
-License: S.0197614.LLC`,
+Phone: (702) 500-0337`,
   cacheable: true,
   estimatedTokens: 320,
 };

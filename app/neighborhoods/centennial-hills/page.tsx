@@ -127,8 +127,7 @@ export default function CentennialHillsPage() {
               <p>
                 <strong>Dr. Jan Duffy</strong> knows which Centennial Hills streets offer the best
                 mountain views, which school zones serve each neighborhood, and which HOAs maintain
-                their communities to the highest standards. That local knowledge, built over 35 years
-                in Las Vegas real estate, means Centennial Hills buyers and sellers get sharp
+                their communities to the highest standards. That local knowledge, built in real estate since 1983, means Centennial Hills buyers and sellers get sharp
                 representation.
               </p>
 
@@ -287,7 +286,7 @@ export default function CentennialHillsPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Centennial Hills offers something newer communities are still building: a finished
                 neighborhood. The parks are built, the shopping is in place, and the landscaping is
-                mature. With 35 years in Las Vegas real estate, I help buyers see beyond the shiny new construction to communities that have proven their value
+                mature. In real estate since 1983, I help buyers see beyond the shiny new construction to communities that have proven their value
                 over time."
               </blockquote>
               <cite className="text-slate-900 font-semibold">

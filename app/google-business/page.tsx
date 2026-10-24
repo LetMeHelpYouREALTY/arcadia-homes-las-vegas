@@ -30,7 +30,7 @@ import { realscoutRange } from "@/lib/realscout-ranges";
 export const metadata: Metadata = {
   title: "Dr. Jan Duffy, REALTOR® Las Vegas",
   description:
-    "Dr. Jan Duffy is a trusted Las Vegas REALTOR® with 35 years of experience. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-0337.",
+    "Dr. Jan Duffy is a trusted Las Vegas REALTOR® in real estate since 1983. Specializing in Summerlin, Henderson, 55+ communities, California relocation, and luxury homes. Call (702) 500-0337.",
   keywords: [
     "Dr. Jan Duffy realtor",
     "Las Vegas real estate agent",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Dr. Jan Duffy - Arcadia Homes Las Vegas",
-    description: "Trusted Las Vegas REALTOR® with 35 years of experience. Summerlin, Henderson, luxury homes, 55+ communities.",
+    description: "Trusted Las Vegas REALTOR® in real estate since 1983. Summerlin, Henderson, luxury homes, 55+ communities.",
     url: "https://www.arcadiahomeslasvegas.com/google-business",
     type: "profile",
   },
@@ -73,13 +73,13 @@ export default function GoogleBusinessPage() {
                 <div>
                   <div className="flex items-center gap-2 mb-4">
                     <Award className="h-6 w-6 text-yellow-400" />
-                    <span className="text-yellow-400 font-semibold">35 Years in Las Vegas Real Estate</span>
+                    <span className="text-yellow-400 font-semibold">In Real Estate Since 1983</span>
                   </div>
                   <PageIllustration scene="office" label="Illustration of Las Vegas skyline and neighborhoods at dusk" />
                   <h1 className="text-4xl md:text-5xl font-bold mb-4">
                     Dr. Jan Duffy
                   </h1>
-                  <p className="text-xl text-blue-200 mb-2">REALTOR® | License {businessInfo.license}</p>
+                  <p className="text-xl text-blue-200 mb-2">REALTOR® · Top 1% Las Vegas REALTOR®</p>
                   <p className="text-slate-300 mb-6">Arcadia Homes Las Vegas</p>
                   
                   {/* NAP - Exact match to GBP */}

@@ -144,7 +144,7 @@ export default function LuxuryHomesPage() {
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               When you're buying or selling a $1M+ home, trust matters more than ever.
-              <strong> Dr. Jan Duffy</strong> brings 35 years in Las Vegas real estate, discretion,
+              <strong> Dr. Jan Duffy</strong> has been in real estate since 1983, bringing discretion,
               and expertise to every luxury transaction.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
@@ -183,8 +183,8 @@ export default function LuxuryHomesPage() {
               {[
                 {
                   icon: Shield,
-                  title: "35 Years Local",
-                  desc: "35 years in Las Vegas real estate, with a focus on Summerlin West and 55+ communities",
+                  title: "Since 1983",
+                  desc: "In real estate since 1983, with a focus on Summerlin West and 55+ communities",
                 },
                 {
                   icon: DollarSign,
@@ -230,7 +230,7 @@ export default function LuxuryHomesPage() {
               <cite className="text-slate-900 font-semibold">
                 <span className="inline-flex items-center gap-3 not-italic">
                   <AgentPhoto size={48} />
-                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas | 35 Years in Las Vegas Real Estate</span>
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas | In Real Estate Since 1983</span>
                 </span>
               </cite>
             </div>

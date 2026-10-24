@@ -20,8 +20,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-slate-300 mb-4 text-sm">
-              Arcadia, Summerlin West and 55+ real estate with Dr. Jan Duffy. 35 years in Las
-              Vegas real estate, $127M+ in closed transactions.
+              Arcadia, Summerlin West and 55+ real estate with Dr. Jan Duffy. In real estate since 1983, $127M+ in closed transactions.
             </p>
             <a
               href="http://drjanduffy.realscout.com/"
@@ -216,10 +215,7 @@ export default function Footer() {
               license number, and franchise independently-owned statement */}
           <div className="mt-6 mx-auto max-w-3xl rounded-lg border border-slate-700 bg-slate-800/60 px-6 py-5 text-center space-y-1">
             <p className="text-white text-base md:text-lg font-bold">
-              Brokered by {agentInfo.brokerage}
-            </p>
-            <p className="text-slate-200 text-sm font-semibold">
-              {agentInfo.name}, {agentInfo.title} | NV License #{agentInfo.license}
+              {agentInfo.brokerage} since September 2008 · License {agentInfo.license}
             </p>
             <p className="text-slate-300 text-sm">
               Each office is independently owned and operated.

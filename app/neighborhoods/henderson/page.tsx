@@ -128,8 +128,8 @@ export default function HendersonPage() {
               <p>
                 <strong>Henderson</strong> has quietly become one of the most desirable cities in the American
                 Southwest. As Nevada's second-largest city with over 320,000 residents, Henderson offers the
-                perfect balance of suburban tranquility and urban convenience. <strong>Dr. Jan Duffy</strong> brings
-                35 years in Las Vegas real estate to every Henderson transaction.
+                perfect balance of suburban tranquility and urban convenience. <strong>Dr. Jan Duffy</strong>, in real
+                estate since 1983, brings that experience to every Henderson transaction.
               </p>
               <p>
                 What sets Henderson apart? Start with space to get outside. The city operates over 60 parks and
@@ -291,7 +291,7 @@ export default function HendersonPage() {
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Henderson offers something for every budget—from condos in the $350,000s to guard-gated estates
-                over $2 million. With 35 years in Las Vegas real estate, I help clients cut through the options and find
+                over $2 million. In real estate since 1983, I help clients cut through the options and find
                 the community that fits their lifestyle. There's a reason Henderson keeps winning 'Best Places
                 to Live' awards."
               </blockquote>
@@ -341,7 +341,7 @@ export default function HendersonPage() {
                   Why choose Dr. Jan Duffy for Henderson real estate?
                 </h3>
                 <p className="text-slate-600">
-                  Dr. Jan Duffy brings 35 years in Las Vegas real estate and $127M+ in closed transactions.
+                  Dr. Jan Duffy has been in real estate since 1983, with $127M+ in closed transactions.
                   She knows Henderson's communities, school zoning, and HOAs, and she works with both buyers
                   and sellers.
                 </p>

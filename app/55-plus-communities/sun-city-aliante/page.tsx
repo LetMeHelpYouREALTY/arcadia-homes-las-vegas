@@ -394,8 +394,7 @@ export default function SunCityAliantePage() {
                 "Sun City Aliante is my top recommendation for buyers who want the
                 full Sun City lifestyle at the best possible price. The amenities
                 are excellent, the community is active and welcoming, and you
-                simply can't beat the value. With 35 years in Las Vegas real
-                estate, I help buyers compare all the Sun City options and understand why Aliante
+                simply can't beat the value. In real estate since 1983, I help buyers compare all the Sun City options and understand why Aliante
                 often makes the most financial sense."
               </blockquote>
               <cite className="text-slate-900 font-semibold">

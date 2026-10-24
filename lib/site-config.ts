@@ -6,7 +6,7 @@ export const siteConfig = {
   tagline: "Arcadia & Summerlin West Luxury Real Estate",
   url: "https://www.arcadiahomeslasvegas.com",
   description:
-    "Expert real estate for Arcadia and Summerlin West (89138), NV. Buy, sell, or invest with Dr. Jan Duffy, 35 years in Las Vegas real estate.",
+    "Expert real estate for Arcadia and Summerlin West (89138), NV. Buy, sell, or invest with Dr. Jan Duffy, in real estate since 1983.",
   ogImage: {
     path: "/og-image.jpg",
     width: 1200,

@@ -23,7 +23,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "Sell Your Las Vegas Home",
   description:
-    "Sell your Las Vegas or Henderson home for top dollar with Dr. Jan Duffy of Arcadia Homes Las Vegas. 35 years of local experience. Free home valuation. World-class marketing. Call (702) 500-0337.",
+    "Sell your Las Vegas or Henderson home for top dollar with Dr. Jan Duffy of Arcadia Homes Las Vegas, in real estate since 1983. Free home valuation. World-class marketing. Call (702) 500-0337.",
   keywords: [
     "sell home Las Vegas",
     "Las Vegas listing agent",
@@ -66,7 +66,7 @@ const sellingBenefits = [
     icon: BarChart,
     title: "Expert Pricing Strategy",
     description:
-      "Dr. Jan has 35 years in Las Vegas real estate, which means accurate pricing that attracts buyers without leaving money on the table. Overpriced homes sit and lose value; well-priced homes generate competition and sell for more.",
+      "Dr. Jan has been in real estate since 1983, which means accurate pricing that attracts buyers without leaving money on the table. Overpriced homes sit and lose value; well-priced homes generate competition and sell for more.",
   },
   {
     icon: DollarSign,
@@ -145,7 +145,7 @@ export default function SellersPage() {
             <p className="text-xl text-slate-600 mb-8">
               When you list with <strong>Dr. Jan Duffy</strong>, you get world-class
               marketing, expert pricing, and skilled negotiation. Dr. Jan 
-              has spent 35 years in Las Vegas real estate—helping sellers achieve top-dollar results 
+              has been in real estate since 1983—helping sellers achieve top-dollar results 
               with proven marketing strategies and skilled negotiation.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
@@ -171,9 +171,8 @@ export default function SellersPage() {
               Why Sell with Dr. Jan
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Not all real estate agents deliver the same results. Dr. Jan brings 35 years
-              in Las Vegas real estate, $127M+ in closed transactions, and 500+ transactions
-              to every listing.
+              Not all real estate agents deliver the same results. Dr. Jan has been in real estate since 1983 and brings $127M+ in closed transactions
+              and 500+ transactions to every listing.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               {sellingBenefits.map((benefit) => {
@@ -298,13 +297,13 @@ export default function SellersPage() {
                 "Pricing your home correctly from day one is the single most important factor in
                 getting top dollar. Overpriced homes sit on the market, and every day on market costs 
                 you money—both in carrying costs and buyer perception. That's why I use comprehensive 
-                market analysis and my 35 years in Las Vegas real estate to price homes right 
+                market analysis and my experience in real estate since 1983 to price homes right 
                 the first time. The result? My listings typically sell within 2% of asking price."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
                 <span className="inline-flex items-center gap-3 not-italic">
                   <AgentPhoto size={48} />
-                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas | 35 Years in Las Vegas Real Estate</span>
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas | In Real Estate Since 1983</span>
                 </span>
               </cite>
             </div>
@@ -337,7 +336,7 @@ export default function SellersPage() {
                 <h2 className="text-3xl font-bold mb-4">What's Your Home Worth?</h2>
                 <p className="text-blue-100 mb-6">
                   Get a free, no-obligation home valuation from Dr. Jan Duffy. Using current MLS
-                  data and 35 years of Las Vegas expertise, you'll know exactly what your 
+                  data and expertise built since 1983, you'll know exactly what your 
                   home could sell for in today's market. No algorithms—just real analysis from 
                   a local expert.
                 </p>

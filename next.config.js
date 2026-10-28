@@ -18,7 +18,6 @@ const nextConfig = {
   compress: true,
 
   // Performance optimizations
-  swcMinify: true,
 
   // Redirect non-www to www
   async redirects() {

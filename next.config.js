@@ -5,12 +5,12 @@ const nextConfig = {
 
   // Image optimization
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000, // 1 year
     dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
+    contentDispositionType: "attachment",
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
@@ -23,46 +23,46 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path*',
+        source: "/:path*",
         has: [
           {
-            type: 'host',
-            value: 'arcadiahomeslasvegas.com',
+            type: "host",
+            value: "arcadiahomeslasvegas.com",
           },
         ],
-        destination: 'https://www.arcadiahomeslasvegas.com/:path*',
+        destination: "https://www.arcadiahomeslasvegas.com/:path*",
         permanent: true,
       },
       // Brokerage name lives in the footer only; old page folds into About
       {
-        source: '/why-berkshire-hathaway',
-        destination: '/about',
+        source: "/why-berkshire-hathaway",
+        destination: "/about",
         permanent: true,
       },
       // Old placeholder listing pages; live listings come from RealScout on /listings
       {
-        source: '/listings/:id',
-        destination: '/listings',
+        source: "/listings/:id",
+        destination: "/listings",
         permanent: true,
       },
       // Old January 2026 "weekly update"; the monthly market report replaces it
       {
-        source: '/market-update',
-        destination: '/market-report',
+        source: "/market-update",
+        destination: "/market-report",
         permanent: true,
       },
-    ]
+    ];
   },
 
   // Enhanced security headers including CSP for RealScout widget
   async headers() {
     return [
       {
-        source: '/(.*)',
+        source: "/(.*)",
         headers: [
           // CSP for RealScout widget
           {
-            key: 'Content-Security-Policy',
+            key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://em.realscout.com https://www.realscout.com https://assets.calendly.com https://www.googletagmanager.com https://www.google-analytics.com",
@@ -72,53 +72,53 @@ const nextConfig = {
               "connect-src 'self' https://em.realscout.com https://www.realscout.com https://openrouter.ai https://api.openai.com https://calendly.com https://www.google-analytics.com https://analytics.google.com https://*.ingest.sentry.io",
               "frame-src 'self' https://em.realscout.com https://www.realscout.com https://calendly.com https://assets.calendly.com https://www.google.com https://maps.google.com https://*.google.com",
               "worker-src 'self' blob:",
-            ].join('; '),
+            ].join("; "),
           },
           // Additional security headers
           {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on'
+            key: "X-DNS-Prefetch-Control",
+            value: "on",
           },
           {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=63072000; includeSubDomains; preload'
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
           },
           {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff'
+            key: "X-Content-Type-Options",
+            value: "nosniff",
           },
           {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN'
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
           },
           {
-            key: 'Referrer-Policy',
-            value: 'strict-origin-when-cross-origin'
+            key: "Referrer-Policy",
+            value: "strict-origin-when-cross-origin",
           },
           {
-            key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=()'
-          }
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
+          },
         ],
       },
-    ]
+    ];
   },
 
   // Bundle analyzer (when ANALYZE=true)
   webpack: (config, { isServer }) => {
-    if (process.env.ANALYZE === 'true' && !isServer) {
-      const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+    if (process.env.ANALYZE === "true" && !isServer) {
+      const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
       config.plugins.push(
         new BundleAnalyzerPlugin({
-          analyzerMode: 'static',
-          reportFilename: './analyze.html',
+          analyzerMode: "static",
+          reportFilename: "./analyze.html",
           openAnalyzer: false,
-        })
-      )
+        }),
+      );
     }
-    return config
+    return config;
   },
-}
+};
 
 // Injected content via Sentry wizard below
 
@@ -153,5 +153,5 @@ module.exports = withSentryConfig(
 
     // Automatically tree-shake Sentry logger statements to reduce bundle size
     disableLogger: true,
-  }
+  },
 );

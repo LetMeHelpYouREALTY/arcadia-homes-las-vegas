@@ -115,7 +115,7 @@ export default function TheRidgesPage() {
                 within Summerlin along the foothills of Red Rock Canyon, this guard-gated
                 community offers estate-quality homes with panoramic views of the Las Vegas Strip, the
                 surrounding mountains, and the pristine desert landscape. When discerning buyers
-                search for Las Vegas luxury, <strong>Dr. Jan Duffy</strong>, in real estate since 1983, brings
+                search for Las Vegas luxury, <strong>Dr. Jan Duffy</strong>, licensed since 2008 · 35 years in Las Vegas, brings
                 experience to match The Ridges' standard of excellence.
               </p>
               <p>

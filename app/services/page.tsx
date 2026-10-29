@@ -27,7 +27,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "Real Estate Services Las Vegas",
   description:
-    "Comprehensive real estate services from Dr. Jan Duffy, in real estate since 1983. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 500-0337.",
+    "Comprehensive real estate services from Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas. Buying, selling, luxury, investment, relocation, 55+ communities, and new construction. Call (702) 500-0337.",
   keywords: [
     "Las Vegas real estate services",
     "Dr. Jan Duffy real estate services",
@@ -67,7 +67,7 @@ const coreServices = [
     title: "Home Selling Services",
     slug: "sellers",
     description:
-      "Maximize your home's value with professional marketing, accurate pricing, and expert negotiation from Dr. Jan Duffy, backed by a career in real estate since 1983.",
+      "Maximize your home's value with professional marketing, accurate pricing, and expert negotiation from Dr. Jan Duffy, backed by a career licensed since 2008 · 35 years in Las Vegas.",
     highlights: ["World-class marketing", "Accurate pricing", "MLS exposure", "Staging guidance"],
     stats: { label: "Homes Sold", value: "500+" },
   },
@@ -121,7 +121,7 @@ const specializedServices = [
     title: "Home Valuation Services",
     slug: "home-valuation",
     description:
-      "Free, no-obligation home valuations using current MLS data, recent comparable sales, and deep local market knowledge built in real estate since 1983.",
+      "Free, no-obligation home valuations using current MLS data, recent comparable sales, and deep local market knowledge built licensed since 2008 · 35 years in Las Vegas.",
     highlights: ["Accurate pricing", "No obligation", "Detailed analysis", "Market trends"],
   },
 ];
@@ -187,22 +187,22 @@ export default function ServicesPage() {
               Las Vegas Real Estate Services
             </h1>
             <p className="text-xl text-slate-600 mb-8">
-              Comprehensive real estate solutions from <strong>Dr. Jan Duffy</strong>, backed by a career in real estate since 1983. Whether you're 
+              Comprehensive real estate solutions from <strong>Dr. Jan Duffy</strong>, backed by a career licensed since 2008 · 35 years in Las Vegas. Whether you're 
               buying your first home, selling a luxury estate, or relocating from California, 
               you'll receive expert guidance every step of the way.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>In Real Estate Since 1983</span>
+                <span>Licensed Since 2008</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>$127M+ in Transactions</span>
+                <span>$127M+ in Team Career Sales</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span>500+ Satisfied Clients</span>
+                <span>500+ Team Sales</span>
               </div>
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function ServicesPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               These foundational services cover the majority of real estate transactions in Las Vegas. 
               Each service is delivered with the professionalism, local knowledge, and ethical
-              standards Dr. Jan has built in real estate since 1983.
+              standards Dr. Jan has built licensed since 2008 · 35 years in Las Vegas.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {coreServices.map((service) => {
@@ -381,12 +381,12 @@ export default function ServicesPage() {
                 <div className="text-slate-300 text-sm">Transactions</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-400 mb-2">Since 1983</div>
+                <div className="text-3xl font-bold text-blue-400 mb-2">Since 2008</div>
                 <div className="text-slate-300 text-sm">in Las Vegas Real Estate</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-blue-400 mb-2">$127M+</div>
-                <div className="text-slate-300 text-sm">Volume Closed</div>
+                <div className="text-slate-300 text-sm">Team Career Sales</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-blue-400 mb-2">4.9★</div>
@@ -398,7 +398,7 @@ export default function ServicesPage() {
                 <Shield className="h-10 w-10 text-blue-400 mx-auto mb-3" />
                 <h3 className="font-bold mb-2">Local Expertise</h3>
                 <p className="text-slate-400 text-sm">
-                  Summerlin West and 55+ specialist in real estate since 1983
+                  Summerlin West and 55+ specialist licensed since 2008 · 35 years in Las Vegas
                 </p>
               </div>
               <div className="text-center">
@@ -412,7 +412,7 @@ export default function ServicesPage() {
                 <Users className="h-10 w-10 text-blue-400 mx-auto mb-3" />
                 <h3 className="font-bold mb-2">Proven Track Record</h3>
                 <p className="text-slate-400 text-sm">
-                  $127M+ in closed transactions and 500+ clients served
+                  $127M+ in Dr. Duffy Group career sales and 500+ team sales
                 </p>
               </div>
             </div>
@@ -426,7 +426,7 @@ export default function ServicesPage() {
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
               Whether you're buying or selling, the process begins with a free consultation 
               to understand your goals, timeline, and unique circumstances. From there, 
-              Dr. Jan creates a customized strategy built on experience in real estate since 1983 to
+              Dr. Jan creates a customized strategy built on experience licensed since 2008 · 35 years in Las Vegas to
               achieve the best possible outcome.
             </p>
             <div className="space-y-6">
@@ -487,7 +487,7 @@ export default function ServicesPage() {
             <p className="text-xl text-blue-100 mb-8">
               Contact Dr. Jan Duffy for a free consultation about any of our real estate services. 
               Whether you're buying, selling, investing, or relocating, you'll receive expert
-              guidance backed by a career in real estate since 1983.
+              guidance backed by a career licensed since 2008 · 35 years in Las Vegas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

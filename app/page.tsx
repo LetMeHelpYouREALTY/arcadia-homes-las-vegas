@@ -105,8 +105,7 @@ export default function Home() {
                 Why Work with Dr. Jan Duffy?
               </h2>
               <p className="text-lg text-slate-700 leading-relaxed">
-                When you work with <strong>Dr. Jan Duffy</strong>, you get a REALTOR® in real estate
-                since 1983 and one agent who handles your move from first call to
+                When you work with <strong>Dr. Jan Duffy</strong>, you get a REALTOR® licensed since 2008 · 35 years in Las Vegas and one agent who handles your move from first call to
                 closing.
               </p>
             </div>
@@ -136,7 +135,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Market Expertise</h3>
                 <p className="text-slate-600 text-sm">
-                  In real estate since 1983, $127M+ in closed transactions
+                  Licensed since 2008 · 35 years in Las Vegas, $127M+ in closed transactions
                 </p>
               </div>
               <div className="text-center p-6">
@@ -153,7 +152,7 @@ export default function Home() {
             {/* Expert Quote */}
             <div className="max-w-3xl mx-auto mt-12 bg-slate-50 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "When clients ask why they should work with me, I tell them: you get experience in real estate since 1983, honest pricing advice, and someone who picks up the phone. Call
+                "When clients ask why they should work with me, I tell them: you get experience licensed since 2008 · 35 years in Las Vegas, honest pricing advice, and someone who picks up the phone. Call
                 me at (702) 500-0337."
               </blockquote>
               <cite className="text-slate-900 font-semibold">

@@ -59,7 +59,7 @@ const faqCategories = [
     faqs: [
       {
         q: "What is my home worth in today's market?",
-        a: "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current MLS data and her expertise built in real estate since 1983.",
+        a: "Home values depend on location, condition, size, and recent comparable sales. Dr. Jan provides free, comprehensive home valuations using current MLS data and her expertise built licensed since 2008 · 35 years in Las Vegas.",
       },
       {
         q: "How long will it take to sell my home?",
@@ -118,7 +118,7 @@ const faqCategories = [
     faqs: [
       {
         q: "What is Dr. Jan Duffy's experience?",
-        a: "Dr. Jan has been in real estate since 1983, with $127M+ in closed transactions and 500+ satisfied clients. She specializes in residential, luxury, investment, and relocation services throughout Southern Nevada.",
+        a: "Dr. Jan has been licensed since 2008 · 35 years in Las Vegas, backed by $127M+ in Dr. Duffy Group career sales and 500+ satisfied clients. She specializes in residential, luxury, investment, and relocation services throughout Southern Nevada.",
       },
       {
         q: "How do I contact Dr. Jan Duffy?",

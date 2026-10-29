@@ -8,7 +8,7 @@ export const rootLayoutMetadata: Metadata = {
     template: `%s | Arcadia Homes Las Vegas`,
   },
   description:
-    "Expert real estate for Arcadia and Summerlin West (89138). Dr. Jan Duffy, in real estate since 1983—buy, sell, or invest with a trusted local agent.",
+    "Expert real estate for Arcadia and Summerlin West (89138). Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas—buy, sell, or invest with a trusted local agent.",
   metadataBase: new URL(siteConfig.url),
   keywords: [
     "Arcadia Homes Las Vegas",

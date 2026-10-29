@@ -417,7 +417,7 @@ export default function MarketInsightsPage() {
                 "Understanding market forces—not just current prices—separates informed decisions
                 from reactive ones. Las Vegas is no longer just a gaming and tourism economy.
                 Tech investment, California migration, and economic diversification are reshaping
-                which neighborhoods will outperform. In real estate since 1983, I help clients position
+                which neighborhoods will outperform. Licensed since 2008 · 35 years in Las Vegas, I help clients position
                 themselves for where the market is going, not just where it's been."
               </blockquote>
               <cite className="text-slate-300 font-semibold">

@@ -110,14 +110,14 @@ export default function BuyersPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy | In Real Estate Since 1983
+              Dr. Jan Duffy | Licensed Since 2008
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Buy Your Las Vegas Home with Confidence
             </h1>
             <p className="text-xl text-slate-600 mb-8">
               When you work with <strong>Dr. Jan Duffy</strong> as your buyer's agent, you get
-              experience in real estate since 1983 on your side—and it costs you nothing.
+              experience licensed since 2008 · 35 years in Las Vegas on your side—and it costs you nothing.
               The seller pays the commission, but the representation is yours.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500">
@@ -146,7 +146,7 @@ export default function BuyersPage() {
                     "Contract and disclosure review",
                     "Inspection coordination and repair negotiation",
                     "Lender and service provider referrals",
-                    "In real estate since 1983",
+                    "Licensed since 2008 · 35 years in Las Vegas",
                   ].map((item) => (
                     <li key={item} className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-400 mr-2 flex-shrink-0" />
@@ -163,7 +163,7 @@ export default function BuyersPage() {
                   transaction—from the first showing to the closing table and beyond.
                 </p>
                 <div className="text-sm text-slate-500">
-                  In real estate since 1983 | $127M+ in transactions
+                  Licensed since 2008 · 35 years in Las Vegas | $127M+ in Dr. Duffy Group career sales
                 </div>
               </div>
             </div>
@@ -306,7 +306,7 @@ export default function BuyersPage() {
               Why Buy with Dr. Jan Duffy
             </h2>
             <p className="text-slate-600 text-center max-w-3xl mx-auto mb-8">
-              Not all real estate agents are created equal. Dr. Jan brings experience in real estate since 1983 to every purchase.
+              Not all real estate agents are created equal. Dr. Jan brings experience licensed since 2008 · 35 years in Las Vegas to every purchase.
             </p>
             <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
               <div className="text-center">
@@ -315,7 +315,7 @@ export default function BuyersPage() {
                 </div>
                 <h3 className="font-bold text-slate-900 mb-2">Local Expertise</h3>
                 <p className="text-slate-600 text-sm">
-                  Dr. Jan has been in real estate since 1983, with $127M+ in transactions
+                  Dr. Jan has been licensed since 2008 · 35 years in Las Vegas, with $127M+ in transactions
                 </p>
               </div>
               <div className="text-center">
@@ -342,7 +342,7 @@ export default function BuyersPage() {
               <cite className="text-slate-900 font-semibold">
                 <span className="inline-flex items-center gap-3 not-italic">
                   <AgentPhoto size={48} />
-                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas | In Real Estate Since 1983</span>
+                  <span>— Dr. Jan Duffy, Arcadia Homes Las Vegas | Licensed Since 2008</span>
                 </span>
               </cite>
             </div>
@@ -406,7 +406,7 @@ export default function BuyersPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Las Vegas Home?</h2>
             <p className="text-xl text-slate-300 mb-8">
               Questions about buying in Las Vegas? Call or text Dr. Jan Duffy for a free buyer
-              consultation. Get expert guidance backed by a career in real estate since 1983—the 
+              consultation. Get expert guidance backed by a career licensed since 2008 · 35 years in Las Vegas—the 
               seller pays the commission, so representation is free for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

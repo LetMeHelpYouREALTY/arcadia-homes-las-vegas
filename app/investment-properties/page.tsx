@@ -40,7 +40,7 @@ export default function InvestmentPropertiesPage() {
           {/* Hero */}
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              Dr. Jan Duffy | In Real Estate Since 1983
+              Dr. Jan Duffy | Licensed Since 2008
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
               Las Vegas Investment Properties
@@ -387,7 +387,7 @@ export default function InvestmentPropertiesPage() {
               Ready to Invest in Las Vegas?
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Get expert guidance on Las Vegas investment properties from Dr. Jan Duffy, in real estate since 1983.
+              Get expert guidance on Las Vegas investment properties from Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas.
             </p>
             <a
               href="tel:+17025000337"

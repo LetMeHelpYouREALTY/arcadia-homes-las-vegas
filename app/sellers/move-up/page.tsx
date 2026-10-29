@@ -334,7 +334,7 @@ export default function MoveUpSellerPage() {
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-r-xl p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Move-up transactions are like a chess game—every move matters. I coordinate both
-                sides so you don't end up homeless or paying two mortgages. In real estate since 1983, I know how to make complex transactions smooth. That's why clients trust me with their biggest
+                sides so you don't end up homeless or paying two mortgages. Licensed since 2008 · 35 years in Las Vegas, I know how to make complex transactions smooth. That's why clients trust me with their biggest
                 financial moves."
               </blockquote>
               <cite className="text-slate-900 font-semibold">

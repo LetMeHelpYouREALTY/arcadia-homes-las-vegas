@@ -125,7 +125,7 @@ export default function GreenValleyPage() {
                 that are already built out.
               </p>
               <p>
-                <strong>Dr. Jan Duffy</strong> brings experience in real estate since 1983 to
+                <strong>Dr. Jan Duffy</strong> brings experience licensed since 2008 · 35 years in Las Vegas to
                 Green Valley. She knows which streets offer the best mountain views, how lot sizes and
                 floor plans vary, and which HOAs maintain their communities to the highest standards.
                 That local knowledge gives Green Valley buyers and sellers a real advantage.

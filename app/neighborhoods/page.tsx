@@ -199,7 +199,7 @@ export default function NeighborhoodsPage() {
                 "Every Las Vegas neighborhood has its own personality. Whether you want the parks and
                 trails of Summerlin, the mature landscaping of Green Valley, or the luxury of The
                 Ridges, I'll help you find the community that matches your lifestyle. That's
-                personalized guidance backed by local expertise built since 1983."
+                personalized guidance backed by local expertise built over 35 years in Las Vegas."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
                 <span className="inline-flex items-center gap-3 not-italic">
@@ -245,7 +245,7 @@ export default function NeighborhoodsPage() {
               Ready to Explore Las Vegas Neighborhoods?
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Dr. Jan Duffy provides personalized neighborhood guidance backed by a career in real estate since 1983.
+              Dr. Jan Duffy provides personalized neighborhood guidance backed by a career licensed since 2008 · 35 years in Las Vegas.
             </p>
             <a
               href="tel:+17025000337"

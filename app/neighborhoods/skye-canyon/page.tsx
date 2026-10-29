@@ -280,7 +280,7 @@ export default function SkyeCanyonPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Skye Canyon is one of the most in-demand communities in the northwest right now. The
                 amenities are incredible, the homes are modern and energy-efficient, and the trails and
-                parks are right outside the door. In real estate since 1983, I make sure my clients get
+                parks are right outside the door. Licensed since 2008 · 35 years in Las Vegas, I make sure my clients get
                 the best value—whether that's negotiating builder upgrades or finding a resale with
                 features already included."
               </blockquote>

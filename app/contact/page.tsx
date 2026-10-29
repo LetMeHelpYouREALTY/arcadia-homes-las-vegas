@@ -103,7 +103,7 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h2>
               <p className="text-slate-700 mb-8">
                 Whether you're buying your first home, selling a luxury property, or exploring
-                investment opportunities, I'm here to provide expert guidance. In real estate since 1983
+                investment opportunities, I'm here to provide expert guidance. Licensed since 2008 · 35 years in Las Vegas
                 and $127M+ in closed transactions.
               </p>
 
@@ -209,7 +209,7 @@ export default function ContactPage() {
                 <AgentPhoto size={64} />
                 <p className="text-sm text-slate-700">
                   <strong>Dr. Jan Duffy, REALTOR®</strong><br />
-                  Top 1% Las Vegas REALTOR®<br />
+                  Las Vegas REALTOR®<br />
                   Arcadia Homes Las Vegas
                 </p>
               </div>

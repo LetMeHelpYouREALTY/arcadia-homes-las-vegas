@@ -383,7 +383,7 @@ export default function HeritageAtStonebridgePage() {
                 private community without the sprawl of larger 55+ communities.
                 The guard gate is staffed—not just a code anyone can get. And the
                 Summerlin location puts Downtown Summerlin and Red Rock Canyon
-                minutes away. In real estate since 1983, I help
+                minutes away. Licensed since 2008 · 35 years in Las Vegas, I help
                 buyers who prioritize quality over quantity find their fit here."
               </blockquote>
               <cite className="text-slate-900 font-semibold">

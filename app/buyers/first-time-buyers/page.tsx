@@ -21,7 +21,7 @@ import PageIllustration from "@/components/PageIllustration";
 export const metadata: Metadata = {
   title: "First-Time Home Buyers Las Vegas",
   description:
-    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy, in real estate since 1983. Call (702) 500-0337.",
+    "First-time buyer in Las Vegas? Down payment assistance, builder incentives, and expert guidance from Dr. Jan Duffy, licensed since 2008 · 35 years in Las Vegas. Call (702) 500-0337.",
   keywords: [
     "first time home buyer Las Vegas",
     "first time buyer Nevada",
@@ -485,7 +485,7 @@ export default function FirstTimeBuyersPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "Buying your first home is exciting AND overwhelming. My job is to make it less
                 overwhelming. I walk first-time buyers through every step, explain everything in
-                plain English, and make sure you're confident in your decision. In real estate since 1983, I know the lenders, builders, and neighborhoods that can help you."
+                plain English, and make sure you're confident in your decision. Licensed since 2008 · 35 years in Las Vegas, I know the lenders, builders, and neighborhoods that can help you."
               </blockquote>
               <cite className="text-slate-900 font-semibold">
                 <span className="inline-flex items-center gap-3 not-italic">

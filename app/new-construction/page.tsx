@@ -566,7 +566,7 @@ export default function NewConstructionPage() {
               <blockquote className="text-lg text-slate-700 italic mb-4">
                 "I've seen buyers leave $30,000 on the table because they didn't know what to ask
                 for. Builders expect negotiation—their sales managers have authority to approve
-                upgrades and credits. As your buyer's agent, in real estate since 1983, I know exactly which incentives are available, which upgrades add value, and
+                upgrades and credits. As your buyer's agent, licensed since 2008 · 35 years in Las Vegas, I know exactly which incentives are available, which upgrades add value, and
                 which builder promises are legally binding. This representation costs you nothing
                 and can save you tens of thousands."
               </blockquote>

@@ -440,7 +440,7 @@ export default function DownsizingPage() {
                 and now deserve to enjoy life without maintaining a 4,000 square
                 foot house. I help them extract the equity they've earned, find a home that fits
                 their current lifestyle, and often pocket significant cash for travel or just
-                peace of mind. In real estate since 1983, I have the experience and compassion this transition requires."
+                peace of mind. Licensed since 2008 · 35 years in Las Vegas, I have the experience and compassion this transition requires."
               </blockquote>
               <cite className="text-slate-300 font-semibold">
                 <span className="inline-flex items-center gap-3 not-italic">

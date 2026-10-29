@@ -271,7 +271,7 @@ export default function MountainsEdgePage() {
                 getting honest guidance about where the community offers the best value. She
                 helps buyers identify neighborhoods with the strongest appreciation potential, homes
                 with the best views, and properties that represent real value rather than
-                superficial appeal. That expertise—backed by a career in real estate since 1983—helps Mountains Edge buyers make informed decisions.
+                superficial appeal. That expertise—backed by a career licensed since 2008 · 35 years in Las Vegas—helps Mountains Edge buyers make informed decisions.
               </p>
             </div>
           </section>

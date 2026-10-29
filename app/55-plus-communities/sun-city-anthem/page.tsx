@@ -297,7 +297,7 @@ export default function SunCityAnthemPage() {
                 "Sun City Anthem pairs Henderson's mountain scenery and two championship golf
                 courses with the Del Webb lifestyle. The views from the upper sections
                 are spectacular, and the Anthem Center rivals any resort clubhouse I've seen.
-                In real estate since 1983, I help buyers find
+                Licensed since 2008 · 35 years in Las Vegas, I help buyers find
                 the right balance of views, price, and proximity to amenities."
               </blockquote>
               <cite className="text-slate-900 font-semibold">

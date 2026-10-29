@@ -683,7 +683,7 @@ export default function FiftyFiveCommunitiesPage() {
                 typical purchase. You need to understand HOA rules, age
                 verification processes, and how the community fits your
                 lifestyle. As a 55+
-                specialist, in real estate since 1983, I guide clients through
+                specialist, licensed since 2008 · 35 years in Las Vegas, I guide clients through
                 every step—from touring amenities to reviewing HOA documents. Many
                 clients are relocating from California, and they rely on my local
                 knowledge to make confident decisions."
@@ -810,9 +810,9 @@ export default function FiftyFiveCommunitiesPage() {
                   <Shield className="h-5 w-5 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-slate-900 mb-1">In Real Estate Since 1983</h3>
+                  <h3 className="font-bold text-slate-900 mb-1">Licensed Since 2008</h3>
                   <p className="text-slate-600 text-sm">
-                    In real estate since 1983 with $127M+ in closed
+                    Licensed since 2008 · 35 years in Las Vegas with $127M+ in closed
                     transactions. That track record matters when you're making
                     one of life's biggest decisions.
                   </p>

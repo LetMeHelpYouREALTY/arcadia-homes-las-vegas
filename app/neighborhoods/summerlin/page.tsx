@@ -52,7 +52,7 @@ const summerlinFaqs = [
   {
     question: "Why should I work with Dr. Jan Duffy in Summerlin?",
     answer:
-      "Dr. Jan Duffy has been in real estate since 1983, with deep Summerlin West expertise and $127M+ in closed transactions. That experience helps buyers compete in Summerlin's competitive market and helps sellers maximize their home's value.",
+      "Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas, with deep Summerlin West expertise and $127M+ in closed transactions. That experience helps buyers compete in Summerlin's competitive market and helps sellers maximize their home's value.",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function SummerlinPage() {
               </h2>
               <p>
                 When homebuyers search for the best neighborhoods in Las Vegas, <strong>Summerlin</strong> consistently
-                ranks at the top. As a Summerlin West specialist, in real estate since 1983,
+                ranks at the top. As a Summerlin West specialist, licensed since 2008 · 35 years in Las Vegas,
                 <strong> Dr. Jan Duffy</strong> has helped hundreds of buyers find their home in this
                 award-winning master-planned community.
               </p>
@@ -263,7 +263,7 @@ export default function SummerlinPage() {
               <p className="mt-8">{areaSummary("summerlin")}</p>
               <p>
                 Working with <strong>Dr. Jan Duffy</strong> gives you access to listings before they hit
-                the market and expert negotiation skills. She has been in real estate since 1983, which means you'll have insights that online 
+                the market and expert negotiation skills. She has been licensed since 2008 · 35 years in Las Vegas, which means you'll have insights that online 
                 searches simply can't provide—from which streets have the best mountain views to which builders 
                 offer the best construction quality.
               </p>
@@ -274,7 +274,7 @@ export default function SummerlinPage() {
           <section className="mb-16 max-w-4xl mx-auto">
             <div className="bg-blue-50 border-l-4 border-blue-600 rounded-lg p-8">
               <blockquote className="text-lg text-slate-700 italic mb-4">
-                "Summerlin isn't just a neighborhood—it's a lifestyle. I've been in real estate since 1983, and I can tell you exactly which villages have the parks and trails you want, which offer the
+                "Summerlin isn't just a neighborhood—it's a lifestyle. I've been licensed since 2008 · 35 years in Las Vegas, and I can tell you exactly which villages have the parks and trails you want, which offer the
                 best investment potential, and where you'll find the hidden gems. That local knowledge is
                 what I bring to every client."
               </blockquote>
@@ -323,8 +323,8 @@ export default function SummerlinPage() {
                   Why should I work with Dr. Jan Duffy in Summerlin?
                 </h3>
                 <p className="text-slate-600">
-                  Dr. Jan Duffy has been in real estate since 1983, with deep Summerlin
-                  West expertise, with $127M+ in closed transactions. That experience helps buyers compete in Summerlin's competitive market and helps sellers
+                  Dr. Jan Duffy has been licensed since 2008 · 35 years in Las Vegas, with deep Summerlin
+                  West expertise, with $127M+ in Dr. Duffy Group career sales. That experience helps buyers compete in Summerlin's competitive market and helps sellers
                   maximize their home's value.
                 </p>
               </div>

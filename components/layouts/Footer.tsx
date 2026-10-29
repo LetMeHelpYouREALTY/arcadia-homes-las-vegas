@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-slate-300 mb-4 text-sm">
-              Arcadia, Summerlin West and 55+ real estate with Dr. Jan Duffy. In real estate since 1983, $127M+ in closed transactions.
+              Arcadia, Summerlin West and 55+ real estate with Dr. Jan Duffy. Licensed since 2008 · 35 years in Las Vegas, $127M+ in closed transactions.
             </p>
             <a
               href="http://drjanduffy.realscout.com/"

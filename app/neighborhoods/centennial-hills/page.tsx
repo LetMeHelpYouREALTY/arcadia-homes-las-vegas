@@ -108,7 +108,7 @@ export default function CentennialHillsPage() {
           <section className="mb-16 max-w-5xl mx-auto">
             <div className="prose prose-lg max-w-none text-slate-700">
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                Centennial Hills: Mountain Views and Mature Neighborhoods in Northwest Las Vegas
+                Centennial Hills: Mountain Views and Older Neighborhoods in Northwest Las Vegas
               </h2>
               <p>
                 <strong>Centennial Hills</strong> represents the best of northwest Las Vegas living.

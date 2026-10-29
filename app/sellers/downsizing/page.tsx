@@ -139,7 +139,7 @@ export default function DownsizingPage() {
                 </div>
                 <h3 className="font-bold text-lg text-slate-900 mb-2">Single-Story Homes</h3>
                 <p className="text-slate-600 text-sm mb-4">
-                  Right-sized single-story homes in mature neighborhoods. No stairs,
+                  Right-sized single-story homes in older neighborhoods. No stairs,
                   smaller yard, lower utility costs.
                 </p>
                 <div className="text-blue-600 font-semibold">$400K - $600K</div>

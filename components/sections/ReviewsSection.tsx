@@ -28,8 +28,8 @@ export const defaultReviews: Review[] = [
 
 // Aggregate rating stats
 export const aggregateRating = {
-  ratingValue: 4.9,
-  reviewCount: 500,
+  ratingValue: 5.0,
+  reviewCount: 50,
   bestRating: 5,
   worstRating: 1,
 };
@@ -77,7 +77,7 @@ export default function ReviewsSection({
               ))}
             </div>
             <span className="text-lg font-semibold text-slate-900">
-              {aggregateRating.ratingValue}
+              {aggregateRating.ratingValue.toFixed(1)}
             </span>
             <span className="text-slate-600">
               average client rating

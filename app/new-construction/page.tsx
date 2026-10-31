@@ -71,7 +71,7 @@ const faqSchema = {
       name: "What builder incentives are currently available?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "As of October 2026, several builders offer below-market rates through their own lenders on select move-in-ready homes, compared with a 7.40% market average. Century Communities, for example, offers up to $3,000 toward closing costs on select move-in-ready homes closing by October 30. Offers change monthly and usually require the builder's lender; ask that lender for the APR and terms. Dr. Jan tracks current offers across builders.",
+        text: "As of November 2026, several builders offer below-market rates through their own lenders on select move-in-ready homes, and some also offer closing-cost credits; Freddie Mac's 30-year fixed average was 7.24% on October 29, 2026. Offers change monthly and usually require the builder's lender; ask that lender for the APR and terms. Dr. Jan tracks current offers across builders.",
       },
     },
     {
@@ -368,7 +368,7 @@ export default function NewConstructionPage() {
               <div className="flex items-center justify-between flex-wrap gap-4 mb-6">
                 <h2 className="text-2xl font-bold text-slate-900 flex items-center">
                   <Calendar className="h-7 w-7 text-green-600 mr-3" />
-                  October 2026 Builder Incentives
+                  November 2026 Builder Incentives
                 </h2>
                 <span className="bg-green-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
                   Limited Time Offers
@@ -376,29 +376,29 @@ export default function NewConstructionPage() {
               </div>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">Below 7.40%</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">Below Market</div>
                   <div className="text-slate-700 font-medium">Builder-Lender Rate Programs</div>
                   <div className="text-slate-500 text-sm mt-1">
-                    Several builders offer below-market rates on select move-in-ready homes. Builder's lender required; ask for APR and terms.
+                    Several builders offer below-market rates through the builder's lender on select move-in-ready homes; ask for APR and terms.
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">Up to $3,000</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">Ask</div>
                   <div className="text-slate-700 font-medium">Closing Cost Help</div>
                   <div className="text-slate-500 text-sm mt-1">
-                    Century Communities, select move-in-ready homes, builder's lender, for closings by Oct. 30
+                    Several builders offer closing-cost credits on move-in-ready homes. Call for this month's offers.
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-5 border border-green-100">
-                  <div className="text-3xl font-bold text-green-600 mb-1">7.40%</div>
+                  <div className="text-3xl font-bold text-green-600 mb-1">7.24%</div>
                   <div className="text-slate-700 font-medium">Market 30-Year Average</div>
                   <div className="text-slate-500 text-sm mt-1">
-                    Freddie Mac, Oct. 15, 2026. Compare any builder rate against the home's price, too
+                    Freddie Mac, Oct. 29, 2026. Compare any builder rate against the home's price, too
                   </div>
                 </div>
               </div>
               <p className="text-center text-slate-600 mt-6">
-                Builder offers checked October 19, 2026 (builder promotions as reported by Neighborhoods in Las Vegas, Oct. 9, and Nevada Real Estate Group, Oct. 8). Incentives change frequently—call Dr. Jan for current offers in your preferred communities.
+                Builder offers checked October 31, 2026 (Taylor Morrison's Las Vegas offers page and Nevada Real Estate Group's builder closing-cost guide, updated Oct. 21; market rate from Freddie Mac PMMS, Oct. 29). Incentives change frequently—call Dr. Jan for current offers in your preferred communities.
               </p>
             </div>
           </section>
@@ -629,7 +629,7 @@ export default function NewConstructionPage() {
                   What builder incentives are currently available?
                 </h3>
                 <p className="text-slate-600">
-                  As of October 2026, several builders offer below-market rates through their own lenders on select move-in-ready homes, compared with a 7.40% market average. Century Communities, for example, offers up to $3,000 toward closing costs on select move-in-ready homes closing by October 30. Offers change monthly and usually require the builder's lender; ask that lender for the APR and terms. Dr. Jan tracks current offers across builders.
+                  As of November 2026, several builders offer below-market rates through their own lenders on select move-in-ready homes, and some also offer closing-cost credits; Freddie Mac's 30-year fixed average was 7.24% on October 29, 2026. Offers change monthly and usually require the builder's lender; ask that lender for the APR and terms. Dr. Jan tracks current offers across builders.
                 </p>
               </div>
               <div className="bg-white border border-slate-200 rounded-lg p-6">
@@ -717,7 +717,7 @@ export default function NewConstructionPage() {
           </section>
         </div>
         <div className="text-center text-sm text-slate-500 mt-8">
-          Incentives checked October 19, 2026 | Subject to change
+          Incentives checked October 31, 2026 | Subject to change
         </div>
       </main>
       <Footer />

@@ -17,6 +17,7 @@ import {
   combineSchemas,
 } from "@/lib/schema";
 import { rootLayoutMetadata } from "@/lib/page-metadata";
+import { SpeedInsights as VercelSpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = rootLayoutMetadata;
 
@@ -88,6 +89,7 @@ export default function RootLayout({
         <AIChatWidget />
         <CalendlyBadge />
         <Analytics />
+        <VercelSpeedInsights />
       </body>
     </html>
   );
